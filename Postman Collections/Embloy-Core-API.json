@@ -1,0 +1,795 @@
+{
+	"info": {
+		"_postman_id": "e44099dd-6647-4b78-bd7a-03293e47dee5",
+		"name": "Embloy-API Collection",
+		"description": "#### If you don't have an account yet:\n\n1. Create new user `POST:/user`\n2. Verify user `GET:/user/verify`\n3. Save the JWT-Token in the response of `GET:/user/verify` in the variable `refresh_token`\n4. Request new access token with `POST:/user/auth/token/access`\n5. Save access token to variable `àccess_token`\n    \n\n#### Else, sign in with existing account:\n\n1. Request new refresh token via `POST:/user/auth/token/refresh` using your credentials\n2. Save the JWT-Token you received in the variable `refresh_token`\n3. Request new access token with `POST:/user/auth/token/access`\n4. Save access token to variable `àccess_token`",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "/user/verify",
+					"id": "20ee549b-80c6-4343-baaf-c82e62cd1a7d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"password": "doublethink",
+								"username": "winston.smith@embloy.com"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{root}}/api/{{api_version}}/user/verify"
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh-Token",
+					"id": "2c38042b-45e7-4de4-8171-ddc3f53a0182",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"password": "doublethink",
+								"username": "winston.smith@embloy.com"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"refresh_token\": {\n    \"email\": \"carlobortolan@gmail.com\",\n    \"password\": \"123123123\"\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{root}}/api/{{api_version}}/user/auth/token/refresh"
+					},
+					"response": []
+				},
+				{
+					"name": "Access-Token",
+					"id": "e29e5a54-533b-413a-9e04-b608cc4acd68",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "refresh_token",
+								"value": "{{refresh_token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/user/auth/token/access"
+					},
+					"response": []
+				}
+			],
+			"id": "66a77466-1308-4153-9a81-a8b0d8c679c5"
+		},
+		{
+			"name": "Jobs",
+			"item": [
+				{
+					"name": "/jobs",
+					"id": "57e944f0-7e32-41f2-ba51-2b61d02d9c38",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{root}}/api/{{api_version}}/jobs?longitude=-0.1293754&latitude=51.5207794",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"api",
+								"{{api_version}}",
+								"jobs"
+							],
+							"query": [
+								{
+									"key": "longitude",
+									"value": "-0.1293754"
+								},
+								{
+									"key": "latitude",
+									"value": "51.5207794"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/find",
+					"id": "5b96ba65-0da2-4c0a-8b57-1a6d40065e4b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{root}}/api/{{api_version}}/find?query=Barista&job_type=Food&sort_by=date_desc",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"api",
+								"{{api_version}}",
+								"find"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "Barista"
+								},
+								{
+									"key": "job_type",
+									"value": "Food"
+								},
+								{
+									"key": "sort_by",
+									"value": "date_desc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/jobs/{id}",
+					"id": "c2661a5f-45ec-404f-81d6-f05b112ef1cc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}"
+					},
+					"response": []
+				},
+				{
+					"name": "/maps",
+					"id": "346404d6-7f8a-42a3-874b-de16264d1d0f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{root}}/api/{{api_version}}/maps?longitude=0&latitude=0",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"api",
+								"{{api_version}}",
+								"maps"
+							],
+							"query": [
+								{
+									"key": "longitude",
+									"value": "0"
+								},
+								{
+									"key": "latitude",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/jobs",
+					"id": "8917ff93-4b2b-486c-849b-a63e6d2b450e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "TestTitle",
+									"type": "text"
+								},
+								{
+									"key": "job_type",
+									"value": "Retail",
+									"type": "text"
+								},
+								{
+									"key": "start_slot",
+									"value": "{{$isoTimestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "position",
+									"value": "CEO",
+									"type": "text"
+								},
+								{
+									"key": "key_skills",
+									"value": "Entrepreneurship",
+									"type": "text"
+								},
+								{
+									"key": "duration",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "<div>Hier steht die Desription</div>",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "public",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "11.613942994844358",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "48.1951076",
+									"type": "text"
+								},
+								{
+									"key": "job_notifications",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"type": "text"
+								},
+								{
+									"key": "image_url",
+									"type": "file",
+									"fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
+									"src": "/C:/Users/carlo/Pictures/Saved Pictures/60151e857007585820e506460334a361a6475c3cf165ea07ff9d0400df8d9ec4.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{root}}/api/{{api_version}}/jobs?id={{own_job_id}}",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"api",
+								"{{api_version}}",
+								"jobs"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "{{own_job_id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/jobs",
+					"id": "da181864-0ed9-4ccd-b5e3-1e8862ffd842",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "TestTitle",
+									"type": "text"
+								},
+								{
+									"key": "job_type",
+									"value": "Retail",
+									"type": "text"
+								},
+								{
+									"key": "start_slot",
+									"value": "{{$isoTimestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "position",
+									"value": "CEO",
+									"type": "text"
+								},
+								{
+									"key": "key_skills",
+									"value": "Entrepreneurship",
+									"type": "text"
+								},
+								{
+									"key": "duration",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "<div>This is the description</div>",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "public",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "11.613942994844358",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "48.1951076",
+									"type": "text"
+								},
+								{
+									"key": "job_notifications",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"type": "text"
+								},
+								{
+									"key": "image_url",
+									"type": "file",
+									"fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
+									"src": "/C:/Users/carlo/Pictures/Saved Pictures/7c655da21b075c3b05a09c37e2b44e592f05bcd4f915f63340b94b68194470b8.jpg"
+								},
+								{
+									"key": "cv_required",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "allowed_cv_formats",
+									"value": "[\".pdf\"]",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{root}}/api/{{api_version}}/jobs"
+					},
+					"response": []
+				}
+			],
+			"id": "1c563a30-4a0e-420e-826c-3c8ea0c14f03",
+			"description": "#### Note #1:\n\n`POST:/user/image`, `POST:/jobs` and `POST:/jobs/{job_id}/applications` require you to insert a local file to be submitted.\n\n#### Note #2:\n\n`POST:/jobs` needs a valid `start_slot` date to be created. To do so, you need to make sure that the date lies in the future and is not more than one year in advance."
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "/user",
+					"id": "03464f43-acba-4fd3-ba1b-113f98cb028e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/user"
+					},
+					"response": []
+				},
+				{
+					"name": "/user/jobs",
+					"id": "0214db05-841a-452d-bad9-19e0a0187e6a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/user/jobs"
+					},
+					"response": []
+				},
+				{
+					"name": "/user/upcoming",
+					"id": "8f9af903-11f1-4822-8ba5-7f31ba908862",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/user/upcoming"
+					},
+					"response": []
+				},
+				{
+					"name": "/user/applications",
+					"id": "113dd00e-6c6e-42a5-ba20-3291ff75dcaf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/user/applications"
+					},
+					"response": []
+				},
+				{
+					"name": "/user/preferences",
+					"id": "6beb8c5e-b35e-45f6-93d3-73fe7ccd3b1b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/user/preferences"
+					},
+					"response": []
+				},
+				{
+					"name": "/user/reviews",
+					"id": "f34dbd71-4ade-4674-a056-91db52dae7a7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/user/reviews"
+					},
+					"response": []
+				},
+				{
+					"name": "/user",
+					"id": "110d59f7-4ca3-4a6e-9832-be7083b056f3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"email\": \"winston.smith@embloy.com\",\r\n    \"first_name\": \"Winston\",\r\n    \"last_name\": \"Smith\",\r\n    \"password\": \"doublethink\",\r\n    \"password_confirmation\": \"doublethink\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{root}}/api/{{api_version}}/user"
+					},
+					"response": []
+				},
+				{
+					"name": "/user/image",
+					"id": "1f248aac-ce80-4543-8671-034c8d351188",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image_url",
+									"type": "file",
+									"src": "/C:/Users/carlo/Pictures/Saved Pictures/7c655da21b075c3b05a09c37e2b44e592f05bcd4f915f63340b94b68194470b8.jpg"
+								}
+							]
+						},
+						"url": "{{root}}/api/{{api_version}}/user/image"
+					},
+					"response": []
+				}
+			],
+			"id": "bcb60e9d-92d7-4f5b-8e72-137270f96af3"
+		},
+		{
+			"name": "Applications",
+			"item": [
+				{
+					"name": "/jobs/{id]/applications",
+					"id": "a0667553-22a3-46cc-b796-db7d925c30c8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "latitude",
+								"value": "11",
+								"type": "text"
+							},
+							{
+								"key": "longitude",
+								"value": "49",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications"
+					},
+					"response": []
+				},
+				{
+					"name": "/jobs/{id}/applications/{id}",
+					"id": "3e91530b-9003-4f11-bfd1-52dc670e022f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/application"
+					},
+					"response": []
+				},
+				{
+					"name": "/jobs/{id}/applications/{id}/accept",
+					"id": "2f949f66-58b0-48c0-88c6-dfae0de0e7f5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/1/accept"
+					},
+					"response": []
+				},
+				{
+					"name": "/jobs/{id}/applications/{id}/reject",
+					"id": "801f81e1-f467-4c57-ac48-aafec707a90a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/1/reject"
+					},
+					"response": []
+				},
+				{
+					"name": "/jobs/{id}/applications",
+					"id": "a9827e37-a7d1-4eeb-af07-2fa5890a2bc9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "application_text",
+									"value": "Hello World",
+									"type": "text"
+								},
+								{
+									"key": "application_attachment",
+									"type": "file",
+									"src": "/C:/Users/carlo/Downloads/Zusammenfassung.pdf"
+								}
+							]
+						},
+						"url": "{{root}}/api/{{api_version}}/jobs/38/applications"
+					},
+					"response": []
+				}
+			],
+			"id": "d7811e3b-5b22-43d9-bfde-2b6e0971c4bd"
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "2d64a948-2ee1-472a-8ab0-328c959e21df",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "696fb68d-4db8-43f5-a60e-64eabe27426c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "access_token",
+			"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQ5LCJleHAiOjE2OTc4MDE1MTcsInR5cCI6InZlcmlmaWVkIiwiaXNzIjoic3J2LWNmczJzNXFycmswYnVkYmZrZ28wLWhpYmVybmF0ZS04N2Y0ZmY2YjQtazk0OW0ifQ.dwavATIpPKQe34T7-9sH3ssKcPgR_Dww3gVoV0zQGGI"
+		},
+		{
+			"key": "refresh_token",
+			"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQ5LCJleHAiOjE2OTc4MTYwMTgsImp0aSI6ImFlOTk0M2EzNGQ3NzMyYzNkMzEzZWY4MDU0NmQwNzcxIiwiaWF0IjoxNjk3ODAxNjE4LCJpc3MiOiJzcnYtY2ZzMnM1cXJyazBidWRiZmtnbzAtaGliZXJuYXRlLTg3ZjRmZjZiNC1rOTQ5bSJ9.ACW33_O48Zw6PLaWbdS7g6OWFKcxD3CfnW49eg39UQY",
+			"type": "string"
+		},
+		{
+			"key": "own_job_id",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "root",
+			"value": "http://localhost:3000",
+			"type": "string"
+		},
+		{
+			"key": "api_version",
+			"value": "v0",
+			"type": "string"
+		}
+	]
+}
