@@ -47,7 +47,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"refresh_token\": {\n    \"email\": \"carlobortolan@gmail.com\",\n    \"password\": \"123123123\"\n  }\n}",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
