@@ -571,7 +571,13 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n  \"user\": {\r\n    \"email\": \"winston.smith@embloy.com\",\r\n    \"first_name\": \"Winston\",\r\n    \"last_name\": \"Smith\",\r\n    \"password\": \"doublethink\",\r\n    \"password_confirmation\": \"doublethink\"\r\n  }\r\n}",
@@ -611,6 +617,34 @@
 							]
 						},
 						"url": "{{root}}/api/{{api_version}}/user/image"
+					},
+					"response": []
+				},
+				{
+					"name": "/user",
+					"id": "a962de05-cf83-4c29-8495-1bdacf06454d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQ5LCJleHAiOjE2OTgxODM4MzIsInR5cCI6InZlcmlmaWVkIiwiaXNzIjoiQ0JfU3VyZmFjZVBybzgifQ.ZAP8fPiR-aQbEqTgZyc8fFrEieYfARGAkoVb8jp6nOo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"email\": \"winston.smith@embloy.com\",\r\n    \"first_name\": \"Winston\",\r\n    \"last_name\": \"Smith\",\r\n    \"password\": \"doublethink\",\r\n    \"password_confirmation\": \"doublethink\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{root}}/api/{{api_version}}/user"
 					},
 					"response": []
 				}
@@ -748,7 +782,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "2d64a948-2ee1-472a-8ab0-328c959e21df",
+				"id": "7851c452-7bb9-47e1-be37-450ef4d17cbf",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -758,7 +792,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "696fb68d-4db8-43f5-a60e-64eabe27426c",
+				"id": "2f4644e1-d20a-48b1-8533-4ab9984c82d6",
 				"type": "text/javascript",
 				"exec": [
 					""
