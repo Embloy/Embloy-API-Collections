@@ -647,6 +647,25 @@
 						"url": "{{root}}/api/{{api_version}}/user"
 					},
 					"response": []
+				},
+				{
+					"name": "/user",
+					"id": "619c8b86-567e-459f-9619-ca3c27b6641a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQ5LCJleHAiOjE2OTgxODM4MzIsInR5cCI6InZlcmlmaWVkIiwiaXNzIjoiQ0JfU3VyZmFjZVBybzgifQ.ZAP8fPiR-aQbEqTgZyc8fFrEieYfARGAkoVb8jp6nOo",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/user"
+					},
+					"response": []
 				}
 			],
 			"id": "bcb60e9d-92d7-4f5b-8e72-137270f96af3"
