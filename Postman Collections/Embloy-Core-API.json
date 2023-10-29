@@ -703,7 +703,7 @@
 					"response": []
 				},
 				{
-					"name": "/jobs/{id}/applications/{id}",
+					"name": "/jobs/{id}/application",
 					"id": "3e91530b-9003-4f11-bfd1-52dc670e022f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
