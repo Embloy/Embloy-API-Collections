@@ -843,12 +843,7 @@
 							},
 							{
 								"key": "access_token",
-								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQsImV4cCI6MTcwMTI5OTc0MCwidHlwIjoidmVyaWZpZWQiLCJpc3MiOiJtYW5rZGUifQ.Si5i_0DaIr58sMCIhQUWLN5FXp7LGS7TlS9HtHiI0aw",
-								"type": "text"
-							},
-							{
-								"key": "application_text",
-								"value": "Hello World!!!",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjUsImV4cCI6MTcwMTMwMTIxMCwidHlwIjoidmVyaWZpZWQiLCJpc3MiOiJtYW5rZGUifQ.xJoTWvsYCGP6a8UAy6CIXy__ZdreypfT8-v-HzEgoyo",
 								"type": "text"
 							}
 						],
@@ -897,7 +892,7 @@
 						"header": [
 							{
 								"key": "refresh_token",
-								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQsImV4cCI6MTcwMTMwNzMwMywianRpIjoiNzczODY3MmRmYzAyYzkxYzFmMTU1NWFlMjEyZGRkYzgiLCJpYXQiOjE3MDEyOTI5MDMsImlzcyI6Im1hbmtkZSJ9.iecqCByPUr14EUKQJwhyp_d5xY5lByapwws4A0G4iwM",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjUsImV4cCI6MTcwMTMxNDQwMiwianRpIjoiM2M1ZTZkZDY4NTFiOGQ2ODUyYTUyYTVjZTg0NGIwMmYiLCJpYXQiOjE3MDEzMDAwMDIsImlzcyI6Im1hbmtkZSJ9.FwSJqc6HUOTCehVYigPeeABHeHVgGzM9RGlSj5rRCQc",
 								"type": "text"
 							}
 						],
