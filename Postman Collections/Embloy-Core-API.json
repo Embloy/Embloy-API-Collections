@@ -843,7 +843,7 @@
 							},
 							{
 								"key": "access_token",
-								"value": "{{access_token_applicant}}",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQsImV4cCI6MTcwMTI5NDEyNywidHlwIjoidmVyaWZpZWQiLCJpc3MiOiJtYW5rZGUifQ.flvAw22m1Q621kWuGgQVZdycdteXZeoc2dMiQxylDj4",
 								"type": "text"
 							}
 						],
@@ -901,7 +901,7 @@
 						"header": [
 							{
 								"key": "refresh_token",
-								"value": "{{refresh_token}}",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQsImV4cCI6MTcwMTMwNzMwMywianRpIjoiNzczODY3MmRmYzAyYzkxYzFmMTU1NWFlMjEyZGRkYzgiLCJpYXQiOjE3MDEyOTI5MDMsImlzcyI6Im1hbmtkZSJ9.iecqCByPUr14EUKQJwhyp_d5xY5lByapwws4A0G4iwM",
 								"type": "text"
 							}
 						],
