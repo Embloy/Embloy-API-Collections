@@ -45,15 +45,6 @@
 						},
 						"method": "POST",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": "{{root}}/api/{{api_version}}/user/auth/token/refresh"
 					},
 					"response": []
@@ -423,8 +414,7 @@
 								{
 									"key": "image_url",
 									"type": "file",
-									"fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
-									"src": "/C:/Users/carlo/Pictures/Saved Pictures/7c655da21b075c3b05a09c37e2b44e592f05bcd4f915f63340b94b68194470b8.jpg"
+									"src": "/C:/Users/carlo/Pictures/Wallpaper/IMG_3041 (2).jpg"
 								},
 								{
 									"key": "cv_required",
@@ -736,7 +726,7 @@
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/1/accept"
+						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/46/reject"
 					},
 					"response": []
 				},
@@ -795,13 +785,57 @@
 				}
 			],
 			"id": "d7811e3b-5b22-43d9-bfde-2b6e0971c4bd"
+		},
+		{
+			"name": "Quicklink",
+			"item": [
+				{
+					"name": "/quick/token/client",
+					"id": "86b2cf1c-b02e-4d83-b65f-9c5e03cc89c4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/quick/token/client"
+					},
+					"response": []
+				},
+				{
+					"name": "/quick/token/request",
+					"id": "cb4b3c33-f0b8-4f76-af72-f8b325e16bb8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "client_token",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/quick/token/request"
+					},
+					"response": []
+				}
+			],
+			"id": "fef972ad-96ec-4bcd-a33e-c37d2735c964"
 		}
 	],
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "1bab4f7c-9052-42c8-9dbf-ef329bae31ad",
+				"id": "2f059266-5316-4fac-a643-cd2adc44b0f1",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -811,7 +845,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "e05a7e04-89a3-4fe0-b611-ff85f29928f3",
+				"id": "d6867c47-adaa-4f6d-8ba6-d1b4d3bf1efa",
 				"type": "text/javascript",
 				"exec": [
 					""
