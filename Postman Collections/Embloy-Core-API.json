@@ -819,7 +819,7 @@
 						"header": [
 							{
 								"key": "client_token",
-								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImV4cCI6MTcwOTMyMzQ3NCwidHlwIjoiYWRtaW4iLCJpYXQiOjE3MDEyODgyNzQsImlzcyI6Im1hbmtkZSJ9.6VBD7CvUNFVeCPyN-piyWGUIsAWDEp9_RVYHQuw7WO8",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImV4cCI6MTcwOTMyNDkyMCwidHlwIjoiYWRtaW4iLCJpYXQiOjE3MDEyODk3MjAsImlzcyI6Im1hbmtkZSJ9.gRSyseymyFq_iXYsx1tdrNEqAtUwL1Ga5MFxpVYjmtw",
 								"type": "text"
 							}
 						],
