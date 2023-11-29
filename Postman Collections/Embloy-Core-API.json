@@ -826,6 +826,25 @@
 						"url": "{{root}}/api/{{api_version}}/quick/token/request"
 					},
 					"response": []
+				},
+				{
+					"name": "/quick/applications",
+					"id": "d30ba0ba-7c54-4b48-a24f-da3741125391",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "client_token",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/quick/token/request"
+					},
+					"response": []
 				}
 			],
 			"id": "fef972ad-96ec-4bcd-a33e-c37d2735c964"
