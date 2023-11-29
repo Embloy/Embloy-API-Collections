@@ -845,8 +845,23 @@
 								"key": "access_token",
 								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQsImV4cCI6MTcwMTI5OTc0MCwidHlwIjoidmVyaWZpZWQiLCJpc3MiOiJtYW5rZGUifQ.Si5i_0DaIr58sMCIhQUWLN5FXp7LGS7TlS9HtHiI0aw",
 								"type": "text"
+							},
+							{
+								"key": "application_text",
+								"value": "Hello World!!!",
+								"type": "text"
 							}
 						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "application_text",
+									"value": "Hello World!!!",
+									"type": "text"
+								}
+							]
+						},
 						"url": "{{root}}/api/{{api_version}}/quick/applications"
 					},
 					"response": []
