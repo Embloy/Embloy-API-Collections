@@ -664,7 +664,7 @@
 			"name": "Applications",
 			"item": [
 				{
-					"name": "/jobs/{id]/applications",
+					"name": "/jobs/{id}/applications",
 					"id": "a0667553-22a3-46cc-b796-db7d925c30c8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -908,7 +908,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "ae3cc0b3-9fdc-4440-a06b-f2c2481a2fef",
+				"id": "717717e5-0dce-48bb-a57d-b1a0f7ec2ce3",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -918,7 +918,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "5a14e9ca-84fe-4f36-abb5-d23c905519c8",
+				"id": "698eeda9-80c2-42e0-b0ba-b62a37fd33bc",
 				"type": "text/javascript",
 				"exec": [
 					""
