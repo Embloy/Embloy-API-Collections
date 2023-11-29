@@ -819,7 +819,7 @@
 						"header": [
 							{
 								"key": "client_token",
-								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImV4cCI6MTcwOTMzMTc3NywidHlwIjoiYWRtaW4iLCJpYXQiOjE3MDEyOTY1NzcsImlzcyI6Im1hbmtkZSJ9.uakqTNZJbd3DZU2rEfzPA6NhWzNqH9OaaaWcM3Kw8ms",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImV4cCI6MTcwOTMzMjEwNiwidHlwIjoiYWRtaW4iLCJpYXQiOjE3MDEyOTY5MDYsImlzcyI6Im1hbmtkZSJ9.BQa8xNwawOXPKzgngji-rF1kKPcurWWcGenTeXLAl6c",
 								"type": "text"
 							}
 						],
@@ -838,7 +838,7 @@
 						"header": [
 							{
 								"key": "request_token",
-								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImV4cCI6MTcwOTMzMTc4MywidHlwIjoiYWRtaW4iLCJpYXQiOjE3MDEyOTY1ODMsImlzcyI6Im1hbmtkZSJ9.BQpLvlVTMPw4jdWTCz8Yi9uauvMuinRjsQW362nrMtg",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImV4cCI6MTcwMTQwNDkzMywiam9iIjoiam9iIzEiLCJpYXQiOjE3MDEyOTY5MzMsImlzcyI6Im1hbmtkZSJ9.6OfQi1hIqQiPQI9_Ye1KLpoapvp0BP17cXxQf3nJdOY",
 								"type": "text"
 							},
 							{
@@ -847,26 +847,7 @@
 								"type": "text"
 							}
 						],
-						"url": {
-							"raw": "{{root}}/api/{{api_version}}/quick/applications",
-							"host": [
-								"{{root}}"
-							],
-							"path": [
-								"api",
-								"{{api_version}}",
-								"quick",
-								"applications"
-							],
-							"query": [
-								{
-									"key": "",
-									"value": null,
-									"type": "text",
-									"disabled": true
-								}
-							]
-						}
+						"url": "{{root}}/api/{{api_version}}/quick/applications"
 					},
 					"response": []
 				},
