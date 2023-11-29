@@ -837,12 +837,75 @@
 						"method": "POST",
 						"header": [
 							{
-								"key": "client_token",
-								"value": "",
+								"key": "request_token",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImV4cCI6MTcwOTMyNzU3NiwidHlwIjoiYWRtaW4iLCJpYXQiOjE3MDEyOTIzNzYsImlzcyI6Im1hbmtkZSJ9.BQSkyMatuTG5Qa5hVaGZhli5967pLPNCJ6obAICRy1Q",
+								"type": "text"
+							},
+							{
+								"key": "access_token",
+								"value": "{{access_token_applicant}}",
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/quick/token/request"
+						"url": {
+							"raw": "{{root}}/api/{{api_version}}/quick/applications",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"api",
+								"{{api_version}}",
+								"quick",
+								"applications"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh-Token Applicant",
+					"id": "25d2d45a-6776-4b6c-b140-268b32c1643c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"password": "123123123",
+								"username": "carlobortolan@gmail.com"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": "{{root}}/api/{{api_version}}/user/auth/token/refresh"
+					},
+					"response": []
+				},
+				{
+					"name": "Access-Token Applicant",
+					"id": "945d98c2-0bef-4cc9-a511-f1eadf0a5571",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "refresh_token",
+								"value": "{{refresh_token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/user/auth/token/access"
 					},
 					"response": []
 				}
@@ -854,7 +917,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "4d1fc9f3-5c66-487a-af9f-e7b7df81644b",
+				"id": "267560b9-b3c4-4e2d-8eac-5ef3fdfbe791",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -864,7 +927,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "25ed6012-e7ab-48f9-934e-b5d865f9d66e",
+				"id": "d346d23b-a15b-4385-8be9-c93990258847",
 				"type": "text/javascript",
 				"exec": [
 					""
