@@ -47,22 +47,7 @@
 						"header": [],
 						"url": "{{root}}/api/{{api_version}}/user/auth/token/refresh"
 					},
-					"response": [
-						{
-							"id": "8f253fc2-b507-4696-8ac9-12f3cc90c2a1",
-							"name": "Refresh-Token",
-							"originalRequest": {
-								"method": "POST",
-								"header": [],
-								"url": "{{root}}/api/{{api_version}}/user/auth/token/refresh"
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": null
-						}
-					]
+					"response": []
 				},
 				{
 					"name": "Access-Token",
@@ -81,7 +66,68 @@
 						],
 						"url": "{{root}}/api/{{api_version}}/user/auth/token/access"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "985b3e8a-5744-4e27-9824-fc0b9cc975cb",
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "refresh_token",
+										"value": "{{refresh_token}}",
+										"type": "text"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/user/auth/token/access"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						},
+						{
+							"id": "f66232f8-e6be-4fe8-b037-a877e5ef0424",
+							"name": "400",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "refresh_token",
+										"value": "{{refresh_token}}",
+										"type": "text"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/user/auth/token/access"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						},
+						{
+							"id": "65fe3032-049e-43e2-9df0-8f5becddbe52",
+							"name": "401",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "refresh_token",
+										"value": "{{refresh_token}}",
+										"type": "text"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/user/auth/token/access"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						}
+					]
 				}
 			],
 			"id": "66a77466-1308-4153-9a81-a8b0d8c679c5"
