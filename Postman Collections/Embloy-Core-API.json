@@ -866,7 +866,7 @@
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/quick/token/client",
-						"description": "If the user has the necessary role, a **client token** is generated based on  \nthe decoded subject (sub) of the token. The generated **client token** is  \nthen returned in the response (valid for 3months)."
+						"description": "If the user has the necessary role, a **`client_token`** is generated based on  \nthe decoded subject (sub) of the token. The generated **`client_token`** is  \nthen returned in the response (valid for 3months)."
 					},
 					"response": [
 						{
@@ -947,7 +947,7 @@
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/quick/token/request",
-						"description": "This endpoint is responsible for creating a `request_token`. for a specific job and client with a validity of 30 minutes. It uses the decoded `client_token`'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
+						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
 					},
 					"response": []
 				},
@@ -981,7 +981,8 @@
 								}
 							]
 						},
-						"url": "{{root}}/api/{{api_version}}/quick/applications"
+						"url": "{{root}}/api/{{api_version}}/quick/applications",
+						"description": "Handles the _Quicklink_ application process. It finds the user based on the decoded  \nuser's **`access_token`** token's subject (sub) and the client based on the  \ndecoded **`request_token`**'s subject (sub). The method then  \nupdates or creates the job based on the decoded **`request_token`**'s job  \ninformation and applies for the job."
 					},
 					"response": []
 				},
@@ -1001,7 +1002,8 @@
 						},
 						"method": "POST",
 						"header": [],
-						"url": "{{root}}/api/{{api_version}}/user/auth/token/refresh"
+						"url": "{{root}}/api/{{api_version}}/user/auth/token/refresh",
+						"description": "> _**NOTE**_: This request is only used for testing with different user credentials"
 					},
 					"response": []
 				},
@@ -1020,7 +1022,8 @@
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/user/auth/token/access"
+						"url": "{{root}}/api/{{api_version}}/user/auth/token/access",
+						"description": "> _**NOTE**_: This request is only used for testing with different user credentials"
 					},
 					"response": []
 				}
