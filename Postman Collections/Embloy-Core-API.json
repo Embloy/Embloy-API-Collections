@@ -865,7 +865,8 @@
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/quick/token/client"
+						"url": "{{root}}/api/{{api_version}}/quick/token/client",
+						"description": "Create unique API key (valid for 3months) for a client, fetched by Genius and used in client's code."
 					},
 					"response": [
 						{
