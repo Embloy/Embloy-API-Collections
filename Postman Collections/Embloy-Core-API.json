@@ -866,7 +866,7 @@
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/quick/token/client",
-						"description": "Create unique API key (valid for 3months) for a client, fetched by Genius and used in client's code."
+						"description": "If the user has the necessary role, a **client token** is generated based on  \nthe decoded subject (sub) of the token. The generated **client token** is  \nthen returned in the response (valid for 3months)."
 					},
 					"response": [
 						{
@@ -947,7 +947,7 @@
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/quick/token/request",
-						"description": "Creates a request token for a specific job and client with a validity of 30 minutes. Used as authentication for further requests to the core-API."
+						"description": "This endpoint is responsible for creating a `request_token`. for a specific job and client with a validity of 30 minutes. It uses the decoded `client_token`'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
 					},
 					"response": []
 				},
