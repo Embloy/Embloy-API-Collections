@@ -47,7 +47,22 @@
 						"header": [],
 						"url": "{{root}}/api/{{api_version}}/user/auth/token/refresh"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "8f253fc2-b507-4696-8ac9-12f3cc90c2a1",
+							"name": "Refresh-Token",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": "{{root}}/api/{{api_version}}/user/auth/token/refresh"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						}
+					]
 				},
 				{
 					"name": "Access-Token",
@@ -806,7 +821,68 @@
 						],
 						"url": "{{root}}/api/{{api_version}}/quick/token/client"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "5ace596b-8afe-40d7-9307-3d5dccdb6bb9",
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/quick/token/client"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						},
+						{
+							"id": "5f998712-48e4-44e3-bd80-c62fcc3a296f",
+							"name": "400",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/quick/token/client"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						},
+						{
+							"id": "c5a95498-c707-4753-8f36-986e9a0e9120",
+							"name": "401",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/quick/token/client"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						}
+					]
 				},
 				{
 					"name": "/quick/token/request",
@@ -908,7 +984,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "59f5b3cd-1c03-47ba-8700-a16d5216903c",
+				"id": "008bb77a-5810-4b46-9c30-ede6fe11c40a",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -918,7 +994,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "a5f619a0-4d56-4d29-8a5b-b5b9417e47c8",
+				"id": "50597c9d-3efa-4d99-b163-4b3cf0a5fd19",
 				"type": "text/javascript",
 				"exec": [
 					""
