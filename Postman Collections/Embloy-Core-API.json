@@ -66,7 +66,8 @@
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/user/auth/token/access"
+						"url": "{{root}}/api/{{api_version}}/user/auth/token/access",
+						"description": "This first verifies the provided refresh token and then issues an access token for the specific account associated with the refresh token. Access tokens only possess a very short time-limited validity or 20 minutes currently. Access tokens are a very important aspect of dealing with the Embloy API. Nearly every endpoint requires the provision of a valid access token. In conclusion access tokens are quite powerfull, have a short validity interval and can be claimend with a valid refresh token. Refresh tokens are less powerfull than access tokens but they possess a longer validity intervall and are mainly used for claiming access tokens."
 					},
 					"response": [
 						{
@@ -172,7 +173,8 @@
 									"value": "51.5207794"
 								}
 							]
-						}
+						},
+						"description": "The provided access token is first verified, and then a user specific job feed is generated and returned."
 					},
 					"response": []
 				},
@@ -537,7 +539,8 @@
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/user/jobs"
+						"url": "{{root}}/api/{{api_version}}/user/jobs",
+						"description": "The provided access token is first verified, and then a list of all the jobs associated with its owner is generated."
 					},
 					"response": []
 				},
@@ -575,7 +578,8 @@
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/user/applications"
+						"url": "{{root}}/api/{{api_version}}/user/applications",
+						"description": "The provided access token is first verified, and then a list of all the job applications associated with its owner is generated."
 					},
 					"response": []
 				},
@@ -613,7 +617,8 @@
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/user/reviews"
+						"url": "{{root}}/api/{{api_version}}/user/reviews",
+						"description": "The provided access token is first verified, and then a list of all reviews associated with its owner is generated.The reviews cover both employer and employee submissions, providing a comprehensive overview of the experiences and perspectives."
 					},
 					"response": []
 				},
