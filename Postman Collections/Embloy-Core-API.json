@@ -389,7 +389,8 @@
 									"value": "{{own_job_id}}"
 								}
 							]
-						}
+						},
+						"description": "The provided access token is first verified, and then an existing job is updated."
 					},
 					"response": []
 				},
@@ -493,7 +494,28 @@
 								}
 							]
 						},
-						"url": "{{root}}/api/{{api_version}}/jobs"
+						"url": "{{root}}/api/{{api_version}}/jobs",
+						"description": "The provided access token is first verified, and then a new job is created. Upon creation, a job is listed as public. Public jobs undergo evaluation by Embloy's Job Ranking Engine and may appear in a user's individual job feed. Moreover, such jobs are open to applications from interested candidates. The job creator/owner or correspondingly authorized users correspondingly authorized users are able to limit the visibility of the job to \"private\". Private jobs are ignored by the Job Ranking Engine and so do not appear to any job seeking user."
+					},
+					"response": []
+				},
+				{
+					"name": "/jobs/{id}",
+					"id": "ca649118-734f-426d-8833-ec2395a7e720",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}",
+						"description": "Please note that this method is not part of the standard usage and requires editor-level or above user permissions. Use with caution. The provided access token is first verified, and then a given job is irreversibly deleted from the system. To only remove a job post you can either use the PATCH /jobs method and change the job_status to 0."
 					},
 					"response": []
 				}
