@@ -25,7 +25,8 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "{{root}}/api/{{api_version}}/user/verify"
+						"url": "{{root}}/api/{{api_version}}/user/verify",
+						"description": "This makes sure that the Embloy account was registerd successfully and automatically claims the initial refresh token. Verifying an account is mandatory before using any function of Embloy's plattform."
 					},
 					"response": []
 				},
@@ -45,7 +46,8 @@
 						},
 						"method": "POST",
 						"header": [],
-						"url": "{{root}}/api/{{api_version}}/user/auth/token/refresh"
+						"url": "{{root}}/api/{{api_version}}/user/auth/token/refresh",
+						"description": "This first authenticates the account credentials and then issues a refresh token for this specific verified Embloy account. Refresh tokens only possess a time-limited validity. (current default validity is 2 weeks) Refresh tokens are primarily used to claim the much more powerful (but much shorter valid) access tokens."
 					},
 					"response": []
 				},
@@ -515,7 +517,8 @@
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/user"
+						"url": "{{root}}/api/{{api_version}}/user",
+						"description": "This creates an user at its related records. In its entirety, this is referred to as an Embloy account. A freshly created Embloy account is inactive and first needs to be verified by the user."
 					},
 					"response": []
 				},
