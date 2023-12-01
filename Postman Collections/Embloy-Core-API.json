@@ -946,7 +946,8 @@
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/quick/token/request"
+						"url": "{{root}}/api/{{api_version}}/quick/token/request",
+						"description": "Creates a request token for a specific job and client with a validity of 30 minutes. Used as authentication for further requests to the core-API."
 					},
 					"response": []
 				},
