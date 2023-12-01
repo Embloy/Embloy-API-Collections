@@ -779,7 +779,8 @@
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications"
+						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications",
+						"description": "The provided access token is first verified, and then all received applications for the given jobs are returned."
 					},
 					"response": []
 				},
@@ -870,7 +871,8 @@
 								}
 							]
 						},
-						"url": "{{root}}/api/{{api_version}}/jobs/38/applications"
+						"url": "{{root}}/api/{{api_version}}/jobs/38/applications",
+						"description": "The provided access token is first verified, and then a new application in the name of the associated user is submitted to the specified job. For Embloy v0 the user account (in detail the user profile) is considered to be the figurehead with which one applies for a job."
 					},
 					"response": []
 				}
