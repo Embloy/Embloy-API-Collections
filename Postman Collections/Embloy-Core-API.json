@@ -1140,7 +1140,7 @@
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/quick/token/request",
+						"url": "{{root}}/api/{{api_version}}/client/subscriptions/{{subscription_id}}/activate",
 						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
 					},
 					"response": []
@@ -1160,7 +1160,7 @@
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/quick/token/request",
+						"url": "{{root}}/api/{{api_version}}/client/subscriptions/{{subscription_id}}/renew",
 						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
 					},
 					"response": []
@@ -1180,7 +1180,7 @@
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/quick/token/request",
+						"url": "{{root}}/api/{{api_version}}/client/subscriptions/{{subscription_id}}/cancel",
 						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
 					},
 					"response": []
