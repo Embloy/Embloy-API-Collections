@@ -1243,7 +1243,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "5b9a3b5c-30fc-4bcf-a189-fefcdd5ed617",
+				"id": "0a4fb67e-f2e4-4825-beef-dc4c3dc0597f",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1253,7 +1253,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "23ca8658-25cc-4f90-ac16-06d077a63d24",
+				"id": "03ba2c3b-aef0-406b-9219-9a5afb11b035",
 				"type": "text/javascript",
 				"exec": [
 					""
