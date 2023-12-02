@@ -1013,7 +1013,7 @@
 								}
 							]
 						},
-						"url": "{{root}}/api/{{api_version}}/quick/applications",
+						"url": "{{root}}/api/{{api_version}}/sdk/applications",
 						"description": "Handles the _Quicklink_ application process. It finds the user based on the decoded  \nuser's **`access_token`** token's subject (sub) and the client based on the  \ndecoded **`request_token`**'s subject (sub). The method then  \nupdates or creates the job based on the decoded **`request_token`**'s job  \ninformation and applies for the job."
 					},
 					"response": []
@@ -1075,12 +1075,12 @@
 						"method": "GET",
 						"header": [
 							{
-								"key": "client_token",
-								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQsImV4cCI6MTcwOTUyMDI4OCwidHlwIjoidmVyaWZpZWQiLCJpYXQiOjE3MDE0ODUwODgsImlzcyI6Im1hbmtkZSJ9.Jfo1W0z3WpwnOIW_mjbuP8S7Lk2oqyyXkKN7jPCRdpQ",
+								"key": "access_token",
+								"value": "{{access_token}}",
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/quick/subscriptions",
+						"url": "{{root}}/api/{{api_version}}/client/subscriptions",
 						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
 					},
 					"response": []
@@ -1095,12 +1095,12 @@
 						"method": "GET",
 						"header": [
 							{
-								"key": "client_token",
-								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQsImV4cCI6MTcwOTUyMDI4OCwidHlwIjoidmVyaWZpZWQiLCJpYXQiOjE3MDE0ODUwODgsImlzcyI6Im1hbmtkZSJ9.Jfo1W0z3WpwnOIW_mjbuP8S7Lk2oqyyXkKN7jPCRdpQ",
+								"key": "access_token",
+								"value": "{{access_token}}",
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/quick/subscriptions",
+						"url": "{{root}}/api/{{api_version}}/client/subscriptions/{{subscription_id}}",
 						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
 					},
 					"response": []
@@ -1115,12 +1115,12 @@
 						"method": "POST",
 						"header": [
 							{
-								"key": "client_token",
-								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQsImV4cCI6MTcwOTUyMDI4OCwidHlwIjoidmVyaWZpZWQiLCJpYXQiOjE3MDE0ODUwODgsImlzcyI6Im1hbmtkZSJ9.Jfo1W0z3WpwnOIW_mjbuP8S7Lk2oqyyXkKN7jPCRdpQ",
+								"key": "access_token",
+								"value": "{{access_token}}",
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/quick/token/request",
+						"url": "{{root}}/api/{{api_version}}/client/subscriptions",
 						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
 					},
 					"response": []
@@ -1135,8 +1135,8 @@
 						"method": "PATCH",
 						"header": [
 							{
-								"key": "client_token",
-								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQsImV4cCI6MTcwOTUyMDI4OCwidHlwIjoidmVyaWZpZWQiLCJpYXQiOjE3MDE0ODUwODgsImlzcyI6Im1hbmtkZSJ9.Jfo1W0z3WpwnOIW_mjbuP8S7Lk2oqyyXkKN7jPCRdpQ",
+								"key": "access_token",
+								"value": "{{access_token}}",
 								"type": "text"
 							}
 						],
@@ -1155,8 +1155,8 @@
 						"method": "PATCH",
 						"header": [
 							{
-								"key": "client_token",
-								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQsImV4cCI6MTcwOTUyMDI4OCwidHlwIjoidmVyaWZpZWQiLCJpYXQiOjE3MDE0ODUwODgsImlzcyI6Im1hbmtkZSJ9.Jfo1W0z3WpwnOIW_mjbuP8S7Lk2oqyyXkKN7jPCRdpQ",
+								"key": "access_token",
+								"value": "{{access_token}}",
 								"type": "text"
 							}
 						],
@@ -1175,8 +1175,8 @@
 						"method": "PATCH",
 						"header": [
 							{
-								"key": "client_token",
-								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQsImV4cCI6MTcwOTUyMDI4OCwidHlwIjoidmVyaWZpZWQiLCJpYXQiOjE3MDE0ODUwODgsImlzcyI6Im1hbmtkZSJ9.Jfo1W0z3WpwnOIW_mjbuP8S7Lk2oqyyXkKN7jPCRdpQ",
+								"key": "access_token",
+								"value": "{{access_token}}",
 								"type": "text"
 							}
 						],
@@ -1195,12 +1195,12 @@
 						"method": "DELETE",
 						"header": [
 							{
-								"key": "client_token",
-								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQsImV4cCI6MTcwOTUyMDI4OCwidHlwIjoidmVyaWZpZWQiLCJpYXQiOjE3MDE0ODUwODgsImlzcyI6Im1hbmtkZSJ9.Jfo1W0z3WpwnOIW_mjbuP8S7Lk2oqyyXkKN7jPCRdpQ",
+								"key": "access_token",
+								"value": "{{access_token}}",
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/quick/token/request",
+						"url": "{{root}}/api/{{api_version}}/client/subscriptions/{{subscription_id}}",
 						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
 					},
 					"response": []
@@ -1213,7 +1213,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "46983669-378b-4e6a-a1f7-cb62d06f6036",
+				"id": "761145ec-d78f-42f5-aa90-05981070c628",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1223,7 +1223,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "1142ccb1-5941-4087-b076-f1698c09880d",
+				"id": "146be1d4-f9b5-4d36-ba65-3c02e39e63c0",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1254,6 +1254,11 @@
 		{
 			"key": "api_version",
 			"value": "v0",
+			"type": "string"
+		},
+		{
+			"key": "subscription_id",
+			"value": "1",
 			"type": "string"
 		}
 	]
