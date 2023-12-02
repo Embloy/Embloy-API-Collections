@@ -40,8 +40,8 @@
 						"auth": {
 							"type": "basic",
 							"basic": {
-								"password": "123123123",
-								"username": "carlobortolan@gmail.com"
+								"password": "doublethink",
+								"username": "winston.smith@embloy.com"
 							}
 						},
 						"method": "POST",
@@ -897,7 +897,7 @@
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/quick/token/client",
+						"url": "{{root}}/api/{{api_version}}/client/auth/token",
 						"description": "If the user has the necessary role, a **`client_token`** is generated based on  \nthe decoded subject (sub) of the token. The generated **`client_token`** is  \nthen returned in the response (valid for 3months)."
 					},
 					"response": [
@@ -974,11 +974,11 @@
 						"header": [
 							{
 								"key": "client_token",
-								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQsImV4cCI6MTcwOTUyMDI4OCwidHlwIjoidmVyaWZpZWQiLCJpYXQiOjE3MDE0ODUwODgsImlzcyI6Im1hbmtkZSJ9.Jfo1W0z3WpwnOIW_mjbuP8S7Lk2oqyyXkKN7jPCRdpQ",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTcwOTU2NzI3NiwidHlwIjoidmVyaWZpZWQiLCJpYXQiOjE3MDE1MzIwNzYsImlzcyI6Im1hbmtkZSJ9.-GQ9UyeNFmNiCWyOxta4-Dt61VJNgMyuUQE35PEcjWU",
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/quick/token/request",
+						"url": "{{root}}/api/{{api_version}}/sdk/request/auth/token",
 						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
 					},
 					"response": []
@@ -1072,7 +1072,7 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "POST",
+						"method": "GET",
 						"header": [
 							{
 								"key": "client_token",
@@ -1080,7 +1080,7 @@
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/quick/token/request",
+						"url": "{{root}}/api/{{api_version}}/quick/subscriptions",
 						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
 					},
 					"response": []
@@ -1092,7 +1092,7 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "POST",
+						"method": "GET",
 						"header": [
 							{
 								"key": "client_token",
@@ -1100,7 +1100,7 @@
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/quick/token/request",
+						"url": "{{root}}/api/{{api_version}}/quick/subscriptions",
 						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
 					},
 					"response": []
@@ -1132,7 +1132,7 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "POST",
+						"method": "PATCH",
 						"header": [
 							{
 								"key": "client_token",
@@ -1152,7 +1152,47 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "POST",
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "client_token",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQsImV4cCI6MTcwOTUyMDI4OCwidHlwIjoidmVyaWZpZWQiLCJpYXQiOjE3MDE0ODUwODgsImlzcyI6Im1hbmtkZSJ9.Jfo1W0z3WpwnOIW_mjbuP8S7Lk2oqyyXkKN7jPCRdpQ",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/quick/token/request",
+						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
+					},
+					"response": []
+				},
+				{
+					"name": "/client/subscriptions/{id}/cancel",
+					"id": "ffaac945-cf10-46a8-b0af-62e4df0c58a8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "client_token",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQsImV4cCI6MTcwOTUyMDI4OCwidHlwIjoidmVyaWZpZWQiLCJpYXQiOjE3MDE0ODUwODgsImlzcyI6Im1hbmtkZSJ9.Jfo1W0z3WpwnOIW_mjbuP8S7Lk2oqyyXkKN7jPCRdpQ",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/quick/token/request",
+						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
+					},
+					"response": []
+				},
+				{
+					"name": "/client/subscriptions/{id}",
+					"id": "e08c7416-3109-4c03-ad0b-633fe5ba3d3f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
 						"header": [
 							{
 								"key": "client_token",
@@ -1173,7 +1213,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "b1429d83-0af6-40d5-8ac0-8004094ccaf6",
+				"id": "46983669-378b-4e6a-a1f7-cb62d06f6036",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1183,7 +1223,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "ef885144-ca34-42fb-8bd2-a808139de143",
+				"id": "1142ccb1-5941-4087-b076-f1698c09880d",
 				"type": "text/javascript",
 				"exec": [
 					""
