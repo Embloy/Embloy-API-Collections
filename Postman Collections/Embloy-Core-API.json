@@ -1146,7 +1146,8 @@
 								{
 									"key": "auto_renew",
 									"value": "true",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								}
 							]
 						},
