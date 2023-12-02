@@ -1061,6 +1061,112 @@
 				}
 			],
 			"id": "fef972ad-96ec-4bcd-a33e-c37d2735c964"
+		},
+		{
+			"name": "Subscriptions",
+			"item": [
+				{
+					"name": "/client/subscriptions",
+					"id": "c45c84f4-688b-4099-8591-c3d71d746d2c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "client_token",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQsImV4cCI6MTcwOTUyMDI4OCwidHlwIjoidmVyaWZpZWQiLCJpYXQiOjE3MDE0ODUwODgsImlzcyI6Im1hbmtkZSJ9.Jfo1W0z3WpwnOIW_mjbuP8S7Lk2oqyyXkKN7jPCRdpQ",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/quick/token/request",
+						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
+					},
+					"response": []
+				},
+				{
+					"name": "/client/subscriptions/{id}",
+					"id": "08a40191-8715-49da-8ee6-66209dcd7dfc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "client_token",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQsImV4cCI6MTcwOTUyMDI4OCwidHlwIjoidmVyaWZpZWQiLCJpYXQiOjE3MDE0ODUwODgsImlzcyI6Im1hbmtkZSJ9.Jfo1W0z3WpwnOIW_mjbuP8S7Lk2oqyyXkKN7jPCRdpQ",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/quick/token/request",
+						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
+					},
+					"response": []
+				},
+				{
+					"name": "/client/subscriptions",
+					"id": "3373ae62-eead-478c-b304-3c2431c557b0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "client_token",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQsImV4cCI6MTcwOTUyMDI4OCwidHlwIjoidmVyaWZpZWQiLCJpYXQiOjE3MDE0ODUwODgsImlzcyI6Im1hbmtkZSJ9.Jfo1W0z3WpwnOIW_mjbuP8S7Lk2oqyyXkKN7jPCRdpQ",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/quick/token/request",
+						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
+					},
+					"response": []
+				},
+				{
+					"name": "/client/subscriptions/{id}/activate",
+					"id": "ef77fd27-5b5e-4765-91af-7aa1bced4334",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "client_token",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQsImV4cCI6MTcwOTUyMDI4OCwidHlwIjoidmVyaWZpZWQiLCJpYXQiOjE3MDE0ODUwODgsImlzcyI6Im1hbmtkZSJ9.Jfo1W0z3WpwnOIW_mjbuP8S7Lk2oqyyXkKN7jPCRdpQ",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/quick/token/request",
+						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
+					},
+					"response": []
+				},
+				{
+					"name": "/client/subscriptions/{id}/renew",
+					"id": "6c0d7fa1-9943-4d92-9f04-74553fac093f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "client_token",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQsImV4cCI6MTcwOTUyMDI4OCwidHlwIjoidmVyaWZpZWQiLCJpYXQiOjE3MDE0ODUwODgsImlzcyI6Im1hbmtkZSJ9.Jfo1W0z3WpwnOIW_mjbuP8S7Lk2oqyyXkKN7jPCRdpQ",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/quick/token/request",
+						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
+					},
+					"response": []
+				}
+			],
+			"id": "6665f20c-82b1-4a41-ae6e-f50f5b050b53"
 		}
 	],
 	"event": [
