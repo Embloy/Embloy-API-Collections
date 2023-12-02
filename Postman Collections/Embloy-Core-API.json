@@ -1121,34 +1121,8 @@
 							}
 						],
 						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "tier",
-									"value": "basic",
-									"type": "text"
-								},
-								{
-									"key": "active",
-									"value": "true",
-									"type": "text"
-								},
-								{
-									"key": "expiration_date",
-									"value": "{{$randomDateFuture}}",
-									"type": "text"
-								},
-								{
-									"key": "start_date",
-									"value": "{{$randomDateFuture}}",
-									"type": "text"
-								},
-								{
-									"key": "auto_renew",
-									"value": "true",
-									"type": "text"
-								}
-							]
+							"mode": "raw",
+							"raw": "{\n  \"subscription\": {\n    \"tier\": \"basic\",\n    \"active\": true,\n    \"expiration_date\": \"2023-12-31T23:59:59Z\",\n    \"start_date\": \"2022-01-01T00:00:00Z\",\n    \"auto_renew\": true,\n    \"renew_date\": \"2023-06-30T23:59:59Z\",\n    \"user_id\": 1\n  }\n}"
 						},
 						"url": "{{root}}/api/{{api_version}}/client/subscriptions",
 						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
