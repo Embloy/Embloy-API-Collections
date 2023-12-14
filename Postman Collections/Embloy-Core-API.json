@@ -31,7 +31,7 @@
 					"response": []
 				},
 				{
-					"name": "Refresh-Token",
+					"name": "Generate Refresh-Token",
 					"id": "2c38042b-45e7-4de4-8171-ddc3f53a0182",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -52,7 +52,7 @@
 					"response": []
 				},
 				{
-					"name": "Access-Token",
+					"name": "Generate Access-Token",
 					"id": "e29e5a54-533b-413a-9e04-b608cc4acd68",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -139,7 +139,7 @@
 			"name": "Jobs",
 			"item": [
 				{
-					"name": "/jobs",
+					"name": "Load feed",
 					"id": "57e944f0-7e32-41f2-ba51-2b61d02d9c38",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -179,7 +179,7 @@
 					"response": []
 				},
 				{
-					"name": "/find",
+					"name": "Search jobs",
 					"id": "5b96ba65-0da2-4c0a-8b57-1a6d40065e4b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -225,26 +225,7 @@
 					"response": []
 				},
 				{
-					"name": "/jobs/{id}",
-					"id": "c2661a5f-45ec-404f-81d6-f05b112ef1cc",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text"
-							}
-						],
-						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}"
-					},
-					"response": []
-				},
-				{
-					"name": "/maps",
+					"name": "Load maps",
 					"id": "346404d6-7f8a-42a3-874b-de16264d1d0f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -283,7 +264,26 @@
 					"response": []
 				},
 				{
-					"name": "/jobs",
+					"name": "Get job",
+					"id": "c2661a5f-45ec-404f-81d6-f05b112ef1cc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Update job",
 					"id": "8917ff93-4b2b-486c-849b-a63e6d2b450e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -395,7 +395,7 @@
 					"response": []
 				},
 				{
-					"name": "/jobs",
+					"name": "Create job",
 					"id": "da181864-0ed9-4ccd-b5e3-1e8862ffd842",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -500,7 +500,7 @@
 					"response": []
 				},
 				{
-					"name": "/jobs/{id}",
+					"name": "Delete job",
 					"id": "ca649118-734f-426d-8833-ec2395a7e720",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -527,7 +527,7 @@
 			"name": "User",
 			"item": [
 				{
-					"name": "/user",
+					"name": "Get user profile",
 					"id": "03464f43-acba-4fd3-ba1b-113f98cb028e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -547,7 +547,7 @@
 					"response": []
 				},
 				{
-					"name": "/user/jobs",
+					"name": "Get user job",
 					"id": "0214db05-841a-452d-bad9-19e0a0187e6a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -567,7 +567,7 @@
 					"response": []
 				},
 				{
-					"name": "/user/upcoming",
+					"name": "Get upcoming jobs",
 					"id": "8f9af903-11f1-4822-8ba5-7f31ba908862",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -586,7 +586,7 @@
 					"response": []
 				},
 				{
-					"name": "/user/applications",
+					"name": "Get user applications",
 					"id": "113dd00e-6c6e-42a5-ba20-3291ff75dcaf",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -606,7 +606,7 @@
 					"response": []
 				},
 				{
-					"name": "/user/preferences",
+					"name": "Get preferences",
 					"id": "6beb8c5e-b35e-45f6-93d3-73fe7ccd3b1b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -625,7 +625,7 @@
 					"response": []
 				},
 				{
-					"name": "/user/reviews",
+					"name": "Get reviews",
 					"id": "f34dbd71-4ade-4674-a056-91db52dae7a7",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -645,7 +645,7 @@
 					"response": []
 				},
 				{
-					"name": "/user",
+					"name": "Create user",
 					"id": "110d59f7-4ca3-4a6e-9832-be7083b056f3",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -673,7 +673,7 @@
 					"response": []
 				},
 				{
-					"name": "/user/image",
+					"name": "Upload profile image",
 					"id": "1f248aac-ce80-4543-8671-034c8d351188",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -702,7 +702,7 @@
 					"response": []
 				},
 				{
-					"name": "/user",
+					"name": "Update user",
 					"id": "a962de05-cf83-4c29-8495-1bdacf06454d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -730,7 +730,7 @@
 					"response": []
 				},
 				{
-					"name": "/user",
+					"name": "Delete user",
 					"id": "619c8b86-567e-459f-9619-ca3c27b6641a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -755,7 +755,7 @@
 			"name": "Applications",
 			"item": [
 				{
-					"name": "/jobs/{id}/applications",
+					"name": "Get all applications for a job",
 					"id": "a0667553-22a3-46cc-b796-db7d925c30c8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -785,7 +785,7 @@
 					"response": []
 				},
 				{
-					"name": "/jobs/{id}/application",
+					"name": "Get submitted application for a job",
 					"id": "3e91530b-9003-4f11-bfd1-52dc670e022f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -883,7 +883,7 @@
 			"name": "Quicklink",
 			"item": [
 				{
-					"name": "Create Client-Token",
+					"name": "Generate Client-Token",
 					"id": "86b2cf1c-b02e-4d83-b65f-9c5e03cc89c4",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -964,7 +964,7 @@
 					]
 				},
 				{
-					"name": "Create Request-Token",
+					"name": "Generate Request-Token",
 					"id": "cb4b3c33-f0b8-4f76-af72-f8b325e16bb8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
