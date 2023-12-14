@@ -1108,7 +1108,8 @@
 							{
 								"key": "refresh_token",
 								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImV4cCI6MTcwMTM2MTMzMywianRpIjoiN2I4OTNiNjc5YjBiMGNmYjNmYjFlMGM3YTNkNDA5NmQiLCJpYXQiOjE3MDEzNDY5MzMsImlzcyI6Im1hbmtkZSJ9.mD_xTEI-aYvhXrNsN-GleWcX6Js_a2IO55hHZw1crNM",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the applicant. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/user/auth/token/access",
