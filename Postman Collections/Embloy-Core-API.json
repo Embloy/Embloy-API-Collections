@@ -224,7 +224,7 @@
 								{
 									"key": "sort_by",
 									"value": "date_desc",
-									"description": "Sort by `date_desc`, `date_asc`, ``"
+									"description": "Sort by `date_desc`, `date_asc`, `salary_desc` or `salary_asc`"
 								}
 							]
 						},
@@ -270,7 +270,8 @@
 									"description": "The latitude of the desired position."
 								}
 							]
-						}
+						},
+						"description": "Returns job map (= jobs near the user's position: `longitude`, `latitude`)\n"
 					},
 					"response": []
 				},
@@ -672,7 +673,8 @@
 								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/user/preferences"
+						"url": "{{root}}/api/{{api_version}}/user/preferences",
+						"description": "The provided access token is first verified, and then a response containing user preferences associated with its owner is generated."
 					},
 					"response": []
 				},
