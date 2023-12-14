@@ -133,7 +133,8 @@
 					]
 				}
 			],
-			"id": "66a77466-1308-4153-9a81-a8b0d8c679c5"
+			"id": "66a77466-1308-4153-9a81-a8b0d8c679c5",
+			"description": "All request regarding user authentication and access token creation."
 		},
 		{
 			"name": "Jobs",
@@ -521,7 +522,7 @@
 				}
 			],
 			"id": "1c563a30-4a0e-420e-826c-3c8ea0c14f03",
-			"description": "#### Note #1:\n\n`POST:/user/image`, `POST:/jobs` and `POST:/jobs/{job_id}/applications` require you to insert a local file to be submitted.\n\n#### Note #2:\n\n`POST:/jobs` needs a valid `start_slot` date to be created. To do so, you need to make sure that the date lies in the future and is not more than one year in advance."
+			"description": "All requests related to job finding & handling.\n\n#### Note #1:\n\n`POST:/user/image`, `POST:/jobs` and `POST:/jobs/{job_id}/applications` require you to insert a local file to be submitted.\n\n#### Note #2:\n\n`POST:/jobs` needs a valid `start_slot` date to be created. To do so, you need to make sure that the date lies in the future and is not more than one year in advance."
 		},
 		{
 			"name": "User",
@@ -749,7 +750,8 @@
 					"response": []
 				}
 			],
-			"id": "bcb60e9d-92d7-4f5b-8e72-137270f96af3"
+			"id": "bcb60e9d-92d7-4f5b-8e72-137270f96af3",
+			"description": "All requests related to user's own jobs, applications, profile, preferences and reviews."
 		},
 		{
 			"name": "Applications",
@@ -785,7 +787,7 @@
 					"response": []
 				},
 				{
-					"name": "Get submitted application for a job",
+					"name": "Get user's submitted application for a job",
 					"id": "3e91530b-9003-4f11-bfd1-52dc670e022f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -804,7 +806,7 @@
 					"response": []
 				},
 				{
-					"name": "/jobs/{id}/applications/{id}/accept",
+					"name": "Accept application",
 					"id": "2f949f66-58b0-48c0-88c6-dfae0de0e7f5",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -823,7 +825,7 @@
 					"response": []
 				},
 				{
-					"name": "/jobs/{id}/applications/{id}/reject",
+					"name": "Reject application",
 					"id": "801f81e1-f467-4c57-ac48-aafec707a90a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -842,7 +844,7 @@
 					"response": []
 				},
 				{
-					"name": "/jobs/{id}/applications",
+					"name": "Submit application",
 					"id": "a9827e37-a7d1-4eeb-af07-2fa5890a2bc9",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -877,7 +879,8 @@
 					"response": []
 				}
 			],
-			"id": "d7811e3b-5b22-43d9-bfde-2b6e0971c4bd"
+			"id": "d7811e3b-5b22-43d9-bfde-2b6e0971c4bd",
+			"description": "All requests for creating and reacting to applications using core-server v1."
 		},
 		{
 			"name": "Quicklink",
@@ -1060,7 +1063,8 @@
 					"response": []
 				}
 			],
-			"id": "fef972ad-96ec-4bcd-a33e-c37d2735c964"
+			"id": "fef972ad-96ec-4bcd-a33e-c37d2735c964",
+			"description": "All requests for the \"_Embloy Button_\" and related token creation and application capturing functionalities."
 		},
 		{
 			"name": "Subscriptions",
@@ -1215,7 +1219,14 @@
 					"response": []
 				}
 			],
-			"id": "6665f20c-82b1-4a41-ae6e-f50f5b050b53"
+			"id": "6665f20c-82b1-4a41-ae6e-f50f5b050b53",
+			"description": "All requests related to setting up a client's individual subscription."
+		},
+		{
+			"name": "Genius",
+			"item": [],
+			"id": "567634cc-a468-46ad-a978-2fccbbc3aeca",
+			"description": "TODO"
 		}
 	],
 	"event": [
