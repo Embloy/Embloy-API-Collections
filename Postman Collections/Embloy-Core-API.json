@@ -224,7 +224,8 @@
 									"value": "date_desc"
 								}
 							]
-						}
+						},
+						"description": "Search all jobs on embloy. Optionally filtered by `query`, `job_type` and `sort_by`."
 					},
 					"response": []
 				},
@@ -257,11 +258,13 @@
 							"query": [
 								{
 									"key": "longitude",
-									"value": "0"
+									"value": "0",
+									"description": "The longitute of the desired position."
 								},
 								{
 									"key": "latitude",
-									"value": "0"
+									"value": "0",
+									"description": "The latitude of the desired position."
 								}
 							]
 						}
