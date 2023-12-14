@@ -63,7 +63,8 @@
 							{
 								"key": "refresh_token",
 								"value": "{{refresh_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid refresh token is needed in order to be able to create an access_token."
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/user/auth/token/access",
@@ -151,7 +152,8 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
 						"url": {
@@ -194,7 +196,8 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
 						"url": {
@@ -237,7 +240,8 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
 						"url": {
@@ -276,7 +280,8 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}"
@@ -1226,7 +1231,7 @@
 			"name": "Genius",
 			"item": [],
 			"id": "567634cc-a468-46ad-a978-2fccbbc3aeca",
-			"description": "TODO"
+			"description": "All requests currently supported by the Genius-API.\n\n// TODO"
 		}
 	],
 	"event": [
