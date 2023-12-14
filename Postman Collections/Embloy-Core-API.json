@@ -213,15 +213,18 @@
 							"query": [
 								{
 									"key": "query",
-									"value": "Barista"
+									"value": "Barista",
+									"description": "Returns jobs with titles, positions and descriptions matching your query"
 								},
 								{
 									"key": "job_type",
-									"value": "Food"
+									"value": "Food",
+									"description": "Filter by a job category of your choice"
 								},
 								{
 									"key": "sort_by",
-									"value": "date_desc"
+									"value": "date_desc",
+									"description": "Sort by `date_desc`, `date_asc`, ``"
 								}
 							]
 						},
@@ -303,7 +306,8 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
 						"body": {
@@ -312,71 +316,85 @@
 								{
 									"key": "title",
 									"value": "TestTitle",
-									"type": "text"
+									"type": "text",
+									"description": "Job's title."
 								},
 								{
 									"key": "job_type",
 									"value": "Retail",
-									"type": "text"
+									"type": "text",
+									"description": "Job category"
 								},
 								{
 									"key": "start_slot",
 									"value": "{{$isoTimestamp}}",
-									"type": "text"
+									"type": "text",
+									"description": "The timestamp of when the job starts"
 								},
 								{
 									"key": "position",
 									"value": "CEO",
-									"type": "text"
+									"type": "text",
+									"description": "The open position"
 								},
 								{
 									"key": "key_skills",
 									"value": "Entrepreneurship",
-									"type": "text"
+									"type": "text",
+									"description": "Key skills relevant for this job"
 								},
 								{
 									"key": "duration",
 									"value": "9",
-									"type": "text"
+									"type": "text",
+									"description": "The job duration in days"
 								},
 								{
 									"key": "salary",
 									"value": "9",
-									"type": "text"
+									"type": "text",
+									"description": "The job's salary"
 								},
 								{
 									"key": "description",
 									"value": "<div>Hier steht die Desription</div>",
-									"type": "text"
+									"type": "text",
+									"description": "A brief description (<500characters) of the job"
 								},
 								{
 									"key": "status",
 									"value": "public",
-									"type": "text"
+									"type": "text",
+									"description": "Visibility status"
 								},
 								{
 									"key": "longitude",
 									"value": "11.613942994844358",
-									"type": "text"
+									"type": "text",
+									"description": "The job's longitde"
 								},
 								{
 									"key": "latitude",
 									"value": "48.1951076",
-									"type": "text"
+									"type": "text",
+									"description": "The job's latitude"
 								},
 								{
 									"key": "job_notifications",
 									"value": "1",
-									"type": "text"
+									"type": "text",
+									"description": "Enable/Disable notifications for this job"
 								},
 								{
 									"key": "currency",
 									"value": "EUR",
-									"type": "text"
+									"type": "text",
+									"description": "Your preferred currency"
 								},
 								{
 									"key": "image_url",
 									"type": "file",
+									"description": "Cover image of your job posting",
 									"fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
 									"src": "/C:/Users/carlo/Pictures/Saved Pictures/60151e857007585820e506460334a361a6475c3cf165ea07ff9d0400df8d9ec4.jpg"
 								}
@@ -395,7 +413,8 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "{{own_job_id}}"
+									"value": "{{own_job_id}}",
+									"description": "The id of the job you want to update"
 								}
 							]
 						},
@@ -520,7 +539,8 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}",
@@ -547,7 +567,8 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/user",
@@ -556,7 +577,7 @@
 					"response": []
 				},
 				{
-					"name": "Get user job",
+					"name": "Get user's jobs",
 					"id": "0214db05-841a-452d-bad9-19e0a0187e6a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -567,7 +588,8 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/user/jobs",
@@ -587,7 +609,8 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/user/upcoming"
@@ -595,7 +618,7 @@
 					"response": []
 				},
 				{
-					"name": "Get user applications",
+					"name": "Get user's applications",
 					"id": "113dd00e-6c6e-42a5-ba20-3291ff75dcaf",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -606,7 +629,8 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/user/applications",
@@ -626,7 +650,8 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/user/preferences"
@@ -645,7 +670,8 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/user/reviews",
@@ -661,13 +687,7 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n  \"user\": {\r\n    \"email\": \"winston.smith@embloy.com\",\r\n    \"first_name\": \"Winston\",\r\n    \"last_name\": \"Smith\",\r\n    \"password\": \"doublethink\",\r\n    \"password_confirmation\": \"doublethink\"\r\n  }\r\n}",
