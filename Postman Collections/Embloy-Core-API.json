@@ -291,7 +291,8 @@
 								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}"
+						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}",
+						"description": "The provided access token is first verified, and then the job is returned. (Only if the the user is authorized to access the resource and if the resource exists)"
 					},
 					"response": []
 				},
@@ -1064,6 +1065,7 @@
 							{
 								"key": "access_token",
 								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImV4cCI6MTcwMTQzODkyOSwianRpIjoiYTVkZDVkOTYwOTY2M2RjYzc1YTU0ZDI1ZDNjODA2YjUiLCJpYXQiOjE3MDE0MjQ1MjksImlzcyI6Im1hbmtkZSJ9.m2qG2zqfAWmFu1LXb96ltWgGBcQRIcbQESq221NMKrU",
+								"description": "A valid access_token is needed to authenticate and authorize the applicant. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
 								"type": "text"
 							}
 						],
@@ -1183,7 +1185,8 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
 						"body": {
@@ -1212,7 +1215,8 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/client/subscriptions/{{subscription_id}}/activate",
@@ -1232,7 +1236,8 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/client/subscriptions/{{subscription_id}}/renew",
@@ -1252,7 +1257,8 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/client/subscriptions/{{subscription_id}}/cancel",
@@ -1272,7 +1278,8 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/client/subscriptions/{{subscription_id}}",
