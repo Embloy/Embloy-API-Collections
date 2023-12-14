@@ -424,7 +424,7 @@
 				},
 				{
 					"name": "Create job",
-					"id": "da181864-0ed9-4ccd-b5e3-1e8862ffd842",
+					"id": "832650d0-f343-4f90-9dec-e5828711156a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -434,7 +434,8 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
 						"body": {
@@ -443,82 +444,99 @@
 								{
 									"key": "title",
 									"value": "TestTitle",
-									"type": "text"
+									"type": "text",
+									"description": "Job's title."
 								},
 								{
 									"key": "job_type",
 									"value": "Retail",
-									"type": "text"
+									"type": "text",
+									"description": "Job category"
 								},
 								{
 									"key": "start_slot",
 									"value": "{{$isoTimestamp}}",
-									"type": "text"
+									"type": "text",
+									"description": "The timestamp of when the job starts"
 								},
 								{
 									"key": "position",
 									"value": "CEO",
-									"type": "text"
+									"type": "text",
+									"description": "The open position"
 								},
 								{
 									"key": "key_skills",
 									"value": "Entrepreneurship",
-									"type": "text"
+									"type": "text",
+									"description": "Key skills relevant for this job"
 								},
 								{
 									"key": "duration",
 									"value": "9",
-									"type": "text"
+									"type": "text",
+									"description": "The job duration in days"
 								},
 								{
 									"key": "salary",
 									"value": "9",
-									"type": "text"
+									"type": "text",
+									"description": "The job's salary"
 								},
 								{
 									"key": "description",
 									"value": "<div>This is the description</div>",
-									"type": "text"
+									"type": "text",
+									"description": "A brief description (<500characters) of the job"
 								},
 								{
 									"key": "status",
 									"value": "public",
-									"type": "text"
+									"type": "text",
+									"description": "Visibility status"
 								},
 								{
 									"key": "longitude",
 									"value": "11.613942994844358",
-									"type": "text"
+									"type": "text",
+									"description": "The job's longitde"
 								},
 								{
 									"key": "latitude",
 									"value": "48.1951076",
-									"type": "text"
+									"type": "text",
+									"description": "The job's latitude"
 								},
 								{
 									"key": "job_notifications",
 									"value": "1",
-									"type": "text"
+									"type": "text",
+									"description": "Enable/Disable notifications for this job"
 								},
 								{
 									"key": "currency",
 									"value": "EUR",
-									"type": "text"
-								},
-								{
-									"key": "image_url",
-									"type": "file",
-									"src": "/C:/Users/carlo/Pictures/Wallpaper/IMG_3041 (2).jpg"
+									"type": "text",
+									"description": "Your preferred currency"
 								},
 								{
 									"key": "cv_required",
 									"value": "false",
-									"type": "text"
+									"type": "text",
+									"description": "Cover image of your job posting"
 								},
 								{
 									"key": "allowed_cv_formats",
 									"value": "[\".pdf\"]",
-									"type": "text"
+									"type": "text",
+									"description": "Allowed cv_formats for the job's applications "
+								},
+								{
+									"key": "image_url",
+									"type": "file",
+									"description": "Cover image of your job posting",
+									"fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
+									"src": "/C:/Users/carlo/Pictures/Saved Pictures/60151e857007585820e506460334a361a6475c3cf165ea07ff9d0400df8d9ec4.jpg"
 								}
 							]
 						},
@@ -713,7 +731,8 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
 						"body": {
@@ -722,6 +741,8 @@
 								{
 									"key": "image_url",
 									"type": "file",
+									"description": "The user's new profile image as a file",
+									"fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
 									"src": "/C:/Users/carlo/Pictures/Saved Pictures/7c655da21b075c3b05a09c37e2b44e592f05bcd4f915f63340b94b68194470b8.jpg"
 								}
 							]
@@ -742,6 +763,7 @@
 							{
 								"key": "access_token",
 								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQ5LCJleHAiOjE2OTgxODM4MzIsInR5cCI6InZlcmlmaWVkIiwiaXNzIjoiQ0JfU3VyZmFjZVBybzgifQ.ZAP8fPiR-aQbEqTgZyc8fFrEieYfARGAkoVb8jp6nOo",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
 								"type": "text"
 							}
 						],
@@ -770,7 +792,8 @@
 							{
 								"key": "access_token",
 								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQ5LCJleHAiOjE2OTgxODM4MzIsInR5cCI6InZlcmlmaWVkIiwiaXNzIjoiQ0JfU3VyZmFjZVBybzgifQ.ZAP8fPiR-aQbEqTgZyc8fFrEieYfARGAkoVb8jp6nOo",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/user"
@@ -782,7 +805,7 @@
 			"description": "All requests related to user's own jobs, applications, profile, preferences and reviews."
 		},
 		{
-			"name": "Applications",
+			"name": "[TODO] Applications",
 			"item": [
 				{
 					"name": "Get all applications for a job",
@@ -925,6 +948,7 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
 								"type": "text"
 							}
 						],
@@ -1006,6 +1030,7 @@
 							{
 								"key": "client_token",
 								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTcwOTU2NzI3NiwidHlwIjoidmVyaWZpZWQiLCJpYXQiOjE3MDE1MzIwNzYsImlzcyI6Im1hbmtkZSJ9.-GQ9UyeNFmNiCWyOxta4-Dt61VJNgMyuUQE35PEcjWU",
+								"description": "A valid client_token is needed to authenticate and authorize the client. For further information see: [client_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#86b2cf1c-b02e-4d83-b65f-9c5e03cc89c4)",
 								"type": "text"
 							}
 						],
@@ -1026,7 +1051,8 @@
 							{
 								"key": "request_token",
 								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQsImV4cCI6MTcwMTU5MzA5NSwiam9iIjoiam9iIzEiLCJpYXQiOjE3MDE0ODUwOTUsImlzcyI6Im1hbmtkZSJ9.hNR2R36hiuWX036hGR56yUdSo6JdxAE5Xt2iXm3-TFM",
-								"type": "text"
+								"type": "text",
+								"description": "A valid request_token is needed to authenticate and authorize the client. For further information see: [request_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#cb4b3c33-f0b8-4f76-af72-f8b325e16bb8)"
 							},
 							{
 								"key": "access_token",
