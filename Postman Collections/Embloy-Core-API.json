@@ -960,7 +960,26 @@
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/client/auth/token",
+						"url": {
+							"raw": "{{root}}/api/{{api_version}}/client/auth/token?exp={{$randomDateFuture}}",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"api",
+								"{{api_version}}",
+								"client",
+								"auth",
+								"token"
+							],
+							"query": [
+								{
+									"key": "exp",
+									"value": "{{$randomDateFuture}}",
+									"type": "text"
+								}
+							]
+						},
 						"description": "If the user has the necessary role, a **`client_token`** is generated based on  \nthe decoded subject (sub) of the token. The generated **`client_token`** is  \nthen returned in the response (valid for 3months)."
 					},
 					"response": [
@@ -1302,7 +1321,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "d2d9ac59-e86d-4b02-8d4f-31c94a52468f",
+				"id": "313c2719-a5e9-4ceb-857b-54c9778b425e",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1312,7 +1331,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "33c34018-a8b7-4af4-ade6-3ad87037254c",
+				"id": "dbc9f6ae-ab9e-4a0e-96cc-c8d0cffd9b12",
 				"type": "text/javascript",
 				"exec": [
 					""
