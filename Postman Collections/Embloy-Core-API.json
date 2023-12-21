@@ -975,8 +975,7 @@
 							"query": [
 								{
 									"key": "exp",
-									"value": "{{$randomDateFuture}}",
-									"type": "text"
+									"value": "{{$randomDateFuture}}"
 								}
 							]
 						},
