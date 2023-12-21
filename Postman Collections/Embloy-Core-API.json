@@ -975,7 +975,8 @@
 							"query": [
 								{
 									"key": "exp",
-									"value": "{{$randomDateFuture}}"
+									"value": "{{$randomDateFuture}}",
+									"description": "Custom expiration (will be set to the end of client's subscription, if it exceeds the subscription's expiration date)"
 								}
 							]
 						},
@@ -1320,7 +1321,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "313c2719-a5e9-4ceb-857b-54c9778b425e",
+				"id": "b13f3a9b-002e-450c-b733-c8bea436cc3f",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1330,7 +1331,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "dbc9f6ae-ab9e-4a0e-96cc-c8d0cffd9b12",
+				"id": "a55a4064-7b83-44ec-a6f6-80ce6912c6c9",
 				"type": "text/javascript",
 				"exec": [
 					""
