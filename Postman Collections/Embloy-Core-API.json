@@ -702,19 +702,6 @@
 					"response": []
 				},
 				{
-					"name": "Reset password",
-					"id": "969a3f0a-af9e-4e62-9eb1-a72110864f27",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": "{{root}}/api/{{api_version}}/user/password/reset"
-					},
-					"response": []
-				},
-				{
 					"name": "Create user",
 					"id": "110d59f7-4ca3-4a6e-9832-be7083b056f3",
 					"protocolProfileBehavior": {
@@ -771,6 +758,26 @@
 					"response": []
 				},
 				{
+					"name": "Reset password",
+					"id": "969a3f0a-af9e-4e62-9eb1-a72110864f27",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/user/password/reset"
+					},
+					"response": []
+				},
+				{
 					"name": "Update  password",
 					"id": "43056e71-ba5e-486f-a676-0a27ee92f2aa",
 					"protocolProfileBehavior": {
@@ -782,6 +789,7 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
 								"type": "text"
 							},
 							{
@@ -793,7 +801,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"user\": {\n        \"password\": \"abc\",\n        \"password_confirmation\": \"abc\"\n    }\n}",
+							"raw": "{\n    \"user\": {\n        \"password\": \"123456789\",\n        \"password_confirmation\": \"123456789\"\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
