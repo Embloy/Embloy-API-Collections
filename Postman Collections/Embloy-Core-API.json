@@ -715,19 +715,6 @@
 					"response": []
 				},
 				{
-					"name": "Update  password",
-					"id": "43056e71-ba5e-486f-a676-0a27ee92f2aa",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": "{{root}}/api/{{api_version}}/user/password"
-					},
-					"response": []
-				},
-				{
 					"name": "Create user",
 					"id": "110d59f7-4ca3-4a6e-9832-be7083b056f3",
 					"protocolProfileBehavior": {
@@ -780,6 +767,25 @@
 						},
 						"url": "{{root}}/api/{{api_version}}/user/image",
 						"description": "The provided access token is first verified, and then the user's profile image is updated."
+					},
+					"response": []
+				},
+				{
+					"name": "Update  password",
+					"id": "43056e71-ba5e-486f-a676-0a27ee92f2aa",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/user/password"
 					},
 					"response": []
 				},
