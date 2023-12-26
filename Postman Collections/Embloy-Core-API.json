@@ -798,6 +798,45 @@
 					"response": []
 				},
 				{
+					"name": "Reset password Copy",
+					"id": "7b07c653-5489-4d04-b3c6-51480e6c7414",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{root}}/api/{{api_version}}/user/password/edit?token=eyJfcmFpbHMiOnsibWVzc2FnZSI6Ik1RPT0iLCJleHAiOiIyMDIzLTEyLTI2VDEzOjI0OjAwLjI3OVoiLCJwdXIiOiJ1c2VyL3Bhc3N3b3JkX3Jlc2V0In19--e23414c2c270ac8941eec4f3696ae3e8f8bc511a468aedf417025ee14322e62c",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"api",
+								"{{api_version}}",
+								"user",
+								"password",
+								"edit"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJfcmFpbHMiOnsibWVzc2FnZSI6Ik1RPT0iLCJleHAiOiIyMDIzLTEyLTI2VDEzOjI0OjAwLjI3OVoiLCJwdXIiOiJ1c2VyL3Bhc3N3b3JkX3Jlc2V0In19--e23414c2c270ac8941eec4f3696ae3e8f8bc511a468aedf417025ee14322e62c"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Update  password",
 					"id": "43056e71-ba5e-486f-a676-0a27ee92f2aa",
 					"protocolProfileBehavior": {
