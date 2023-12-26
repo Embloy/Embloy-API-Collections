@@ -809,7 +809,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{root}}/api/{{api_version}}/user/password/edit?token=eyJfcmFpbHMiOnsibWVzc2FnZSI6Ik1RPT0iLCJleHAiOiIyMDIzLTEyLTI2VDE3OjQ0OjU4LjA3OFoiLCJwdXIiOiJ1c2VyL3Bhc3N3b3JkX3Jlc2V0In19--d57cad3e713b4008c450fd9d13e5f992e64e9a65d8cc06731a92f14309f7c213",
+							"raw": "{{root}}/api/{{api_version}}/user/password/reset?token={{password_reset_token}}",
 							"host": [
 								"{{root}}"
 							],
@@ -818,12 +818,12 @@
 								"{{api_version}}",
 								"user",
 								"password",
-								"edit"
+								"reset"
 							],
 							"query": [
 								{
 									"key": "token",
-									"value": "eyJfcmFpbHMiOnsibWVzc2FnZSI6Ik1RPT0iLCJleHAiOiIyMDIzLTEyLTI2VDE3OjQ0OjU4LjA3OFoiLCJwdXIiOiJ1c2VyL3Bhc3N3b3JkX3Jlc2V0In19--d57cad3e713b4008c450fd9d13e5f992e64e9a65d8cc06731a92f14309f7c213",
+									"value": "{{password_reset_token}}",
 									"description": "Password reset token provided which can also be found in the email sent to the user when he initiates the password reset process"
 								}
 							]
@@ -850,7 +850,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"user\": {\n        \"password\": \"doublethink\",\n        \"password_confirmation\": \"doublethink\"\n    }\n}",
+							"raw": "{\n    \"user\": {\n        \"password\": \"\",\n        \"password_confirmation\": \"doublethink\"\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1426,7 +1426,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "f40da40f-f238-4e2e-95e7-1dead25120ba",
+				"id": "b5ce9602-8acd-47f8-920b-30140ba90119",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1436,7 +1436,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "4cc5a848-f115-4184-a191-0fd7733e0faa",
+				"id": "5ae760c4-9e78-47f3-9f8a-349e4520d75c",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1472,6 +1472,11 @@
 		{
 			"key": "subscription_id",
 			"value": "1",
+			"type": "string"
+		},
+		{
+			"key": "password_reset_token",
+			"value": "eyJfcmFpbHMiOnsibWVzc2FnZSI6Ik1RPT0iLCJleHAiOiIyMDIzLTEyLTI2VDE3OjQ0OjU4LjA3OFoiLCJwdXIiOiJ1c2VyL3Bhc3N3b3JkX3Jlc2V0In19",
 			"type": "string"
 		}
 	]
