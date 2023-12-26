@@ -783,8 +783,23 @@
 								"key": "access_token",
 								"value": "{{access_token}}",
 								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
 							}
 						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": {\n        \"password\": \"abc\",\n        \"password_confirmation\": \"abc\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": "{{root}}/api/{{api_version}}/user/password"
 					},
 					"response": []
