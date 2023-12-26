@@ -720,7 +720,7 @@
 							}
 						},
 						"url": "{{root}}/api/{{api_version}}/user",
-						"description": "This creates an user at its related records. In its entirety, this is referred to as an Embloy account. An freshly created Embloy account is inactive and first needs to be verified by the user."
+						"description": "This creates an user at its related records. In its entirety, this is referred to as an Embloy account. An freshly created Embloy account is inactive and first needs to be verified by the user. Note that the minimum password length is 8 characters and the maximum password length is 72 characters. `password` and `password_confirmation` need to match."
 					},
 					"response": []
 				},
@@ -828,7 +828,7 @@
 								}
 							]
 						},
-						"description": "Resets the current user's password. `password` and `password_confirmation` need to match."
+						"description": "Resets the current user's password. Note that the minimum password length is 8 characters and the maximum password length is 72 characters. `password` and `password_confirmation` need to match."
 					},
 					"response": []
 				},
@@ -858,7 +858,7 @@
 							}
 						},
 						"url": "{{root}}/api/{{api_version}}/user/password",
-						"description": "Updates the current user's password. `password` and `password_confirmation` need to match."
+						"description": "Updates the current user's password. Note that the minimum password length is 8 characters and the maximum password length is 72 characters. `password` and `password_confirmation` need to match."
 					},
 					"response": []
 				},
