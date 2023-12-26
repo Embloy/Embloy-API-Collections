@@ -801,7 +801,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"user\": {\n        \"password\": \"123456789\",\n        \"password_confirmation\": \"123456789\"\n    }\n}",
+							"raw": "{\n    \"user\": {\n        \"password\": \"doublethink\",\n        \"password_confirmation\": \"doublethink\"\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -809,7 +809,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{root}}/api/{{api_version}}/user/password/edit?token=eyJfcmFpbHMiOnsibWVzc2FnZSI6Ik1RPT0iLCJleHAiOiIyMDIzLTEyLTI2VDEzOjI0OjAwLjI3OVoiLCJwdXIiOiJ1c2VyL3Bhc3N3b3JkX3Jlc2V0In19--e23414c2c270ac8941eec4f3696ae3e8f8bc511a468aedf417025ee14322e62c",
+							"raw": "{{root}}/api/{{api_version}}/user/password/edit?token=eyJfcmFpbHMiOnsibWVzc2FnZSI6Ik1RPT0iLCJleHAiOiIyMDIzLTEyLTI2VDE3OjQ0OjU4LjA3OFoiLCJwdXIiOiJ1c2VyL3Bhc3N3b3JkX3Jlc2V0In19--d57cad3e713b4008c450fd9d13e5f992e64e9a65d8cc06731a92f14309f7c213",
 							"host": [
 								"{{root}}"
 							],
@@ -823,7 +823,8 @@
 							"query": [
 								{
 									"key": "token",
-									"value": "eyJfcmFpbHMiOnsibWVzc2FnZSI6Ik1RPT0iLCJleHAiOiIyMDIzLTEyLTI2VDEzOjI0OjAwLjI3OVoiLCJwdXIiOiJ1c2VyL3Bhc3N3b3JkX3Jlc2V0In19--e23414c2c270ac8941eec4f3696ae3e8f8bc511a468aedf417025ee14322e62c"
+									"value": "eyJfcmFpbHMiOnsibWVzc2FnZSI6Ik1RPT0iLCJleHAiOiIyMDIzLTEyLTI2VDE3OjQ0OjU4LjA3OFoiLCJwdXIiOiJ1c2VyL3Bhc3N3b3JkX3Jlc2V0In19--d57cad3e713b4008c450fd9d13e5f992e64e9a65d8cc06731a92f14309f7c213",
+									"description": "Password reset token provided which can also be found in the email sent to the user when he initiates the password reset process"
 								}
 							]
 						},
@@ -849,7 +850,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"user\": {\n        \"password\": \"123456789\",\n        \"password_confirmation\": \"123456789\"\n    }\n}",
+							"raw": "{\n    \"user\": {\n        \"password\": \"doublethink\",\n        \"password_confirmation\": \"doublethink\"\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
