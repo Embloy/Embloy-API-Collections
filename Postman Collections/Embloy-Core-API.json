@@ -809,13 +809,14 @@
 							}
 						},
 						"url": {
-							"raw": "{{root}}/api/{{api_version}}/password/edit?token=eyJfcmFpbHMiOnsibWVzc2FnZSI6Ik1RPT0iLCJleHAiOiIyMDIzLTEyLTI2VDEzOjI0OjAwLjI3OVoiLCJwdXIiOiJ1c2VyL3Bhc3N3b3JkX3Jlc2V0In19--e23414c2c270ac8941eec4f3696ae3e8f8bc511a468aedf417025ee14322e62c",
+							"raw": "{{root}}/api/{{api_version}}/user/password/edit?token=eyJfcmFpbHMiOnsibWVzc2FnZSI6Ik1RPT0iLCJleHAiOiIyMDIzLTEyLTI2VDEzOjI0OjAwLjI3OVoiLCJwdXIiOiJ1c2VyL3Bhc3N3b3JkX3Jlc2V0In19--e23414c2c270ac8941eec4f3696ae3e8f8bc511a468aedf417025ee14322e62c",
 							"host": [
 								"{{root}}"
 							],
 							"path": [
 								"api",
 								"{{api_version}}",
+								"user",
 								"password",
 								"edit"
 							],
@@ -826,7 +827,7 @@
 								}
 							]
 						},
-						"description": "Updates the current user's password. `password` and `password_confirmation` need to match."
+						"description": "Resets the current user's password. `password` and `password_confirmation` need to match."
 					},
 					"response": []
 				},
