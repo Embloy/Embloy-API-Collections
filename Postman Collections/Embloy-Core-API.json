@@ -702,6 +702,32 @@
 					"response": []
 				},
 				{
+					"name": "Reset password",
+					"id": "969a3f0a-af9e-4e62-9eb1-a72110864f27",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "{{root}}/api/{{api_version}}/user/password/reset"
+					},
+					"response": []
+				},
+				{
+					"name": "Update  password",
+					"id": "43056e71-ba5e-486f-a676-0a27ee92f2aa",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "{{root}}/api/{{api_version}}/user/password"
+					},
+					"response": []
+				},
+				{
 					"name": "Create user",
 					"id": "110d59f7-4ca3-4a6e-9832-be7083b056f3",
 					"protocolProfileBehavior": {
@@ -1321,7 +1347,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "b13f3a9b-002e-450c-b733-c8bea436cc3f",
+				"id": "e911e447-bbd6-4529-bc89-9a47342ca704",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1331,7 +1357,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "a55a4064-7b83-44ec-a6f6-80ce6912c6c9",
+				"id": "8c05ccff-1d0c-4d50-b932-b28b08fcd740",
 				"type": "text/javascript",
 				"exec": [
 					""
