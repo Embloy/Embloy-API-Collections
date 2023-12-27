@@ -1161,7 +1161,7 @@
 						"header": [
 							{
 								"key": "client_token",
-								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEyMywiZXhwIjowLCJ0eXAiOiJiYXNpYyIsImlhdCI6MTcwMzcxMjc0OSwiaXNzIjoibWFua2RlIn0.ieXZ64nH2Jv8Z8-7YwuTaR2lpxyOFn83APLeBfqEHM4",
+								"value": "{{client_token}}",
 								"description": "A valid client_token is needed to authenticate and authorize the client. For further information see: [client_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#86b2cf1c-b02e-4d83-b65f-9c5e03cc89c4)",
 								"type": "text"
 							}
@@ -1426,7 +1426,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "f23a189f-d74d-46c2-916e-35e16a61f342",
+				"id": "75434969-f02d-455e-990d-00876268553c",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1436,7 +1436,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "eca432dc-de66-4c16-8ef9-b4a07c8ba24f",
+				"id": "f4eada99-c99b-49fc-8c5e-5092ff0412de",
 				"type": "text/javascript",
 				"exec": [
 					""
