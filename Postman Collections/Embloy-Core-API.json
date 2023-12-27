@@ -1315,7 +1315,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"subscription\": {\n    \"tier\": \"basic\",\n    \"active\": true,\n    \"expiration_date\": \"2023-12-31T23:59:59Z\",\n    \"start_date\": \"2022-01-01T00:00:00Z\",\n    \"auto_renew\": true,\n    \"renew_date\": \"2023-06-30T23:59:59Z\",\n    \"user_id\": 1\n  }\n}",
+							"raw": "{\n  \"subscription\": {\n    \"tier\": \"basic\",\n    \"active\": true,\n    \"expiration_date\": \"2023-12-31T23:59:59Z\",\n    \"start_date\": \"2022-01-01T00:00:00Z\",\n    \"auto_renew\": true,\n    \"renew_date\": \"2023-06-30T23:59:59Z\"\n  }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
