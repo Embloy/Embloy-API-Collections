@@ -1426,7 +1426,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "57308e34-2775-4ed9-a19f-6c23aa2a7bf0",
+				"id": "38b2b496-8167-4a8e-ada9-b992d46275b1",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1436,7 +1436,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "68066945-4a41-448d-8fae-e3736e39e237",
+				"id": "536c844a-b8fb-48ab-8402-aa55deae1014",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1486,7 +1486,7 @@
 		},
 		{
 			"key": "request_token",
-			"value": "",
+			"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTcwMzgyNDUyNywiam9iIjoiam9iIzEiLCJpYXQiOjE3MDM3MTY1MjcsImlzcyI6Im1hbmtkZSJ9.36C0FuP4jMXfhXikVfawTrzDrN391bOrpDTzUu3NaQ8",
 			"type": "string"
 		}
 	]
