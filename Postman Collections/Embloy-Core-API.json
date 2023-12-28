@@ -1163,7 +1163,8 @@
 								"key": "client_token",
 								"value": "{{client_token}}",
 								"description": "A valid client_token is needed to authenticate and authorize the client. For further information see: [client_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#86b2cf1c-b02e-4d83-b65f-9c5e03cc89c4)",
-								"type": "text"
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/sdk/request/auth/token",
