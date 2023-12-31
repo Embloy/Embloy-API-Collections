@@ -1428,14 +1428,16 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-								"type": "text"
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"evt_1Gt5S2G882ZvajlDltn5772M\",\n  \"object\": \"event\",\n  \"api_version\": \"2020-03-02\",\n  \"created\": 1583786470,\n  \"data\": {\n    \"object\": {\n      \"id\": \"pi_1Gt5S2G882ZvajlDltn5772M\",\n      \"object\": \"payment_intent\",\n      \"amount\": 2000,\n      \"currency\": \"usd\",\n      \"status\": \"succeeded\"\n    }\n  },\n  \"livemode\": false,\n  \"type\": \"payment_intent.succeeded\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
 							}
-						],
+						},
 						"url": "{{root}}/api/{{api_version}}/stripe_webhook"
 					},
 					"response": []
