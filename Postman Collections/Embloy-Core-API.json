@@ -1416,6 +1416,26 @@
 			"description": "All requests related to setting up a client's individual subscription."
 		},
 		{
+			"name": "Payments",
+			"item": [
+				{
+					"name": "New Request",
+					"id": "10e3cf9f-1215-4758-b77c-9762127bb184",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "{{root}}/api/{{api_version}}/payments"
+					},
+					"response": []
+				}
+			],
+			"id": "d0c134ac-7cec-44eb-8bd2-a145844d26ef",
+			"description": "All requests related to processing a client's payment."
+		},
+		{
 			"name": "Genius",
 			"item": [],
 			"id": "567634cc-a468-46ad-a978-2fccbbc3aeca",
