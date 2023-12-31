@@ -1269,7 +1269,8 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/client/subscriptions",
@@ -1289,7 +1290,8 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/client/subscriptions/{{subscription_id}}",
@@ -1416,10 +1418,10 @@
 			"description": "All requests related to setting up a client's individual subscription."
 		},
 		{
-			"name": "Payments",
+			"name": "[TODO] Payments",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "Create Stripe-Payment",
 					"id": "10e3cf9f-1215-4758-b77c-9762127bb184",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1430,6 +1432,27 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/stripe_webhook"
+					},
+					"response": []
+				},
+				{
+					"name": "Notify Stripe-Webhook",
+					"id": "990448a6-1704-4891-95ed-96c1d0cadf1c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
 								"type": "text"
 							}
 						],
