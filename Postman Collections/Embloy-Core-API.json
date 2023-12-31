@@ -1426,7 +1426,13 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
 						"url": "{{root}}/api/{{api_version}}/payments"
 					},
 					"response": []
@@ -1446,7 +1452,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "e9d2837a-bf00-495c-aeeb-c1c5a84c6ca3",
+				"id": "95a37c3f-f4c6-4103-9d24-110958e44edb",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1456,7 +1462,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "4a2e61fe-2a80-487d-821e-80543360cf6f",
+				"id": "7af7e9f4-8a80-4361-a789-27dacce45f12",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1465,20 +1471,6 @@
 		}
 	],
 	"variable": [
-		{
-			"key": "refresh_token",
-			"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQ5LCJleHAiOjE2OTc4MTYwMTgsImp0aSI6ImFlOTk0M2EzNGQ3NzMyYzNkMzEzZWY4MDU0NmQwNzcxIiwiaWF0IjoxNjk3ODAxNjE4LCJpc3MiOiJzcnYtY2ZzMnM1cXJyazBidWRiZmtnbzAtaGliZXJuYXRlLTg3ZjRmZjZiNC1rOTQ5bSJ9.ACW33_O48Zw6PLaWbdS7g6OWFKcxD3CfnW49eg39UQY",
-			"type": "string"
-		},
-		{
-			"key": "access_token",
-			"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQ5LCJleHAiOjE2OTc4MDE1MTcsInR5cCI6InZlcmlmaWVkIiwiaXNzIjoic3J2LWNmczJzNXFycmswYnVkYmZrZ28wLWhpYmVybmF0ZS04N2Y0ZmY2YjQtazk0OW0ifQ.dwavATIpPKQe34T7-9sH3ssKcPgR_Dww3gVoV0zQGGI"
-		},
-		{
-			"key": "own_job_id",
-			"value": "",
-			"type": "string"
-		},
 		{
 			"key": "root",
 			"value": "http://localhost:3000",
@@ -1490,14 +1482,13 @@
 			"type": "string"
 		},
 		{
-			"key": "subscription_id",
-			"value": "1",
+			"key": "refresh_token",
+			"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQ5LCJleHAiOjE2OTc4MTYwMTgsImp0aSI6ImFlOTk0M2EzNGQ3NzMyYzNkMzEzZWY4MDU0NmQwNzcxIiwiaWF0IjoxNjk3ODAxNjE4LCJpc3MiOiJzcnYtY2ZzMnM1cXJyazBidWRiZmtnbzAtaGliZXJuYXRlLTg3ZjRmZjZiNC1rOTQ5bSJ9.ACW33_O48Zw6PLaWbdS7g6OWFKcxD3CfnW49eg39UQY",
 			"type": "string"
 		},
 		{
-			"key": "password_reset_token",
-			"value": "eyJfcmFpbHMiOnsibWVzc2FnZSI6Ik1RPT0iLCJleHAiOiIyMDIzLTEyLTI2VDE3OjQ0OjU4LjA3OFoiLCJwdXIiOiJ1c2VyL3Bhc3N3b3JkX3Jlc2V0In19",
-			"type": "string"
+			"key": "access_token",
+			"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQ5LCJleHAiOjE2OTc4MDE1MTcsInR5cCI6InZlcmlmaWVkIiwiaXNzIjoic3J2LWNmczJzNXFycmswYnVkYmZrZ28wLWhpYmVybmF0ZS04N2Y0ZmY2YjQtazk0OW0ifQ.dwavATIpPKQe34T7-9sH3ssKcPgR_Dww3gVoV0zQGGI"
 		},
 		{
 			"key": "client_token",
@@ -1507,6 +1498,21 @@
 		{
 			"key": "request_token",
 			"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTcwMzgyNDUyNywiam9iIjoiam9iIzEiLCJpYXQiOjE3MDM3MTY1MjcsImlzcyI6Im1hbmtkZSJ9.36C0FuP4jMXfhXikVfawTrzDrN391bOrpDTzUu3NaQ8",
+			"type": "string"
+		},
+		{
+			"key": "password_reset_token",
+			"value": "eyJfcmFpbHMiOnsibWVzc2FnZSI6Ik1RPT0iLCJleHAiOiIyMDIzLTEyLTI2VDE3OjQ0OjU4LjA3OFoiLCJwdXIiOiJ1c2VyL3Bhc3N3b3JkX3Jlc2V0In19",
+			"type": "string"
+		},
+		{
+			"key": "own_job_id",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "subscription_id",
+			"value": "1",
 			"type": "string"
 		}
 	]
