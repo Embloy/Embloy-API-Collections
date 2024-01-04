@@ -1255,7 +1255,7 @@
 			"description": "All requests for the \"_Embloy Button_\" and related token creation and application capturing functionalities."
 		},
 		{
-			"name": "Subscriptions",
+			"name": "[DEPRECATED] Subscriptions",
 			"item": [
 				{
 					"name": "/client/subscriptions",
@@ -1421,7 +1421,7 @@
 			"name": "[TODO] Payments",
 			"item": [
 				{
-					"name": "Create Stripe-Payment",
+					"name": "[DEPRECATED] Create Stripe-Payment",
 					"id": "10e3cf9f-1215-4758-b77c-9762127bb184",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1443,7 +1443,7 @@
 					"response": []
 				},
 				{
-					"name": "Notify Stripe-Webhook",
+					"name": "[DEPRECATED] Notify Stripe-Webhook",
 					"id": "990448a6-1704-4891-95ed-96c1d0cadf1c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1478,7 +1478,29 @@
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/checkout",
+						"url": {
+							"raw": "{{root}}/api/{{api_version}}/checkout?line_items=price_1OUqrPKMiBrigNb6lia8VWiD&payment_mode=subscription",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"api",
+								"{{api_version}}",
+								"checkout"
+							],
+							"query": [
+								{
+									"key": "line_items",
+									"value": "price_1OUqrPKMiBrigNb6lia8VWiD",
+									"description": "Subscription tier (one-off payment: 'price_1OUhNDKMiBrigNb67roRCr5S', premium subscription: 'price_1OUqrPKMiBrigNb6lia8VWiD')"
+								},
+								{
+									"key": "payment_mode",
+									"value": "subscription",
+									"description": "Payment mode (can either be a recurring 'subscription' or a one-off 'payment'."
+								}
+							]
+						},
 						"description": "Creates a checkout session for a one-time stripe payment.\n\nReturns customer and payment information including stripe url (e.g., \"https://checkout.stripe.com/c/pay/...\")"
 					},
 					"response": []
