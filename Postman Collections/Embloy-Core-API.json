@@ -1501,7 +1501,7 @@
 								}
 							]
 						},
-						"description": "Creates a checkout session for a one-time stripe payment.\n\nReturns customer and payment information including stripe url (e.g., \"https://checkout.stripe.com/c/pay/...\")"
+						"description": "Creates a checkout session for either a recurring 'subscription' or a one-time 'payment'.\n\nReturns customer and payment information including stripe url (e.g., \"[https://checkout.stripe.com/c/pay/...\"](https://checkout.stripe.com/c/pay/...))"
 					},
 					"response": []
 				},
@@ -1578,6 +1578,27 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Portal Session",
+					"id": "687fefbc-dd89-4fcc-8e17-30d72a0dacaf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/checkout/portal",
+						"description": "Returns a portal session for the customer's stripe dashboard."
+					},
+					"response": []
 				}
 			],
 			"id": "d0c134ac-7cec-44eb-8bd2-a145844d26ef",
@@ -1594,7 +1615,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "d18aea35-491a-442c-8830-681896ff27ee",
+				"id": "0e62a4ef-38fa-4c42-bb15-d470c0a65bac",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1604,7 +1625,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "d7f106b0-2cd0-45a7-9163-1e0c2c114c7d",
+				"id": "62b644d1-4c7c-4a90-867d-053214cdd9a6",
 				"type": "text/javascript",
 				"exec": [
 					""
