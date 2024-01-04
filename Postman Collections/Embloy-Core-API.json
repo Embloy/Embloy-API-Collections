@@ -1479,7 +1479,7 @@
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/checkout",
-						"description": "Creates a checkout session for a one-time stripe payment."
+						"description": "Creates a checkout session for a one-time stripe payment.\n\nReturns customer and payment information including stripe url (e.g., \"https://checkout.stripe.com/c/pay/...\")"
 					},
 					"response": []
 				},
