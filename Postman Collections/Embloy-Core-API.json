@@ -1258,7 +1258,7 @@
 			"name": "[IN_PROGRESS] Stripe",
 			"item": [
 				{
-					"name": "Payments",
+					"name": "Subscriptions",
 					"item": [
 						{
 							"name": "Get all charges",
@@ -1277,16 +1277,10 @@
 									}
 								],
 								"url": "{{root}}/api/{{api_version}}/client/charges",
-								"description": "Returns all charges of the current user's payments."
+								"description": "Returns all charges of the current user's payments and subscriptions."
 							},
 							"response": []
-						}
-					],
-					"id": "d7d1bf7a-6f12-4a8e-952c-9e14f260e80b"
-				},
-				{
-					"name": "Subscriptions",
-					"item": [
+						},
 						{
 							"name": "Get all subscriptions",
 							"id": "c45c84f4-688b-4099-8591-c3d71d746d2c",
@@ -1305,6 +1299,27 @@
 								],
 								"url": "{{root}}/api/{{api_version}}/client/subscriptions",
 								"description": "Returns all subscriptions of the current user."
+							},
+							"response": []
+						},
+						{
+							"name": "Get active subscription",
+							"id": "30d38830-cbda-411b-8b33-f7cb0f21a0ff",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
+										"type": "text"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/client/subscription/active",
+								"description": "Returns currently active subscription for current user including additional information."
 							},
 							"response": []
 						}
