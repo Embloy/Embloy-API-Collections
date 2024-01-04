@@ -1318,7 +1318,7 @@
 										"type": "text"
 									}
 								],
-								"url": "{{root}}/api/{{api_version}}/client/subscription/active",
+								"url": "{{root}}/api/{{api_version}}/client/subscriptions/active",
 								"description": "Returns currently active subscription for current user including additional information."
 							},
 							"response": []
@@ -1710,7 +1710,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "269e3a3d-48ee-4d2e-8325-110ee8783fdf",
+				"id": "930b08cd-55f2-4b9b-88c9-60e82ee46008",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1720,7 +1720,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "85ec84fa-d709-4379-87fc-16a560baa939",
+				"id": "1192c8fd-3356-47cc-ac59-a588cd8272dd",
 				"type": "text/javascript",
 				"exec": [
 					""
