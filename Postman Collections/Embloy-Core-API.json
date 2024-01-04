@@ -1538,7 +1538,8 @@
 									"value": "{{checkout_session_id}}"
 								}
 							]
-						}
+						},
+						"description": "Endpoint used to redirect customer after successful stripe-payment and activate an embloy subscription."
 					},
 					"response": []
 				},
