@@ -1142,11 +1142,13 @@
 								],
 								"url": "{{root}}/api/{{api_version}}/quick/token/client"
 							},
+							"status": "Unauthorized",
+							"code": 401,
 							"_postman_previewlanguage": null,
 							"header": null,
 							"cookie": [],
 							"responseTime": null,
-							"body": null
+							"body": "{\n    \"token\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is invalid or expired\"\n        }\n    ]\n}"
 						}
 					]
 				},
@@ -2661,7 +2663,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "3bfbccf2-05c2-4a1d-8555-a05a4369f7f6",
+				"id": "d2a70085-2219-4246-9862-328e36b9ffad",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -2671,7 +2673,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "ef853c2f-16c3-4cb3-a9de-0ccf08480d88",
+				"id": "87f44a5e-7326-4338-98ec-d89c3c5b3175",
 				"type": "text/javascript",
 				"exec": [
 					""
