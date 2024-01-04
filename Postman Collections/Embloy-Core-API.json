@@ -1255,7 +1255,7 @@
 			"description": "All requests for the \"_Embloy Button_\" and related token creation and application capturing functionalities."
 		},
 		{
-			"name": "[TODO] Stripe",
+			"name": "[IN_PROGRESS] Stripe",
 			"item": [
 				{
 					"name": "Payments",
