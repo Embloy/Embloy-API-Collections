@@ -1258,7 +1258,7 @@
 			"name": "Subscriptions",
 			"item": [
 				{
-					"name": "/client/charges",
+					"name": "Get all charges",
 					"id": "404f289e-eb7b-4b4f-9c95-acb27fc856e6",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1279,7 +1279,7 @@
 					"response": []
 				},
 				{
-					"name": "/client/subscriptions",
+					"name": "Get all subscriptions",
 					"id": "c45c84f4-688b-4099-8591-c3d71d746d2c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1300,7 +1300,7 @@
 					"response": []
 				},
 				{
-					"name": "/client/subscriptions/{id}",
+					"name": "[DEPRECATED] /client/subscriptions/{id}",
 					"id": "08a40191-8715-49da-8ee6-66209dcd7dfc",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1484,7 +1484,7 @@
 					"response": []
 				},
 				{
-					"name": "Checkout Payment",
+					"name": "Checkout payment",
 					"id": "19871b4d-01c2-4823-9de1-272ee3d6adfc",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1500,7 +1500,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{root}}/api/{{api_version}}/checkout?line_items=price_1OUqrPKMiBrigNb6lia8VWiD&payment_mode=subscription&payment_method_token=",
+							"raw": "{{root}}/api/{{api_version}}/checkout?line_items=price_1OUhNDKMiBrigNb67roRCr5S&payment_mode=payment",
 							"host": [
 								"{{root}}"
 							],
@@ -1512,19 +1512,19 @@
 							"query": [
 								{
 									"key": "line_items",
-									"value": "price_1OUqrPKMiBrigNb6lia8VWiD",
+									"value": "price_1OUhNDKMiBrigNb67roRCr5S",
 									"description": "Subscription tier (one-off payment: 'price_1OUhNDKMiBrigNb67roRCr5S', premium subscription: 'price_1OUqrPKMiBrigNb6lia8VWiD')"
 								},
 								{
 									"key": "payment_mode",
-									"value": "subscription",
+									"value": "payment",
 									"description": "Payment mode (can either be a recurring 'subscription' or a one-time 'payment')"
 								},
 								{
 									"key": "payment_method_token",
 									"value": "",
 									"description": "Add the payment method via the API and mark it as the default for future payments",
-									"type": "text"
+									"disabled": true
 								}
 							]
 						},
@@ -1533,7 +1533,7 @@
 					"response": []
 				},
 				{
-					"name": "Successful Payment",
+					"name": "Successful payment",
 					"id": "42f00b33-2fb5-48cf-94ac-48ef299b5c9b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1571,7 +1571,7 @@
 					"response": []
 				},
 				{
-					"name": "Failed Payment",
+					"name": "Failed payment",
 					"id": "de05c66a-7cab-42f4-9edb-03fed03204a3",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1608,7 +1608,7 @@
 					"response": []
 				},
 				{
-					"name": "Portal Session",
+					"name": "Portal session",
 					"id": "687fefbc-dd89-4fcc-8e17-30d72a0dacaf",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
