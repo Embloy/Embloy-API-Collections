@@ -1479,7 +1479,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{root}}/api/{{api_version}}/checkout?line_items=price_1OUqrPKMiBrigNb6lia8VWiD&payment_mode=subscription",
+							"raw": "{{root}}/api/{{api_version}}/checkout?line_items=price_1OUqrPKMiBrigNb6lia8VWiD&payment_mode=subscription&payment_method_token=",
 							"host": [
 								"{{root}}"
 							],
@@ -1497,7 +1497,13 @@
 								{
 									"key": "payment_mode",
 									"value": "subscription",
-									"description": "Payment mode (can either be a recurring 'subscription' or a one-off 'payment'."
+									"description": "Payment mode (can either be a recurring 'subscription' or a one-time 'payment')"
+								},
+								{
+									"key": "payment_method_token",
+									"value": "",
+									"description": "Add the payment method via the API and mark it as the default for future payments",
+									"type": "text"
 								}
 							]
 						},
