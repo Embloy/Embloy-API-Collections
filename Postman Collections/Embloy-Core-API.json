@@ -1484,7 +1484,7 @@
 					"response": []
 				},
 				{
-					"name": "Checkout payment",
+					"name": "Checkout",
 					"id": "19871b4d-01c2-4823-9de1-272ee3d6adfc",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1549,7 +1549,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{root}}/api/{{api_version}}/checkout/success?session_id={{checkout_session_id}}",
+							"raw": "{{root}}/api/{{api_version}}/checkout/payment/success?session_id={{checkout_session_id}}",
 							"host": [
 								"{{root}}"
 							],
@@ -1557,6 +1557,46 @@
 								"api",
 								"{{api_version}}",
 								"checkout",
+								"payment",
+								"success"
+							],
+							"query": [
+								{
+									"key": "session_id",
+									"value": "{{checkout_session_id}}"
+								}
+							]
+						},
+						"description": "Endpoint used to redirect customer after successful stripe-payment and activate an embloy subscription."
+					},
+					"response": []
+				},
+				{
+					"name": "Successful subscription",
+					"id": "9a3e1762-a038-4267-ba75-cf28899547a5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{root}}/api/{{api_version}}/checkout/subscription/success?session_id={{checkout_session_id}}",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"api",
+								"{{api_version}}",
+								"checkout",
+								"subscription",
 								"success"
 							],
 							"query": [
@@ -1643,7 +1683,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "de268891-ecd9-442c-8446-6ed3769d3ef0",
+				"id": "a2634ea8-214d-422e-9c3d-c8f832f60ce6",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1653,7 +1693,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "866fe166-e226-4048-b1d0-6e9450d2ae82",
+				"id": "e6edd78c-0519-46f5-b5ba-0af3b0a811a5",
 				"type": "text/javascript",
 				"exec": [
 					""
