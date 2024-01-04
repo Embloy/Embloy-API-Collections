@@ -1255,29 +1255,8 @@
 			"description": "All requests for the \"_Embloy Button_\" and related token creation and application capturing functionalities."
 		},
 		{
-			"name": "[DEPRECATED] Subscriptions",
+			"name": "Subscriptions",
 			"item": [
-				{
-					"name": "/client/subscriptions",
-					"id": "c45c84f4-688b-4099-8591-c3d71d746d2c",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
-						"url": "{{root}}/api/{{api_version}}/client/subscriptions",
-						"description": "Returns all subscriptions of the current user."
-					},
-					"response": []
-				},
 				{
 					"name": "/client/charges",
 					"id": "404f289e-eb7b-4b4f-9c95-acb27fc856e6",
@@ -1296,6 +1275,27 @@
 						],
 						"url": "{{root}}/api/{{api_version}}/client/charges",
 						"description": "Returns all charges of the current user, including the receipt URL."
+					},
+					"response": []
+				},
+				{
+					"name": "/client/subscriptions",
+					"id": "c45c84f4-688b-4099-8591-c3d71d746d2c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/client/subscriptions",
+						"description": "Returns all subscriptions of the current user."
 					},
 					"response": []
 				},
@@ -1321,7 +1321,7 @@
 					"response": []
 				},
 				{
-					"name": "/client/subscriptions",
+					"name": "[DEPRECATED] /client/subscriptions",
 					"id": "3373ae62-eead-478c-b304-3c2431c557b0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1351,7 +1351,7 @@
 					"response": []
 				},
 				{
-					"name": "/client/subscriptions/{id}/activate",
+					"name": "[DEPRECATED] /client/subscriptions/{id}/activate",
 					"id": "ef77fd27-5b5e-4765-91af-7aa1bced4334",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1372,7 +1372,7 @@
 					"response": []
 				},
 				{
-					"name": "/client/subscriptions/{id}/renew",
+					"name": "[DEPRECATED] /client/subscriptions/{id}/renew",
 					"id": "6c0d7fa1-9943-4d92-9f04-74553fac093f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1393,7 +1393,7 @@
 					"response": []
 				},
 				{
-					"name": "/client/subscriptions/{id}/cancel",
+					"name": "[DEPRECATED] /client/subscriptions/{id}/cancel",
 					"id": "ffaac945-cf10-46a8-b0af-62e4df0c58a8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1414,7 +1414,7 @@
 					"response": []
 				},
 				{
-					"name": "/client/subscriptions/{id}",
+					"name": "[DEPRECATED] /client/subscriptions/{id}",
 					"id": "e08c7416-3109-4c03-ad0b-633fe5ba3d3f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
