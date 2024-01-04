@@ -1652,7 +1652,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{root}}/api/{{api_version}}/checkout",
+							"raw": "{{root}}/api/{{api_version}}/checkout?tier=basic&payment_mode=subscription",
 							"host": [
 								"{{root}}"
 							],
@@ -1663,23 +1663,15 @@
 							],
 							"query": [
 								{
-									"key": "line_items",
-									"value": "price_1OUhNDKMiBrigNb67roRCr5S",
-									"description": "Subscription tier (one-off payment: 'price_1OUhNDKMiBrigNb67roRCr5S', premium subscription: 'price_1OUqrPKMiBrigNb6lia8VWiD')",
-									"disabled": true
-								},
-								{
 									"key": "tier",
 									"value": "basic",
 									"description": "Subscription tier (basic, premium, enterprise_1, enterprise_2, enterprise_3)",
-									"type": "text",
-									"disabled": true
+									"type": "text"
 								},
 								{
 									"key": "payment_mode",
-									"value": "payment",
-									"description": "Payment mode (can either be a recurring 'subscription' or a one-time 'payment')",
-									"disabled": true
+									"value": "subscription",
+									"description": "Payment mode (can either be a recurring 'subscription' or a one-time 'payment')"
 								},
 								{
 									"key": "payment_method_token",
@@ -1897,6 +1889,57 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"error\": \"You must pass either `subscription_data` or `tier` or `mode`.\"\n}"
+						},
+						{
+							"id": "ea8d6c3e-bc29-4a1b-84fd-aafd41c0e9e6",
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{root}}/api/{{api_version}}/checkout?tier=basic&payment_mode=subscription",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"{{api_version}}",
+										"checkout"
+									],
+									"query": [
+										{
+											"key": "tier",
+											"value": "basic",
+											"description": "Subscription tier (basic, premium, enterprise_1, enterprise_2, enterprise_3)"
+										},
+										{
+											"key": "payment_mode",
+											"value": "subscription",
+											"description": "Payment mode (can either be a recurring 'subscription' or a one-time 'payment')"
+										},
+										{
+											"key": "payment_method_token",
+											"value": "",
+											"description": "Add the payment method via the API and mark it as the default for future payments",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"error\": \"You specified `payment` mode but passed a recurring price. Either switch to `subscription` mode or use only one-time prices.\"\n}"
 						},
 						{
 							"id": "9db013fd-5426-4a1c-bdfe-36925ef09a61",
@@ -2648,13 +2691,95 @@
 				}
 			],
 			"id": "f548f0f8-eb62-4855-9d29-a72dedcefe8d"
+		},
+		{
+			"name": "Generate Access-Token Copy",
+			"id": "9560c39c-89d3-46ae-ad27-862cac19ec80",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "refresh_token",
+						"value": "{{refresh_token}}",
+						"type": "text",
+						"description": "A valid refresh token is needed in order to be able to create an access_token."
+					}
+				],
+				"url": "{{root}}/api/{{api_version}}/user/auth/token/access",
+				"description": "This first verifies the provided refresh token and then issues an access token for the specific account associated with the refresh token. Access tokens only possess a very short time-limited validity or 20 minutes currently. Access tokens are a very important aspect of dealing with the Embloy API. Nearly every endpoint requires the provision of a valid access token. In conclusion access tokens are quite powerfull, have a short validity interval and can be claimend with a valid refresh token. Refresh tokens are less powerfull than access tokens but they possess a longer validity intervall and are mainly used for claiming access tokens."
+			},
+			"response": [
+				{
+					"id": "95c8b094-4ac3-4f80-80bf-4f4624f3a15a",
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "refresh_token",
+								"value": "{{refresh_token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/user/auth/token/access"
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"access_token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTcwNDM5MjQyMCwidHlwIjoidmVyaWZpZWQiLCJpc3MiOiJtYW5rZGUifQ.lAojakeDTmgLCCxDd6g4MRoBIf9cpcdT6bV96DP-4XU\"\n}"
+				},
+				{
+					"id": "5237fd4a-1c67-4d92-8e56-9065d238f461",
+					"name": "400",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "refresh_token",
+								"value": "{{refresh_token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/user/auth/token/access"
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"responseTime": null,
+					"body": null
+				},
+				{
+					"id": "0ab63451-6fc7-4d24-9929-cbeb54681b46",
+					"name": "401",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "refresh_token",
+								"value": "{{refresh_token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/user/auth/token/access"
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"responseTime": null,
+					"body": null
+				}
+			]
 		}
 	],
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "245a2f69-f546-4f28-a7d1-b3b546e9281e",
+				"id": "47b14985-a1cf-491c-9a84-d902487dfd60",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -2664,7 +2789,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "19a3dd50-ef62-4459-a561-b4de25b3f4a4",
+				"id": "51757b30-f206-4764-9b6c-358aa78ab742",
 				"type": "text/javascript",
 				"exec": [
 					""
