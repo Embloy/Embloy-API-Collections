@@ -1111,26 +1111,6 @@
 							"body": "{\n    \"client_token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTcwNzA3MDAwOSwidHlwIjoicHJlbWl1bSIsImlhdCI6MTcwNDM5NTM5MSwiaXNzIjoibWFua2RlIn0.sAA-GwLZwgYM5uhlpMJDRKb0b1qFDpb4Pv0EMsPIp0E\"\n}"
 						},
 						{
-							"id": "5f998712-48e4-44e3-bd80-c62fcc3a296f",
-							"name": "400",
-							"originalRequest": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text"
-									}
-								],
-								"url": "{{root}}/api/{{api_version}}/quick/token/client"
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": null
-						},
-						{
 							"id": "c5a95498-c707-4753-8f36-986e9a0e9120",
 							"name": "401",
 							"originalRequest": {
