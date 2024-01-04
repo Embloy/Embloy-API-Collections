@@ -1461,6 +1461,66 @@
 						"url": "{{root}}/api/{{api_version}}/payments"
 					},
 					"response": []
+				},
+				{
+					"name": "Checkout Payment",
+					"id": "19871b4d-01c2-4823-9de1-272ee3d6adfc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/checkout"
+					},
+					"response": []
+				},
+				{
+					"name": "Successful Payment",
+					"id": "42f00b33-2fb5-48cf-94ac-48ef299b5c9b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/checkout/success"
+					},
+					"response": []
+				},
+				{
+					"name": "Failed Payment",
+					"id": "de05c66a-7cab-42f4-9edb-03fed03204a3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/checkout/failure"
+					},
+					"response": []
 				}
 			],
 			"id": "d0c134ac-7cec-44eb-8bd2-a145844d26ef",
@@ -1477,7 +1537,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "95a37c3f-f4c6-4103-9d24-110958e44edb",
+				"id": "641eab3a-b591-450d-b456-3db3c4e81785",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1487,7 +1547,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "7af7e9f4-8a80-4361-a789-27dacce45f12",
+				"id": "40a4bace-4bf5-4f85-bbcd-21369bcd3209",
 				"type": "text/javascript",
 				"exec": [
 					""
