@@ -2690,95 +2690,13 @@
 				}
 			],
 			"id": "f548f0f8-eb62-4855-9d29-a72dedcefe8d"
-		},
-		{
-			"name": "Generate Access-Token Copy",
-			"id": "9560c39c-89d3-46ae-ad27-862cac19ec80",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "refresh_token",
-						"value": "{{refresh_token}}",
-						"type": "text",
-						"description": "A valid refresh token is needed in order to be able to create an access_token."
-					}
-				],
-				"url": "{{root}}/api/{{api_version}}/user/auth/token/access",
-				"description": "This first verifies the provided refresh token and then issues an access token for the specific account associated with the refresh token. Access tokens only possess a very short time-limited validity or 20 minutes currently. Access tokens are a very important aspect of dealing with the Embloy API. Nearly every endpoint requires the provision of a valid access token. In conclusion access tokens are quite powerfull, have a short validity interval and can be claimend with a valid refresh token. Refresh tokens are less powerfull than access tokens but they possess a longer validity intervall and are mainly used for claiming access tokens."
-			},
-			"response": [
-				{
-					"id": "95c8b094-4ac3-4f80-80bf-4f4624f3a15a",
-					"name": "200",
-					"originalRequest": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "refresh_token",
-								"value": "{{refresh_token}}",
-								"type": "text"
-							}
-						],
-						"url": "{{root}}/api/{{api_version}}/user/auth/token/access"
-					},
-					"_postman_previewlanguage": null,
-					"header": null,
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"access_token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTcwNDM5MjQyMCwidHlwIjoidmVyaWZpZWQiLCJpc3MiOiJtYW5rZGUifQ.lAojakeDTmgLCCxDd6g4MRoBIf9cpcdT6bV96DP-4XU\"\n}"
-				},
-				{
-					"id": "5237fd4a-1c67-4d92-8e56-9065d238f461",
-					"name": "400",
-					"originalRequest": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "refresh_token",
-								"value": "{{refresh_token}}",
-								"type": "text"
-							}
-						],
-						"url": "{{root}}/api/{{api_version}}/user/auth/token/access"
-					},
-					"_postman_previewlanguage": null,
-					"header": null,
-					"cookie": [],
-					"responseTime": null,
-					"body": null
-				},
-				{
-					"id": "0ab63451-6fc7-4d24-9929-cbeb54681b46",
-					"name": "401",
-					"originalRequest": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "refresh_token",
-								"value": "{{refresh_token}}",
-								"type": "text"
-							}
-						],
-						"url": "{{root}}/api/{{api_version}}/user/auth/token/access"
-					},
-					"_postman_previewlanguage": null,
-					"header": null,
-					"cookie": [],
-					"responseTime": null,
-					"body": null
-				}
-			]
 		}
 	],
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "1a8c3297-50e5-4079-965e-8b173850f9cf",
+				"id": "c3a1414f-358e-4fa7-bfc2-f256fed672b2",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -2788,7 +2706,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "521747c4-886b-4df3-a1f2-703007d47ff9",
+				"id": "36a0dc15-6fd4-4d6a-a931-700f6acf8aca",
 				"type": "text/javascript",
 				"exec": [
 					""
