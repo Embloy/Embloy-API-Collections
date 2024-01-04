@@ -1500,7 +1500,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{root}}/api/{{api_version}}/checkout?line_items=price_1OUhNDKMiBrigNb67roRCr5S&payment_mode=payment",
+							"raw": "{{root}}/api/{{api_version}}/checkout?line_items=price_1OUqrPKMiBrigNb6lia8VWiD&payment_mode=payment",
 							"host": [
 								"{{root}}"
 							],
@@ -1512,7 +1512,7 @@
 							"query": [
 								{
 									"key": "line_items",
-									"value": "price_1OUhNDKMiBrigNb67roRCr5S",
+									"value": "price_1OUqrPKMiBrigNb6lia8VWiD",
 									"description": "Subscription tier (one-off payment: 'price_1OUhNDKMiBrigNb67roRCr5S', premium subscription: 'price_1OUqrPKMiBrigNb6lia8VWiD')"
 								},
 								{
@@ -1567,7 +1567,7 @@
 								}
 							]
 						},
-						"description": "Endpoint used to redirect customer after successful stripe-payment and activate an embloy subscription."
+						"description": "Endpoint used to redirect customer after successful stripe-payment.\n\nReturns completed charge (including receiptURL), stripe session and line_items."
 					},
 					"response": []
 				},
@@ -1606,7 +1606,7 @@
 								}
 							]
 						},
-						"description": "Endpoint used to redirect customer after successful stripe-payment and activate an embloy subscription."
+						"description": "Endpoint used to redirect customer after successful stripe-subscription.\n\nReturns completed subscription (including receiptURL), stripe session and line_items."
 					},
 					"response": []
 				},
@@ -1683,7 +1683,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "a2634ea8-214d-422e-9c3d-c8f832f60ce6",
+				"id": "c150385a-30be-483a-a01f-338ca5b4e374",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1693,7 +1693,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "e6edd78c-0519-46f5-b5ba-0af3b0a811a5",
+				"id": "c791adac-25b9-4793-a106-fe6bce996cf3",
 				"type": "text/javascript",
 				"exec": [
 					""
