@@ -1521,7 +1521,57 @@
 						},
 						"description": "Creates a checkout session for either a recurring 'subscription' or a one-time 'payment'.\n\nReturns customer and payment information including stripe url (e.g., \"[https://checkout.stripe.com/c/pay/...\"](https://checkout.stripe.com/c/pay/...))"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "0b92552c-6b8b-441d-a55e-da2a37153ac2",
+							"name": "Checkout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{root}}/api/{{api_version}}/checkout?line_items=price_1OUqrPKMiBrigNb6lia8VWiD&payment_mode=subscription",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"{{api_version}}",
+										"checkout"
+									],
+									"query": [
+										{
+											"key": "line_items",
+											"value": "price_1OUqrPKMiBrigNb6lia8VWiD",
+											"description": "Subscription tier (one-off payment: 'price_1OUhNDKMiBrigNb67roRCr5S', premium subscription: 'price_1OUqrPKMiBrigNb6lia8VWiD')"
+										},
+										{
+											"key": "payment_mode",
+											"value": "subscription",
+											"description": "Payment mode (can either be a recurring 'subscription' or a one-time 'payment')"
+										},
+										{
+											"key": "payment_method_token",
+											"value": "",
+											"description": "Add the payment method via the API and mark it as the default for future payments",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"id\": \"cs_test_a147VVz9czrVJ7yS1XDFP0H0ZpYvjvGorBUCznrTc2MpWLxaTGu6f7HKvM\",\n    \"object\": \"checkout.session\",\n    \"after_expiration\": null,\n    \"allow_promotion_codes\": null,\n    \"amount_subtotal\": 1000,\n    \"amount_total\": 1000,\n    \"automatic_tax\": {\n        \"enabled\": false,\n        \"status\": null\n    },\n    \"billing_address_collection\": null,\n    \"cancel_url\": \"http://localhost:3000/api/v0/checkout/failure?session_id={CHECKOUT_SESSION_ID}\",\n    \"client_reference_id\": null,\n    \"client_secret\": null,\n    \"consent\": null,\n    \"consent_collection\": null,\n    \"created\": 1704391158,\n    \"currency\": \"eur\",\n    \"currency_conversion\": null,\n    \"custom_fields\": [],\n    \"custom_text\": {\n        \"after_submit\": null,\n        \"shipping_address\": null,\n        \"submit\": null,\n        \"terms_of_service_acceptance\": null\n    },\n    \"customer\": \"cus_PJVtS7Rf19hX4j\",\n    \"customer_creation\": null,\n    \"customer_details\": {\n        \"address\": null,\n        \"email\": \"winston.smith@embloy.com\",\n        \"name\": null,\n        \"phone\": null,\n        \"tax_exempt\": \"none\",\n        \"tax_ids\": null\n    },\n    \"customer_email\": null,\n    \"expires_at\": 1704477558,\n    \"invoice\": null,\n    \"invoice_creation\": null,\n    \"livemode\": false,\n    \"locale\": null,\n    \"metadata\": {},\n    \"mode\": \"subscription\",\n    \"payment_intent\": null,\n    \"payment_link\": null,\n    \"payment_method_collection\": \"always\",\n    \"payment_method_configuration_details\": null,\n    \"payment_method_options\": null,\n    \"payment_method_types\": [\n        \"card\"\n    ],\n    \"payment_status\": \"unpaid\",\n    \"phone_number_collection\": {\n        \"enabled\": false\n    },\n    \"recovered_from\": null,\n    \"setup_intent\": null,\n    \"shipping_address_collection\": null,\n    \"shipping_cost\": null,\n    \"shipping_details\": null,\n    \"shipping_options\": [],\n    \"status\": \"open\",\n    \"submit_type\": null,\n    \"subscription\": null,\n    \"success_url\": \"http://localhost:3000/api/v0/checkout/subscription/success?session_id={CHECKOUT_SESSION_ID}\",\n    \"total_details\": {\n        \"amount_discount\": 0,\n        \"amount_shipping\": 0,\n        \"amount_tax\": 0\n    },\n    \"ui_mode\": \"hosted\",\n    \"url\": \"https://checkout.stripe.com/c/pay/cs_test_a147VVz9czrVJ7yS1XDFP0H0ZpYvjvGorBUCznrTc2MpWLxaTGu6f7HKvM#fidkdWxOYHwnPyd1blpxYHZxWjA0SlFBMjROSGxHd2xiS2czV251QDFzcUBkVV9oZjM3b3VrM25AQjZtd2JWZzU3dz1mbjJgV0RuUHdDXEtEcndObEZqbHN8MjBhd101SG9MV2hmbUZUb3FwNTVCTUQwdnxGPScpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl\"\n}"
+						}
+					]
 				},
 				{
 					"name": "Successful payment",
