@@ -1274,7 +1274,7 @@
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/client/subscriptions",
-						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
+						"description": "Returns all subscriptions of the current user."
 					},
 					"response": []
 				},
@@ -1295,7 +1295,7 @@
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/client/charges",
-						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
+						"description": "Returns all charges of the current user, including the receipt URL."
 					},
 					"response": []
 				},
