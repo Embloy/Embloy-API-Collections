@@ -1470,7 +1470,8 @@
 							"query": [
 								{
 									"key": "info",
-									"value": "1"
+									"value": "1",
+									"description": "Toggle additional information"
 								}
 							]
 						},
@@ -1645,10 +1646,10 @@
 				}
 			],
 			"id": "6665f20c-82b1-4a41-ae6e-f50f5b050b53",
-			"description": "All requests related to setting up a client's individual subscription."
+			"description": "All requests related to fetching the client's subscriptions, invoices, receipts and past payments."
 		},
 		{
-			"name": "[IN_PROGRESS] Stripe",
+			"name": "Stripe",
 			"item": [
 				{
 					"name": "Checkout",
@@ -2464,7 +2465,7 @@
 				}
 			],
 			"id": "d0c134ac-7cec-44eb-8bd2-a145844d26ef",
-			"description": "All requests related to processing a client's payment."
+			"description": "All requests related to processing a client's payment and setting up a client's individual subscription using Stripe."
 		},
 		{
 			"name": "[TODO] Genius",
