@@ -1479,7 +1479,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{root}}/api/{{api_version}}/checkout?line_items=price_1OUqrPKMiBrigNb6lia8VWiD&payment_mode=subscription",
+							"raw": "{{root}}/api/{{api_version}}/checkout?line_items=price_1OUhNDKMiBrigNb67roRCr5S&payment_mode=subscription",
 							"host": [
 								"{{root}}"
 							],
@@ -1491,7 +1491,7 @@
 							"query": [
 								{
 									"key": "line_items",
-									"value": "price_1OUqrPKMiBrigNb6lia8VWiD",
+									"value": "price_1OUhNDKMiBrigNb67roRCr5S",
 									"description": "Subscription tier (one-off payment: 'price_1OUhNDKMiBrigNb67roRCr5S', premium subscription: 'price_1OUqrPKMiBrigNb6lia8VWiD')"
 								},
 								{
@@ -1594,7 +1594,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "07a2cb0d-a47e-4661-ae96-50377dfb9420",
+				"id": "dae734ce-0417-4062-bd01-05cdacec5510",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1604,7 +1604,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "b9a4e253-4002-4e9b-b1b7-cdca0da1b7ef",
+				"id": "81b7e966-2715-47af-9a2e-0498aa61899c",
 				"type": "text/javascript",
 				"exec": [
 					""
