@@ -1652,7 +1652,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{root}}/api/{{api_version}}/checkout?tier=premium&payment_mode=subscription",
+							"raw": "{{root}}/api/{{api_version}}/checkout?tier=basic&payment_mode=subscription",
 							"host": [
 								"{{root}}"
 							],
@@ -1664,7 +1664,7 @@
 							"query": [
 								{
 									"key": "tier",
-									"value": "premium",
+									"value": "basic",
 									"description": "Subscription tier (basic, premium, enterprise_1, enterprise_2, enterprise_3)"
 								},
 								{
@@ -2478,7 +2478,7 @@
 					]
 				},
 				{
-					"name": "[TODO] Portal session",
+					"name": "Portal session",
 					"id": "687fefbc-dd89-4fcc-8e17-30d72a0dacaf",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -2696,7 +2696,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "f501e531-353e-48f1-ab3b-62e47d0ae2e5",
+				"id": "07035f6f-2cbf-403a-a4a2-83a4b9e32cf2",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -2706,7 +2706,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "d3f4fc5a-92b5-497c-aca4-dece51388fe9",
+				"id": "1c258eb0-776f-43b7-9b34-9790e98f7e81",
 				"type": "text/javascript",
 				"exec": [
 					""
