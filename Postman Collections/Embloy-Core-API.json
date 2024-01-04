@@ -1602,7 +1602,7 @@
 					"response": []
 				},
 				{
-					"name": "Failed payment",
+					"name": "Failed procedure",
 					"id": "de05c66a-7cab-42f4-9edb-03fed03204a3",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1857,7 +1857,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "930b08cd-55f2-4b9b-88c9-60e82ee46008",
+				"id": "9097cba9-f963-42b3-ae43-f7ef4c89ead0",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1867,7 +1867,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "1192c8fd-3356-47cc-ac59-a588cd8272dd",
+				"id": "8784221e-7d1b-47e6-be6f-3b4a81cfe7de",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1913,11 +1913,6 @@
 		{
 			"key": "own_job_id",
 			"value": "",
-			"type": "string"
-		},
-		{
-			"key": "subscription_id",
-			"value": "1",
 			"type": "string"
 		},
 		{
