@@ -918,7 +918,7 @@
 			"description": "All requests related to user's own jobs, applications, profile, preferences and reviews."
 		},
 		{
-			"name": "[TODO] Applications",
+			"name": "[IN_PROGRESS] Applications",
 			"item": [
 				{
 					"name": "Get all applications for a job",
@@ -1277,7 +1277,7 @@
 									}
 								],
 								"url": "{{root}}/api/{{api_version}}/client/charges",
-								"description": "Returns all charges of the current user, including the receipt URL."
+								"description": "Returns all charges of the current user's payments."
 							},
 							"response": []
 						}
@@ -1307,183 +1307,6 @@
 								"description": "Returns all subscriptions of the current user."
 							},
 							"response": []
-						},
-						{
-							"name": "[DEPRECATED] /client/subscriptions/{id}",
-							"id": "08a40191-8715-49da-8ee6-66209dcd7dfc",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
-								"url": "{{root}}/api/{{api_version}}/client/subscriptions/{{subscription_id}}",
-								"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
-							},
-							"response": []
-						},
-						{
-							"name": "[DEPRECATED] /client/subscriptions",
-							"id": "3373ae62-eead-478c-b304-3c2431c557b0",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n  \"subscription\": {\n    \"tier\": \"basic\",\n    \"active\": true,\n    \"expiration_date\": \"2023-12-31T23:59:59Z\",\n    \"start_date\": \"2022-01-01T00:00:00Z\",\n    \"auto_renew\": true,\n    \"renew_date\": \"2023-06-30T23:59:59Z\"\n  }\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "{{root}}/api/{{api_version}}/client/subscriptions",
-								"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
-							},
-							"response": []
-						},
-						{
-							"name": "[DEPRECATED] /client/subscriptions/{id}/activate",
-							"id": "ef77fd27-5b5e-4765-91af-7aa1bced4334",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
-								"url": "{{root}}/api/{{api_version}}/client/subscriptions/{{subscription_id}}/activate",
-								"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
-							},
-							"response": []
-						},
-						{
-							"name": "[DEPRECATED] /client/subscriptions/{id}/renew",
-							"id": "6c0d7fa1-9943-4d92-9f04-74553fac093f",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
-								"url": "{{root}}/api/{{api_version}}/client/subscriptions/{{subscription_id}}/renew",
-								"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
-							},
-							"response": []
-						},
-						{
-							"name": "[DEPRECATED] /client/subscriptions/{id}/cancel",
-							"id": "ffaac945-cf10-46a8-b0af-62e4df0c58a8",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
-								"url": "{{root}}/api/{{api_version}}/client/subscriptions/{{subscription_id}}/cancel",
-								"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
-							},
-							"response": []
-						},
-						{
-							"name": "[DEPRECATED] /client/subscriptions/{id}",
-							"id": "e08c7416-3109-4c03-ad0b-633fe5ba3d3f",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "DELETE",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
-								"url": "{{root}}/api/{{api_version}}/client/subscriptions/{{subscription_id}}",
-								"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
-							},
-							"response": []
-						},
-						{
-							"name": "[DEPRECATED] Create Stripe-Payment",
-							"id": "10e3cf9f-1215-4758-b77c-9762127bb184",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n  \"id\": \"evt_1Gt5S2G882ZvajlDltn5772M\",\n  \"object\": \"event\",\n  \"api_version\": \"2020-03-02\",\n  \"created\": 1583786470,\n  \"data\": {\n    \"object\": {\n      \"id\": \"pi_1Gt5S2G882ZvajlDltn5772M\",\n      \"object\": \"payment_intent\",\n      \"amount\": 2000,\n      \"currency\": \"usd\",\n      \"status\": \"succeeded\"\n    }\n  },\n  \"livemode\": false,\n  \"type\": \"payment_intent.succeeded\"\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "{{root}}/api/{{api_version}}/stripe_webhook"
-							},
-							"response": []
-						},
-						{
-							"name": "[DEPRECATED] Notify Stripe-Webhook",
-							"id": "990448a6-1704-4891-95ed-96c1d0cadf1c",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-										"type": "text"
-									}
-								],
-								"url": "{{root}}/api/{{api_version}}/payments"
-							},
-							"response": []
 						}
 					],
 					"id": "6665f20c-82b1-4a41-ae6e-f50f5b050b53",
@@ -1496,7 +1319,7 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [
 							{
 								"key": "access_token",
@@ -1679,17 +1502,200 @@
 			"description": "All requests related to processing a client's payment."
 		},
 		{
-			"name": "Genius",
+			"name": "[TODO] Genius",
 			"item": [],
 			"id": "567634cc-a468-46ad-a978-2fccbbc3aeca",
 			"description": "All requests currently supported by the Genius-API.\n\n// TODO"
+		},
+		{
+			"name": "[DEPRECATED]",
+			"item": [
+				{
+					"name": "[DEPRECATED] /client/subscriptions/{id}",
+					"id": "08a40191-8715-49da-8ee6-66209dcd7dfc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/client/subscriptions/{{subscription_id}}",
+						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
+					},
+					"response": []
+				},
+				{
+					"name": "[DEPRECATED] /client/subscriptions",
+					"id": "3373ae62-eead-478c-b304-3c2431c557b0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"subscription\": {\n    \"tier\": \"basic\",\n    \"active\": true,\n    \"expiration_date\": \"2023-12-31T23:59:59Z\",\n    \"start_date\": \"2022-01-01T00:00:00Z\",\n    \"auto_renew\": true,\n    \"renew_date\": \"2023-06-30T23:59:59Z\"\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{root}}/api/{{api_version}}/client/subscriptions",
+						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
+					},
+					"response": []
+				},
+				{
+					"name": "[DEPRECATED] /client/subscriptions/{id}/activate",
+					"id": "ef77fd27-5b5e-4765-91af-7aa1bced4334",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/client/subscriptions/{{subscription_id}}/activate",
+						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
+					},
+					"response": []
+				},
+				{
+					"name": "[DEPRECATED] /client/subscriptions/{id}/renew",
+					"id": "6c0d7fa1-9943-4d92-9f04-74553fac093f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/client/subscriptions/{{subscription_id}}/renew",
+						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
+					},
+					"response": []
+				},
+				{
+					"name": "[DEPRECATED] /client/subscriptions/{id}/cancel",
+					"id": "ffaac945-cf10-46a8-b0af-62e4df0c58a8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/client/subscriptions/{{subscription_id}}/cancel",
+						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
+					},
+					"response": []
+				},
+				{
+					"name": "[DEPRECATED] /client/subscriptions/{id}",
+					"id": "e08c7416-3109-4c03-ad0b-633fe5ba3d3f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/client/subscriptions/{{subscription_id}}",
+						"description": "This endpoint is responsible for creating a **`request_token`**. for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
+					},
+					"response": []
+				},
+				{
+					"name": "[DEPRECATED] Create Stripe-Payment",
+					"id": "10e3cf9f-1215-4758-b77c-9762127bb184",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"evt_1Gt5S2G882ZvajlDltn5772M\",\n  \"object\": \"event\",\n  \"api_version\": \"2020-03-02\",\n  \"created\": 1583786470,\n  \"data\": {\n    \"object\": {\n      \"id\": \"pi_1Gt5S2G882ZvajlDltn5772M\",\n      \"object\": \"payment_intent\",\n      \"amount\": 2000,\n      \"currency\": \"usd\",\n      \"status\": \"succeeded\"\n    }\n  },\n  \"livemode\": false,\n  \"type\": \"payment_intent.succeeded\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{root}}/api/{{api_version}}/stripe_webhook"
+					},
+					"response": []
+				},
+				{
+					"name": "[DEPRECATED] Notify Stripe-Webhook",
+					"id": "990448a6-1704-4891-95ed-96c1d0cadf1c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/payments"
+					},
+					"response": []
+				}
+			],
+			"id": "f548f0f8-eb62-4855-9d29-a72dedcefe8d"
 		}
 	],
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "c150385a-30be-483a-a01f-338ca5b4e374",
+				"id": "7de0212e-be3b-4a1a-a68e-fa640e1f5c3d",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1699,7 +1705,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "c791adac-25b9-4793-a106-fe6bce996cf3",
+				"id": "a179238f-171e-43dc-81b4-14e8cc24d053",
 				"type": "text/javascript",
 				"exec": [
 					""
