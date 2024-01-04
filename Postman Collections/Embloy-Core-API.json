@@ -1624,7 +1624,7 @@
 							"header": null,
 							"cookie": [],
 							"responseTime": null,
-							"body": "{ \"message\": \"No active subscription found.\" }"
+							"body": "{\n    \"message\": \"No active subscription found.\"\n}"
 						}
 					]
 				}
@@ -1652,7 +1652,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{root}}/api/{{api_version}}/checkout?tier=basic&payment_mode=subscription",
+							"raw": "{{root}}/api/{{api_version}}/checkout?tier=premium&payment_mode=subscription",
 							"host": [
 								"{{root}}"
 							],
@@ -1664,9 +1664,8 @@
 							"query": [
 								{
 									"key": "tier",
-									"value": "basic",
-									"description": "Subscription tier (basic, premium, enterprise_1, enterprise_2, enterprise_3)",
-									"type": "text"
+									"value": "premium",
+									"description": "Subscription tier (basic, premium, enterprise_1, enterprise_2, enterprise_3)"
 								},
 								{
 									"key": "payment_mode",
