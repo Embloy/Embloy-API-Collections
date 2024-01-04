@@ -1102,11 +1102,13 @@
 								],
 								"url": "{{root}}/api/{{api_version}}/quick/token/client"
 							},
+							"status": "OK",
+							"code": 200,
 							"_postman_previewlanguage": null,
 							"header": null,
 							"cookie": [],
 							"responseTime": null,
-							"body": null
+							"body": "{\n    \"client_token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTcwNzA3MDAwOSwidHlwIjoicHJlbWl1bSIsImlhdCI6MTcwNDM5NTM5MSwiaXNzIjoibWFua2RlIn0.sAA-GwLZwgYM5uhlpMJDRKb0b1qFDpb4Pv0EMsPIp0E\"\n}"
 						},
 						{
 							"id": "5f998712-48e4-44e3-bd80-c62fcc3a296f",
