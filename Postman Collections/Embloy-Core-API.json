@@ -1478,7 +1478,8 @@
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/checkout"
+						"url": "{{root}}/api/{{api_version}}/checkout",
+						"description": "Creates a checkout session for a one-time stripe payment."
 					},
 					"response": []
 				},
