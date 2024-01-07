@@ -850,7 +850,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"user\": {\n        \"password\": \"\",\n        \"password_confirmation\": \"doublethink\"\n    }\n}",
+							"raw": "{\n    \"user\": {\n        \"password\": \"doublethink\",\n        \"password_confirmation\": \"doublethink\"\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -860,7 +860,38 @@
 						"url": "{{root}}/api/{{api_version}}/user/password",
 						"description": "Updates the current user's password. Note that the minimum password length is 8 characters and the maximum password length is 72 characters. `password` and `password_confirmation` need to match."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "67f6c70e-251f-489f-a768-2d8953934b6e",
+							"name": "[200 OK]",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"user\": {\n        \"password\": \"doublethink\",\n        \"password_confirmation\": \"doublethink\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{root}}/api/{{api_version}}/user/password"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						}
+					]
 				},
 				{
 					"name": "Update user",
