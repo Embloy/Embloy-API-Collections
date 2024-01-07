@@ -616,7 +616,7 @@
 							"header": null,
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"user\": {\n        \"id\": 1,\n        \"email\": \"winston.smith@embloy.com\",\n        \"password_digest\": \"$2a$12$4qpxHSEu2KfVBrpCKQpYkeZvBs/Vrqjv/cnQz/dH07GC62sl8qffu\",\n        \"activity_status\": 1,\n        \"first_name\": \"Winston\",\n        \"last_name\": \"Smith\",\n        \"longitude\": null,\n        \"latitude\": null,\n        \"country_code\": null,\n        \"postal_code\": null,\n        \"city\": null,\n        \"address\": null,\n        \"date_of_birth\": null,\n        \"user_type\": \"private\",\n        \"view_count\": 0,\n        \"created_at\": \"2024-01-07T18:22:47.965Z\",\n        \"updated_at\": \"2024-01-07T18:22:47.965Z\",\n        \"applications_count\": 0,\n        \"jobs_count\": 0,\n        \"user_role\": \"verified\",\n        \"application_notifications\": true,\n        \"twitter_url\": null,\n        \"facebook_url\": null,\n        \"instagram_url\": null,\n        \"phone\": null,\n        \"degree\": null,\n        \"linkedin_url\": null,\n        \"image_url\": null\n    }\n}"
+							"body": "{\n    \"user\": {\n        \"id\": 1,\n        \"email\": \"winston.smith@embloy.com\",\n        \"password_digest\": \"$2a$12$2rlRIdcSWUGvtGyxmlHXS.cwFV5JZRuH.jaJZhbUposkYDH19Yjyy\",\n        \"activity_status\": 1,\n        \"first_name\": \"Winston\",\n        \"last_name\": \"Smith\",\n        \"longitude\": null,\n        \"latitude\": null,\n        \"country_code\": null,\n        \"postal_code\": null,\n        \"city\": null,\n        \"address\": null,\n        \"date_of_birth\": null,\n        \"user_type\": \"private\",\n        \"view_count\": 0,\n        \"created_at\": \"2024-01-07T18:22:47.965Z\",\n        \"updated_at\": \"2024-01-07T19:48:53.804Z\",\n        \"applications_count\": 0,\n        \"jobs_count\": 0,\n        \"user_role\": \"verified\",\n        \"application_notifications\": true,\n        \"twitter_url\": null,\n        \"facebook_url\": null,\n        \"instagram_url\": null,\n        \"phone\": null,\n        \"degree\": null,\n        \"linkedin_url\": null,\n        \"image_url\": \"https://f005.backblazeb2.com/file/TestEmbloy/hrv0t9t8hd57p2f183n0phhx6tf5?Authorization=3_20240107200242_474278ba550b47eb0ed2a7f7_f596e41ae1f9563846101b2623150ef208a775e8_005_20240114200242_0028_dnld\"\n    }\n}"
 						}
 					]
 				},
@@ -2874,7 +2874,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "15c5c829-75ac-418d-994f-24ffdd3bdad7",
+				"id": "7f5819e1-1a82-48ce-97ef-0c713284da58",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -2884,7 +2884,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "24facd60-8fa7-4d3f-83ed-32b70a217f79",
+				"id": "025e1a24-560d-47fa-ae73-f768ab3519ca",
 				"type": "text/javascript",
 				"exec": [
 					""
