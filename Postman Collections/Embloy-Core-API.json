@@ -594,7 +594,31 @@
 						"url": "{{root}}/api/{{api_version}}/user",
 						"description": "This creates an user at its related records. In its entirety, this is referred to as an Embloy account. A freshly created Embloy account is inactive and first needs to be verified by the user."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "650a58af-0735-44c6-a701-59bc152ae9e9",
+							"name": "[200 OK]",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/user"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"user\": {\n        \"id\": 1,\n        \"email\": \"winston.smith@embloy.com\",\n        \"password_digest\": \"$2a$12$4qpxHSEu2KfVBrpCKQpYkeZvBs/Vrqjv/cnQz/dH07GC62sl8qffu\",\n        \"activity_status\": 1,\n        \"first_name\": \"Winston\",\n        \"last_name\": \"Smith\",\n        \"longitude\": null,\n        \"latitude\": null,\n        \"country_code\": null,\n        \"postal_code\": null,\n        \"city\": null,\n        \"address\": null,\n        \"date_of_birth\": null,\n        \"user_type\": \"private\",\n        \"view_count\": 0,\n        \"created_at\": \"2024-01-07T18:22:47.965Z\",\n        \"updated_at\": \"2024-01-07T18:22:47.965Z\",\n        \"applications_count\": 0,\n        \"jobs_count\": 0,\n        \"user_role\": \"verified\",\n        \"application_notifications\": true,\n        \"twitter_url\": null,\n        \"facebook_url\": null,\n        \"instagram_url\": null,\n        \"phone\": null,\n        \"degree\": null,\n        \"linkedin_url\": null,\n        \"image_url\": null\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "Get user's jobs",
@@ -678,7 +702,31 @@
 						"url": "{{root}}/api/{{api_version}}/user/preferences",
 						"description": "The provided access token is first verified, and then a response containing user preferences associated with its owner is generated."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "30049a3e-149f-4fd4-bf19-ff57800e066d",
+							"name": "[200 OK]",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/user/preferences"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"preferences\": {\n        \"id\": null,\n        \"user_id\": 1,\n        \"interests\": null,\n        \"experience\": null,\n        \"degree\": null,\n        \"num_jobs_done\": 0,\n        \"gender\": null,\n        \"spontaneity\": null,\n        \"job_types\": {\n            \"1\": 0,\n            \"2\": 0,\n            \"3\": 0\n        },\n        \"key_skills\": null,\n        \"salary_range\": [\n            0.0,\n            0.0\n        ],\n        \"cv_url\": null\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "Get reviews",
@@ -722,7 +770,33 @@
 						"url": "{{root}}/api/{{api_version}}/user",
 						"description": "This creates an user at its related records. In its entirety, this is referred to as an Embloy account. An freshly created Embloy account is inactive and first needs to be verified by the user. Note that the minimum password length is 8 characters and the maximum password length is 72 characters. `password` and `password_confirmation` need to match."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "4c079848-c15d-410f-9a74-e667f674b9b3",
+							"name": "[201 Created]",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"user\": {\r\n    \"email\": \"winston.smith@embloy.com\",\r\n    \"first_name\": \"Winston\",\r\n    \"last_name\": \"Smith\",\r\n    \"password\": \"doublethink\",\r\n    \"password_confirmation\": \"doublethink\"\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{root}}/api/{{api_version}}/user"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"Account registered! Please activate your account and claim your refresh token via GET /api/v0/user/verify \"\n}"
+						}
+					]
 				},
 				{
 					"name": "Upload profile image",
@@ -747,15 +821,50 @@
 									"key": "image_url",
 									"type": "file",
 									"description": "The user's new profile image as a file",
-									"fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
-									"src": "/C:/Users/carlo/Pictures/Saved Pictures/7c655da21b075c3b05a09c37e2b44e592f05bcd4f915f63340b94b68194470b8.jpg"
+									"src": "tJXv183KA/shadcn.png"
 								}
 							]
 						},
 						"url": "{{root}}/api/{{api_version}}/user/image",
 						"description": "The provided access token is first verified, and then the user's profile image is updated."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "1a3def40-d66f-4d1c-a92d-da51c42a5858",
+							"name": "[200 OK]",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image_url",
+											"type": "file",
+											"description": "The user's new profile image as a file",
+											"fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
+											"src": "/C:/Users/carlo/Pictures/Saved Pictures/7c655da21b075c3b05a09c37e2b44e592f05bcd4f915f63340b94b68194470b8.jpg"
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/user/image"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"image_url\": \"https://f005.backblazeb2.com/file/TestEmbloy/hrv0t9t8hd57p2f183n0phhx6tf5?Authorization=3_20240107194856_b385897f84e043696cf90c7c_5e0788424bb9485c44398f2bd7faa77df14bdaee_005_20240114194856_0028_dnld\"\n}"
+						}
+					]
 				},
 				{
 					"name": "Reset password",
@@ -788,7 +897,43 @@
 						},
 						"description": "Initiates the password reset process by sending an email with a password reset token (valid for 15 minutes) to the current user's email."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "5d685e1b-b686-47d4-9664-14c8fdfe7340",
+							"name": "[202 Accepted]",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{root}}/api/{{api_version}}/user/password/reset?email=winston.smith@embloy.com",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"{{api_version}}",
+										"user",
+										"password",
+										"reset"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "winston.smith@embloy.com",
+											"description": "Email of the account that needs to reset password."
+										}
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"Password reset process initiated! Please check your mailbox.\"\n}"
+						}
+					]
 				},
 				{
 					"name": "Reset password",
@@ -885,11 +1030,13 @@
 								},
 								"url": "{{root}}/api/{{api_version}}/user/password"
 							},
+							"status": "OK",
+							"code": 200,
 							"_postman_previewlanguage": null,
 							"header": null,
 							"cookie": [],
 							"responseTime": null,
-							"body": null
+							"body": "{\n    \"message\": \"Password updated\"\n}"
 						}
 					]
 				},
