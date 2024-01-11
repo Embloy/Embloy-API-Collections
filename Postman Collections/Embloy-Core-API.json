@@ -40,7 +40,7 @@
 						"auth": {
 							"type": "basic",
 							"basic": {
-								"password": "123123123",
+								"password": "doublethink",
 								"username": "winston.smith@embloy.com"
 							}
 						},
@@ -49,7 +49,24 @@
 						"url": "{{root}}/api/{{api_version}}/user/auth/token/refresh",
 						"description": "This first authenticates the account credentials and then issues a refresh token for this specific verified Embloy account. Refresh tokens only possess a time-limited validity. (current default validity is 2 weeks) Refresh tokens are primarily used to claim the much more powerful (but much shorter valid) access tokens."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "f560726c-a025-4a14-9882-b5332c17b0d3",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": "{{root}}/api/{{api_version}}/user/auth/token/refresh"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"refresh_token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTcwNTAxOTg2NywianRpIjoiMDU5OTNmZWVkYTg1MTRjNjBmNmM5ZTU3ZjA1YmIyYWMiLCJpYXQiOjE3MDUwMDU0NjcsImlzcyI6Im1hbmtkZSJ9.RAmusHNZOvChGN4hXS5Z7NGkoeMKWaEvtCNMQL8X3R0\"\n}"
+						}
+					]
 				},
 				{
 					"name": "Generate Access-Token",
@@ -3081,7 +3098,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "fac56fa3-6c9c-4d4f-9e42-5599169d55cd",
+				"id": "298d01a4-a67a-4c6e-95a3-9fb2ad294b15",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3091,7 +3108,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "047622b6-ccf2-4c53-ac7c-01302b2873aa",
+				"id": "5e0c13f2-2056-46b4-86bf-e93353c3584a",
 				"type": "text/javascript",
 				"exec": [
 					""
