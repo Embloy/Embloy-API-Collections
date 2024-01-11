@@ -1381,7 +1381,112 @@
 						"url": "{{root}}/api/{{api_version}}/sdk/request/auth/token",
 						"description": "This endpoint is responsible for creating a new application session containing a **`request_token`**which can be further used to apply for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "a6359da6-5f37-473b-adad-f36a03c8f24b",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "client_token",
+										"value": "{{client_token}}",
+										"description": "A valid client_token is needed to authenticate and authorize the client. For further information see: [client_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#86b2cf1c-b02e-4d83-b65f-9c5e03cc89c4)",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "mode",
+											"value": "job",
+											"description": "Describes what type of Quicklink service the portal is needed for. Allowed values: 'job'",
+											"type": "text"
+										},
+										{
+											"key": "success_url",
+											"value": "/success",
+											"description": "User gets redirected to this URL if application process succeeds ",
+											"type": "text"
+										},
+										{
+											"key": "cancel_url",
+											"value": "/failure",
+											"description": "User gets redirected to this URL if application process fails",
+											"type": "text"
+										},
+										{
+											"key": "job_slug",
+											"value": "job#1",
+											"description": "Combined with the client's ID, this is used as an unique identifier for the client's job. ",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/sdk/request/auth/token"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTcwNTA1Mzg4NSwic2Vzc2lvbiI6eyJjbGllbnRfaWQiOjEsInN1YnNjcmlwdGlvbl90eXBlIjoiZW50ZXJwcmlzZV8xIiwibW9kZSI6ImpvYiIsInN1Y2Nlc3NfdXJsIjoiL3N1Y2Nlc3MiLCJjYW5jZWxfdXJsIjoiL2ZhaWx1cmUiLCJqb2Jfc2x1ZyI6ImpvYiMxIn0sImlhdCI6MTcwNDk0NTg4NSwiaXNzIjoibWFua2RlIn0.yzzM0o-EtqXM3mt_hJTCFyUwnYZQAQYmyNHBvfI3d6s"
+						},
+						{
+							"id": "fbaa3d6a-bcae-4513-b499-c57f69c1e8dd",
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "client_token",
+										"value": "{{client_token}}",
+										"description": "A valid client_token is needed to authenticate and authorize the client. For further information see: [client_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#86b2cf1c-b02e-4d83-b65f-9c5e03cc89c4)",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "mode",
+											"value": "job",
+											"description": "Describes what type of Quicklink service the portal is needed for. Allowed values: 'job'",
+											"type": "text"
+										},
+										{
+											"key": "success_url",
+											"value": "/success",
+											"description": "User gets redirected to this URL if application process succeeds ",
+											"type": "text"
+										},
+										{
+											"key": "cancel_url",
+											"value": "/failure",
+											"description": "User gets redirected to this URL if application process fails",
+											"type": "text"
+										},
+										{
+											"key": "job_slug",
+											"value": "job#1",
+											"description": "Combined with the client's ID, this is used as an unique identifier for the client's job. ",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/sdk/request/auth/token"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"mode\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is malformed or unknown\"\n        }\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "[NOT_PLANNED] Application portal Copy",
