@@ -2054,7 +2054,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{root}}/api/{{api_version}}/checkout?tier=basic&payment_mode=subscription",
+							"raw": "{{root}}/api/{{api_version}}/checkout?tier=premium&payment_mode=subscription",
 							"host": [
 								"{{root}}"
 							],
@@ -2066,7 +2066,7 @@
 							"query": [
 								{
 									"key": "tier",
-									"value": "basic",
+									"value": "premium",
 									"description": "Subscription tier (basic, premium, enterprise_1, enterprise_2, enterprise_3)"
 								},
 								{
@@ -3098,7 +3098,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "9d00adeb-9a5e-49d2-95a2-bd45c661a376",
+				"id": "746ec4ef-1661-4a13-b1c6-b30f5a36abcd",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3108,7 +3108,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "8fd5df8f-63fd-432c-bf16-e635835a42cf",
+				"id": "5af6f37a-69cd-42aa-814c-02e853fd64cb",
 				"type": "text/javascript",
 				"exec": [
 					""
