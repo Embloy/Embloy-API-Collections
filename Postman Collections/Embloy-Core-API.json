@@ -1340,7 +1340,7 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "formdata",
@@ -1365,7 +1365,8 @@
 								},
 								{
 									"key": "job_slug",
-									"value": "{{own_job_id}}",
+									"value": "job#1",
+									"description": "Combined with the client's ID, this is used as an unique identifier for the client's job. ",
 									"type": "text"
 								}
 							]
