@@ -1313,7 +1313,7 @@
 					]
 				},
 				{
-					"name": "Generate Request-Token",
+					"name": "[DEPRECATED] Generate Request-Token",
 					"id": "cb4b3c33-f0b8-4f76-af72-f8b325e16bb8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
