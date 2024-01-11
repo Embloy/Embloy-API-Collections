@@ -40,7 +40,7 @@
 						"auth": {
 							"type": "basic",
 							"basic": {
-								"password": "doublethink",
+								"password": "123123123",
 								"username": "winston.smith@embloy.com"
 							}
 						},
@@ -3081,7 +3081,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "713749c3-31ac-47db-8fd7-a5f9954c8986",
+				"id": "02f84226-df5d-47df-b131-88b031941715",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3091,7 +3091,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "66bf4712-fefd-46ea-a56e-12ec995862ca",
+				"id": "c1581b6b-416b-4380-b6bf-442129dab932",
 				"type": "text/javascript",
 				"exec": [
 					""
