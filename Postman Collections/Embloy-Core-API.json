@@ -1334,6 +1334,28 @@
 					"response": []
 				},
 				{
+					"name": "Application portal",
+					"id": "7629b41f-882f-4897-bacd-5b900378eac6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "?client_token={{client_token}}",
+							"query": [
+								{
+									"key": "client_token",
+									"value": "{{client_token}}",
+									"description": "A valid client_token is needed to authenticate and authorize the client. For further information see: [client_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#86b2cf1c-b02e-4d83-b65f-9c5e03cc89c4)"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Capture application",
 					"id": "d30ba0ba-7c54-4b48-a24f-da3741125391",
 					"protocolProfileBehavior": {
