@@ -3098,7 +3098,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "34531d1a-b7e2-4a7a-a3d9-8623f81b2d7e",
+				"id": "1be82110-4782-4311-9c1a-a169f3909203",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3108,7 +3108,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "9181bd4a-397e-4ca0-bdef-d504f6e23352",
+				"id": "c05c8f11-9c8b-48e3-bdba-fa3b1ee662bb",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3119,7 +3119,7 @@
 	"variable": [
 		{
 			"key": "root",
-			"value": "https://embloy-core.onrender.com",
+			"value": "https://api.embloy.com",
 			"type": "string"
 		},
 		{
