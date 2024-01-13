@@ -158,7 +158,7 @@
 			"name": "Jobs",
 			"item": [
 				{
-					"name": "Load feed",
+					"name": "[DEPRECATED] Load feed",
 					"id": "57e944f0-7e32-41f2-ba51-2b61d02d9c38",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
