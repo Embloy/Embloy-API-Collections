@@ -1245,6 +1245,91 @@
 			"name": "Quicklink",
 			"item": [
 				{
+					"name": "Generate Client-Token",
+					"id": "86b2cf1c-b02e-4d83-b65f-9c5e03cc89c4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{root}}/api/{{api_version}}/client/auth/token?exp={{$randomDateFuture}}",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"api",
+								"{{api_version}}",
+								"client",
+								"auth",
+								"token"
+							],
+							"query": [
+								{
+									"key": "exp",
+									"value": "{{$randomDateFuture}}",
+									"description": "Custom expiration (will be set to the end of client's subscription, if it exceeds the subscription's expiration date)"
+								}
+							]
+						},
+						"description": "If the user has the necessary role, a **`client_token`** is generated based on  \nthe decoded subject (sub) of the token. The generated **`client_token`** is  \nthen returned in the response (valid for 3months)."
+					},
+					"response": [
+						{
+							"id": "5ace596b-8afe-40d7-9307-3d5dccdb6bb9",
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/quick/token/client"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"client_token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTcwNzA3MDAwOSwidHlwIjoicHJlbWl1bSIsImlhdCI6MTcwNDM5NTM5MSwiaXNzIjoibWFua2RlIn0.sAA-GwLZwgYM5uhlpMJDRKb0b1qFDpb4Pv0EMsPIp0E\"\n}"
+						},
+						{
+							"id": "c5a95498-c707-4753-8f36-986e9a0e9120",
+							"name": "401",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/quick/token/client"
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"token\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is invalid or expired\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
 					"name": "[DEPRECATED] Generate Request-Token",
 					"id": "cb4b3c33-f0b8-4f76-af72-f8b325e16bb8",
 					"protocolProfileBehavior": {
@@ -3007,98 +3092,13 @@
 				}
 			],
 			"id": "f548f0f8-eb62-4855-9d29-a72dedcefe8d"
-		},
-		{
-			"name": "Generate Client-Token",
-			"id": "86b2cf1c-b02e-4d83-b65f-9c5e03cc89c4",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "access_token",
-						"value": "{{access_token}}",
-						"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "{{root}}/api/{{api_version}}/client/auth/token?exp={{$randomDateFuture}}",
-					"host": [
-						"{{root}}"
-					],
-					"path": [
-						"api",
-						"{{api_version}}",
-						"client",
-						"auth",
-						"token"
-					],
-					"query": [
-						{
-							"key": "exp",
-							"value": "{{$randomDateFuture}}",
-							"description": "Custom expiration (will be set to the end of client's subscription, if it exceeds the subscription's expiration date)"
-						}
-					]
-				},
-				"description": "If the user has the necessary role, a **`client_token`** is generated based on  \nthe decoded subject (sub) of the token. The generated **`client_token`** is  \nthen returned in the response (valid for 3months)."
-			},
-			"response": [
-				{
-					"id": "5ace596b-8afe-40d7-9307-3d5dccdb6bb9",
-					"name": "200",
-					"originalRequest": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text"
-							}
-						],
-						"url": "{{root}}/api/{{api_version}}/quick/token/client"
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": null,
-					"header": null,
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"client_token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTcwNzA3MDAwOSwidHlwIjoicHJlbWl1bSIsImlhdCI6MTcwNDM5NTM5MSwiaXNzIjoibWFua2RlIn0.sAA-GwLZwgYM5uhlpMJDRKb0b1qFDpb4Pv0EMsPIp0E\"\n}"
-				},
-				{
-					"id": "c5a95498-c707-4753-8f36-986e9a0e9120",
-					"name": "401",
-					"originalRequest": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text"
-							}
-						],
-						"url": "{{root}}/api/{{api_version}}/quick/token/client"
-					},
-					"status": "Unauthorized",
-					"code": 401,
-					"_postman_previewlanguage": null,
-					"header": null,
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"token\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is invalid or expired\"\n        }\n    ]\n}"
-				}
-			]
 		}
 	],
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "59626cd3-8595-4d3c-b08b-0c92ba5f248f",
+				"id": "02a3de16-733f-452b-9eb1-6d6076e40575",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3108,7 +3108,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "13edb453-4b67-40a3-8771-ab362aa8f509",
+				"id": "c2a05f02-3785-45e2-b020-81355f124f36",
 				"type": "text/javascript",
 				"exec": [
 					""
