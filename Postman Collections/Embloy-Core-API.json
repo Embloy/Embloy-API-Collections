@@ -1068,7 +1068,7 @@
 						"header": [
 							{
 								"key": "access_token",
-								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQ5LCJleHAiOjE2OTgxODM4MzIsInR5cCI6InZlcmlmaWVkIiwiaXNzIjoiQ0JfU3VyZmFjZVBybzgifQ.ZAP8fPiR-aQbEqTgZyc8fFrEieYfARGAkoVb8jp6nOo",
+								"value": "{{access_token}}",
 								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
 								"type": "text"
 							}
@@ -3098,7 +3098,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "0c38cbab-51d2-48de-b0dd-9421d01758f0",
+				"id": "54a5d2ed-662b-404e-b855-61728f78e0b0",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3108,7 +3108,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "8b13414d-8071-4524-9634-232aad64ad9e",
+				"id": "226a299e-bb8b-4771-afb8-533591eef5c8",
 				"type": "text/javascript",
 				"exec": [
 					""
