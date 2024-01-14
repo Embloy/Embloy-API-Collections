@@ -1187,17 +1187,8 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
-							},
-							{
-								"key": "latitude",
-								"value": "11",
-								"type": "text"
-							},
-							{
-								"key": "longitude",
-								"value": "49",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
 						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications",
@@ -1250,10 +1241,12 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/jobs/{{job_id}}/application"
+						"url": "{{root}}/api/{{api_version}}/jobs/{{job_id}}/application",
+						"description": "Returns the applications submitted by the current user for a given job including optional application attachments."
 					},
 					"response": [
 						{
@@ -1292,7 +1285,8 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
 						"body": {
@@ -1301,11 +1295,13 @@
 								{
 									"key": "application_text",
 									"value": "Hello World",
-									"type": "text"
+									"type": "text",
+									"description": "Application text which will be shown to the employer."
 								},
 								{
 									"key": "application_attachment",
 									"type": "file",
+									"description": "Application attachment (can be required by the employer and must have the file format specified in the job's 'allowed_cv_formats' field)",
 									"src": "b1lpMViGB/awafww.txt"
 								}
 							]
@@ -1478,12 +1474,36 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/accept"
+						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/accept",
+						"description": "Accepts an application for one of your jobs (optionally with a response which will be shown to the applicant)."
 					},
 					"response": [
+						{
+							"id": "27ce6a24-005f-4ae1-82d8-2286fe49b374",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/accept"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"Application successfully accepted.\"\n}"
+						},
 						{
 							"id": "031473b4-9619-44b3-983e-613544c5b3d7",
 							"name": "400 Bad Request",
@@ -1504,7 +1524,7 @@
 							"header": null,
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"message\": \"Already rejected.\"\n}"
+							"body": "{\n    \"message\": \"Already accepted.\"\n}"
 						}
 					]
 				},
@@ -1523,12 +1543,35 @@
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/reject"
+						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/reject",
+						"description": "Rejects an application for one of your jobs (optionally with a response which will be shown to the applicant)."
 					},
 					"response": [
 						{
+							"id": "436cf65a-4a0d-4307-828d-a6324978a13f",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/reject"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"Application successfully rejected.\"\n}"
+						},
+						{
 							"id": "b0f3fc31-b013-42d9-a1ee-4a304b82d39d",
-							"name": "400 Bad Re",
+							"name": "400 Bad Request",
 							"originalRequest": {
 								"method": "PATCH",
 								"header": [
