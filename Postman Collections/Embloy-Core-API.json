@@ -589,7 +589,7 @@
 								},
 								{
 									"key": "allowed_cv_formats",
-									"value": "awdawd",
+									"value": "[\".pdf\"]ddawd",
 									"type": "text",
 									"description": "Allowed cv_formats for the job's applications "
 								},
@@ -3140,7 +3140,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "20d68f2c-7675-4664-9fee-914312c52e9e",
+				"id": "46b6375f-633a-4d2a-b46e-c9e7cdbb6c7e",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3150,7 +3150,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "ae0a2909-b0f5-43d2-988c-f2c01175ca0e",
+				"id": "23c05b1e-c6cd-44a8-85a3-8d150fa95f38",
 				"type": "text/javascript",
 				"exec": [
 					""
