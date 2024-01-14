@@ -19,8 +19,8 @@
 						"auth": {
 							"type": "basic",
 							"basic": {
-								"password": "doublethink",
-								"username": "winston.smith@embloy.com"
+								"username": "winston.smith@embloy.com",
+								"password": "doublethink"
 							}
 						},
 						"method": "GET",
@@ -40,8 +40,8 @@
 						"auth": {
 							"type": "basic",
 							"basic": {
-								"password": "doublethink",
-								"username": "winston.smith@embloy.com"
+								"username": "winston.smith@embloy.com",
+								"password": "doublethink"
 							}
 						},
 						"method": "POST",
@@ -3140,7 +3140,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "cafd0435-d4d5-43f1-bea4-81cd036e6dea",
+				"id": "42f8078b-298b-4953-9a2b-d14acfff0e5e",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3150,7 +3150,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "494af2b3-d592-4486-988d-b4021a74e0a5",
+				"id": "8f42cb0f-541e-4c27-8e77-5e21bac7051e",
 				"type": "text/javascript",
 				"exec": [
 					""
