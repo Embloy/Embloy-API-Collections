@@ -591,12 +591,11 @@
 									"key": "image_url",
 									"type": "file",
 									"description": "Cover image of your job posting",
-									"src": "RGxcpmaXo/config.ru",
-									"disabled": true
+									"src": "RGxcpmaXo/config.ru"
 								},
 								{
-									"key": "allowed_cv_format",
-									"value": "aawdawdaw",
+									"key": "allowed_cv_formats",
+									"value": "[\".pdf\"]",
 									"type": "text"
 								}
 							]
