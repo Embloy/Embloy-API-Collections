@@ -1319,6 +1319,82 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"errors\": {\n        \"user_id\": [\n            {\n                \"error\": \"ERR_TAKEN\",\n                \"description\": \"You already submitted an application for this job\",\n                \"value\": 2\n            }\n        ]\n    }\n}"
+						},
+						{
+							"id": "a0053671-379d-4131-b598-edae3d867283",
+							"name": "422 Unprocessable Entity",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "application_text",
+											"value": "Hello World",
+											"type": "text"
+										},
+										{
+											"key": "application_attachment",
+											"type": "file",
+											"src": "b1lpMViGB/awafww.txt",
+											"disabled": true
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/jobs/{{job_id}}/applications"
+							},
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+							"code": 422,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"application\": [\n        {\n            \"error\": \"ERR_UNNECESSARY\",\n            \"description\": \"Attribute is already submitted\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "9a29b26b-f25b-451a-832a-653b5bca9a65",
+							"name": "422 Unprocessable Content",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "application_text",
+											"value": "Hello World",
+											"type": "text"
+										},
+										{
+											"key": "application_attachment",
+											"type": "file",
+											"src": "b1lpMViGB/awafww.txt",
+											"disabled": true
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/jobs/{{job_id}}/applications"
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"errors\": {\n        \"application_attachment\": [\n            \"CV is required\"\n        ]\n    }\n}"
 						}
 					]
 				},
