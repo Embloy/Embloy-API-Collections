@@ -716,7 +716,54 @@
 						"url": "{{root}}/api/{{api_version}}/user/jobs",
 						"description": "The provided access token is first verified, and then a list of all the jobs associated with its owner is generated."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "8d852d8b-5278-4254-9d25-11d239ff28d8",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/user/jobs"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"jobs\": [\n        {\n            \"job_id\": 6,\n            \"job_type\": \"Retail\",\n            \"job_type_value\": 1,\n            \"job_status\": 0,\n            \"status\": \"public\",\n            \"user_id\": 1,\n            \"duration\": 9,\n            \"code_lang\": null,\n            \"title\": \"TestTitle\",\n            \"position\": \"CEO\",\n            \"description\": {\n                \"id\": 6,\n                \"name\": \"description\",\n                \"body\": \"<div>This is the description</div>\",\n                \"record_type\": \"Job\",\n                \"record_id\": 6,\n                \"created_at\": \"2024-01-14T14:52:43.336Z\",\n                \"updated_at\": \"2024-01-14T14:52:43.336Z\"\n            },\n            \"key_skills\": \"Entrepreneurship\",\n            \"salary\": 9,\n            \"euro_salary\": null,\n            \"relevance_score\": null,\n            \"currency\": \"EUR\",\n            \"start_slot\": \"2024-01-14T14:52:42.738Z\",\n            \"longitude\": 11.613942994844358,\n            \"latitude\": 48.1951076,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"created_at\": \"2024-01-14T14:52:43.090Z\",\n            \"updated_at\": \"2024-01-14T14:52:45.377Z\",\n            \"applications_count\": 0,\n            \"employer_rating\": 0,\n            \"job_notifications\": \"1\",\n            \"boost\": 0,\n            \"cv_required\": true,\n            \"allowed_cv_formats\": [\n                \".pdf\",\n                \".docx\",\n                \".txt\",\n                \".xml\"\n            ],\n            \"deleted_at\": null,\n            \"job_value\": \"01010000A0E6100000BC992C49F9184840FCED78BC563A2740000000000000F03F\",\n            \"image_url\": \"https://f005.backblazeb2.com/file/TestEmbloy/w5pv1gu6651lrvl7cif2n0mky9rw?Authorization=3_20240114180906_2ae6c09ee06379503811f6d6_0c8ae065a3fe2b5089233bec26631c03c7a14774_005_20240121180906_0028_dnld\"\n        },\n        {\n            \"job_id\": 5,\n            \"job_type\": \"Retail\",\n            \"job_type_value\": 1,\n            \"job_status\": 0,\n            \"status\": \"public\",\n            \"user_id\": 1,\n            \"duration\": 9,\n            \"code_lang\": null,\n            \"title\": \"TestTitle\",\n            \"position\": \"CEO\",\n            \"description\": {\n                \"id\": 5,\n                \"name\": \"description\",\n                \"body\": \"<div>This is the description</div>\",\n                \"record_type\": \"Job\",\n                \"record_id\": 5,\n                \"created_at\": \"2024-01-14T14:52:32.332Z\",\n                \"updated_at\": \"2024-01-14T14:52:32.332Z\"\n            },\n            \"key_skills\": \"Entrepreneurship\",\n            \"salary\": 9,\n            \"euro_salary\": null,\n            \"relevance_score\": null,\n            \"currency\": \"EUR\",\n            \"start_slot\": \"2024-01-14T14:52:28.218Z\",\n            \"longitude\": 11.613942994844358,\n            \"latitude\": 48.1951076,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"created_at\": \"2024-01-14T14:52:32.258Z\",\n            \"updated_at\": \"2024-01-14T14:52:36.240Z\",\n            \"applications_count\": 0,\n            \"employer_rating\": 0,\n            \"job_notifications\": \"1\",\n            \"boost\": 0,\n            \"cv_required\": true,\n            \"allowed_cv_formats\": [\n                \".pdf\",\n                \".docx\",\n                \".txt\",\n                \".xml\"\n            ],\n            \"deleted_at\": null,\n            \"job_value\": \"01010000A0E6100000BC992C49F9184840FCED78BC563A2740000000000000F03F\",\n            \"image_url\": \"https://f005.backblazeb2.com/file/TestEmbloy/1cvu3n9s0kjkpwm9fu6943w441oo?Authorization=3_20240114180906_f9e5664d3b12d6aa3dda5d3e_9be1993a06b150c1826e3c1321cd513da743dedc_005_20240121180906_0028_dnld\"\n        },\n        {\n            \"job_id\": 4,\n            \"job_type\": \"Retail\",\n            \"job_type_value\": 1,\n            \"job_status\": 0,\n            \"status\": \"public\",\n            \"user_id\": 1,\n            \"duration\": 9,\n            \"code_lang\": null,\n            \"title\": \"TestTitle\",\n            \"position\": \"CEO\",\n            \"description\": {\n                \"id\": 4,\n                \"name\": \"description\",\n                \"body\": \"<div>This is the description</div>\",\n                \"record_type\": \"Job\",\n                \"record_id\": 4,\n                \"created_at\": \"2024-01-14T14:40:26.502Z\",\n                \"updated_at\": \"2024-01-14T14:40:26.502Z\"\n            },\n            \"key_skills\": \"Entrepreneurship\",\n            \"salary\": 9,\n            \"euro_salary\": null,\n            \"relevance_score\": null,\n            \"currency\": \"EUR\",\n            \"start_slot\": \"2024-01-14T14:40:25.811Z\",\n            \"longitude\": 11.613942994844358,\n            \"latitude\": 48.1951076,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"created_at\": \"2024-01-14T14:40:26.413Z\",\n            \"updated_at\": \"2024-01-14T14:40:28.317Z\",\n            \"applications_count\": 0,\n            \"employer_rating\": 0,\n            \"job_notifications\": \"1\",\n            \"boost\": 0,\n            \"cv_required\": true,\n            \"allowed_cv_formats\": [\n                \".pdf\",\n                \".docx\",\n                \".txt\",\n                \".xml\"\n            ],\n            \"deleted_at\": null,\n            \"job_value\": \"01010000A0E6100000BC992C49F9184840FCED78BC563A2740000000000000F03F\",\n            \"image_url\": \"https://f005.backblazeb2.com/file/TestEmbloy/bsjz9rpy4p64vg2iqa730i9bz4oq?Authorization=3_20240114180907_04a816ec2ae30d25bcac6fff_5dc11ade77bd9eb578ca32d7734f049aa2e8fc54_005_20240121180907_0028_dnld\"\n        },\n        {\n            \"job_id\": 3,\n            \"job_type\": \"Retail\",\n            \"job_type_value\": 1,\n            \"job_status\": 0,\n            \"status\": \"public\",\n            \"user_id\": 1,\n            \"duration\": 9,\n            \"code_lang\": null,\n            \"title\": \"TestTitle\",\n            \"position\": \"CEO\",\n            \"description\": {\n                \"id\": 3,\n                \"name\": \"description\",\n                \"body\": \"<div>This is the description</div>\",\n                \"record_type\": \"Job\",\n                \"record_id\": 3,\n                \"created_at\": \"2024-01-14T14:40:16.043Z\",\n                \"updated_at\": \"2024-01-14T14:40:16.043Z\"\n            },\n            \"key_skills\": \"Entrepreneurship\",\n            \"salary\": 9,\n            \"euro_salary\": null,\n            \"relevance_score\": null,\n            \"currency\": \"EUR\",\n            \"start_slot\": \"2024-01-14T14:40:15.511Z\",\n            \"longitude\": 11.613942994844358,\n            \"latitude\": 48.1951076,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"created_at\": \"2024-01-14T14:40:15.843Z\",\n            \"updated_at\": \"2024-01-14T14:40:18.951Z\",\n            \"applications_count\": 0,\n            \"employer_rating\": 0,\n            \"job_notifications\": \"1\",\n            \"boost\": 0,\n            \"cv_required\": true,\n            \"allowed_cv_formats\": [\n                \".pdf\",\n                \".docx\",\n                \".txt\",\n                \".xml\"\n            ],\n            \"deleted_at\": null,\n            \"job_value\": \"01010000A0E6100000BC992C49F9184840FCED78BC563A2740000000000000F03F\",\n            \"image_url\": \"https://f005.backblazeb2.com/file/TestEmbloy/szqr3s98gzvujrejuz5t5iys8xtd?Authorization=3_20240114180907_6b10350e982c856bb78080ff_c379158836741d08d5eee5c56327e779c88ad4ad_005_20240121180907_0028_dnld\"\n        },\n        {\n            \"job_id\": 2,\n            \"job_type\": \"Retail\",\n            \"job_type_value\": 1,\n            \"job_status\": 0,\n            \"status\": \"public\",\n            \"user_id\": 1,\n            \"duration\": 9,\n            \"code_lang\": null,\n            \"title\": \"TestTitle\",\n            \"position\": \"CEO\",\n            \"description\": {\n                \"id\": 2,\n                \"name\": \"description\",\n                \"body\": \"<div>This is the description</div>\",\n                \"record_type\": \"Job\",\n                \"record_id\": 2,\n                \"created_at\": \"2024-01-14T14:40:07.360Z\",\n                \"updated_at\": \"2024-01-14T14:40:07.360Z\"\n            },\n            \"key_skills\": \"Entrepreneurship\",\n            \"salary\": 9,\n            \"euro_salary\": null,\n            \"relevance_score\": null,\n            \"currency\": \"EUR\",\n            \"start_slot\": \"2024-01-14T14:40:06.832Z\",\n            \"longitude\": 11.613942994844358,\n            \"latitude\": 48.1951076,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"created_at\": \"2024-01-14T14:40:07.177Z\",\n            \"updated_at\": \"2024-01-14T14:40:10.878Z\",\n            \"applications_count\": 4,\n            \"employer_rating\": 0,\n            \"job_notifications\": \"1\",\n            \"boost\": 0,\n            \"cv_required\": true,\n            \"allowed_cv_formats\": [\n                \".pdf\",\n                \".docx\",\n                \".txt\",\n                \".xml\"\n            ],\n            \"deleted_at\": null,\n            \"job_value\": \"01010000A0E6100000BC992C49F9184840FCED78BC563A2740000000000000F03F\",\n            \"image_url\": \"https://f005.backblazeb2.com/file/TestEmbloy/p5axgdhejw3al6ytnc572rbsdvrh?Authorization=3_20240114180908_f8d96557d5f1061a45e4ea2b_e018a7a6df0bf07541cbc0d17fe19ea7cdf4948e_005_20240121180908_0028_dnld\"\n        },\n        {\n            \"job_id\": 1,\n            \"job_type\": \"Retail\",\n            \"job_type_value\": 1,\n            \"job_status\": 0,\n            \"status\": \"public\",\n            \"user_id\": 1,\n            \"duration\": 9,\n            \"code_lang\": null,\n            \"title\": \"TestTitle\",\n            \"position\": \"CEO\",\n            \"description\": {\n                \"id\": 1,\n                \"name\": \"description\",\n                \"body\": \"<div>This is the description</div>\",\n                \"record_type\": \"Job\",\n                \"record_id\": 1,\n                \"created_at\": \"2024-01-14T14:39:50.639Z\",\n                \"updated_at\": \"2024-01-14T14:39:50.639Z\"\n            },\n            \"key_skills\": \"Entrepreneurship\",\n            \"salary\": 9,\n            \"euro_salary\": null,\n            \"relevance_score\": null,\n            \"currency\": \"EUR\",\n            \"start_slot\": \"2024-01-14T14:39:49.266Z\",\n            \"longitude\": 11.613942994844358,\n            \"latitude\": 48.1951076,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"created_at\": \"2024-01-14T14:39:50.497Z\",\n            \"updated_at\": \"2024-01-14T14:39:54.686Z\",\n            \"applications_count\": 12,\n            \"employer_rating\": 0,\n            \"job_notifications\": \"1\",\n            \"boost\": 0,\n            \"cv_required\": true,\n            \"allowed_cv_formats\": [\n                \".pdf\",\n                \".docx\",\n                \".txt\"\n            ],\n            \"deleted_at\": null,\n            \"job_value\": \"01010000A0E6100000BC992C49F9184840FCED78BC563A2740000000000000F03F\",\n            \"image_url\": \"https://f005.backblazeb2.com/file/TestEmbloy/hfpb9wbvbyopes44ibt4883bsd1v?Authorization=3_20240114180908_70e1d0a3b3f98d3f7d5f5f95_937b199ec7bc3cc9969bcaa94054b3dc63408234_005_20240121180908_0028_dnld\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "9ff6606f-872a-4364-8649-b13f072a443b",
+							"name": "204 No Content",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/user/jobs"
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						}
+					]
 				},
 				{
 					"name": "Get upcoming jobs",
@@ -758,7 +805,54 @@
 						"url": "{{root}}/api/{{api_version}}/user/applications",
 						"description": "The provided access token is first verified, and then a list of all the job applications associated with its owner is generated."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "3fec3698-4e0c-47aa-bbc3-a91f81778fda",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/user/applications"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"applications\": [\n        {\n            \"job_id\": 2,\n            \"user_id\": 1,\n            \"updated_at\": \"2023-02-27T23:06:10.000Z\",\n            \"created_at\": \"2023-02-27T23:06:10.000Z\",\n            \"status\": \"-1\",\n            \"application_text\": \"Hello World\",\n            \"application_documents\": null,\n            \"response\": \"Not good enough!\",\n            \"deleted_at\": null\n        }\n    ]\n}"
+						},
+						{
+							"id": "f9054ce0-56f7-4971-a515-939fcbd1d57b",
+							"name": "204 No Content",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/user/applications"
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						}
+					]
 				},
 				{
 					"name": "Get preferences",
@@ -824,7 +918,31 @@
 						"url": "{{root}}/api/{{api_version}}/user/reviews",
 						"description": "The provided access token is first verified, and then a list of all reviews associated with its owner is generated.The reviews cover both employer and employee submissions, providing a comprehensive overview of the experiences and perspectives."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "d9ddbcfc-7bc3-4caf-b26e-8f67c4220539",
+							"name": "204 No Content",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/user/reviews"
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						}
+					]
 				},
 				{
 					"name": "Create user",
@@ -1052,7 +1170,52 @@
 						},
 						"description": "Resets the current user's password. Note that the minimum password length is 8 characters and the maximum password length is 72 characters. `password` and `password_confirmation` need to match."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "6729c019-f50b-4311-952b-de6099a3f6e3",
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"user\": {\n        \"password\": \"doublethink\",\n        \"password_confirmation\": \"doublethink\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{root}}/api/{{api_version}}/user/password/reset?token={{password_reset_token}}",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"{{api_version}}",
+										"user",
+										"password",
+										"reset"
+									],
+									"query": [
+										{
+											"key": "token",
+											"value": "{{password_reset_token}}",
+											"description": "Password reset token provided which can also be found in the email sent to the user when he initiates the password reset process"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"Token has either expired, has a purpose mismatch, is for another record, or has been tampered with\"\n}"
+						}
+					]
 				},
 				{
 					"name": "Update  password",
@@ -1135,7 +1298,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"user\": {\r\n    \"email\": \"winston.smith@embloy.com\",\r\n    \"first_name\": \"Winston\",\r\n    \"last_name\": \"Smith\",\r\n    \"password\": \"doublethink\",\r\n    \"password_confirmation\": \"doublethink\"\r\n  }\r\n}",
+							"raw": "{\r\n  \"user\": {\r\n    \"email\": \"winston.smith@embloy.com\",\r\n    \"first_name\": \"Winston\",\r\n    \"last_name\": \"Smith\"\r\n  }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1145,7 +1308,40 @@
 						"url": "{{root}}/api/{{api_version}}/user",
 						"description": "The provided access token is first verified, and then the current user's profile is updated."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "a254cb10-5b9c-4c6c-94ad-cae959439799",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"user\": {\r\n    \"email\": \"winston.smith@embloy.com\",\r\n    \"first_name\": \"Winston\",\r\n    \"last_name\": \"Smith\",\r\n    \"password\": \"doublethink\",\r\n    \"password_confirmation\": \"doublethink\"\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{root}}/api/{{api_version}}/user"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"Successfully updated user.\"\n}"
+						}
+					]
 				},
 				{
 					"name": "Delete user",
@@ -1685,7 +1881,7 @@
 					"response": [
 						{
 							"id": "5ace596b-8afe-40d7-9307-3d5dccdb6bb9",
-							"name": "200",
+							"name": "200 OK",
 							"originalRequest": {
 								"method": "POST",
 								"header": [
@@ -1707,7 +1903,7 @@
 						},
 						{
 							"id": "c5a95498-c707-4753-8f36-986e9a0e9120",
-							"name": "401",
+							"name": "401 Unauthorized",
 							"originalRequest": {
 								"method": "POST",
 								"header": [
@@ -1902,6 +2098,58 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"mode\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is malformed or unknown\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "50e89a30-e63e-4d04-b394-2f47a7053a56",
+							"name": "401 Unauthorized",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "client_token",
+										"value": "{{client_token}}",
+										"description": "A valid client_token is needed to authenticate and authorize the client. For further information see: [client_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#86b2cf1c-b02e-4d83-b65f-9c5e03cc89c4)",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "mode",
+											"value": "job",
+											"description": "Describes what type of Quicklink service the portal is needed for. Allowed values: 'job'",
+											"type": "text"
+										},
+										{
+											"key": "success_url",
+											"value": "/success",
+											"description": "User gets redirected to this URL if application process succeeds ",
+											"type": "text"
+										},
+										{
+											"key": "cancel_url",
+											"value": "/failure",
+											"description": "User gets redirected to this URL if application process fails",
+											"type": "text"
+										},
+										{
+											"key": "job_slug",
+											"value": "job#1",
+											"description": "Combined with the client's ID, this is used as an unique identifier for the client's job. ",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/sdk/request/auth/token"
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"token\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is invalid or expired\"\n        }\n    ]\n}"
 						}
 					]
 				},
