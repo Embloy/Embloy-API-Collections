@@ -257,7 +257,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{root}}/api/{{api_version}}/find?query=universität&sort_by=date_desc",
+							"raw": "{{root}}/api/{{api_version}}/find?query=Baristsa&job_type=Retail&sort_by=date_desc",
 							"host": [
 								"{{root}}"
 							],
@@ -269,14 +269,13 @@
 							"query": [
 								{
 									"key": "query",
-									"value": "universität",
+									"value": "Baristsa",
 									"description": "Returns jobs with titles, positions and descriptions matching your query"
 								},
 								{
 									"key": "job_type",
-									"value": "Food",
-									"description": "Filter by a job category of your choice",
-									"disabled": true
+									"value": "Retail",
+									"description": "Filter by a job category of your choice"
 								},
 								{
 									"key": "sort_by",
@@ -3137,7 +3136,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "ddd2e2ce-3b2c-41fc-b5b9-7df0abadbb01",
+				"id": "f61ba520-8883-4235-9652-b452ba8c4258",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3147,7 +3146,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "558125c6-afe9-4c3e-a70e-b533d18576c6",
+				"id": "114867c0-f4cd-4d20-97a5-68865064bece",
 				"type": "text/javascript",
 				"exec": [
 					""
