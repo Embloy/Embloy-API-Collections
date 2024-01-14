@@ -551,7 +551,7 @@
 									"key": "status",
 									"value": "public",
 									"type": "text",
-									"description": "Visibility status"
+									"description": "Visibility status ('private', 'public', 'archived')"
 								},
 								{
 									"key": "longitude",
@@ -593,7 +593,6 @@
 									"key": "image_url",
 									"type": "file",
 									"description": "Cover image of your job posting",
-									"fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
 									"src": "/C:/Users/carlo/Pictures/Saved Pictures/60151e857007585820e506460334a361a6475c3cf165ea07ff9d0400df8d9ec4.jpg"
 								}
 							]
@@ -3137,7 +3136,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "655fa167-c4be-46b2-8db2-7c94444cffb7",
+				"id": "76179098-2479-45f3-b568-c28a6b9f46bb",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3147,7 +3146,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "40ac914b-2502-46d2-9e45-18264b133c4d",
+				"id": "3e1ec5f5-a7ec-479d-92bb-f5a3072b94b3",
 				"type": "text/javascript",
 				"exec": [
 					""
