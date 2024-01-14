@@ -1478,7 +1478,29 @@
 								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/accept",
+						"url": {
+							"raw": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/accept?response=Great Job!",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"api",
+								"{{api_version}}",
+								"jobs",
+								"{{own_job_id}}",
+								"applications",
+								"{{application_id}}",
+								"accept"
+							],
+							"query": [
+								{
+									"key": "response",
+									"value": "Great Job!",
+									"description": "Short (max 500 character) long test for feedback to the applicant.",
+									"type": "text"
+								}
+							]
+						},
 						"description": "Accepts an application for one of your jobs (optionally with a response which will be shown to the applicant)."
 					},
 					"response": [
@@ -1540,10 +1562,32 @@
 							{
 								"key": "access_token",
 								"value": "{{access_token}}",
-								"type": "text"
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/reject",
+						"url": {
+							"raw": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/reject?response=Not good enough!",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"api",
+								"{{api_version}}",
+								"jobs",
+								"{{own_job_id}}",
+								"applications",
+								"{{application_id}}",
+								"reject"
+							],
+							"query": [
+								{
+									"key": "response",
+									"value": "Not good enough!",
+									"description": "Short (max 500 character) long test for feedback to the applicant."
+								}
+							]
+						},
 						"description": "Rejects an application for one of your jobs (optionally with a response which will be shown to the applicant)."
 					},
 					"response": [
@@ -1862,59 +1906,7 @@
 					]
 				},
 				{
-					"name": "[NOT_PLANNED] Application portal Copy",
-					"id": "f2296f26-aeba-4a03-a1a4-3172527af937",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "mode",
-									"value": "job",
-									"description": "Describes what type of Quicklink service the portal is needed for. Allowed values: 'job'",
-									"type": "text"
-								},
-								{
-									"key": "success_url",
-									"value": "/success",
-									"description": "User gets redirected to this URL if application process succeeds ",
-									"type": "text"
-								},
-								{
-									"key": "cancel_url",
-									"value": "/failure",
-									"description": "User gets redirected to this URL if application process fails",
-									"type": "text"
-								},
-								{
-									"key": "job_slug",
-									"value": "job#1",
-									"description": "Combined with the client's ID, this is used as an unique identifier for the client's job. ",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "?client_token={{client_token}}",
-							"query": [
-								{
-									"key": "client_token",
-									"value": "{{client_token}}",
-									"description": "A valid client_token is needed to authenticate and authorize the client. For further information see: [client_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#86b2cf1c-b02e-4d83-b65f-9c5e03cc89c4)"
-								}
-							]
-						},
-						"description": "This endpoint is responsible for creating a new application session containing a **`request_token`**which can be further used to apply for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
-					},
-					"response": []
-				},
-				{
-					"name": "Capture application",
+					"name": "[TODO] Capture application",
 					"id": "d30ba0ba-7c54-4b48-a24f-da3741125391",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1951,7 +1943,7 @@
 					"response": []
 				},
 				{
-					"name": "Refresh-Token (applicant)",
+					"name": "[IGNORE] Refresh-Token (applicant)",
 					"id": "25d2d45a-6776-4b6c-b140-268b32c1643c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1972,7 +1964,7 @@
 					"response": []
 				},
 				{
-					"name": "Access-Token (applicant)",
+					"name": "[IGNORE] Access-Token (applicant)",
 					"id": "945d98c2-0bef-4cc9-a511-f1eadf0a5571",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -2178,6 +2170,29 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"token\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is invalid or expired\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "9ede5432-d0e5-41e9-a07a-966361e6432e",
+							"name": "404 Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/client/subscriptions"
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"error\": \"User or payment processor not found\"\n}"
 						}
 					]
 				},
@@ -2896,7 +2911,54 @@
 						"url": "{{root}}/api/{{api_version}}/checkout/portal",
 						"description": "Returns a portal session for the customer's stripe dashboard."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "e5db5242-b18d-4895-9fe4-daa6c3f84ba8",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
+										"type": "text"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/checkout/portal"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"portal_session\": {\n        \"id\": \"bps_1OYY5CKMiBrigNb6I2axKOQz\",\n        \"object\": \"billing_portal.session\",\n        \"configuration\": \"bpc_1OUyIDKMiBrigNb6UElcAB5n\",\n        \"created\": 1705255614,\n        \"customer\": \"cus_PNIfAp6SlEirfb\",\n        \"flow\": null,\n        \"livemode\": false,\n        \"locale\": null,\n        \"on_behalf_of\": null,\n        \"return_url\": \"https://genius.embloy.com\",\n        \"url\": \"https://billing.stripe.com/p/session/test_YWNjdF8xT1RENzFLTWlCcmlnTmI2LF9QTklnQlc2VFFtM2loRFdPakUybXZqbk82dVozdWNV0100qLX3d8vj\"\n    }\n}"
+						},
+						{
+							"id": "9218c094-3df9-477f-a779-59048d14311d",
+							"name": "401 Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
+										"type": "text"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/checkout/portal"
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"subscription\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is invalid or expired\"\n        }\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "Checkout",
