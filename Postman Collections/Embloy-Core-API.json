@@ -358,133 +358,6 @@
 					"response": []
 				},
 				{
-					"name": "Update job",
-					"id": "8917ff93-4b2b-486c-849b-a63e6d2b450e",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PATCH",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "title",
-									"value": "TestTitle",
-									"type": "text",
-									"description": "Job's title."
-								},
-								{
-									"key": "job_type",
-									"value": "Retail",
-									"type": "text",
-									"description": "Job category"
-								},
-								{
-									"key": "start_slot",
-									"value": "{{$isoTimestamp}}",
-									"type": "text",
-									"description": "The timestamp of when the job starts"
-								},
-								{
-									"key": "position",
-									"value": "CEO",
-									"type": "text",
-									"description": "The open position"
-								},
-								{
-									"key": "key_skills",
-									"value": "Entrepreneurship",
-									"type": "text",
-									"description": "Key skills relevant for this job"
-								},
-								{
-									"key": "duration",
-									"value": "9",
-									"type": "text",
-									"description": "The job duration in days"
-								},
-								{
-									"key": "salary",
-									"value": "9",
-									"type": "text",
-									"description": "The job's salary"
-								},
-								{
-									"key": "description",
-									"value": "<div>Hier steht die Desription</div>",
-									"type": "text",
-									"description": "A brief description (<500characters) of the job"
-								},
-								{
-									"key": "status",
-									"value": "private",
-									"type": "text",
-									"description": "Visibility status"
-								},
-								{
-									"key": "longitude",
-									"value": "11.613942994844358",
-									"type": "text",
-									"description": "The job's longitde"
-								},
-								{
-									"key": "latitude",
-									"value": "48.1951076",
-									"type": "text",
-									"description": "The job's latitude"
-								},
-								{
-									"key": "job_notifications",
-									"value": "1",
-									"type": "text",
-									"description": "Enable/Disable notifications for this job"
-								},
-								{
-									"key": "currency",
-									"value": "EUR",
-									"type": "text",
-									"description": "Your preferred currency"
-								},
-								{
-									"key": "image_url",
-									"type": "file",
-									"description": "Cover image of your job posting",
-									"src": "Pda0ojbZI/test_image.png"
-								}
-							]
-						},
-						"url": {
-							"raw": "{{root}}/api/{{api_version}}/jobs?id={{own_job_id}}",
-							"host": [
-								"{{root}}"
-							],
-							"path": [
-								"api",
-								"{{api_version}}",
-								"jobs"
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": "{{own_job_id}}",
-									"description": "The id of the job you want to update"
-								}
-							]
-						},
-						"description": "The provided access token is first verified, and then an existing job is updated."
-					},
-					"response": []
-				},
-				{
 					"name": "Create job",
 					"id": "832650d0-f343-4f90-9dec-e5828711156a",
 					"protocolProfileBehavior": {
@@ -621,6 +494,133 @@
 						},
 						"url": "{{root}}/api/{{api_version}}/jobs",
 						"description": "The provided access token is first verified, and then a new job is created. Upon creation, a job is listed as public. Public jobs undergo evaluation by Embloy's Job Ranking Engine and may appear in a user's individual job feed. Moreover, such jobs are open to applications from interested candidates. The job creator/owner or correspondingly authorized users correspondingly authorized users are able to limit the visibility of the job to \"private\". Private jobs are ignored by the Job Ranking Engine and so do not appear to any job seeking user."
+					},
+					"response": []
+				},
+				{
+					"name": "Update job",
+					"id": "8917ff93-4b2b-486c-849b-a63e6d2b450e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "TestTitle",
+									"type": "text",
+									"description": "Job's title."
+								},
+								{
+									"key": "job_type",
+									"value": "Retail",
+									"type": "text",
+									"description": "Job category"
+								},
+								{
+									"key": "start_slot",
+									"value": "{{$isoTimestamp}}",
+									"type": "text",
+									"description": "The timestamp of when the job starts"
+								},
+								{
+									"key": "position",
+									"value": "CEO",
+									"type": "text",
+									"description": "The open position"
+								},
+								{
+									"key": "key_skills",
+									"value": "Entrepreneurship",
+									"type": "text",
+									"description": "Key skills relevant for this job"
+								},
+								{
+									"key": "duration",
+									"value": "9",
+									"type": "text",
+									"description": "The job duration in days"
+								},
+								{
+									"key": "salary",
+									"value": "9",
+									"type": "text",
+									"description": "The job's salary"
+								},
+								{
+									"key": "description",
+									"value": "<div>Hier steht die Desription</div>",
+									"type": "text",
+									"description": "A brief description (<500characters) of the job"
+								},
+								{
+									"key": "status",
+									"value": "private",
+									"type": "text",
+									"description": "Visibility status"
+								},
+								{
+									"key": "longitude",
+									"value": "11.613942994844358",
+									"type": "text",
+									"description": "The job's longitde"
+								},
+								{
+									"key": "latitude",
+									"value": "48.1951076",
+									"type": "text",
+									"description": "The job's latitude"
+								},
+								{
+									"key": "job_notifications",
+									"value": "1",
+									"type": "text",
+									"description": "Enable/Disable notifications for this job"
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"type": "text",
+									"description": "Your preferred currency"
+								},
+								{
+									"key": "image_url",
+									"type": "file",
+									"description": "Cover image of your job posting",
+									"src": "Pda0ojbZI/test_image.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{root}}/api/{{api_version}}/jobs?id={{own_job_id}}",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"api",
+								"{{api_version}}",
+								"jobs"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "{{own_job_id}}",
+									"description": "The id of the job you want to update"
+								}
+							]
+						},
+						"description": "The provided access token is first verified, and then an existing job is updated."
 					},
 					"response": []
 				},
@@ -1225,44 +1225,6 @@
 					"response": []
 				},
 				{
-					"name": "Accept application",
-					"id": "2f949f66-58b0-48c0-88c6-dfae0de0e7f5",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PATCH",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text"
-							}
-						],
-						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/46/reject"
-					},
-					"response": []
-				},
-				{
-					"name": "Reject application",
-					"id": "801f81e1-f467-4c57-ac48-aafec707a90a",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PATCH",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text"
-							}
-						],
-						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/1/reject"
-					},
-					"response": []
-				},
-				{
 					"name": "Submit application",
 					"id": "a9827e37-a7d1-4eeb-af07-2fa5890a2bc9",
 					"protocolProfileBehavior": {
@@ -1288,12 +1250,50 @@
 								{
 									"key": "application_attachment",
 									"type": "file",
-									"src": "/C:/Users/carlo/Downloads/Zusammenfassung.pdf"
+									"src": "b1lpMViGB/awafww.txt"
 								}
 							]
 						},
-						"url": "{{root}}/api/{{api_version}}/jobs/38/applications",
+						"url": "{{root}}/api/{{api_version}}/jobs/1/applications",
 						"description": "The provided access token is first verified, and then a new application in the name of the associated user is submitted to the specified job. For Embloy v0 the user account (in detail the user profile) is considered to be the figurehead with which one applies for a job."
+					},
+					"response": []
+				},
+				{
+					"name": "Accept application",
+					"id": "2f949f66-58b0-48c0-88c6-dfae0de0e7f5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/reject"
+					},
+					"response": []
+				},
+				{
+					"name": "Reject application",
+					"id": "801f81e1-f467-4c57-ac48-aafec707a90a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/reject"
 					},
 					"response": []
 				}
@@ -2098,364 +2098,6 @@
 			"name": "Stripe",
 			"item": [
 				{
-					"name": "Checkout",
-					"id": "19871b4d-01c2-4823-9de1-272ee3d6adfc",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "{{root}}/api/{{api_version}}/checkout?tier=premium&payment_mode=subscription",
-							"host": [
-								"{{root}}"
-							],
-							"path": [
-								"api",
-								"{{api_version}}",
-								"checkout"
-							],
-							"query": [
-								{
-									"key": "tier",
-									"value": "premium",
-									"description": "Subscription tier (basic, premium, enterprise_1, enterprise_2, enterprise_3)"
-								},
-								{
-									"key": "payment_mode",
-									"value": "subscription",
-									"description": "Payment mode (can either be a recurring 'subscription' or a one-time 'payment')"
-								},
-								{
-									"key": "payment_method_token",
-									"value": "",
-									"description": "Add the payment method via the API and mark it as the default for future payments",
-									"disabled": true
-								}
-							]
-						},
-						"description": "Creates a checkout session for either a recurring 'subscription' or a one-time 'payment'.\n\nReturns customer and payment information including stripe url (e.g., \"[https://checkout.stripe.com/c/pay/...\"](https://checkout.stripe.com/c/pay/...))"
-					},
-					"response": [
-						{
-							"id": "0b92552c-6b8b-441d-a55e-da2a37153ac2",
-							"name": "200 OK",
-							"originalRequest": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "{{root}}/api/{{api_version}}/checkout?tier=basic&payment_mode=subscription",
-									"host": [
-										"{{root}}"
-									],
-									"path": [
-										"api",
-										"{{api_version}}",
-										"checkout"
-									],
-									"query": [
-										{
-											"key": "tier",
-											"value": "basic",
-											"description": "Subscription tier (basic, premium, enterprise_1, enterprise_2, enterprise_3)"
-										},
-										{
-											"key": "payment_mode",
-											"value": "subscription",
-											"description": "Payment mode (can either be a recurring 'subscription' or a one-time 'payment')"
-										},
-										{
-											"key": "payment_method_token",
-											"value": "",
-											"description": "Add the payment method via the API and mark it as the default for future payments",
-											"disabled": true
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"id\": \"cs_test_a147VVz9czrVJ7yS1XDFP0H0ZpYvjvGorBUCznrTc2MpWLxaTGu6f7HKvM\",\n    \"object\": \"checkout.session\",\n    \"after_expiration\": null,\n    \"allow_promotion_codes\": null,\n    \"amount_subtotal\": 1000,\n    \"amount_total\": 1000,\n    \"automatic_tax\": {\n        \"enabled\": false,\n        \"status\": null\n    },\n    \"billing_address_collection\": null,\n    \"cancel_url\": \"http://localhost:3000/api/v0/checkout/failure?session_id={CHECKOUT_SESSION_ID}\",\n    \"client_reference_id\": null,\n    \"client_secret\": null,\n    \"consent\": null,\n    \"consent_collection\": null,\n    \"created\": 1704391158,\n    \"currency\": \"eur\",\n    \"currency_conversion\": null,\n    \"custom_fields\": [],\n    \"custom_text\": {\n        \"after_submit\": null,\n        \"shipping_address\": null,\n        \"submit\": null,\n        \"terms_of_service_acceptance\": null\n    },\n    \"customer\": \"cus_PJVtS7Rf19hX4j\",\n    \"customer_creation\": null,\n    \"customer_details\": {\n        \"address\": null,\n        \"email\": \"winston.smith@embloy.com\",\n        \"name\": null,\n        \"phone\": null,\n        \"tax_exempt\": \"none\",\n        \"tax_ids\": null\n    },\n    \"customer_email\": null,\n    \"expires_at\": 1704477558,\n    \"invoice\": null,\n    \"invoice_creation\": null,\n    \"livemode\": false,\n    \"locale\": null,\n    \"metadata\": {},\n    \"mode\": \"subscription\",\n    \"payment_intent\": null,\n    \"payment_link\": null,\n    \"payment_method_collection\": \"always\",\n    \"payment_method_configuration_details\": null,\n    \"payment_method_options\": null,\n    \"payment_method_types\": [\n        \"card\"\n    ],\n    \"payment_status\": \"unpaid\",\n    \"phone_number_collection\": {\n        \"enabled\": false\n    },\n    \"recovered_from\": null,\n    \"setup_intent\": null,\n    \"shipping_address_collection\": null,\n    \"shipping_cost\": null,\n    \"shipping_details\": null,\n    \"shipping_options\": [],\n    \"status\": \"open\",\n    \"submit_type\": null,\n    \"subscription\": null,\n    \"success_url\": \"http://localhost:3000/api/v0/checkout/subscription/success?session_id={CHECKOUT_SESSION_ID}\",\n    \"total_details\": {\n        \"amount_discount\": 0,\n        \"amount_shipping\": 0,\n        \"amount_tax\": 0\n    },\n    \"ui_mode\": \"hosted\",\n    \"url\": \"https://checkout.stripe.com/c/pay/cs_test_a147VVz9czrVJ7yS1XDFP0H0ZpYvjvGorBUCznrTc2MpWLxaTGu6f7HKvM#fidkdWxOYHwnPyd1blpxYHZxWjA0SlFBMjROSGxHd2xiS2czV251QDFzcUBkVV9oZjM3b3VrM25AQjZtd2JWZzU3dz1mbjJgV0RuUHdDXEtEcndObEZqbHN8MjBhd101SG9MV2hmbUZUb3FwNTVCTUQwdnxGPScpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl\"\n}"
-						},
-						{
-							"id": "3ff26a2c-0f96-4b4a-9312-44c1f55149a5",
-							"name": "400 Bad Request",
-							"originalRequest": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "{{root}}/api/{{api_version}}/checkout?tier=basic&payment_mode=test",
-									"host": [
-										"{{root}}"
-									],
-									"path": [
-										"api",
-										"{{api_version}}",
-										"checkout"
-									],
-									"query": [
-										{
-											"key": "tier",
-											"value": "basic",
-											"description": "Subscription tier (basic, premium, enterprise_1, enterprise_2, enterprise_3)"
-										},
-										{
-											"key": "payment_mode",
-											"value": "test",
-											"description": "Payment mode (can either be a recurring 'subscription' or a one-time 'payment')"
-										},
-										{
-											"key": "payment_method_token",
-											"value": "",
-											"description": "Add the payment method via the API and mark it as the default for future payments",
-											"disabled": true
-										}
-									]
-								}
-							},
-							"status": "Bad Request",
-							"code": 400,
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"error\": \"Invalid mode: must be one of payment, setup, or subscription\"\n}"
-						},
-						{
-							"id": "f096b427-257f-463f-9951-80f58614a836",
-							"name": "400 Bad Request",
-							"originalRequest": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "{{root}}/api/{{api_version}}/checkout?tier=basic&payment_mode=test",
-									"host": [
-										"{{root}}"
-									],
-									"path": [
-										"api",
-										"{{api_version}}",
-										"checkout"
-									],
-									"query": [
-										{
-											"key": "tier",
-											"value": "basic",
-											"description": "Subscription tier (basic, premium, enterprise_1, enterprise_2, enterprise_3)"
-										},
-										{
-											"key": "payment_mode",
-											"value": "test",
-											"description": "Payment mode (can either be a recurring 'subscription' or a one-time 'payment')"
-										},
-										{
-											"key": "payment_method_token",
-											"value": "",
-											"description": "Add the payment method via the API and mark it as the default for future payments",
-											"disabled": true
-										}
-									]
-								}
-							},
-							"status": "Bad Request",
-							"code": 400,
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"error\": \"Invalid tier: must be one of basic, premium, enterprise_1, enterprise_2 or enterprise_3\"\n}"
-						},
-						{
-							"id": "cd28beb3-42b4-470d-9135-a34a9f8c1457",
-							"name": "400 Bad Request",
-							"originalRequest": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "{{root}}/api/{{api_version}}/checkout",
-									"host": [
-										"{{root}}"
-									],
-									"path": [
-										"api",
-										"{{api_version}}",
-										"checkout"
-									],
-									"query": [
-										{
-											"key": "tier",
-											"value": "price_1OUhNDKMiBrigNb67roRCr5S",
-											"description": "Subscription tier (basic, premium, enterprise_1, enterprise_2, enterprise_3)",
-											"disabled": true
-										},
-										{
-											"key": "payment_mode",
-											"value": "payment",
-											"description": "Payment mode (can either be a recurring 'subscription' or a one-time 'payment')",
-											"disabled": true
-										},
-										{
-											"key": "payment_method_token",
-											"value": "",
-											"description": "Add the payment method via the API and mark it as the default for future payments",
-											"disabled": true
-										}
-									]
-								}
-							},
-							"status": "Bad Request",
-							"code": 400,
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"error\": \"You must pass either `subscription_data` or `tier` or `mode`.\"\n}"
-						},
-						{
-							"id": "ea8d6c3e-bc29-4a1b-84fd-aafd41c0e9e6",
-							"name": "400 Bad Request",
-							"originalRequest": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "{{root}}/api/{{api_version}}/checkout?tier=basic&payment_mode=subscription",
-									"host": [
-										"{{root}}"
-									],
-									"path": [
-										"api",
-										"{{api_version}}",
-										"checkout"
-									],
-									"query": [
-										{
-											"key": "tier",
-											"value": "basic",
-											"description": "Subscription tier (basic, premium, enterprise_1, enterprise_2, enterprise_3)"
-										},
-										{
-											"key": "payment_mode",
-											"value": "subscription",
-											"description": "Payment mode (can either be a recurring 'subscription' or a one-time 'payment')"
-										},
-										{
-											"key": "payment_method_token",
-											"value": "",
-											"description": "Add the payment method via the API and mark it as the default for future payments",
-											"disabled": true
-										}
-									]
-								}
-							},
-							"status": "Bad Request",
-							"code": 400,
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"error\": \"You specified `payment` mode but passed a recurring price. Either switch to `subscription` mode or use only one-time prices.\"\n}"
-						},
-						{
-							"id": "9db013fd-5426-4a1c-bdfe-36925ef09a61",
-							"name": "401 Unauthorized",
-							"originalRequest": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "{{root}}/api/{{api_version}}/checkout?line_items=price_1OUhNDKMiBrigNb67roRCr5S&payment_mode=payment",
-									"host": [
-										"{{root}}"
-									],
-									"path": [
-										"api",
-										"{{api_version}}",
-										"checkout"
-									],
-									"query": [
-										{
-											"key": "line_items",
-											"value": "price_1OUhNDKMiBrigNb67roRCr5S",
-											"description": "Subscription tier (one-off payment: 'price_1OUhNDKMiBrigNb67roRCr5S', premium subscription: 'price_1OUqrPKMiBrigNb6lia8VWiD')"
-										},
-										{
-											"key": "payment_mode",
-											"value": "payment",
-											"description": "Payment mode (can either be a recurring 'subscription' or a one-time 'payment')"
-										},
-										{
-											"key": "payment_method_token",
-											"value": "",
-											"description": "Add the payment method via the API and mark it as the default for future payments",
-											"disabled": true
-										}
-									]
-								}
-							},
-							"status": "Unauthorized",
-							"code": 401,
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"token\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is invalid or expired\"\n        }\n    ]\n}"
-						}
-					]
-				},
-				{
 					"name": "Successful payment",
 					"id": "42f00b33-2fb5-48cf-94ac-48ef299b5c9b",
 					"protocolProfileBehavior": {
@@ -2959,6 +2601,364 @@
 						"description": "Returns a portal session for the customer's stripe dashboard."
 					},
 					"response": []
+				},
+				{
+					"name": "Checkout",
+					"id": "19871b4d-01c2-4823-9de1-272ee3d6adfc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{root}}/api/{{api_version}}/checkout?tier=premium&payment_mode=subscription",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"api",
+								"{{api_version}}",
+								"checkout"
+							],
+							"query": [
+								{
+									"key": "tier",
+									"value": "premium",
+									"description": "Subscription tier (basic, premium, enterprise_1, enterprise_2, enterprise_3)"
+								},
+								{
+									"key": "payment_mode",
+									"value": "subscription",
+									"description": "Payment mode (can either be a recurring 'subscription' or a one-time 'payment')"
+								},
+								{
+									"key": "payment_method_token",
+									"value": "",
+									"description": "Add the payment method via the API and mark it as the default for future payments",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Creates a checkout session for either a recurring 'subscription' or a one-time 'payment'.\n\nReturns customer and payment information including stripe url (e.g., \"[https://checkout.stripe.com/c/pay/...\"](https://checkout.stripe.com/c/pay/...))"
+					},
+					"response": [
+						{
+							"id": "0b92552c-6b8b-441d-a55e-da2a37153ac2",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{root}}/api/{{api_version}}/checkout?tier=basic&payment_mode=subscription",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"{{api_version}}",
+										"checkout"
+									],
+									"query": [
+										{
+											"key": "tier",
+											"value": "basic",
+											"description": "Subscription tier (basic, premium, enterprise_1, enterprise_2, enterprise_3)"
+										},
+										{
+											"key": "payment_mode",
+											"value": "subscription",
+											"description": "Payment mode (can either be a recurring 'subscription' or a one-time 'payment')"
+										},
+										{
+											"key": "payment_method_token",
+											"value": "",
+											"description": "Add the payment method via the API and mark it as the default for future payments",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"id\": \"cs_test_a147VVz9czrVJ7yS1XDFP0H0ZpYvjvGorBUCznrTc2MpWLxaTGu6f7HKvM\",\n    \"object\": \"checkout.session\",\n    \"after_expiration\": null,\n    \"allow_promotion_codes\": null,\n    \"amount_subtotal\": 1000,\n    \"amount_total\": 1000,\n    \"automatic_tax\": {\n        \"enabled\": false,\n        \"status\": null\n    },\n    \"billing_address_collection\": null,\n    \"cancel_url\": \"http://localhost:3000/api/v0/checkout/failure?session_id={CHECKOUT_SESSION_ID}\",\n    \"client_reference_id\": null,\n    \"client_secret\": null,\n    \"consent\": null,\n    \"consent_collection\": null,\n    \"created\": 1704391158,\n    \"currency\": \"eur\",\n    \"currency_conversion\": null,\n    \"custom_fields\": [],\n    \"custom_text\": {\n        \"after_submit\": null,\n        \"shipping_address\": null,\n        \"submit\": null,\n        \"terms_of_service_acceptance\": null\n    },\n    \"customer\": \"cus_PJVtS7Rf19hX4j\",\n    \"customer_creation\": null,\n    \"customer_details\": {\n        \"address\": null,\n        \"email\": \"winston.smith@embloy.com\",\n        \"name\": null,\n        \"phone\": null,\n        \"tax_exempt\": \"none\",\n        \"tax_ids\": null\n    },\n    \"customer_email\": null,\n    \"expires_at\": 1704477558,\n    \"invoice\": null,\n    \"invoice_creation\": null,\n    \"livemode\": false,\n    \"locale\": null,\n    \"metadata\": {},\n    \"mode\": \"subscription\",\n    \"payment_intent\": null,\n    \"payment_link\": null,\n    \"payment_method_collection\": \"always\",\n    \"payment_method_configuration_details\": null,\n    \"payment_method_options\": null,\n    \"payment_method_types\": [\n        \"card\"\n    ],\n    \"payment_status\": \"unpaid\",\n    \"phone_number_collection\": {\n        \"enabled\": false\n    },\n    \"recovered_from\": null,\n    \"setup_intent\": null,\n    \"shipping_address_collection\": null,\n    \"shipping_cost\": null,\n    \"shipping_details\": null,\n    \"shipping_options\": [],\n    \"status\": \"open\",\n    \"submit_type\": null,\n    \"subscription\": null,\n    \"success_url\": \"http://localhost:3000/api/v0/checkout/subscription/success?session_id={CHECKOUT_SESSION_ID}\",\n    \"total_details\": {\n        \"amount_discount\": 0,\n        \"amount_shipping\": 0,\n        \"amount_tax\": 0\n    },\n    \"ui_mode\": \"hosted\",\n    \"url\": \"https://checkout.stripe.com/c/pay/cs_test_a147VVz9czrVJ7yS1XDFP0H0ZpYvjvGorBUCznrTc2MpWLxaTGu6f7HKvM#fidkdWxOYHwnPyd1blpxYHZxWjA0SlFBMjROSGxHd2xiS2czV251QDFzcUBkVV9oZjM3b3VrM25AQjZtd2JWZzU3dz1mbjJgV0RuUHdDXEtEcndObEZqbHN8MjBhd101SG9MV2hmbUZUb3FwNTVCTUQwdnxGPScpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl\"\n}"
+						},
+						{
+							"id": "3ff26a2c-0f96-4b4a-9312-44c1f55149a5",
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{root}}/api/{{api_version}}/checkout?tier=basic&payment_mode=test",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"{{api_version}}",
+										"checkout"
+									],
+									"query": [
+										{
+											"key": "tier",
+											"value": "basic",
+											"description": "Subscription tier (basic, premium, enterprise_1, enterprise_2, enterprise_3)"
+										},
+										{
+											"key": "payment_mode",
+											"value": "test",
+											"description": "Payment mode (can either be a recurring 'subscription' or a one-time 'payment')"
+										},
+										{
+											"key": "payment_method_token",
+											"value": "",
+											"description": "Add the payment method via the API and mark it as the default for future payments",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"error\": \"Invalid mode: must be one of payment, setup, or subscription\"\n}"
+						},
+						{
+							"id": "f096b427-257f-463f-9951-80f58614a836",
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{root}}/api/{{api_version}}/checkout?tier=basic&payment_mode=test",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"{{api_version}}",
+										"checkout"
+									],
+									"query": [
+										{
+											"key": "tier",
+											"value": "basic",
+											"description": "Subscription tier (basic, premium, enterprise_1, enterprise_2, enterprise_3)"
+										},
+										{
+											"key": "payment_mode",
+											"value": "test",
+											"description": "Payment mode (can either be a recurring 'subscription' or a one-time 'payment')"
+										},
+										{
+											"key": "payment_method_token",
+											"value": "",
+											"description": "Add the payment method via the API and mark it as the default for future payments",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"error\": \"Invalid tier: must be one of basic, premium, enterprise_1, enterprise_2 or enterprise_3\"\n}"
+						},
+						{
+							"id": "cd28beb3-42b4-470d-9135-a34a9f8c1457",
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{root}}/api/{{api_version}}/checkout",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"{{api_version}}",
+										"checkout"
+									],
+									"query": [
+										{
+											"key": "tier",
+											"value": "price_1OUhNDKMiBrigNb67roRCr5S",
+											"description": "Subscription tier (basic, premium, enterprise_1, enterprise_2, enterprise_3)",
+											"disabled": true
+										},
+										{
+											"key": "payment_mode",
+											"value": "payment",
+											"description": "Payment mode (can either be a recurring 'subscription' or a one-time 'payment')",
+											"disabled": true
+										},
+										{
+											"key": "payment_method_token",
+											"value": "",
+											"description": "Add the payment method via the API and mark it as the default for future payments",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"error\": \"You must pass either `subscription_data` or `tier` or `mode`.\"\n}"
+						},
+						{
+							"id": "ea8d6c3e-bc29-4a1b-84fd-aafd41c0e9e6",
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{root}}/api/{{api_version}}/checkout?tier=basic&payment_mode=subscription",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"{{api_version}}",
+										"checkout"
+									],
+									"query": [
+										{
+											"key": "tier",
+											"value": "basic",
+											"description": "Subscription tier (basic, premium, enterprise_1, enterprise_2, enterprise_3)"
+										},
+										{
+											"key": "payment_mode",
+											"value": "subscription",
+											"description": "Payment mode (can either be a recurring 'subscription' or a one-time 'payment')"
+										},
+										{
+											"key": "payment_method_token",
+											"value": "",
+											"description": "Add the payment method via the API and mark it as the default for future payments",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"error\": \"You specified `payment` mode but passed a recurring price. Either switch to `subscription` mode or use only one-time prices.\"\n}"
+						},
+						{
+							"id": "9db013fd-5426-4a1c-bdfe-36925ef09a61",
+							"name": "401 Unauthorized",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{root}}/api/{{api_version}}/checkout?line_items=price_1OUhNDKMiBrigNb67roRCr5S&payment_mode=payment",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"{{api_version}}",
+										"checkout"
+									],
+									"query": [
+										{
+											"key": "line_items",
+											"value": "price_1OUhNDKMiBrigNb67roRCr5S",
+											"description": "Subscription tier (one-off payment: 'price_1OUhNDKMiBrigNb67roRCr5S', premium subscription: 'price_1OUqrPKMiBrigNb6lia8VWiD')"
+										},
+										{
+											"key": "payment_mode",
+											"value": "payment",
+											"description": "Payment mode (can either be a recurring 'subscription' or a one-time 'payment')"
+										},
+										{
+											"key": "payment_method_token",
+											"value": "",
+											"description": "Add the payment method via the API and mark it as the default for future payments",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"token\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is invalid or expired\"\n        }\n    ]\n}"
+						}
+					]
 				}
 			],
 			"id": "d0c134ac-7cec-44eb-8bd2-a145844d26ef",
@@ -3158,7 +3158,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "03758c84-be54-4188-9693-e8b106f7463e",
+				"id": "0b26b6ea-5aa2-4458-a3b7-2f5a283af9a5",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3168,7 +3168,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "74e54dd0-88f6-43e3-b540-b50ca6e52994",
+				"id": "4c9b0c1a-0ee2-466b-a689-40103df52e60",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3213,6 +3213,11 @@
 		},
 		{
 			"key": "own_job_id",
+			"value": "1",
+			"type": "string"
+		},
+		{
+			"key": "application_id",
 			"value": "1",
 			"type": "string"
 		},
