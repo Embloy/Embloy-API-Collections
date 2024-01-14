@@ -1282,6 +1282,43 @@
 					},
 					"response": [
 						{
+							"id": "77edeb6f-e32f-4527-a8b1-c8c25a4964cf",
+							"name": "201 Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "application_text",
+											"value": "Hello World",
+											"type": "text"
+										},
+										{
+											"key": "application_attachment",
+											"type": "file",
+											"src": "b1lpMViGB/awafww.txt"
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/jobs/{{job_id}}/applications"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"Application submitted!\"\n}"
+						},
+						{
 							"id": "9a93c621-2ddf-474d-a2e8-06c9c0bf1380",
 							"name": "400 Bad Request",
 							"originalRequest": {
@@ -1342,8 +1379,7 @@
 										{
 											"key": "application_attachment",
 											"type": "file",
-											"src": "b1lpMViGB/awafww.txt",
-											"disabled": true
+											"src": "b1lpMViGB/awafww.txt"
 										}
 									]
 								},
