@@ -65,6 +65,22 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"refresh_token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTcwNTAxOTg2NywianRpIjoiMDU5OTNmZWVkYTg1MTRjNjBmNmM5ZTU3ZjA1YmIyYWMiLCJpYXQiOjE3MDUwMDU0NjcsImlzcyI6Im1hbmtkZSJ9.RAmusHNZOvChGN4hXS5Z7NGkoeMKWaEvtCNMQL8X3R0\"\n}"
+						},
+						{
+							"id": "84117c4f-c433-4b50-8458-ee4a17d177f5",
+							"name": "403 Forbidden",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": "{{root}}/api/{{api_version}}/user/auth/token/refresh"
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"user\": [\n        {\n            \"error\": \"ERR_RAC\",\n            \"description\": \"Proceeding is inhibited by an access restriction\"\n        }\n    ]\n}"
 						}
 					]
 				},
@@ -147,6 +163,29 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": null
+						},
+						{
+							"id": "1e80a63f-b2bb-4ae3-b9df-9bf6bd03fb59",
+							"name": "403 Forbidden",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "refresh_token",
+										"value": "{{refresh_token}}",
+										"type": "text",
+										"description": "A valid refresh token is needed in order to be able to create an access_token."
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/user/auth/token/access"
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"user\": [\n        {\n            \"error\": \"ERR_RAC\",\n            \"description\": \"Proceeding is inhibited by an access restriction\"\n        }\n    ]\n}"
 						}
 					]
 				}
