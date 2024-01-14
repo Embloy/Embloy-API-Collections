@@ -589,24 +589,25 @@
 								},
 								{
 									"key": "allowed_cv_formats[]",
-									"value": " .pdfa",
+									"value": ".pdf",
 									"type": "text"
 								},
 								{
 									"key": "allowed_cv_formats[]",
-									"value": " .docx",
+									"value": ".docx",
+									"type": "text",
+									"description": "Cover image of your job posting",
+									"disabled": true
+								},
+								{
+									"key": "allowed_cv_formats[]",
+									"value": ".txt",
 									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "allowed_cv_formats[]",
-									"value": " .txt",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "allowed_cv_formats[]",
-									"value": " .xml",
+									"value": ".xml",
 									"type": "text",
 									"disabled": true
 								},
