@@ -583,7 +583,7 @@
 								},
 								{
 									"key": "cv_required",
-									"value": "true",
+									"value": "adawdwad",
 									"type": "text",
 									"description": "Cover image of your job posting"
 								},
@@ -3140,7 +3140,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "91e13890-73da-45a5-8a1a-8f14e86b8a14",
+				"id": "c04e4bf7-8a17-46f0-a824-97a6da9f88da",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3150,7 +3150,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "cc0a89fa-731f-4cab-8469-9f905a96a598",
+				"id": "254158f0-4d5e-4359-9356-053339c4b3e4",
 				"type": "text/javascript",
 				"exec": [
 					""
