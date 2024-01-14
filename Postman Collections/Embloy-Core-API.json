@@ -589,7 +589,7 @@
 								},
 								{
 									"key": "allowed_cv_formats",
-									"value": "[\".pdf\"]a",
+									"value": "awdawd",
 									"type": "text",
 									"description": "Allowed cv_formats for the job's applications "
 								},
