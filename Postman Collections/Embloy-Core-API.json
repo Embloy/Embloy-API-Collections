@@ -583,21 +583,21 @@
 								},
 								{
 									"key": "cv_required",
-									"value": "false",
+									"value": "true",
 									"type": "text",
 									"description": "Cover image of your job posting"
-								},
-								{
-									"key": "allowed_cv_formats",
-									"value": "[\".pdf\"]ddawd",
-									"type": "text",
-									"description": "Allowed cv_formats for the job's applications "
 								},
 								{
 									"key": "image_url",
 									"type": "file",
 									"description": "Cover image of your job posting",
-									"src": "RGxcpmaXo/config.ru"
+									"src": "RGxcpmaXo/config.ru",
+									"disabled": true
+								},
+								{
+									"key": "allowed_cv_format",
+									"value": "aawdawdaw",
+									"type": "text"
 								}
 							]
 						},
