@@ -590,22 +590,26 @@
 								{
 									"key": "allowed_cv_formats[]",
 									"value": ".pdf",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "allowed_cv_formats[]",
 									"value": ".docx",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "allowed_cv_formats[]",
 									"value": ".txt",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "allowed_cv_formats[]",
 									"value": ".xml",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "image_url",
