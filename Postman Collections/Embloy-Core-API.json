@@ -1251,6 +1251,11 @@
 									"key": "application_attachment",
 									"type": "file",
 									"src": "b1lpMViGB/awafww.txt"
+								},
+								{
+									"key": "response",
+									"value": "awldnandlawnd",
+									"type": "text"
 								}
 							]
 						},
