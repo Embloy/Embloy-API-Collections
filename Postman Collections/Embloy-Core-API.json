@@ -257,7 +257,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{root}}/api/{{api_version}}/find?query=TestTitle&sort_by=date_desc",
+							"raw": "{{root}}/api/{{api_version}}/find?query=universität&sort_by=date_desc",
 							"host": [
 								"{{root}}"
 							],
@@ -269,7 +269,7 @@
 							"query": [
 								{
 									"key": "query",
-									"value": "TestTitle",
+									"value": "universität",
 									"description": "Returns jobs with titles, positions and descriptions matching your query"
 								},
 								{
@@ -520,7 +520,7 @@
 								},
 								{
 									"key": "position",
-									"value": "CEO",
+									"value": "Entrepreurshiü at the technical university of muncih",
 									"type": "text",
 									"description": "The open position"
 								},
