@@ -589,27 +589,24 @@
 								},
 								{
 									"key": "allowed_cv_formats[]",
-									"value": ".pdf",
+									"value": ".pdfa",
 									"type": "text"
 								},
 								{
 									"key": "allowed_cv_formats[]",
 									"value": ".docx",
 									"type": "text",
-									"description": "Cover image of your job posting",
-									"disabled": true
+									"description": "Cover image of your job posting"
 								},
 								{
 									"key": "allowed_cv_formats[]",
 									"value": ".txt",
-									"type": "text",
-									"disabled": true
+									"type": "text"
 								},
 								{
 									"key": "allowed_cv_formats[]",
 									"value": ".xml",
-									"type": "text",
-									"disabled": true
+									"type": "text"
 								},
 								{
 									"key": "image_url",
@@ -3158,7 +3155,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "0fa335d7-bc45-4253-8469-e4ee8589a7c1",
+				"id": "29dec756-8236-41b6-98e5-8ca139be7f63",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3168,7 +3165,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "979d634e-901e-4c9d-bc82-a4fef267e9ad",
+				"id": "d6078e9a-2c25-4625-9b87-b1a867acf95a",
 				"type": "text/javascript",
 				"exec": [
 					""
