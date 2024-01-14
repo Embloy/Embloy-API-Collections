@@ -589,7 +589,7 @@
 								},
 								{
 									"key": "allowed_cv_formats",
-									"value": "[\".pdf\"]",
+									"value": "[\".pdf\"]a",
 									"type": "text",
 									"description": "Allowed cv_formats for the job's applications "
 								},
@@ -597,7 +597,7 @@
 									"key": "image_url",
 									"type": "file",
 									"description": "Cover image of your job posting",
-									"src": "JDd0WJDub/embloy_basic-Page-1.drawio.png"
+									"src": "zsrUhQG3S/embloy_basic-Page-1.drawio.png"
 								}
 							]
 						},
