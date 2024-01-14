@@ -257,7 +257,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{root}}/api/{{api_version}}/find?query=Barista&job_type=Food&sort_by=date_desc",
+							"raw": "{{root}}/api/{{api_version}}/find?query=TestTitle&sort_by=date_desc",
 							"host": [
 								"{{root}}"
 							],
@@ -269,13 +269,14 @@
 							"query": [
 								{
 									"key": "query",
-									"value": "Barista",
+									"value": "TestTitle",
 									"description": "Returns jobs with titles, positions and descriptions matching your query"
 								},
 								{
 									"key": "job_type",
 									"value": "Food",
-									"description": "Filter by a job category of your choice"
+									"description": "Filter by a job category of your choice",
+									"disabled": true
 								},
 								{
 									"key": "sort_by",
