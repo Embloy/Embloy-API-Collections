@@ -1281,7 +1281,46 @@
 						"url": "{{root}}/api/{{api_version}}/jobs/{{job_id}}/applications",
 						"description": "The provided access token is first verified, and then a new application in the name of the associated user is submitted to the specified job. For Embloy v0 the user account (in detail the user profile) is considered to be the figurehead with which one applies for a job."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "9a93c621-2ddf-474d-a2e8-06c9c0bf1380",
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "application_text",
+											"value": "Hello World",
+											"type": "text"
+										},
+										{
+											"key": "application_attachment",
+											"type": "file",
+											"src": "b1lpMViGB/awafww.txt",
+											"disabled": true
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/jobs/{{job_id}}/applications"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"errors\": {\n        \"user_id\": [\n            {\n                \"error\": \"ERR_TAKEN\",\n                \"description\": \"You already submitted an application for this job\",\n                \"value\": 2\n            }\n        ]\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "Accept application",
@@ -3182,7 +3221,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "d39cdfbc-9ef1-4942-be84-3b8935526ab7",
+				"id": "8fdb486b-5ad4-4eb7-806c-5c4d92be20ee",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3192,7 +3231,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "64ac9824-c72b-47c7-a2e6-33950475e56b",
+				"id": "1cfa2388-3570-4830-86bb-82a4887dab21",
 				"type": "text/javascript",
 				"exec": [
 					""
