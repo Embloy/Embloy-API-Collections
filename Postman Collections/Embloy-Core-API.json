@@ -591,11 +591,11 @@
 									"key": "image_url",
 									"type": "file",
 									"description": "Cover image of your job posting",
-									"src": "RGxcpmaXo/config.ru"
+									"src": "_d3ndnMW8/embloy_basic-Page-1.drawio.png"
 								},
 								{
 									"key": "allowed_cv_formats",
-									"value": "[\".pdf\"]",
+									"value": "[.pdf]",
 									"type": "text"
 								}
 							]
@@ -3139,7 +3139,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "46b6375f-633a-4d2a-b46e-c9e7cdbb6c7e",
+				"id": "91e13890-73da-45a5-8a1a-8f14e86b8a14",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3149,7 +3149,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "23c05b1e-c6cd-44a8-85a3-8d150fa95f38",
+				"id": "cc0a89fa-731f-4cab-8469-9f905a96a598",
 				"type": "text/javascript",
 				"exec": [
 					""
