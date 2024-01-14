@@ -1173,7 +1173,7 @@
 			"description": "All requests related to user's own jobs, applications, profile, preferences and reviews."
 		},
 		{
-			"name": "[IN_PROGRESS] Applications",
+			"name": "Applications",
 			"item": [
 				{
 					"name": "Get all applications for a job",
@@ -1203,7 +1203,40 @@
 						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications",
 						"description": "The provided access token is first verified, and then all received applications for the given jobs are returned."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "97a37395-3be6-48d1-ae14-80bc8d4c904e",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text"
+									},
+									{
+										"key": "latitude",
+										"value": "11",
+										"type": "text"
+									},
+									{
+										"key": "longitude",
+										"value": "49",
+										"type": "text"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"applications\": [\n        {\n            \"job_id\": 2,\n            \"user_id\": 2,\n            \"updated_at\": \"2023-02-27T23:06:10.000Z\",\n            \"created_at\": \"2023-02-27T23:06:10.000Z\",\n            \"status\": \"0\",\n            \"application_text\": \"Hello World\",\n            \"application_documents\": null,\n            \"response\": null,\n            \"deleted_at\": null\n        },\n        {\n            \"job_id\": 2,\n            \"user_id\": 1,\n            \"updated_at\": \"2023-02-27T23:06:10.000Z\",\n            \"created_at\": \"2023-02-27T23:06:10.000Z\",\n            \"status\": \"0\",\n            \"application_text\": \"Hello World\",\n            \"application_documents\": null,\n            \"response\": null,\n            \"deleted_at\": null\n        }\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "Get user's submitted application for a job",
@@ -1336,13 +1369,13 @@
 										{
 											"key": "application_text",
 											"value": "Hello World",
-											"type": "text"
+											"type": "text",
+											"disabled": true
 										},
 										{
 											"key": "application_attachment",
 											"type": "file",
-											"src": "b1lpMViGB/awafww.txt",
-											"disabled": true
+											"src": "b1lpMViGB/awafww.txt"
 										}
 									]
 								},
@@ -1448,9 +1481,32 @@
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/reject"
+						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/accept"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "031473b4-9619-44b3-983e-613544c5b3d7",
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/accept"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"Already rejected.\"\n}"
+						}
+					]
 				},
 				{
 					"name": "Reject application",
@@ -1469,7 +1525,30 @@
 						],
 						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/reject"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "b0f3fc31-b013-42d9-a1ee-4a304b82d39d",
+							"name": "400 Bad Re",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/reject"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"Already rejected.\"\n}"
+						}
+					]
 				}
 			],
 			"id": "d7811e3b-5b22-43d9-bfde-2b6e0971c4bd",
@@ -3332,7 +3411,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "697151d6-9611-4bba-86a9-1d7e7a69c21f",
+				"id": "815aeb6a-a50b-4668-93d8-d8cb320d57bc",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3342,7 +3421,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "50186aac-49a5-491f-a644-cceb76d0f0b2",
+				"id": "93e7b1c4-a0dd-4e3c-b9d7-5bbbdaa9f980",
 				"type": "text/javascript",
 				"exec": [
 					""
