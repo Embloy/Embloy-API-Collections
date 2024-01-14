@@ -595,9 +595,8 @@
 								},
 								{
 									"key": "allowed_cv_formats",
-									"value": "",
-									"type": "text",
-									"disabled": true
+									"value": "awdawd",
+									"type": "text"
 								}
 							]
 						},
