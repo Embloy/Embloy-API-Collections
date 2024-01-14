@@ -257,7 +257,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{root}}/api/{{api_version}}/find?query=Baristsa&job_type=Retail&sort_by=date_desc",
+							"raw": "{{root}}/api/{{api_version}}/find?query=Baristsa&job_type=Retail&sort_by=date_desc&page=1",
 							"host": [
 								"{{root}}"
 							],
@@ -281,6 +281,11 @@
 									"key": "sort_by",
 									"value": "date_desc",
 									"description": "Sort by `date_desc`, `date_asc`, `salary_desc` or `salary_asc`"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "Pagination (e.g., 1, 2, ...)"
 								}
 							]
 						},
@@ -3136,7 +3141,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "f61ba520-8883-4235-9652-b452ba8c4258",
+				"id": "48f3506c-9362-498e-85c4-5265f6d59ed3",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3146,7 +3151,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "114867c0-f4cd-4d20-97a5-68865064bece",
+				"id": "0c673672-07b1-4d7c-ab19-c5b4796e5eb4",
 				"type": "text/javascript",
 				"exec": [
 					""
