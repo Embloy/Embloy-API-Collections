@@ -426,7 +426,7 @@
 								},
 								{
 									"key": "status",
-									"value": "public",
+									"value": "private",
 									"type": "text",
 									"description": "Visibility status"
 								},
@@ -458,7 +458,7 @@
 									"key": "image_url",
 									"type": "file",
 									"description": "Cover image of your job posting",
-									"src": "/C:/Users/carlo/Pictures/Saved Pictures/60151e857007585820e506460334a361a6475c3cf165ea07ff9d0400df8d9ec4.jpg"
+									"src": "Pda0ojbZI/test_image.png"
 								}
 							]
 						},
