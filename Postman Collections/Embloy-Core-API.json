@@ -197,7 +197,7 @@
 			"name": "Jobs",
 			"item": [
 				{
-					"name": "[DEPRECATED] Load feed",
+					"name": "[DEACTIVATED] Load feed",
 					"id": "57e944f0-7e32-41f2-ba51-2b61d02d9c38",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1354,7 +1354,7 @@
 						"header": [
 							{
 								"key": "access_token",
-								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQ5LCJleHAiOjE2OTgxODM4MzIsInR5cCI6InZlcmlmaWVkIiwiaXNzIjoiQ0JfU3VyZmFjZVBybzgifQ.ZAP8fPiR-aQbEqTgZyc8fFrEieYfARGAkoVb8jp6nOo",
+								"value": "{{access_token}}",
 								"type": "text",
 								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
@@ -1362,7 +1362,54 @@
 						"url": "{{root}}/api/{{api_version}}/user",
 						"description": "The provided access token is first verified, and then the current user as well as all other associated records are deleted permanently."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "40ab274f-4a27-41d4-b1b7-fb01fdce164c",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/user"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"User deleted!\"\n}"
+						},
+						{
+							"id": "25e5d6ed-14c1-4bf1-9d07-18a1a6574e03",
+							"name": "401 Unauthorized",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQ5LCJleHAiOjE2OTgxODM4MzIsInR5cCI6InZlcmlmaWVkIiwiaXNzIjoiQ0JfU3VyZmFjZVBybzgifQ.ZAP8fPiR-aQbEqTgZyc8fFrEieYfARGAkoVb8jp6nOo",
+										"type": "text",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/user"
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"token\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is invalid or expired\"\n        }\n    ]\n}"
+						}
+					]
 				}
 			],
 			"id": "bcb60e9d-92d7-4f5b-8e72-137270f96af3",
