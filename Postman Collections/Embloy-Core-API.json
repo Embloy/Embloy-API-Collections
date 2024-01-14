@@ -597,7 +597,7 @@
 									"key": "image_url",
 									"type": "file",
 									"description": "Cover image of your job posting",
-									"src": "/C:/Users/carlo/Pictures/Saved Pictures/60151e857007585820e506460334a361a6475c3cf165ea07ff9d0400df8d9ec4.jpg"
+									"value": null
 								}
 							]
 						},
@@ -3140,7 +3140,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "428e6a39-a081-472a-9745-b193efbe2430",
+				"id": "2ebb56f4-94dc-4024-a8c9-ffa5be3ee9b0",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3150,7 +3150,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "0541f8ac-22ae-4d73-81bb-974f6ac0370d",
+				"id": "76f1b641-bb05-48ae-a15d-b7e44fe9fd10",
 				"type": "text/javascript",
 				"exec": [
 					""
