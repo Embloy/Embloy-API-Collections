@@ -1220,9 +1220,32 @@
 								"type": "text"
 							}
 						],
-						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/application"
+						"url": "{{root}}/api/{{api_version}}/jobs/{{job_id}}/application"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "c38ae15e-5a6d-4b04-86b7-7057329e958b",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/application"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"application\": [\n        {\n            \"job_id\": 1,\n            \"user_id\": 2,\n            \"updated_at\": \"2023-02-27T23:06:10.000Z\",\n            \"created_at\": \"2023-02-27T23:06:10.000Z\",\n            \"status\": \"0\",\n            \"application_text\": \"Hello World\",\n            \"application_documents\": null,\n            \"response\": null,\n            \"deleted_at\": null\n        }\n    ],\n    \"application_attachment\": {\n        \"attachment\": {\n            \"id\": 21,\n            \"user_id\": 2,\n            \"job_id\": 1,\n            \"created_at\": \"2024-01-14T16:51:53.356Z\",\n            \"updated_at\": \"2024-01-14T16:51:53.618Z\"\n        },\n        \"url\": \"http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBIUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0cc720c837e96db5b561cef649ad6a4c9523b18d/awafww.txt\"\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "Submit application",
@@ -1250,16 +1273,12 @@
 								{
 									"key": "application_attachment",
 									"type": "file",
-									"src": "b1lpMViGB/awafww.txt"
-								},
-								{
-									"key": "response",
-									"value": "awldnandlawnd",
-									"type": "text"
+									"src": "b1lpMViGB/awafww.txt",
+									"disabled": true
 								}
 							]
 						},
-						"url": "{{root}}/api/{{api_version}}/jobs/1/applications",
+						"url": "{{root}}/api/{{api_version}}/jobs/{{job_id}}/applications",
 						"description": "The provided access token is first verified, and then a new application in the name of the associated user is submitted to the specified job. For Embloy v0 the user account (in detail the user profile) is considered to be the figurehead with which one applies for a job."
 					},
 					"response": []
@@ -3163,7 +3182,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "76406bc5-1a32-4103-ae8d-c3db53fd46f7",
+				"id": "501261c0-3853-4cde-afdd-7539f12b22a8",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3173,7 +3192,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "f1980651-a9a1-4bf6-965f-cbbff2f3a822",
+				"id": "e048d2c6-f444-4364-bc73-0e8d06cc9504",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3229,6 +3248,11 @@
 		{
 			"key": "checkout_session_id",
 			"value": "cs_test_a1n3HRfEmSLvF5fDsh9hs2bxoadxAgQkFWn87eB42iLLuSXVyT0RxyYhuB",
+			"type": "string"
+		},
+		{
+			"key": "job_id",
+			"value": "2",
 			"type": "string"
 		}
 	]
