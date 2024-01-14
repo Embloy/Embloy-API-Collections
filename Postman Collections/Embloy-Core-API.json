@@ -595,7 +595,7 @@
 								},
 								{
 									"key": "allowed_cv_formats",
-									"value": "[.pdf]",
+									"value": "[\".pdf\"]",
 									"type": "text"
 								}
 							]
