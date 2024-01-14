@@ -1268,14 +1268,12 @@
 								{
 									"key": "application_text",
 									"value": "Hello World",
-									"type": "text",
-									"disabled": true
+									"type": "text"
 								},
 								{
 									"key": "application_attachment",
 									"type": "file",
-									"src": "b1lpMViGB/awafww.txt",
-									"disabled": true
+									"src": "b1lpMViGB/awafww.txt"
 								}
 							]
 						},
@@ -1319,7 +1317,7 @@
 							"header": null,
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"errors\": {\n        \"user_id\": [\n            {\n                \"error\": \"ERR_TAKEN\",\n                \"description\": \"You already submitted an application for this job\",\n                \"value\": 2\n            }\n        ]\n    }\n}"
+							"body": "{\n    \"errors\": {\n        \"application_text\": [\n            {\n                \"error\": \"ERR_LENGTH\",\n                \"description\": \"Attribute length is invalid\",\n                \"count\": 0\n            },\n            {\n                \"error\": \"blank\"\n            }\n        ]\n    }\n}"
 						},
 						{
 							"id": "a0053671-379d-4131-b598-edae3d867283",
