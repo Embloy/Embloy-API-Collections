@@ -588,15 +588,33 @@
 									"description": "Cover image of your job posting"
 								},
 								{
+									"key": "allowed_cv_formats[]",
+									"value": " .pdfa",
+									"type": "text"
+								},
+								{
+									"key": "allowed_cv_formats[]",
+									"value": " .docx",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "allowed_cv_formats[]",
+									"value": " .txt",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "allowed_cv_formats[]",
+									"value": " .xml",
+									"type": "text",
+									"disabled": true
+								},
+								{
 									"key": "image_url",
 									"type": "file",
 									"description": "Cover image of your job posting",
 									"src": "_d3ndnMW8/embloy_basic-Page-1.drawio.png"
-								},
-								{
-									"key": "allowed_cv_formats",
-									"value": "awdawd",
-									"type": "text"
 								}
 							]
 						},
