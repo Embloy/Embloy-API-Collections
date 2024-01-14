@@ -597,7 +597,7 @@
 									"key": "image_url",
 									"type": "file",
 									"description": "Cover image of your job posting",
-									"value": null
+									"src": "Ozd9LQ0Cm/.rspec"
 								}
 							]
 						},
@@ -3140,7 +3140,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "42f8078b-298b-4953-9a2b-d14acfff0e5e",
+				"id": "20d68f2c-7675-4664-9fee-914312c52e9e",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3150,7 +3150,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "8f42cb0f-541e-4c27-8e77-5e21bac7051e",
+				"id": "ae0a2909-b0f5-43d2-988c-f2c01175ca0e",
 				"type": "text/javascript",
 				"exec": [
 					""
