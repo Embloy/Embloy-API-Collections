@@ -2184,31 +2184,136 @@
 								{
 									"key": "mode",
 									"value": "job",
-									"description": "Describes what type of Quicklink service the portal is needed for. Allowed values: 'job'",
-									"type": "text"
-								},
-								{
-									"key": "success_url",
-									"value": "/success",
-									"description": "User gets redirected to this URL if application process succeeds ",
-									"type": "text"
-								},
-								{
-									"key": "cancel_url",
-									"value": "/failure",
-									"description": "User gets redirected to this URL if application process fails",
-									"type": "text"
+									"type": "text",
+									"description": "Describes what type of Quicklink service the portal is needed for. Allowed values: 'job'"
 								},
 								{
 									"key": "job_slug",
 									"value": "job#3",
-									"description": "Combined with the client's ID, this is used as an unique identifier for the client's job. ",
-									"type": "text"
+									"type": "text",
+									"description": "Combined with the client's ID, this is used as an unique identifier for the client's job. "
+								},
+								{
+									"key": "success_url",
+									"value": "/success",
+									"type": "text",
+									"description": "User gets redirected to this URL if application process succeeds ",
+									"disabled": true
+								},
+								{
+									"key": "cancel_url",
+									"value": "/failure",
+									"type": "text",
+									"description": "User gets redirected to this URL if application process fails",
+									"disabled": true
+								},
+								{
+									"key": "title",
+									"value": "TestTitle",
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "job_type",
-									"value": "retail",
-									"type": "text"
+									"value": "Retail",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "start_slot",
+									"value": "{{$isoTimestamp}}",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "position",
+									"value": "CEO",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "key_skills",
+									"value": "Entrepreneurship",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "duration",
+									"value": "9",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "salary",
+									"value": "9",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "description",
+									"value": "<div>This is the description</div>",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "public",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "longitude",
+									"value": "11.613942994844358",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "latitude",
+									"value": "48.1951076",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "job_notifications",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "cv_required",
+									"value": "true",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "allowed_cv_formats[]",
+									"value": ".pdf",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "allowed_cv_formats[]",
+									"value": ".docx",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "allowed_cv_formats[]",
+									"value": ".txt",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "allowed_cv_formats[]",
+									"value": ".xml",
+									"type": "text",
+									"disabled": true
 								}
 							]
 						},
@@ -2319,6 +2424,63 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"mode\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is malformed or unknown\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "bc7cb66c-e7fd-45e7-9fb4-2215391b8d00",
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "client_token",
+										"value": "{{client_token}}",
+										"description": "A valid client_token is needed to authenticate and authorize the client. For further information see: [client_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#86b2cf1c-b02e-4d83-b65f-9c5e03cc89c4)",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "mode",
+											"value": "job",
+											"description": "Describes what type of Quicklink service the portal is needed for. Allowed values: 'job'",
+											"type": "text"
+										},
+										{
+											"key": "success_url",
+											"value": "/success",
+											"description": "User gets redirected to this URL if application process succeeds ",
+											"type": "text"
+										},
+										{
+											"key": "cancel_url",
+											"value": "/failure",
+											"description": "User gets redirected to this URL if application process fails",
+											"type": "text"
+										},
+										{
+											"key": "job_slug",
+											"value": "job#3",
+											"description": "Combined with the client's ID, this is used as an unique identifier for the client's job. ",
+											"type": "text"
+										},
+										{
+											"key": "job_type",
+											"value": "retail",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/sdk/request/auth/token"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"job_slug\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is malformed or unknown\"\n        }\n    ]\n}"
 						},
 						{
 							"id": "50e89a30-e63e-4d04-b394-2f47a7053a56",
