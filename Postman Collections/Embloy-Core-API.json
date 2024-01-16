@@ -2211,7 +2211,7 @@
 						"header": [
 							{
 								"key": "access_token",
-								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImV4cCI6MTcwNTM3MzU3MSwidHlwIjoidmVyaWZpZWQiLCJpc3MiOiJtYW5rZGUifQ.-kJZGC3ztK4sXIiQ0R6nB-4-YPfKjRmGX7YtLRv9AjY",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImV4cCI6MTcwNTM3NDg5MiwidHlwIjoidmVyaWZpZWQiLCJpc3MiOiJtYW5rZGUifQ.mdUHrI3gXHK7jW8avBMT1JSGkzQNmcIgrMvhwbMdMfs",
 								"description": "A valid access_token is needed to authenticate and authorize the applicant. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
 								"type": "text"
 							},
