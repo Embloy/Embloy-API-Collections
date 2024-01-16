@@ -2225,6 +2225,11 @@
 									"value": "job#3",
 									"description": "Combined with the client's ID, this is used as an unique identifier for the client's job. ",
 									"type": "text"
+								},
+								{
+									"key": "job_type",
+									"value": "retail",
+									"type": "text"
 								}
 							]
 						},
