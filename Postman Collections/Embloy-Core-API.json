@@ -495,7 +495,148 @@
 						"url": "{{root}}/api/{{api_version}}/jobs",
 						"description": "The provided access token is first verified, and then a new job is created. Upon creation, a job is listed as public. Public jobs undergo evaluation by Embloy's Job Ranking Engine and may appear in a user's individual job feed. Moreover, such jobs are open to applications from interested candidates. The job creator/owner or correspondingly authorized users correspondingly authorized users are able to limit the visibility of the job to \"private\". Private jobs are ignored by the Job Ranking Engine and so do not appear to any job seeking user."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "9928fdad-2391-4d5d-9629-5144e6c57232",
+							"name": "201 Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "TestTitle",
+											"type": "text",
+											"description": "Job's title."
+										},
+										{
+											"key": "job_type",
+											"value": "Retail",
+											"type": "text",
+											"description": "Job category"
+										},
+										{
+											"key": "start_slot",
+											"value": "{{$isoTimestamp}}",
+											"type": "text",
+											"description": "The timestamp of when the job starts"
+										},
+										{
+											"key": "position",
+											"value": "CEO",
+											"type": "text",
+											"description": "The open position"
+										},
+										{
+											"key": "key_skills",
+											"value": "Entrepreneurship",
+											"type": "text",
+											"description": "Key skills relevant for this job"
+										},
+										{
+											"key": "duration",
+											"value": "9",
+											"type": "text",
+											"description": "The job duration in days"
+										},
+										{
+											"key": "salary",
+											"value": "9",
+											"type": "text",
+											"description": "The job's salary"
+										},
+										{
+											"key": "description",
+											"value": "<div>This is the description</div>",
+											"type": "text",
+											"description": "A brief description (<500characters) of the job"
+										},
+										{
+											"key": "status",
+											"value": "public",
+											"type": "text",
+											"description": "Visibility status ('private', 'public', 'archived')"
+										},
+										{
+											"key": "longitude",
+											"value": "11.613942994844358",
+											"type": "text",
+											"description": "The job's longitde"
+										},
+										{
+											"key": "latitude",
+											"value": "48.1951076",
+											"type": "text",
+											"description": "The job's latitude"
+										},
+										{
+											"key": "job_notifications",
+											"value": "1",
+											"type": "text",
+											"description": "Enable/Disable notifications for this job"
+										},
+										{
+											"key": "currency",
+											"value": "EUR",
+											"type": "text",
+											"description": "Your preferred currency"
+										},
+										{
+											"key": "cv_required",
+											"value": "true",
+											"type": "text",
+											"description": "Cover image of your job posting"
+										},
+										{
+											"key": "allowed_cv_formats[]",
+											"value": ".pdf",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "allowed_cv_formats[]",
+											"value": ".docx",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "allowed_cv_formats[]",
+											"value": ".txt",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "allowed_cv_formats[]",
+											"value": ".xml",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "image_url",
+											"type": "file",
+											"description": "Cover image of your job posting",
+											"src": "_d3ndnMW8/embloy_basic-Page-1.drawio.png"
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/jobs"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"Job created!\"\n}"
+						}
+					]
 				},
 				{
 					"name": "Update job",
@@ -643,7 +784,54 @@
 						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}",
 						"description": "Please note that this method is not part of the standard usage and requires editor-level or above user permissions. Use with caution. The provided access token is first verified, and then a given job is irreversibly deleted from the system. To only remove a job post you can either use the PATCH /jobs method and change the job_status to 0."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "4f79ae4e-5758-4077-b5ce-2e81a50824cd",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"Job deleted!\"\n}"
+						},
+						{
+							"id": "5065c1d9-2afc-45e7-a202-20f4e0bc79b6",
+							"name": "Delete job",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text",
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
+									}
+								],
+								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}"
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"job\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute can not be retrieved\"\n        }\n    ]\n}"
+						}
+					]
 				}
 			],
 			"id": "1c563a30-4a0e-420e-826c-3c8ea0c14f03",
