@@ -1,0 +1,592 @@
+{
+	"info": {
+		"_postman_id": "909f4fd1-9843-4a7a-9c25-3771983184d0",
+		"name": "Embloy-Integrations Collection",
+		"description": "Contains all third-party integrations currently supporting Embloy.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Lever",
+			"item": [
+				{
+					"name": "OAuth",
+					"item": [
+						{
+							"name": "Step 1: Request User Authorization",
+							"id": "d878bd0a-b48f-49bc-9d09-68ba1727c518",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://sandbox-lever.auth0.com/authorize?client_id={{LEVER_CLIENT_ID}}&redirect_uri={{root}}/auth/lever/callback&state=vgG5sHr6&response_type=code&scope=postings:read:admin&prompt=consent&audience=https://api.sandbox.lever.co/v1/",
+									"protocol": "https",
+									"host": [
+										"sandbox-lever",
+										"auth0",
+										"com"
+									],
+									"path": [
+										"authorize"
+									],
+									"query": [
+										{
+											"key": "client_id",
+											"value": "{{LEVER_CLIENT_ID}}",
+											"description": "The client application id as provided when registering the application with Lever."
+										},
+										{
+											"key": "redirect_uri",
+											"value": "{{root}}/auth/lever/callback",
+											"description": "The redirect URI must exactly match the value that the application was registered with."
+										},
+										{
+											"key": "state",
+											"value": "vgG5sHr6",
+											"description": "Indicates which OAuth 2.0 flow you want to perform. Specify code for Authorization Code Grant Flow."
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"description": "A unique token to maintain application state between the request and callback. This parameter and token value will be included in the Lever's redirect response. Embloy verifies that the token returned matches the token that you have specified. Lever recommends that this token be generated using a high-quality random-number generator."
+										},
+										{
+											"key": "scope",
+											"value": "postings:read:admin",
+											"description": "The unique identifier of the target API."
+										},
+										{
+											"key": "prompt",
+											"value": "consent",
+											"description": "A list of permissions that your application requires. Permissions are separated by a space character. Include offline_access to get a Refresh Token. See here for full list and description."
+										},
+										{
+											"key": "audience",
+											"value": "https://api.sandbox.lever.co/v1/",
+											"description": "Specify consent to require user consent."
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Step 2: Receive redirect from Lever",
+							"id": "9c572422-3e41-4392-ab2e-60ed5e14c606",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{root}}/integrations/lever/callback?state=vgG5sHr6&code=e7ySnlkpS61E8vLA&error=access_denied&error_description=User did not authorize the request",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"integrations",
+										"lever",
+										"callback"
+									],
+									"query": [
+										{
+											"key": "state",
+											"value": "vgG5sHr6",
+											"description": "The unique token that Embloy specified in the original request. Embloy verifies that this token matches what was specified before continuing to the next step."
+										},
+										{
+											"key": "code",
+											"value": "e7ySnlkpS61E8vLA",
+											"description": "A one-time authorization code that is exchanged for an access token in the next step."
+										},
+										{
+											"key": "error",
+											"value": "access_denied",
+											"description": "The error type."
+										},
+										{
+											"key": "error_description",
+											"value": "User did not authorize the request",
+											"description": "The error reason."
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Step 3: Request Access Token",
+							"id": "3f916f43-75bc-4abb-8a36-6a3e1aa75b8f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "text"
+										},
+										{
+											"key": "client_id",
+											"value": "{{LEVER_CLIENT_SECRET}}",
+											"type": "text"
+										},
+										{
+											"key": "client_secret",
+											"value": "{{LEVER_CLIENT_SECRET}}",
+											"type": "text"
+										},
+										{
+											"key": "code",
+											"value": "e7ySnlkpS61E8vLA",
+											"type": "text"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "https://yourapplication.com/callback",
+											"type": "text"
+										}
+									]
+								},
+								"url": "https://sandbox-lever.auth0.com/oauth/token"
+							},
+							"response": []
+						},
+						{
+							"name": "Step 4: Use an Access Token",
+							"id": "77260aca-88ec-47df-8773-51ed19980460",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{LEVER_ACCESS_TOKEN}}"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": "https://api.sandbox.lever.co/v1/candidates"
+							},
+							"response": []
+						},
+						{
+							"name": "Step 5: Refresh an Access Token",
+							"id": "464aea16-4e5a-455a-b7bf-6c732b20df38",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "grant_type",
+											"value": "refresh_token",
+											"type": "text"
+										},
+										{
+											"key": "client_id",
+											"value": "odduLmYKvgG5sHr6IO5KskcSpuGA2D",
+											"type": "text"
+										},
+										{
+											"key": "client_secret",
+											"value": "uLmYKvgG5sHr6IO5KskcSpuGA2Dodd",
+											"type": "text"
+										},
+										{
+											"key": "refresh_token",
+											"value": "DOOIm_5oZhqtkZmLwsFJudu4kBxSIdgMsKrxr_2QZZ9ia",
+											"type": "text"
+										}
+									]
+								},
+								"url": "https://sandbox-lever.auth0.com/oauth/token"
+							},
+							"response": []
+						}
+					],
+					"id": "00982fd2-74a8-48ad-80f5-a9432845c2c8"
+				},
+				{
+					"name": "Redirect to Lever OAuth",
+					"id": "e8387d79-a8ee-4240-97ee-07981be137c8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{EMBLOY_ACCESS_TOKEN}}"
+							}
+						],
+						"url": "{{root}}/lever/auth"
+					},
+					"response": []
+				},
+				{
+					"name": "Receive redirect from Lever",
+					"id": "6d6ff3cb-e006-4f51-8bbf-b51ea3ed8446",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{root}}/integrations/auth/lever/callback?state=vgG5sHr6&code=e7ySnlkpS61E8vLA&error=access_denied&error_description=User did not authorize the request",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"integrations",
+								"auth",
+								"lever",
+								"callback"
+							],
+							"query": [
+								{
+									"key": "state",
+									"value": "vgG5sHr6",
+									"description": "The unique token that Embloy specified in the original request. Embloy verifies that this token matches what was specified before continuing to the next step."
+								},
+								{
+									"key": "code",
+									"value": "e7ySnlkpS61E8vLA",
+									"description": "A one-time authorization code that is exchanged for an access token in the next step."
+								},
+								{
+									"key": "error",
+									"value": "access_denied",
+									"description": "The error type."
+								},
+								{
+									"key": "error_description",
+									"value": "User did not authorize the request",
+									"description": "The error reason."
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve single posting",
+					"id": "dc7eb51f-0f25-4274-befd-9fec1d662ae4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "{{LEVER_API_KEY}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"customQuestions\": [\n        {\n            \"id\": \"75f54523-ff77-4307-a868-08392ee02cab\",\n            \"fields\": [\n                {\n                    \"value\": \"I have extensive work experience over 10 years. Let me go into detail...\"\n                },\n                {\n                    \"value\": [\n                        \"JavaScript\",\n                        \"Ruby\"\n                    ]\n                }\n            ]\n        }\n    ],\n    \"eeoResponses\": {\n        \"gender\": \"Female\",\n        \"race\": \"Native Hawaiian or Other Pacific Islander (Not Hispanic or Latino)\",\n        \"veteran\": \"I am not a Protected Veteran\",\n        \"disability\": \"Yes, I have a disability, or have a history/record of having a disability\",\n        \"disabilitySignature\": \"Firstname Lastname\",\n        \"disabilitySignatureDate\": \"11/21/2022\"\n    },\n    \"diversitySurvey\": {\n        \"surveyId\": \"b0d26744-60b2-4015-b125-b09fd5b95c1d\",\n        \"candidateSelectedLocation\": \"CO\",\n        \"responses\": [\n            {\n                \"questionId\": \"62d6bd6a-be74-48d1-a7a5-5b9570b50bf8\",\n                \"questionText\": \"What gender do you identify as?\",\n                \"questionType\": \"multiple choice\",\n                \"answer\": \"Male\"\n            },\n            {\n                \"questionId\": \"72riOps2-48pt-48d1-b7v3-a49e1eae2c30\",\n                \"questionText\": \"What is your age range?\",\n                \"questionType\": \"multiple-select\",\n                \"answer\": \"18-25\"\n            }\n        ]\n    },\n    \"personalInformation\": [\n        {\n            \"name\": \"fullName\",\n            \"value\": \"Shane Smith\"\n        },\n        {\n            \"name\": \"email\",\n            \"value\": \"shane@exampleq3.com\"\n        },\n        {\n            \"name\": \"currentCompany\",\n            \"value\": \"Brickly LLC, Vandelay Industries, Inc, Central Perk\"\n        },\n        {\n            \"name\": \"currentLocation\",\n            \"value\": \"Oakland\"\n        },\n        {\n            \"name\": \"phone\",\n            \"value\": \"(123) 456-7891\"\n        },\n        {\n            \"name\": \"resume\",\n            \"value\": \"https://api.lever.co/v1/uploads/083d56ef-40c6-483a-9551-20ece8c4e776-resume.pdf\"\n        },\n        {\n            \"name\": \"preferredPostingLocation\",\n            \"value\": \"Oakland\"\n        },\n        {\n            \"name\": \"additionalInformation\",\n            \"value\": \"I am interested in discussing a remote working situation, if at all possible.\"\n        }\n    ],\n    \"urls\": [\n        {\n            \"name\": \"LinkedIn\",\n            \"value\": \"https://linkedin.com/shane-smith\"\n        },\n        {\n            \"name\": \"Other Website\",\n            \"value\": \"www.shane-smith.com\"\n        },\n        {\n            \"name\": \"Github\",\n            \"value\": \"https://github.com/shane-smith\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.sandbox.lever.co/v1/postings/:postingId?distribution=internal",
+							"protocol": "https",
+							"host": [
+								"api",
+								"sandbox",
+								"lever",
+								"co"
+							],
+							"path": [
+								"v1",
+								"postings",
+								":postingId"
+							],
+							"query": [
+								{
+									"key": "distribution",
+									"value": "internal",
+									"description": "This parameter is used to return internal or external custom application questions. If unspecified, it returns both (internal and external)."
+								}
+							],
+							"variable": [
+								{
+									"key": "postingId",
+									"value": "{{LEVER_POSTING_ID}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Apply to a posting",
+					"id": "687519ee-1519-4350-a7a8-772adf306155",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "{{LEVER_API_KEY}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"customQuestions\": [\n        {\n            \"id\": \"75f54523-ff77-4307-a868-08392ee02cab\",\n            \"fields\": [\n                {\n                    \"value\": \"I have extensive work experience over 10 years. Let me go into detail...\"\n                },\n                {\n                    \"value\": [\n                        \"JavaScript\",\n                        \"Ruby\"\n                    ]\n                }\n            ]\n        }\n    ],\n    \"eeoResponses\": {\n        \"gender\": \"Female\",\n        \"race\": \"Native Hawaiian or Other Pacific Islander (Not Hispanic or Latino)\",\n        \"veteran\": \"I am not a Protected Veteran\",\n        \"disability\": \"Yes, I have a disability, or have a history/record of having a disability\",\n        \"disabilitySignature\": \"Firstname Lastname\",\n        \"disabilitySignatureDate\": \"11/21/2022\"\n    },\n    \"diversitySurvey\": {\n        \"surveyId\": \"b0d26744-60b2-4015-b125-b09fd5b95c1d\",\n        \"candidateSelectedLocation\": \"CO\",\n        \"responses\": [\n            {\n                \"questionId\": \"62d6bd6a-be74-48d1-a7a5-5b9570b50bf8\",\n                \"questionText\": \"What gender do you identify as?\",\n                \"questionType\": \"multiple choice\",\n                \"answer\": \"Male\"\n            },\n            {\n                \"questionId\": \"72riOps2-48pt-48d1-b7v3-a49e1eae2c30\",\n                \"questionText\": \"What is your age range?\",\n                \"questionType\": \"multiple-select\",\n                \"answer\": \"18-25\"\n            }\n        ]\n    },\n    \"personalInformation\": [\n        {\n            \"name\": \"fullName\",\n            \"value\": \"Shane Smith\"\n        },\n        {\n            \"name\": \"email\",\n            \"value\": \"shane@exampleq3.com\"\n        },\n        {\n            \"name\": \"currentCompany\",\n            \"value\": \"Brickly LLC, Vandelay Industries, Inc, Central Perk\"\n        },\n        {\n            \"name\": \"currentLocation\",\n            \"value\": \"Oakland\"\n        },\n        {\n            \"name\": \"phone\",\n            \"value\": \"(123) 456-7891\"\n        },\n        {\n            \"name\": \"resume\",\n            \"value\": \"https://api.lever.co/v1/uploads/083d56ef-40c6-483a-9551-20ece8c4e776-resume.pdf\"\n        },\n        {\n            \"name\": \"preferredPostingLocation\",\n            \"value\": \"Oakland\"\n        },\n        {\n            \"name\": \"additionalInformation\",\n            \"value\": \"I am interested in discussing a remote working situation, if at all possible.\"\n        }\n    ],\n    \"urls\": [\n        {\n            \"name\": \"LinkedIn\",\n            \"value\": \"https://linkedin.com/shane-smith\"\n        },\n        {\n            \"name\": \"Other Website\",\n            \"value\": \"www.shane-smith.com\"\n        },\n        {\n            \"name\": \"Github\",\n            \"value\": \"https://github.com/shane-smith\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.sandbox.lever.co/v1/postings/:postingId/apply?send_confirmation_email=true",
+							"protocol": "https",
+							"host": [
+								"api",
+								"sandbox",
+								"lever",
+								"co"
+							],
+							"path": [
+								"v1",
+								"postings",
+								":postingId",
+								"apply"
+							],
+							"query": [
+								{
+									"key": "send_confirmation_email",
+									"value": "true",
+									"description": "After application is created, send a confirmation email to the applicant email provided in the payload. If unspecified, defaults to false."
+								}
+							],
+							"variable": [
+								{
+									"key": "postingId",
+									"value": "{{LEVER_POSTING_ID}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "1b0fbb17-52ee-4eb9-8495-3c0fbbc95212",
+			"description": "Contains all relevant [Lever](https://www.lever.co/) endpoints for the Embloy integration."
+		},
+		{
+			"name": "Ashby",
+			"item": [
+				{
+					"name": "Register Ashby API-key",
+					"id": "dc80be5a-3318-4e33-a339-d7dbfb1fa726",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "{{ASHBY_API_KEY}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": "{{root}}/integrations/ashby/register",
+						"description": "When activating the Embloy integration in Ashby, the client needs to register his Ashby API-key in Embloy so that Embloy can use it to submit incoming applications to Ashby."
+					},
+					"response": []
+				},
+				{
+					"name": "Get job info",
+					"id": "a44faada-6eab-4696-8508-9c8aa39d3fe6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": \"{{ASHBY_JOB_ID}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.ashbyhq.com/job.info"
+					},
+					"response": []
+				},
+				{
+					"name": "Get job posting info",
+					"id": "83bf9af2-0d7a-4194-9cd4-46733dc82968",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"jobPostingId\": \"{{ASHBY_JOB_POSTING_ID}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.ashbyhq.com/jobPosting.info"
+					},
+					"response": []
+				},
+				{
+					"name": "Submit application form",
+					"id": "5b86d7e9-05c7-4f60-9019-088219665606",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "jobPostingId",
+									"value": "{{ASHBY_JOB_POSTING_ID}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.ashbyhq.com/applicationForm.submit"
+					},
+					"response": []
+				}
+			],
+			"id": "70159ad5-339e-4c7c-b887-91c97edffeb0",
+			"description": "Contains all relevant [Ashby](https://www.ashbyhq.com/) endpoints for the Embloy integration.",
+			"auth": {
+				"type": "basic",
+				"basic": {
+					"username": "{{ASHBY_API_KEY}}"
+				}
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "e04507b5-0f8d-4a55-98e3-eb16e47019d6",
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "d30edc06-a2be-4abf-9a1c-741e43ff7111",
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "2200f8c8-de8b-4632-8ba0-25bc49661e50",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "8453f62b-2eda-4b2f-912c-57cea60b005a",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "root",
+			"value": "https://api.embloy.com"
+		},
+		{
+			"key": "LEVER_ACCESS_TOKEN",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "LEVER_CLIENT_ID",
+			"value": ""
+		},
+		{
+			"key": "LEVER_CLIENT_SECRET",
+			"value": ""
+		},
+		{
+			"key": "LEVER_POSTING_ID",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "LEVER_API_KEY",
+			"value": ""
+		},
+		{
+			"key": "ASHBY_API_KEY",
+			"value": ""
+		},
+		{
+			"key": "ASHBY_JOB_ID",
+			"value": ""
+		},
+		{
+			"key": "ASHBY_JOB_POSTING_ID",
+			"value": ""
+		}
+	]
+}
