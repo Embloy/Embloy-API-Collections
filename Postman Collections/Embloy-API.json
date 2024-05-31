@@ -3559,7 +3559,7 @@
 							}
 						},
 						"url": "{{root}}/api/{{api_version}}/sdk/request/auth/token",
-						"description": "This endpoint is responsible for creating a new application session containing a **`request_token`** which can be further used to apply for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job__250d8f03-...\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
+						"description": "This endpoint is responsible for creating a new application session containing a **`request_token`** which can be further used to apply for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"df074300-2627-4511-985e-e62c69dc0d7g\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API.\n\n**If you're an ATS provider, make sure to set** **`mode`** **as the name of your ATS system (e.g., \"Lever\", \"Ashby\", \"Greenhouse\", etc.) and** **`job_slug`** **as the current job's posting ID.**"
 					},
 					"response": [
 						{
