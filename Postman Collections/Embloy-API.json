@@ -3545,7 +3545,7 @@
 						"header": [
 							{
 								"key": "client_token",
-								"value": "{{client_token}}a",
+								"value": "{{client_token}}",
 								"description": "A valid client_token is needed to authenticate and authorize the client. For further information see: [client_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#86b2cf1c-b02e-4d83-b65f-9c5e03cc89c4)"
 							}
 						],
@@ -3559,7 +3559,7 @@
 							}
 						},
 						"url": "{{root}}/api/{{api_version}}/sdk/request/auth/token",
-						"description": "This endpoint is responsible for creating a new application session containing a **`request_token`**which can be further used to apply for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job#1\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
+						"description": "This endpoint is responsible for creating a new application session containing a **`request_token`** which can be further used to apply for a specific job and client with a validity of 30 minutes. It uses the decoded **`client_token`**'s subject (sub) and a specific identifier (\"job__250d8f03-...\") to generate the token. The generated request token is then returned in the response which can be used as authentication for further requests to the core-API."
 					},
 					"response": [
 						{
