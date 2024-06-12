@@ -5434,12 +5434,7 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}"
-							}
-						],
+						"header": [],
 						"url": {
 							"raw": "{{root}}/api/{{api_version}}/resource?job_id={{own_job_id}}&exp={{$randomDateFuture}}&qr=1",
 							"host": [
@@ -5482,14 +5477,8 @@
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text"
-									}
-								],
-								"url": "{{root}}/api/{{api_version}}/resource"
+								"header": [],
+								"url": "https://api.embloy.com/api/v0/resource"
 							},
 							"status": "OK",
 							"code": 200,
@@ -5500,33 +5489,11 @@
 							"body": "{\n    \"query_token\": \"eyJhbGciOiJIUzI1NiJ9°eyJzdWIiOjEsImV4cCI6MTcwNzg1ODM1OSwianRpIjoiYWVmZDAyZWJjNzA3ZDk2MDAzY2IwNGQ3YmM3Y2UwZjkiLCJpYXQiOjE3MDc4NTQ3NTksImlzcyI6ImFwaS5lbWJsb3kuY29tIn0°jVOy6EYn6RQvA3w9XqTJSIR8f5Gf-oPbGqjnBeK_8cc\"\n}"
 						},
 						{
-							"id": "599bbf4d-11ea-4d93-8dcb-9b04dbde9e31",
-							"name": "400 Bad Request",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": "{{root}}/api/{{api_version}}/resource/jobs"
-							},
-							"status": "Bad Request",
-							"code": 400,
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"genius_query\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is malformed or unknown\"\n        }\n    ]\n}"
-						},
-						{
 							"id": "77f894dc-d907-40aa-a085-8959a76c8ec8",
 							"name": "400 Bad Request",
 							"originalRequest": {
 								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"url": {
 									"raw": "{{root}}/api/{{api_version}}/resource?job_id={{own_job_id}}&expires_at={{$randomDateFuture}}",
 									"host": [
@@ -5570,13 +5537,7 @@
 							"name": "404 Not Found",
 							"originalRequest": {
 								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"url": {
 									"raw": "{{root}}/api/{{api_version}}/resource?job_id={{own_job_id}}&expires_at={{$randomDateFuture}}",
 									"host": [
@@ -5624,9 +5585,12 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "noauth"
+						},
 						"method": "GET",
 						"header": [],
-						"url": "{{root}}/api/{{api_version}}/resource/eyJhbGciOiJIUzI1NiJ9°eyJzdWIiOjEsImV4cCI6MTcwNzk0MTYzNCwianRpIjoiZTUyY2RjMmU0YWE2NDU4ZGNlZDI4YmU2ODM2MzhmZmMiLCJpYXQiOjE3MDc4NTUyMzQsImpvYl9pZCI6IjIiLCJpc3MiOiJhcGkuZW1ibG95LmNvbSJ9°BXUQg19mt3T10OEW7zwllz3NJ861wZrdvo3offpFA3w",
+						"url": "{{root}}/api/{{api_version}}/resource/{{genius_query}}",
 						"description": "Returns a specific resourced depending on the payload of the resource specified in the Genius-Query."
 					},
 					"response": [
@@ -5636,7 +5600,7 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": "{{root}}/api/{{api_version}}/resource/eyJhbGciOiJIUzI1NiJ9°eyJzdWIiOjEsImV4cCI6MTcwNzk0MTYzNCwianRpIjoiZTUyY2RjMmU0YWE2NDU4ZGNlZDI4YmU2ODM2MzhmZmMiLCJpYXQiOjE3MDc4NTUyMzQsImpvYl9pZCI6IjIiLCJpc3MiOiJhcGkuZW1ibG95LmNvbSJ9°BXUQg19mt3T10OEW7zwllz3NJ861wZrdvo3offpFA3w"
+								"url": "{{root}}/api/{{api_version}}/resource/{{genius_query}}"
 							},
 							"status": "OK",
 							"code": 200,
@@ -5652,7 +5616,7 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": "{{root}}/api/{{api_version}}/resource/jobs"
+								"url": "{{root}}/api/{{api_version}}/resource/12"
 							},
 							"status": "Bad Request",
 							"code": 400,
