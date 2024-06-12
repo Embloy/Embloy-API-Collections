@@ -213,52 +213,59 @@
 					},
 					"response": [
 						{
-							"id": "985b3e8a-5744-4e27-9824-fc0b9cc975cb",
+							"id": "2238e929-d13b-499d-b074-ed5d44499a65",
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "POST",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/x-www-form-urlencoded",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"body": {
 									"mode": "urlencoded",
 									"urlencoded": [
 										{
 											"key": "refresh_token",
 											"value": "{{refresh_token}}",
+											"description": "A valid refresh token is needed in order to be able to create an access_token.",
 											"type": "text"
 										},
 										{
 											"key": "grant_type",
 											"value": "refresh_token",
+											"description": "Specifies the type of access delegation according to the authorization grant. This parameter tells the authorization server what kind of authorization grant (i.e., method of proving identity) the client application is presenting in exchange for an access token.",
 											"type": "text"
 										}
 									]
 								},
-								"url": "https://api.embloy.com/api/v0/auth/token/access"
+								"url": "{{root}}/api/{{api_version}}/auth/token/access"
 							},
 							"_postman_previewlanguage": null,
 							"header": null,
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"access_token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTcwNDM5MjQyMCwidHlwIjoidmVyaWZpZWQiLCJpc3MiOiJtYW5rZGUifQ.lAojakeDTmgLCCxDd6g4MRoBIf9cpcdT6bV96DP-4XU\"\n}"
+							"body": null
 						},
 						{
-							"id": "f66232f8-e6be-4fe8-b037-a877e5ef0424",
+							"id": "e8149d0c-225d-4df1-bfa7-6938248ba2a8",
 							"name": "400 Bad Request",
 							"originalRequest": {
 								"method": "POST",
-								"header": [
-									{
-										"key": "refresh_token",
-										"value": "{{refresh_token}}",
-										"type": "text"
-									}
-								],
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "refresh_token",
+											"value": "{{refresh_token}}",
+											"description": "A valid refresh token is needed in order to be able to create an access_token.",
+											"type": "text"
+										},
+										{
+											"key": "grant_type",
+											"value": "refresh_token",
+											"description": "Specifies the type of access delegation according to the authorization grant. This parameter tells the authorization server what kind of authorization grant (i.e., method of proving identity) the client application is presenting in exchange for an access token.",
+											"type": "text"
+										}
+									]
+								},
 								"url": "{{root}}/api/{{api_version}}/auth/token/access"
 							},
 							"_postman_previewlanguage": null,
@@ -268,38 +275,53 @@
 							"body": null
 						},
 						{
-							"id": "65fe3032-049e-43e2-9df0-8f5becddbe52",
+							"id": "33bc38b6-186e-46b2-8716-7914c9b9ee5e",
 							"name": "401 Unauthorized",
 							"originalRequest": {
 								"method": "POST",
-								"header": [
-									{
-										"key": "refresh_token",
-										"value": "{{refresh_token}}",
-										"type": "text"
-									}
-								],
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "refresh_token",
+											"value": "abc",
+											"description": "A valid refresh token is needed in order to be able to create an access_token.",
+											"type": "text"
+										}
+									]
+								},
 								"url": "{{root}}/api/{{api_version}}/auth/token/access"
 							},
 							"_postman_previewlanguage": null,
 							"header": null,
 							"cookie": [],
 							"responseTime": null,
-							"body": null
+							"body": "{\n    \"token\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is invalid or expired\"\n        }\n    ]\n}"
 						},
 						{
-							"id": "1e80a63f-b2bb-4ae3-b9df-9bf6bd03fb59",
+							"id": "5adc4120-2456-41e9-9f7f-b15e78b1626d",
 							"name": "403 Forbidden",
 							"originalRequest": {
 								"method": "POST",
-								"header": [
-									{
-										"key": "refresh_token",
-										"value": "{{refresh_token}}",
-										"type": "text",
-										"description": "A valid refresh token is needed in order to be able to create an access_token."
-									}
-								],
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "refresh_token",
+											"value": "{{refresh_token}}",
+											"description": "A valid refresh token is needed in order to be able to create an access_token.",
+											"type": "text"
+										},
+										{
+											"key": "grant_type",
+											"value": "refresh_token",
+											"description": "Specifies the type of access delegation according to the authorization grant. This parameter tells the authorization server what kind of authorization grant (i.e., method of proving identity) the client application is presenting in exchange for an access token.",
+											"type": "text"
+										}
+									]
+								},
 								"url": "{{root}}/api/{{api_version}}/auth/token/access"
 							},
 							"status": "Forbidden",
