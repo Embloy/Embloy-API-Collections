@@ -219,12 +219,27 @@
 								"method": "POST",
 								"header": [
 									{
-										"key": "refresh_token",
-										"value": "{{refresh_token}}",
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
 										"type": "text"
 									}
 								],
-								"url": "{{root}}/api/{{api_version}}/auth/token/access"
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "refresh_token",
+											"value": "{{refresh_token}}",
+											"type": "text"
+										},
+										{
+											"key": "grant_type",
+											"value": "refresh_token",
+											"type": "text"
+										}
+									]
+								},
+								"url": "https://api.embloy.com/api/v0/auth/token/access"
 							},
 							"_postman_previewlanguage": null,
 							"header": null,
@@ -458,7 +473,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"Automatically generated token\",\n    \"issuer\": \"Embloy\",\n    \"token\": \"{{refresh_token}}\",\n    \"issued_at\": \"{{$randomDatePast}}\",\n    \"expires_at\": \"{{$randomDateFuture}}\",\n    \"type\": \"refresh_token\"\n}",
+							"raw": "{\n    \"name\": \"Automatically generated token\",\n    \"issuer\": \"Embloy\",\n    \"token\": \"{{refresh_token}}\",\n    \"issued_at\": \"{{$randomDatePast}}\",\n    \"expires_at\": \"{{$randomDateFuture}}\",\n    \"token_type\": \"refresh_token\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -541,13 +556,7 @@
 					},
 					"request": {
 						"method": "PATCH",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n    \"name\": \"Automatically generated refresh token\",\n    \"token_type\": \"refresh_token\",\n    \"issuer\": \"embloy\",\n    \"issued_at\": \"2024-05-26T13:57:11.000Z\",\n    \"expires_at\": \"2024-06-09T13:57:11.000Z\",\n    \"last_used_at\": null,\n    \"active\": false,\n    \"scopes\": null,\n    \"created_at\": \"2024-05-26T13:57:11.649Z\",\n    \"updated_at\": \"2024-05-26T13:57:11.649Z\",\n    \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIidkuado98adn2o8dao2d2QzMSwianRpIjoiMWQxYmZiYzE4YTQ0ODA5ZjczNzQ1OTg3OGU3YmEyTEiLJpYXiOj3MT3E4MzEsImlzcyI6ImFwaS5lbWJsb3kuY29tIn0.cTjwoGtWLbONWeYwg6ahfKugrPV36irZpzsVEA\"\n}",
@@ -6449,7 +6458,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "4b21034a-48a9-48e0-9142-2596fa8625ba",
+				"id": "2db9ff95-3a5b-4037-b00b-1fc5cb9b195a",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -6459,7 +6468,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "f5748568-28ac-4379-aec5-26675f1aced4",
+				"id": "7b06094b-ea4e-4f78-9ed5-fe256070e1bd",
 				"type": "text/javascript",
 				"exec": [
 					""
