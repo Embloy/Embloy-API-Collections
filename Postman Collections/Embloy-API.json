@@ -814,18 +814,8 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"auth": {
-							"type": "noauth"
-						},
 						"method": "GET",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
+						"header": [],
 						"url": {
 							"raw": "{{root}}/api/{{api_version}}/find?query=Baristsa&job_type=Retail&sort_by=date_desc&page=1",
 							"host": [
@@ -871,14 +861,7 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
+						"header": [],
 						"url": {
 							"raw": "{{root}}/api/{{api_version}}/maps?longitude=0&latitude=0",
 							"host": [
@@ -914,14 +897,7 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
+						"header": [],
 						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}",
 						"description": "The provided access token is first verified, and then the job is returned. (Only if the the user is authorized to access the resource and if the resource exists)"
 					},
@@ -931,15 +907,8 @@
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
-								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}"
+								"header": [],
+								"url": "https://api.embloy.com/api/v0/jobs/1"
 							},
 							"status": "OK",
 							"code": 200,
