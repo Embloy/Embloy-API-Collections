@@ -2094,7 +2094,7 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications"
+								"url": "{{root}}/api/{{api_version}}/jobs/applications"
 							},
 							"status": "OK",
 							"code": 200,
@@ -5070,14 +5070,7 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-								"type": "text"
-							}
-						],
+						"header": [],
 						"url": {
 							"raw": "{{root}}/api/{{api_version}}/checkout?tier=enterprise_3&payment_mode=subscription",
 							"host": [
@@ -5115,14 +5108,7 @@
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"url": {
 									"raw": "{{root}}/api/{{api_version}}/checkout?tier=basic&payment_mode=subscription&origin=core",
 									"host": [
@@ -5165,14 +5151,7 @@
 							"name": "400 Bad Request",
 							"originalRequest": {
 								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"url": {
 									"raw": "{{root}}/api/{{api_version}}/checkout?tier=basic&payment_mode=test",
 									"host": [
@@ -5216,14 +5195,7 @@
 							"name": "400 Bad Request",
 							"originalRequest": {
 								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"url": {
 									"raw": "{{root}}/api/{{api_version}}/checkout?tier=basic&payment_mode=test",
 									"host": [
@@ -5267,14 +5239,7 @@
 							"name": "400 Bad Request",
 							"originalRequest": {
 								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"url": {
 									"raw": "{{root}}/api/{{api_version}}/checkout",
 									"host": [
@@ -5320,14 +5285,7 @@
 							"name": "400 Bad Request",
 							"originalRequest": {
 								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"url": {
 									"raw": "{{root}}/api/{{api_version}}/checkout?tier=basic&payment_mode=subscription",
 									"host": [
@@ -5365,57 +5323,6 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"error\": \"You specified `payment` mode but passed a recurring price. Either switch to `subscription` mode or use only one-time prices.\"\n}"
-						},
-						{
-							"id": "9db013fd-5426-4a1c-bdfe-36925ef09a61",
-							"name": "401 Unauthorized",
-							"originalRequest": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "{{root}}/api/{{api_version}}/checkout?line_items=price_1OUhNDKMiBrigNb67roRCr5S&payment_mode=payment",
-									"host": [
-										"{{root}}"
-									],
-									"path": [
-										"api",
-										"{{api_version}}",
-										"checkout"
-									],
-									"query": [
-										{
-											"key": "line_items",
-											"value": "price_1OUhNDKMiBrigNb67roRCr5S",
-											"description": "Subscription tier (one-off payment: 'price_1OUhNDKMiBrigNb67roRCr5S', premium subscription: 'price_1OUqrPKMiBrigNb6lia8VWiD')"
-										},
-										{
-											"key": "payment_mode",
-											"value": "payment",
-											"description": "Payment mode (can either be a recurring 'subscription' or a one-time 'payment')"
-										},
-										{
-											"key": "payment_method_token",
-											"value": "",
-											"description": "Add the payment method via the API and mark it as the default for future payments",
-											"disabled": true
-										}
-									]
-								}
-							},
-							"status": "Unauthorized",
-							"code": 401,
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"token\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is invalid or expired\"\n        }\n    ]\n}"
 						}
 					]
 				}
@@ -5616,7 +5523,7 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": "{{root}}/api/{{api_version}}/resource/12"
+								"url": "{{root}}/api/{{api_version}}/resource/123"
 							},
 							"status": "Bad Request",
 							"code": 400,
