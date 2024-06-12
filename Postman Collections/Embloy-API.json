@@ -908,7 +908,7 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": "https://api.embloy.com/api/v0/jobs/1"
+								"url": "{{root}}/api/{{api_version}}/jobs/1"
 							},
 							"status": "OK",
 							"code": 200,
@@ -957,7 +957,7 @@
 										}
 									}
 								},
-								"url": "https://api.embloy.com/api/v0/jobs"
+								"url": "{{root}}/api/{{api_version}}/jobs"
 							},
 							"status": "Created",
 							"code": 201,
@@ -2786,23 +2786,7 @@
 							"name": "204 No Content",
 							"originalRequest": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text"
-									},
-									{
-										"key": "latitude",
-										"value": "11",
-										"type": "text"
-									},
-									{
-										"key": "longitude",
-										"value": "49",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"url": "{{root}}/api/{{api_version}}/user/notifications"
 							},
 							"status": "OK",
@@ -2833,24 +2817,8 @@
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text"
-									},
-									{
-										"key": "latitude",
-										"value": "11",
-										"type": "text"
-									},
-									{
-										"key": "longitude",
-										"value": "49",
-										"type": "text"
-									}
-								],
-								"url": "{{root}}/api/{{api_version}}/user/notifications/unread"
+								"header": [],
+								"url": "https://api.embloy.com/api/v0/user/notifications/unread"
 							},
 							"status": "OK",
 							"code": 200,
@@ -2865,23 +2833,7 @@
 							"name": "204 No Content",
 							"originalRequest": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text"
-									},
-									{
-										"key": "latitude",
-										"value": "11",
-										"type": "text"
-									},
-									{
-										"key": "longitude",
-										"value": "49",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"url": "{{root}}/api/{{api_version}}/user/notifications/unread"
 							},
 							"status": "No Content",
@@ -2912,31 +2864,18 @@
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text"
-									},
-									{
-										"key": "latitude",
-										"value": "11",
-										"type": "text"
-									},
-									{
-										"key": "longitude",
-										"value": "49",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"url": {
-									"raw": "{{root}}/api/{{api_version}}/user/notifications/27?read=0",
+									"raw": "https://api.embloy.com/api/v0/user/notifications/27?read=0",
+									"protocol": "https",
 									"host": [
-										"{{root}}"
+										"api",
+										"embloy",
+										"com"
 									],
 									"path": [
 										"api",
-										"{{api_version}}",
+										"v0",
 										"user",
 										"notifications",
 										"27"
@@ -2962,23 +2901,7 @@
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text"
-									},
-									{
-										"key": "latitude",
-										"value": "11",
-										"type": "text"
-									},
-									{
-										"key": "longitude",
-										"value": "49",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"url": {
 									"raw": "{{root}}/api/{{api_version}}/user/notifications/27?read=1",
 									"host": [
@@ -4100,14 +4023,7 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
+						"header": [],
 						"url": "{{root}}/api/{{api_version}}/client/subscriptions/charges",
 						"description": "Returns all charges of the current user's payments and subscriptions."
 					},
@@ -4117,15 +4033,8 @@
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
-								"url": "{{root}}/api/{{api_version}}/client/subscriptions/charges"
+								"header": [],
+								"url": "https://api.embloy.com/api/v0/client/subscriptions/charges"
 							},
 							"status": "OK",
 							"code": 200,
