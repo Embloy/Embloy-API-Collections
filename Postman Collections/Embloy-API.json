@@ -3039,14 +3039,7 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-								"type": "text"
-							}
-						],
+						"header": [],
 						"url": {
 							"raw": "{{root}}/api/{{api_version}}/auth/token/client?exp={{$randomDateFuture}}",
 							"host": [
@@ -3123,6 +3116,9 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "noauth"
+						},
 						"method": "POST",
 						"header": [
 							{
@@ -4126,7 +4122,7 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": "https://api.embloy.com/api/v0/client/subscriptions/charges"
+								"url": "{{root}}/api/{{api_version}}/client/subscriptions/charges"
 							},
 							"status": "OK",
 							"code": 200,
@@ -4141,14 +4137,7 @@
 							"name": "204 No Content",
 							"originalRequest": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
+								"header": [],
 								"url": "{{root}}/api/{{api_version}}/client/subscriptions/charges"
 							},
 							"status": "No Content",
@@ -4158,29 +4147,6 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": ""
-						},
-						{
-							"id": "63f9583f-6a7e-434f-9f2d-f200758c435c",
-							"name": "401 Unauthorized",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
-								"url": "{{root}}/api/{{api_version}}/client/subscriptions/charges"
-							},
-							"status": "Unauthorized",
-							"code": 401,
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"token\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is invalid or expired\"\n        }\n    ]\n}"
 						}
 					]
 				},
@@ -4192,14 +4158,7 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
+						"header": [],
 						"url": "{{root}}/api/{{api_version}}/client/subscriptions",
 						"description": "Returns all subscriptions of the current user."
 					},
@@ -4209,14 +4168,7 @@
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
+								"header": [],
 								"url": "{{root}}/api/{{api_version}}/client/subscriptions"
 							},
 							"status": "OK",
@@ -4232,14 +4184,7 @@
 							"name": "204 No Content",
 							"originalRequest": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
+								"header": [],
 								"url": "{{root}}/api/{{api_version}}/client/subscriptions"
 							},
 							"status": "No Content",
@@ -4251,41 +4196,11 @@
 							"body": ""
 						},
 						{
-							"id": "dd6a6548-4624-4d3c-a7c0-ede56e14f882",
-							"name": "401 Unauthorized",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
-								"url": "{{root}}/api/{{api_version}}/client/subscriptions"
-							},
-							"status": "Unauthorized",
-							"code": 401,
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"token\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is invalid or expired\"\n        }\n    ]\n}"
-						},
-						{
 							"id": "9ede5432-d0e5-41e9-a07a-966361e6432e",
 							"name": "404 Not Found",
 							"originalRequest": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
+								"header": [],
 								"url": "{{root}}/api/{{api_version}}/client/subscriptions"
 							},
 							"status": "Not Found",
@@ -4306,14 +4221,7 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-								"type": "text"
-							}
-						],
+						"header": [],
 						"url": {
 							"raw": "{{root}}/api/{{api_version}}/client/subscriptions/active?info=1",
 							"host": [
@@ -4342,14 +4250,7 @@
 							"name": "200 OK (Subscription only)",
 							"originalRequest": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"url": {
 									"raw": "{{root}}/api/{{api_version}}/client/subscriptions/active?info=0",
 									"host": [
@@ -4383,14 +4284,7 @@
 							"name": "200 OK (Additional info)",
 							"originalRequest": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"url": {
 									"raw": "{{root}}/api/{{api_version}}/client/subscriptions/active?info=0",
 									"host": [
@@ -4420,59 +4314,11 @@
 							"body": "{\n    \"subscription\": {\n        \"id\": \"sub_1OUvJdKMiBrigNb68GF8ZQN0\",\n        \"object\": \"subscription\",\n        \"application\": null,\n        \"application_fee_percent\": null,\n        \"automatic_tax\": {\n            \"enabled\": false\n        },\n        \"billing_cycle_anchor\": 1704391609,\n        \"billing_thresholds\": null,\n        \"cancel_at\": null,\n        \"cancel_at_period_end\": false,\n        \"canceled_at\": null,\n        \"cancellation_details\": {\n            \"comment\": null,\n            \"feedback\": null,\n            \"reason\": null\n        },\n        \"collection_method\": \"charge_automatically\",\n        \"created\": 1704391609,\n        \"currency\": \"eur\",\n        \"current_period_end\": 1707070009,\n        \"current_period_start\": 1704391609,\n        \"customer\": \"cus_PJVtS7Rf19hX4j\",\n        \"days_until_due\": null,\n        \"default_payment_method\": {\n            \"id\": \"pm_1OUtY8KMiBrigNb6g5lAmBzg\",\n            \"object\": \"payment_method\",\n            \"billing_details\": {\n                \"address\": {\n                    \"city\": null,\n                    \"country\": \"DE\",\n                    \"line1\": null,\n                    \"line2\": null,\n                    \"postal_code\": null,\n                    \"state\": null\n                },\n                \"email\": \"winston.smith@embloy.com\",\n                \"name\": \"Winstom Smith\",\n                \"phone\": null\n            },\n            \"card\": {\n                \"brand\": \"visa\",\n                \"checks\": {\n                    \"address_line1_check\": null,\n                    \"address_postal_code_check\": null,\n                    \"cvc_check\": \"pass\"\n                },\n                \"country\": \"US\",\n                \"exp_month\": 12,\n                \"exp_year\": 2034,\n                \"fingerprint\": \"0hUglDbVMf8GxtPf\",\n                \"funding\": \"credit\",\n                \"generated_from\": null,\n                \"last4\": \"4242\",\n                \"networks\": {\n                    \"available\": [\n                        \"visa\"\n                    ],\n                    \"preferred\": null\n                },\n                \"three_d_secure_usage\": {\n                    \"supported\": true\n                },\n                \"wallet\": null\n            },\n            \"created\": 1704384820,\n            \"customer\": \"cus_PJVtS7Rf19hX4j\",\n            \"livemode\": false,\n            \"metadata\": {},\n            \"type\": \"card\"\n        },\n        \"default_source\": null,\n        \"default_tax_rates\": [],\n        \"description\": null,\n        \"discount\": null,\n        \"ended_at\": null,\n        \"items\": {\n            \"object\": \"list\",\n            \"data\": [\n                {\n                    \"id\": \"si_PJYQb8PUfoaEc3\",\n                    \"object\": \"subscription_item\",\n                    \"billing_thresholds\": null,\n                    \"created\": 1704391610,\n                    \"metadata\": {},\n                    \"plan\": {\n                        \"id\": \"price_1OUqrPKMiBrigNb6lia8VWiD\",\n                        \"object\": \"plan\",\n                        \"active\": true,\n                        \"aggregate_usage\": null,\n                        \"amount\": 1000,\n                        \"amount_decimal\": \"1000\",\n                        \"billing_scheme\": \"per_unit\",\n                        \"created\": 1704374483,\n                        \"currency\": \"eur\",\n                        \"interval\": \"month\",\n                        \"interval_count\": 1,\n                        \"livemode\": false,\n                        \"metadata\": {},\n                        \"nickname\": null,\n                        \"product\": \"prod_PJTpN7HCdVqHwz\",\n                        \"tiers_mode\": null,\n                        \"transform_usage\": null,\n                        \"trial_period_days\": null,\n                        \"usage_type\": \"licensed\"\n                    },\n                    \"price\": {\n                        \"id\": \"price_1OUqrPKMiBrigNb6lia8VWiD\",\n                        \"object\": \"price\",\n                        \"active\": true,\n                        \"billing_scheme\": \"per_unit\",\n                        \"created\": 1704374483,\n                        \"currency\": \"eur\",\n                        \"custom_unit_amount\": null,\n                        \"livemode\": false,\n                        \"lookup_key\": null,\n                        \"metadata\": {},\n                        \"nickname\": null,\n                        \"product\": \"prod_PJTpN7HCdVqHwz\",\n                        \"recurring\": {\n                            \"aggregate_usage\": null,\n                            \"interval\": \"month\",\n                            \"interval_count\": 1,\n                            \"trial_period_days\": null,\n                            \"usage_type\": \"licensed\"\n                        },\n                        \"tax_behavior\": \"unspecified\",\n                        \"tiers_mode\": null,\n                        \"transform_quantity\": null,\n                        \"type\": \"recurring\",\n                        \"unit_amount\": 1000,\n                        \"unit_amount_decimal\": \"1000\"\n                    },\n                    \"quantity\": 1,\n                    \"subscription\": \"sub_1OUvJdKMiBrigNb68GF8ZQN0\",\n                    \"tax_rates\": []\n                }\n            ],\n            \"has_more\": false,\n            \"total_count\": 1,\n            \"url\": \"/v1/subscription_items?subscription=sub_1OUvJdKMiBrigNb68GF8ZQN0\"\n        },\n        \"latest_invoice\": {\n            \"id\": \"in_1OUvJdKMiBrigNb6qmiVAgLU\",\n            \"object\": \"invoice\",\n            \"account_country\": \"DE\",\n            \"account_name\": \"Embloy\",\n            \"account_tax_ids\": null,\n            \"amount_due\": 1000,\n            \"amount_paid\": 1000,\n            \"amount_remaining\": 0,\n            \"amount_shipping\": 0,\n            \"application\": null,\n            \"application_fee_amount\": null,\n            \"attempt_count\": 1,\n            \"attempted\": true,\n            \"auto_advance\": false,\n            \"automatic_tax\": {\n                \"enabled\": false,\n                \"status\": null\n            },\n            \"billing_reason\": \"subscription_create\",\n            \"charge\": {\n                \"id\": \"ch_3OUvJeKMiBrigNb60BEGnajY\",\n                \"object\": \"charge\",\n                \"amount\": 1000,\n                \"amount_captured\": 1000,\n                \"amount_refunded\": 0,\n                \"application\": null,\n                \"application_fee\": null,\n                \"application_fee_amount\": null,\n                \"balance_transaction\": \"txn_3OUvJeKMiBrigNb60k3YM2LT\",\n                \"billing_details\": {\n                    \"address\": {\n                        \"city\": null,\n                        \"country\": \"DE\",\n                        \"line1\": null,\n                        \"line2\": null,\n                        \"postal_code\": null,\n                        \"state\": null\n                    },\n                    \"email\": \"winston.smith@embloy.com\",\n                    \"name\": \"Winstom Smith\",\n                    \"phone\": null\n                },\n                \"calculated_statement_descriptor\": \"GITHUB.COM\",\n                \"captured\": true,\n                \"created\": 1704391611,\n                \"currency\": \"eur\",\n                \"customer\": \"cus_PJVtS7Rf19hX4j\",\n                \"description\": \"Subscription creation\",\n                \"destination\": null,\n                \"dispute\": null,\n                \"disputed\": false,\n                \"failure_balance_transaction\": null,\n                \"failure_code\": null,\n                \"failure_message\": null,\n                \"fraud_details\": {},\n                \"invoice\": \"in_1OUvJdKMiBrigNb6qmiVAgLU\",\n                \"livemode\": false,\n                \"metadata\": {},\n                \"on_behalf_of\": null,\n                \"order\": null,\n                \"outcome\": {\n                    \"network_status\": \"approved_by_network\",\n                    \"reason\": null,\n                    \"risk_level\": \"normal\",\n                    \"risk_score\": 44,\n                    \"seller_message\": \"Payment complete.\",\n                    \"type\": \"authorized\"\n                },\n                \"paid\": true,\n                \"payment_intent\": \"pi_3OUvJeKMiBrigNb60uyckEsR\",\n                \"payment_method\": \"pm_1OUtY8KMiBrigNb6g5lAmBzg\",\n                \"payment_method_details\": {\n                    \"card\": {\n                        \"amount_authorized\": 1000,\n                        \"brand\": \"visa\",\n                        \"checks\": {\n                            \"address_line1_check\": null,\n                            \"address_postal_code_check\": null,\n                            \"cvc_check\": null\n                        },\n                        \"country\": \"US\",\n                        \"exp_month\": 12,\n                        \"exp_year\": 2034,\n                        \"extended_authorization\": {\n                            \"status\": \"disabled\"\n                        },\n                        \"fingerprint\": \"0hUglDbVMf8GxtPf\",\n                        \"funding\": \"credit\",\n                        \"incremental_authorization\": {\n                            \"status\": \"unavailable\"\n                        },\n                        \"installments\": null,\n                        \"last4\": \"4242\",\n                        \"mandate\": null,\n                        \"multicapture\": {\n                            \"status\": \"unavailable\"\n                        },\n                        \"network\": \"visa\",\n                        \"network_token\": {\n                            \"used\": false\n                        },\n                        \"overcapture\": {\n                            \"maximum_amount_capturable\": 1000,\n                            \"status\": \"unavailable\"\n                        },\n                        \"three_d_secure\": null,\n                        \"wallet\": null\n                    },\n                    \"type\": \"card\"\n                },\n                \"radar_options\": {},\n                \"receipt_email\": null,\n                \"receipt_number\": null,\n                \"receipt_url\": \"https://pay.stripe.com/receipts/invoices/CAcaFwoVYWNjdF8xT1RENzFLTWlCcmlnTmI2KMXq26wGMgbdh9N-els6LBb65rQE1UejCDqAn89oBzQZhlvSEr2qAPI0SIWd3xCVvHtxzhqy1Zoc2MqD?s=ap\",\n                \"refunded\": false,\n                \"review\": null,\n                \"shipping\": null,\n                \"source\": null,\n                \"source_transfer\": null,\n                \"statement_descriptor\": null,\n                \"statement_descriptor_suffix\": null,\n                \"status\": \"succeeded\",\n                \"transfer_data\": null,\n                \"transfer_group\": null\n            },\n            \"collection_method\": \"charge_automatically\",\n            \"created\": 1704391609,\n            \"currency\": \"eur\",\n            \"custom_fields\": null,\n            \"customer\": \"cus_PJVtS7Rf19hX4j\",\n            \"customer_address\": null,\n            \"customer_email\": \"winston.smith@embloy.com\",\n            \"customer_name\": \"Winston Smith\",\n            \"customer_phone\": null,\n            \"customer_shipping\": null,\n            \"customer_tax_exempt\": \"none\",\n            \"customer_tax_ids\": [],\n            \"default_payment_method\": null,\n            \"default_source\": null,\n            \"default_tax_rates\": [],\n            \"description\": null,\n            \"discount\": null,\n            \"discounts\": [],\n            \"due_date\": null,\n            \"effective_at\": 1704391609,\n            \"ending_balance\": 0,\n            \"footer\": null,\n            \"from_invoice\": null,\n            \"hosted_invoice_url\": \"https://invoice.stripe.com/i/acct_1OTD71KMiBrigNb6/test_YWNjdF8xT1RENzFLTWlCcmlnTmI2LF9QSllRUkpjSVZQWUVoWlJqQzZGQkJ6S3l2S01kVjJvLDk0OTMyODA10200KAt8Wfeb?s=ap\",\n            \"invoice_pdf\": \"https://pay.stripe.com/invoice/acct_1OTD71KMiBrigNb6/test_YWNjdF8xT1RENzFLTWlCcmlnTmI2LF9QSllRUkpjSVZQWUVoWlJqQzZGQkJ6S3l2S01kVjJvLDk0OTMyODA10200KAt8Wfeb/pdf?s=ap\",\n            \"last_finalization_error\": null,\n            \"latest_revision\": null,\n            \"lines\": {\n                \"object\": \"list\",\n                \"data\": [\n                    {\n                        \"id\": \"il_1OUvJdKMiBrigNb6pOShn1jq\",\n                        \"object\": \"line_item\",\n                        \"amount\": 1000,\n                        \"amount_excluding_tax\": 1000,\n                        \"currency\": \"eur\",\n                        \"description\": \"1 × Embloy Premium (at €10.00 / month)\",\n                        \"discount_amounts\": [],\n                        \"discountable\": true,\n                        \"discounts\": [],\n                        \"livemode\": false,\n                        \"metadata\": {},\n                        \"period\": {\n                            \"end\": 1707070009,\n                            \"start\": 1704391609\n                        },\n                        \"plan\": {\n                            \"id\": \"price_1OUqrPKMiBrigNb6lia8VWiD\",\n                            \"object\": \"plan\",\n                            \"active\": true,\n                            \"aggregate_usage\": null,\n                            \"amount\": 1000,\n                            \"amount_decimal\": \"1000\",\n                            \"billing_scheme\": \"per_unit\",\n                            \"created\": 1704374483,\n                            \"currency\": \"eur\",\n                            \"interval\": \"month\",\n                            \"interval_count\": 1,\n                            \"livemode\": false,\n                            \"metadata\": {},\n                            \"nickname\": null,\n                            \"product\": \"prod_PJTpN7HCdVqHwz\",\n                            \"tiers_mode\": null,\n                            \"transform_usage\": null,\n                            \"trial_period_days\": null,\n                            \"usage_type\": \"licensed\"\n                        },\n                        \"price\": {\n                            \"id\": \"price_1OUqrPKMiBrigNb6lia8VWiD\",\n                            \"object\": \"price\",\n                            \"active\": true,\n                            \"billing_scheme\": \"per_unit\",\n                            \"created\": 1704374483,\n                            \"currency\": \"eur\",\n                            \"custom_unit_amount\": null,\n                            \"livemode\": false,\n                            \"lookup_key\": null,\n                            \"metadata\": {},\n                            \"nickname\": null,\n                            \"product\": \"prod_PJTpN7HCdVqHwz\",\n                            \"recurring\": {\n                                \"aggregate_usage\": null,\n                                \"interval\": \"month\",\n                                \"interval_count\": 1,\n                                \"trial_period_days\": null,\n                                \"usage_type\": \"licensed\"\n                            },\n                            \"tax_behavior\": \"unspecified\",\n                            \"tiers_mode\": null,\n                            \"transform_quantity\": null,\n                            \"type\": \"recurring\",\n                            \"unit_amount\": 1000,\n                            \"unit_amount_decimal\": \"1000\"\n                        },\n                        \"proration\": false,\n                        \"proration_details\": {\n                            \"credited_items\": null\n                        },\n                        \"quantity\": 1,\n                        \"subscription\": \"sub_1OUvJdKMiBrigNb68GF8ZQN0\",\n                        \"subscription_item\": \"si_PJYQb8PUfoaEc3\",\n                        \"tax_amounts\": [],\n                        \"tax_rates\": [],\n                        \"type\": \"subscription\",\n                        \"unit_amount_excluding_tax\": \"1000\"\n                    }\n                ],\n                \"has_more\": false,\n                \"total_count\": 1,\n                \"url\": \"/v1/invoices/in_1OUvJdKMiBrigNb6qmiVAgLU/lines\"\n            },\n            \"livemode\": false,\n            \"metadata\": {},\n            \"next_payment_attempt\": null,\n            \"number\": \"C5F0B98E-0006\",\n            \"on_behalf_of\": null,\n            \"paid\": true,\n            \"paid_out_of_band\": false,\n            \"payment_intent\": {\n                \"id\": \"pi_3OUvJeKMiBrigNb60uyckEsR\",\n                \"object\": \"payment_intent\",\n                \"amount\": 1000,\n                \"amount_capturable\": 0,\n                \"amount_details\": {\n                    \"tip\": {}\n                },\n                \"amount_received\": 1000,\n                \"application\": null,\n                \"application_fee_amount\": null,\n                \"automatic_payment_methods\": null,\n                \"canceled_at\": null,\n                \"cancellation_reason\": null,\n                \"capture_method\": \"automatic\",\n                \"client_secret\": \"pi_3OUvJeKMiBrigNb60uyckEsR_secret_H3LnmqHStOpCOJzAuPTcaX6XW\",\n                \"confirmation_method\": \"automatic\",\n                \"created\": 1704391610,\n                \"currency\": \"eur\",\n                \"customer\": \"cus_PJVtS7Rf19hX4j\",\n                \"description\": \"Subscription creation\",\n                \"invoice\": \"in_1OUvJdKMiBrigNb6qmiVAgLU\",\n                \"last_payment_error\": null,\n                \"latest_charge\": \"ch_3OUvJeKMiBrigNb60BEGnajY\",\n                \"livemode\": false,\n                \"metadata\": {},\n                \"next_action\": null,\n                \"on_behalf_of\": null,\n                \"payment_method\": \"pm_1OUtY8KMiBrigNb6g5lAmBzg\",\n                \"payment_method_configuration_details\": null,\n                \"payment_method_options\": {\n                    \"card\": {\n                        \"installments\": null,\n                        \"mandate_options\": null,\n                        \"network\": null,\n                        \"request_three_d_secure\": \"automatic\",\n                        \"setup_future_usage\": \"off_session\"\n                    },\n                    \"link\": {\n                        \"persistent_token\": null\n                    },\n                    \"paypal\": {\n                        \"preferred_locale\": null,\n                        \"reference\": null\n                    },\n                    \"sepa_debit\": {}\n                },\n                \"payment_method_types\": [\n                    \"card\",\n                    \"link\",\n                    \"paypal\",\n                    \"sepa_debit\"\n                ],\n                \"processing\": null,\n                \"receipt_email\": null,\n                \"review\": null,\n                \"setup_future_usage\": \"off_session\",\n                \"shipping\": null,\n                \"source\": null,\n                \"statement_descriptor\": null,\n                \"statement_descriptor_suffix\": null,\n                \"status\": \"succeeded\",\n                \"transfer_data\": null,\n                \"transfer_group\": null\n            },\n            \"payment_settings\": {\n                \"default_mandate\": null,\n                \"payment_method_options\": null,\n                \"payment_method_types\": null\n            },\n            \"period_end\": 1704391609,\n            \"period_start\": 1704391609,\n            \"post_payment_credit_notes_amount\": 0,\n            \"pre_payment_credit_notes_amount\": 0,\n            \"quote\": null,\n            \"receipt_number\": null,\n            \"rendering\": null,\n            \"rendering_options\": null,\n            \"shipping_cost\": null,\n            \"shipping_details\": null,\n            \"starting_balance\": 0,\n            \"statement_descriptor\": null,\n            \"status\": \"paid\",\n            \"status_transitions\": {\n                \"finalized_at\": 1704391609,\n                \"marked_uncollectible_at\": null,\n                \"paid_at\": 1704391611,\n                \"voided_at\": null\n            },\n            \"subscription\": \"sub_1OUvJdKMiBrigNb68GF8ZQN0\",\n            \"subscription_details\": {\n                \"metadata\": {}\n            },\n            \"subtotal\": 1000,\n            \"subtotal_excluding_tax\": 1000,\n            \"tax\": null,\n            \"test_clock\": null,\n            \"total\": 1000,\n            \"total_discount_amounts\": [],\n            \"total_excluding_tax\": 1000,\n            \"total_tax_amounts\": [],\n            \"transfer_data\": null,\n            \"webhooks_delivered_at\": 1704391613\n        },\n        \"livemode\": false,\n        \"metadata\": {},\n        \"next_pending_invoice_item_invoice\": null,\n        \"on_behalf_of\": null,\n        \"pause_collection\": null,\n        \"payment_settings\": {\n            \"payment_method_options\": null,\n            \"payment_method_types\": null,\n            \"save_default_payment_method\": \"off\"\n        },\n        \"pending_invoice_item_interval\": null,\n        \"pending_setup_intent\": null,\n        \"pending_update\": null,\n        \"plan\": {\n            \"id\": \"price_1OUqrPKMiBrigNb6lia8VWiD\",\n            \"object\": \"plan\",\n            \"active\": true,\n            \"aggregate_usage\": null,\n            \"amount\": 1000,\n            \"amount_decimal\": \"1000\",\n            \"billing_scheme\": \"per_unit\",\n            \"created\": 1704374483,\n            \"currency\": \"eur\",\n            \"interval\": \"month\",\n            \"interval_count\": 1,\n            \"livemode\": false,\n            \"metadata\": {},\n            \"nickname\": null,\n            \"product\": \"prod_PJTpN7HCdVqHwz\",\n            \"tiers_mode\": null,\n            \"transform_usage\": null,\n            \"trial_period_days\": null,\n            \"usage_type\": \"licensed\"\n        },\n        \"quantity\": 1,\n        \"schedule\": null,\n        \"start_date\": 1704391609,\n        \"status\": \"active\",\n        \"test_clock\": null,\n        \"transfer_data\": null,\n        \"trial_end\": null,\n        \"trial_settings\": {\n            \"end_behavior\": {\n                \"missing_payment_method\": \"create_invoice\"\n            }\n        },\n        \"trial_start\": null\n    }\n}"
 						},
 						{
-							"id": "8cd22e9e-50d6-44b2-9d89-e31be672f016",
-							"name": "401 Unauthorized",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "{{root}}/api/{{api_version}}/client/subscriptions/active?info=1",
-									"host": [
-										"{{root}}"
-									],
-									"path": [
-										"api",
-										"{{api_version}}",
-										"client",
-										"subscriptions",
-										"active"
-									],
-									"query": [
-										{
-											"key": "info",
-											"value": "1"
-										}
-									]
-								}
-							},
-							"status": "Unauthorized",
-							"code": 401,
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"token\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is invalid or expired\"\n        }\n    ]\n}"
-						},
-						{
 							"id": "d09b4ca9-6f65-46c0-b141-12757e46c308",
 							"name": "404 Not Found",
 							"originalRequest": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"url": {
 									"raw": "{{root}}/api/{{api_version}}/client/subscriptions/active?info=1",
 									"host": [
