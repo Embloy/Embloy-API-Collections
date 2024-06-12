@@ -2096,24 +2096,8 @@
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text"
-									},
-									{
-										"key": "latitude",
-										"value": "11",
-										"type": "text"
-									},
-									{
-										"key": "longitude",
-										"value": "49",
-										"type": "text"
-									}
-								],
-								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications"
+								"header": [],
+								"url": "https://api.embloy.com/api/v0/jobs/1/applications"
 							},
 							"status": "OK",
 							"code": 200,
@@ -2143,24 +2127,8 @@
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text"
-									},
-									{
-										"key": "latitude",
-										"value": "11",
-										"type": "text"
-									},
-									{
-										"key": "longitude",
-										"value": "49",
-										"type": "text"
-									}
-								],
-								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications"
+								"header": [],
+								"url": "https://api.embloy.com/api/v0/jobs/1/applications"
 							},
 							"status": "OK",
 							"code": 200,
@@ -2190,14 +2158,8 @@
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text"
-									}
-								],
-								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/application"
+								"header": [],
+								"url": "https://api.embloy.com/api/v0/jobs/1/application"
 							},
 							"status": "OK",
 							"code": 200,
@@ -2227,14 +2189,8 @@
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text"
-									}
-								],
-								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/application"
+								"header": [],
+								"url": "https://api.embloy.com/api/v0/jobs/1/application"
 							},
 							"status": "OK",
 							"code": 200,
@@ -2331,13 +2287,7 @@
 							"name": "201 Created",
 							"originalRequest": {
 								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"body": {
 									"mode": "formdata",
 									"formdata": [
@@ -2403,7 +2353,7 @@
 										}
 									]
 								},
-								"url": "{{root}}/api/{{api_version}}/jobs/{{job_id}}/applications"
+								"url": "https://api.embloy.com/api/v0/jobs/1/applications"
 							},
 							"status": "Created",
 							"code": 201,
@@ -2418,13 +2368,7 @@
 							"name": "400 Bad Request",
 							"originalRequest": {
 								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"body": {
 									"mode": "formdata",
 									"formdata": [
@@ -2505,13 +2449,7 @@
 							"name": "422 Unprocessable Content",
 							"originalRequest": {
 								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"body": {
 									"mode": "formdata",
 									"formdata": [
@@ -2592,13 +2530,7 @@
 							"name": "422 Unprocessable Content",
 							"originalRequest": {
 								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"body": {
 									"mode": "formdata",
 									"formdata": [
@@ -2685,14 +2617,7 @@
 					},
 					"request": {
 						"method": "PATCH",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
+						"header": [],
 						"url": {
 							"raw": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/accept?response=Great Job!",
 							"host": [
@@ -2723,14 +2648,8 @@
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "PATCH",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text"
-									}
-								],
-								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/accept"
+								"header": [],
+								"url": "https://api.embloy.com/api/v0/jobs/1/applications/1/accept"
 							},
 							"status": "OK",
 							"code": 200,
@@ -2745,13 +2664,7 @@
 							"name": "400 Bad Request",
 							"originalRequest": {
 								"method": "PATCH",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/accept"
 							},
 							"status": "Bad Request",
@@ -2772,14 +2685,7 @@
 					},
 					"request": {
 						"method": "PATCH",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
+						"header": [],
 						"url": {
 							"raw": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/reject?response=Not good enough!",
 							"host": [
@@ -2810,14 +2716,8 @@
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "PATCH",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text"
-									}
-								],
-								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/reject"
+								"header": [],
+								"url": "https://api.embloy.com/api/v0/jobs/1/applications/1/reject"
 							},
 							"status": "OK",
 							"code": 200,
@@ -2832,13 +2732,7 @@
 							"name": "400 Bad Request",
 							"originalRequest": {
 								"method": "PATCH",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/reject"
 							},
 							"status": "Bad Request",
@@ -2866,14 +2760,7 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
+						"header": [],
 						"url": "{{root}}/api/{{api_version}}/user/notifications",
 						"description": "The provided access token is first verified, and then the latest 9 read and unread notifications are returned."
 					},
@@ -2883,24 +2770,8 @@
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text"
-									},
-									{
-										"key": "latitude",
-										"value": "11",
-										"type": "text"
-									},
-									{
-										"key": "longitude",
-										"value": "49",
-										"type": "text"
-									}
-								],
-								"url": "{{root}}/api/{{api_version}}/user/notifications"
+								"header": [],
+								"url": "https://api.embloy.com/api/v0/user/notifications"
 							},
 							"status": "OK",
 							"code": 200,
@@ -2952,14 +2823,7 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
+						"header": [],
 						"url": "{{root}}/api/{{api_version}}/user/notifications/unread",
 						"description": "The provided access token is first verified, and then all unread application notifications are returned."
 					},
@@ -3038,14 +2902,7 @@
 					},
 					"request": {
 						"method": "PATCH",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
+						"header": [],
 						"url": "{{root}}/api/{{api_version}}/user/notifications",
 						"description": "Mark a given notification as read/unread."
 					},
