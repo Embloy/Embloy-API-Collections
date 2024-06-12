@@ -88,6 +88,9 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "noauth"
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -183,15 +186,28 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "noauth"
+						},
 						"method": "POST",
-						"header": [
-							{
-								"key": "refresh_token",
-								"value": "{{refresh_token}}",
-								"type": "text",
-								"description": "A valid refresh token is needed in order to be able to create an access_token."
-							}
-						],
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "refresh_token",
+									"value": "{{refresh_token}}",
+									"description": "A valid refresh token is needed in order to be able to create an access_token.",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "refresh_token",
+									"description": "Specifies the type of access delegation according to the authorization grant. This parameter tells the authorization server what kind of authorization grant (i.e., method of proving identity) the client application is presenting in exchange for an access token.",
+									"type": "text"
+								}
+							]
+						},
 						"url": "{{root}}/api/{{api_version}}/auth/token/access",
 						"description": "This first verifies the provided refresh token and then issues an access token for the specific account associated with the refresh token. Access tokens only possess a very short time-limited validity or 20 minutes currently. Access tokens are a very important aspect of dealing with the Embloy API. Nearly every endpoint requires the provision of a valid access token. In conclusion access tokens are quite powerfull, have a short validity interval and can be claimend with a valid refresh token. Refresh tokens are less powerfull than access tokens but they possess a longer validity intervall and are mainly used for claiming access tokens."
 					},
@@ -283,7 +299,34 @@
 				}
 			],
 			"id": "66a77466-1308-4153-9a81-a8b0d8c679c5",
-			"description": "All request regarding user authentication and access token creation."
+			"description": "All request regarding user authentication and access token creation.",
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "4980d3c5-a4b8-41f2-a1ff-e4216c696e9c",
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "a2f29c4a-b462-45d8-a148-ca1c92059fc8",
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Tokens",
