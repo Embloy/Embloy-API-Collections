@@ -241,7 +241,7 @@
 					"response": []
 				},
 				{
-					"name": "Receive redirect from Lever",
+					"name": "Lever OAuth callback",
 					"id": "6d6ff3cb-e006-4f51-8bbf-b51ea3ed8446",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -431,26 +431,6 @@
 		{
 			"name": "Ashby",
 			"item": [
-				{
-					"name": "Register Ashby API-key",
-					"id": "dc80be5a-3318-4e33-a339-d7dbfb1fa726",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": {
-								"username": "{{ASHBY_API_KEY}}"
-							}
-						},
-						"method": "POST",
-						"header": [],
-						"url": "{{root}}/integrations/ashby/register",
-						"description": "When activating the Embloy integration in Ashby, the client needs to register his Ashby API-key in Embloy so that Embloy can use it to submit incoming applications to Ashby."
-					},
-					"response": []
-				},
 				{
 					"name": "Get job info",
 					"id": "a44faada-6eab-4696-8508-9c8aa39d3fe6",
