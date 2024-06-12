@@ -1446,7 +1446,7 @@
 						},
 						{
 							"id": "5065c1d9-2afc-45e7-a202-20f4e0bc79b6",
-							"name": "Delete job",
+							"name": "404 Not Found",
 							"originalRequest": {
 								"method": "DELETE",
 								"header": [],
@@ -1943,14 +1943,7 @@
 					},
 					"request": {
 						"method": "PATCH",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-								"type": "text"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n    \"user\": {\n        \"password\": \"doublethink\",\n        \"password_confirmation\": \"doublethink\"\n    }\n}",
@@ -1966,17 +1959,10 @@
 					"response": [
 						{
 							"id": "67f6c70e-251f-489f-a768-2d8953934b6e",
-							"name": "[200 OK]",
+							"name": "200 OK",
 							"originalRequest": {
 								"method": "PATCH",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"body": {
 									"mode": "raw",
 									"raw": "{\n    \"user\": {\n        \"password\": \"doublethink\",\n        \"password_confirmation\": \"doublethink\"\n    }\n}",
@@ -1986,7 +1972,7 @@
 										}
 									}
 								},
-								"url": "{{root}}/api/{{api_version}}/user/password"
+								"url": "https://api.embloy.com/api/v0/user/password"
 							},
 							"status": "OK",
 							"code": 200,
@@ -2006,14 +1992,7 @@
 					},
 					"request": {
 						"method": "PATCH",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-								"type": "text"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n  \"user\": {\r\n    \"email\": \"winston.smith@embloy.com\",\r\n    \"first_name\": \"Winston\",\r\n    \"last_name\": \"Smith\"\r\n  }\r\n}",
@@ -2069,14 +2048,7 @@
 					},
 					"request": {
 						"method": "DELETE",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
+						"header": [],
 						"url": "{{root}}/api/{{api_version}}/user",
 						"description": "The provided access token is first verified, and then the current user as well as all other associated records are deleted permanently."
 					},
@@ -2086,15 +2058,8 @@
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "DELETE",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
-								"url": "{{root}}/api/{{api_version}}/user"
+								"header": [],
+								"url": "https://api.embloy.com/api/v0/user"
 							},
 							"status": "OK",
 							"code": 200,
@@ -2103,29 +2068,6 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"message\": \"User deleted!\"\n}"
-						},
-						{
-							"id": "25e5d6ed-14c1-4bf1-9d07-18a1a6574e03",
-							"name": "401 Unauthorized",
-							"originalRequest": {
-								"method": "DELETE",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQ5LCJleHAiOjE2OTgxODM4MzIsInR5cCI6InZlcmlmaWVkIiwiaXNzIjoiQ0JfU3VyZmFjZVBybzgifQ.ZAP8fPiR-aQbEqTgZyc8fFrEieYfARGAkoVb8jp6nOo",
-										"type": "text",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
-								"url": "{{root}}/api/{{api_version}}/user"
-							},
-							"status": "Unauthorized",
-							"code": 401,
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"token\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is invalid or expired\"\n        }\n    ]\n}"
 						}
 					]
 				}
@@ -2144,13 +2086,7 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
+						"header": [],
 						"url": "{{root}}/api/{{api_version}}/jobs/applications",
 						"description": "The provided access token is first verified, and then all received applications for the given employer are returned."
 					},
@@ -2197,14 +2133,7 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
+						"header": [],
 						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications",
 						"description": "The provided access token is first verified, and then all received applications for the given jobs are returned."
 					},
@@ -2251,13 +2180,7 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
+						"header": [],
 						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}",
 						"description": "Returns the applications submitted by a specifc user for a given job owned by the current user including optional application attachments."
 					},
@@ -2294,14 +2217,7 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
+						"header": [],
 						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/application",
 						"description": "Returns the applications submitted by the current user for a given job including optional application attachments."
 					},
@@ -2338,14 +2254,7 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "formdata",
 							"formdata": [
