@@ -237,11 +237,13 @@
 								},
 								"url": "{{root}}/api/{{api_version}}/auth/token/access"
 							},
+							"status": "OK",
+							"code": 200,
 							"_postman_previewlanguage": null,
 							"header": null,
 							"cookie": [],
 							"responseTime": null,
-							"body": null
+							"body": "{\n    \"access_token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjE1LCJleHAiOjE3MTgyMjczODcsInR5cCI6InZlcmlmaWVkIiwiaXNzIjoiYXBpLmVtYmxveS5jb20ifQ.79EpTS3dlbjs1DWkoOuZlzAOsgOx5K8Pke4OFs_1O8A\",\n    \"token_type\": \"Bearer\",\n    \"scope\": \"https://api.embloy.com/auth/core.write\",\n    \"expires_in\": 1200\n}"
 						},
 						{
 							"id": "e8149d0c-225d-4df1-bfa7-6938248ba2a8",
@@ -268,11 +270,13 @@
 								},
 								"url": "{{root}}/api/{{api_version}}/auth/token/access"
 							},
+							"status": "Bad Request",
+							"code": 400,
 							"_postman_previewlanguage": null,
 							"header": null,
 							"cookie": [],
 							"responseTime": null,
-							"body": null
+							"body": "{\n    \"error\": \"Invalid request\"\n}"
 						},
 						{
 							"id": "33bc38b6-186e-46b2-8716-7914c9b9ee5e",
@@ -293,6 +297,8 @@
 								},
 								"url": "{{root}}/api/{{api_version}}/auth/token/access"
 							},
+							"status": "Unauthorized",
+							"code": 401,
 							"_postman_previewlanguage": null,
 							"header": null,
 							"cookie": [],
@@ -376,13 +382,7 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
+						"header": [],
 						"url": {
 							"raw": "{{root}}/api/{{api_version}}/tokens?active=1",
 							"host": [
@@ -409,13 +409,7 @@
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
+								"header": [],
 								"url": {
 									"raw": "{{root}}/api/{{api_version}}/tokens?active=1",
 									"host": [
@@ -448,13 +442,7 @@
 							"name": "204 No Content",
 							"originalRequest": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
+								"header": [],
 								"url": {
 									"raw": "{{root}}/api/{{api_version}}/tokens?active=1",
 									"host": [
@@ -511,13 +499,7 @@
 							"name": "201 Created",
 							"originalRequest": {
 								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
+								"header": [],
 								"body": {
 									"mode": "raw",
 									"raw": "{\n    \"name\": \"Custom Job Board API key\",\n    \"issuer\": \"Ashby\",\n    \"token\": \"e484fbfdhdga1h2aheh6vh96h2h9fh8g1hc9jgb27j8t79j7ejc7j7g37e3992eb6c5ccf\",\n    \"token_type\": \"api_key\"\n}\n",
@@ -542,13 +524,7 @@
 							"name": "422 Unprocessable Entity",
 							"originalRequest": {
 								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
+								"header": [],
 								"body": {
 									"mode": "raw",
 									"raw": "{\n    \"name\": \"\",\n    \"issuer\": \"\",\n    \"token\": \"\",\n    \"token_type\": \"\"\n}",
@@ -615,17 +591,7 @@
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "PATCH",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									},
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
+								"header": [],
 								"body": {
 									"mode": "raw",
 									"raw": "{\n    \"name\": \"Automatically generated refresh token\",\n    \"token_type\": \"refresh_token\",\n    \"issuer\": \"embloy\",\n    \"issued_at\": \"2024-05-26T13:57:11.000Z\",\n    \"expires_at\": \"2024-06-09T13:57:11.000Z\",\n    \"last_used_at\": null,\n    \"active\": false,\n    \"scopes\": null,\n    \"created_at\": \"2024-05-26T13:57:11.649Z\",\n    \"updated_at\": \"2024-05-26T13:57:11.649Z\",\n    \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIidkuado98adn2o8dao2d2QzMSwianRpIjoiMWQxYmZiYzE4YTQ0ODA5ZjczNzQ1OTg3OGU3YmEyTEiLJpYXiOj3MT3E4MzEsImlzcyI6ImFwaS5lbWJsb3kuY29tIn0.cTjwoGtWLbONWeYwg6ahfKugrPV36irZpzsVEA\"\n}",
@@ -668,13 +634,7 @@
 							"name": "404 Not Found",
 							"originalRequest": {
 								"method": "PATCH",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
+								"header": [],
 								"url": {
 									"raw": "{{root}}/api/{{api_version}}/tokens/:token_id",
 									"host": [
@@ -713,13 +673,7 @@
 					},
 					"request": {
 						"method": "DELETE",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
+						"header": [],
 						"url": {
 							"raw": "{{root}}/api/{{api_version}}/tokens/:token_id",
 							"host": [
@@ -747,13 +701,7 @@
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "DELETE",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
+								"header": [],
 								"url": {
 									"raw": "{{root}}/api/{{api_version}}/tokens/:token_id",
 									"host": [
@@ -787,13 +735,7 @@
 							"name": "404 Not Found",
 							"originalRequest": {
 								"method": "DELETE",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
+								"header": [],
 								"url": {
 									"raw": "{{root}}/api/{{api_version}}/tokens/:token_id",
 									"host": [
