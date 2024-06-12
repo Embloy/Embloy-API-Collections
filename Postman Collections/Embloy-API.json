@@ -2350,7 +2350,7 @@
 										}
 									]
 								},
-								"url": "https://api.embloy.com/api/v0/jobs/1/applications"
+								"url": "{{root}}/api/{{api_version}}/jobs/{{job_id}}/applications"
 							},
 							"status": "Created",
 							"code": 201,
@@ -2646,7 +2646,27 @@
 							"originalRequest": {
 								"method": "PATCH",
 								"header": [],
-								"url": "https://api.embloy.com/api/v0/jobs/1/applications/1/accept"
+								"url": {
+									"raw": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/accept?response=Great Job!",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"{{api_version}}",
+										"jobs",
+										"{{own_job_id}}",
+										"applications",
+										"{{application_id}}",
+										"accept"
+									],
+									"query": [
+										{
+											"key": "response",
+											"value": "Great Job!"
+										}
+									]
+								}
 							},
 							"status": "OK",
 							"code": 200,
@@ -2662,7 +2682,27 @@
 							"originalRequest": {
 								"method": "PATCH",
 								"header": [],
-								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/accept"
+								"url": {
+									"raw": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/accept?response=Great Job!",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"{{api_version}}",
+										"jobs",
+										"{{own_job_id}}",
+										"applications",
+										"{{application_id}}",
+										"accept"
+									],
+									"query": [
+										{
+											"key": "response",
+											"value": "Great Job!"
+										}
+									]
+								}
 							},
 							"status": "Bad Request",
 							"code": 400,
@@ -2714,7 +2754,27 @@
 							"originalRequest": {
 								"method": "PATCH",
 								"header": [],
-								"url": "https://api.embloy.com/api/v0/jobs/1/applications/1/reject"
+								"url": {
+									"raw": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/reject?response=Not good enough!",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"{{api_version}}",
+										"jobs",
+										"{{own_job_id}}",
+										"applications",
+										"{{application_id}}",
+										"reject"
+									],
+									"query": [
+										{
+											"key": "response",
+											"value": "Not good enough!"
+										}
+									]
+								}
 							},
 							"status": "OK",
 							"code": 200,
@@ -2730,7 +2790,27 @@
 							"originalRequest": {
 								"method": "PATCH",
 								"header": [],
-								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/reject"
+								"url": {
+									"raw": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/reject?response=Not good enough!",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"{{api_version}}",
+										"jobs",
+										"{{own_job_id}}",
+										"applications",
+										"{{application_id}}",
+										"reject"
+									],
+									"query": [
+										{
+											"key": "response",
+											"value": "Not good enough!"
+										}
+									]
+								}
 							},
 							"status": "Bad Request",
 							"code": 400,
@@ -2768,7 +2848,7 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": "https://api.embloy.com/api/v0/user/notifications"
+								"url": "{{root}}/api/{{api_version}}/user/notifications"
 							},
 							"status": "OK",
 							"code": 200,
