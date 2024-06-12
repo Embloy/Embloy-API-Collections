@@ -1812,7 +1812,7 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{root}}/api/{{api_version}}/user/password/reset?email=winston{{username}}",
+									"raw": "{{root}}/api/{{api_version}}/user/password/reset?email={{username}}",
 									"host": [
 										"{{root}}"
 									],
@@ -1826,7 +1826,7 @@
 									"query": [
 										{
 											"key": "email",
-											"value": "winston{{username}}",
+											"value": "{{username}}",
 											"description": "Email of the account that needs to reset password."
 										}
 									]
@@ -1962,14 +1962,14 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"user\": {\n        \"password\": \"doublethink\",\n        \"password_confirmation\": \"doublethink\"\n    }\n}",
+									"raw": "{\n    \"user\": {\n        \"password\": \"{{password}}\",\n        \"password_confirmation\": \"{{password}}\"\n    }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "https://api.embloy.com/api/v0/user/password"
+								"url": "{{root}}/api/{{api_version}}/user/password"
 							},
 							"status": "OK",
 							"code": 200,
@@ -2011,7 +2011,7 @@
 								"header": [
 									{
 										"key": "access_token",
-										"value": "{{access_token}}",
+										"value": "",
 										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
 										"type": "text"
 									}
@@ -2056,7 +2056,7 @@
 							"originalRequest": {
 								"method": "DELETE",
 								"header": [],
-								"url": "https://api.embloy.com/api/v0/user"
+								"url": "{{root}}/api/{{api_version}}/user"
 							},
 							"status": "OK",
 							"code": 200,
@@ -2094,7 +2094,7 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": "https://api.embloy.com/api/v0/jobs/1/applications"
+								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications"
 							},
 							"status": "OK",
 							"code": 200,
@@ -2125,7 +2125,7 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": "https://api.embloy.com/api/v0/jobs/1/applications"
+								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications"
 							},
 							"status": "OK",
 							"code": 200,
@@ -2156,7 +2156,7 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": "https://api.embloy.com/api/v0/jobs/1/application"
+								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}"
 							},
 							"status": "OK",
 							"code": 200,
@@ -2187,7 +2187,7 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": "https://api.embloy.com/api/v0/jobs/1/application"
+								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/application"
 							},
 							"status": "OK",
 							"code": 200,
