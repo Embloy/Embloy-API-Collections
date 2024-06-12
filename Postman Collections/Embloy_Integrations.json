@@ -228,14 +228,15 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{EMBLOY_ACCESS_TOKEN}}"
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{EMBLOY_ACCESS_TOKEN}}"
 							}
-						],
-						"url": "{{root}}/lever/auth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{root}}/integrations/lever/auth"
 					},
 					"response": []
 				},
@@ -293,9 +294,9 @@
 					},
 					"request": {
 						"auth": {
-							"type": "basic",
-							"basic": {
-								"username": "{{LEVER_API_KEY}}"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{LEVER_ACCESS_TOKEN}}"
 							}
 						},
 						"method": "GET",
@@ -348,9 +349,9 @@
 					},
 					"request": {
 						"auth": {
-							"type": "basic",
-							"basic": {
-								"username": "{{LEVER_API_KEY}}"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{LEVER_ACCESS_TOKEN}}"
 							}
 						},
 						"method": "POST",
@@ -398,7 +399,34 @@
 				}
 			],
 			"id": "1b0fbb17-52ee-4eb9-8495-3c0fbbc95212",
-			"description": "Contains all relevant [Lever](https://www.lever.co/) endpoints for the Embloy integration."
+			"description": "Contains all relevant [Lever](https://www.lever.co/) endpoints for the Embloy integration.",
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "fddd765a-b12a-49df-bc99-be7a3f13bd32",
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "7b17b89d-a95b-443f-9b8f-6f5787b05b75",
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Ashby",
@@ -529,7 +557,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "2200f8c8-de8b-4632-8ba0-25bc49661e50",
+				"id": "3b6a286e-d644-454b-b777-39d0e6df5774",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -540,7 +568,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "8453f62b-2eda-4b2f-912c-57cea60b005a",
+				"id": "edca1045-ad2c-43b9-951e-34787391c0f7",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -587,6 +615,11 @@
 		{
 			"key": "ASHBY_JOB_POSTING_ID",
 			"value": ""
+		},
+		{
+			"key": "EMBLOY_ACCESS_TOKEN",
+			"value": "",
+			"type": "string"
 		}
 	]
 }
