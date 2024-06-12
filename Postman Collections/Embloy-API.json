@@ -908,7 +908,7 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": "{{root}}/api/{{api_version}}/jobs/1"
+								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}"
 							},
 							"status": "OK",
 							"code": 200,
@@ -1248,22 +1248,19 @@
 									]
 								},
 								"url": {
-									"raw": "https://api.embloy.com/api/v0/jobs?id=1",
-									"protocol": "https",
+									"raw": "{{root}}/api/{{api_version}}/jobs?id={{own_job_id}}",
 									"host": [
-										"api",
-										"embloy",
-										"com"
+										"{{root}}"
 									],
 									"path": [
 										"api",
-										"v0",
+										"{{api_version}}",
 										"jobs"
 									],
 									"query": [
 										{
 											"key": "id",
-											"value": "1",
+											"value": "{{own_job_id}}",
 											"description": "The id of the job you want to update"
 										}
 									]
@@ -1434,7 +1431,7 @@
 							"originalRequest": {
 								"method": "DELETE",
 								"header": [],
-								"url": "https://api.embloy.com/api/v0/jobs/1"
+								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}"
 							},
 							"status": "OK",
 							"code": 200,
@@ -1488,7 +1485,7 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": "https://api.embloy.com/api/v0/user"
+								"url": "{{root}}/api/{{api_version}}/user"
 							},
 							"status": "OK",
 							"code": 200,
@@ -1519,7 +1516,7 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": "https://api.embloy.com/api/v0/user/jobs"
+								"url": "{{root}}/api/{{api_version}}/user/jobs"
 							},
 							"status": "OK",
 							"code": 200,
@@ -1580,7 +1577,7 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": "https://api.embloy.com/api/v0/user/applications"
+								"url": "{{root}}/api/{{api_version}}/user/applications"
 							},
 							"status": "OK",
 							"code": 200,
@@ -1658,7 +1655,7 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": "https://api.embloy.com/api/v0/user/reviews"
+								"url": "{{root}}/api/{{api_version}}/user/reviews"
 							},
 							"status": "No Content",
 							"code": 204,
@@ -1786,7 +1783,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "{{root}}/api/{{api_version}}/user/password/reset?email=winston.smith@embloy.com",
+							"raw": "{{root}}/api/{{api_version}}/user/password/reset?email={{username}}",
 							"host": [
 								"{{root}}"
 							],
@@ -1800,7 +1797,7 @@
 							"query": [
 								{
 									"key": "email",
-									"value": "winston.smith@embloy.com",
+									"value": "{{username}}",
 									"description": "Email of the account that needs to reset password."
 								}
 							]
@@ -1815,7 +1812,7 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{root}}/api/{{api_version}}/user/password/reset?email=winston.smith@embloy.com",
+									"raw": "{{root}}/api/{{api_version}}/user/password/reset?email=winston{{username}}",
 									"host": [
 										"{{root}}"
 									],
@@ -1829,7 +1826,7 @@
 									"query": [
 										{
 											"key": "email",
-											"value": "winston.smith@embloy.com",
+											"value": "winston{{username}}",
 											"description": "Email of the account that needs to reset password."
 										}
 									]
