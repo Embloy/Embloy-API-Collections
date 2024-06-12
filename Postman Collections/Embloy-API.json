@@ -455,13 +455,7 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n    \"name\": \"Automatically generated token\",\n    \"issuer\": \"Embloy\",\n    \"token\": \"{{refresh_token}}\",\n    \"issued_at\": \"{{$randomDatePast}}\",\n    \"expires_at\": \"{{$randomDateFuture}}\",\n    \"type\": \"refresh_token\"\n}",
@@ -6455,7 +6449,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "3f2e52c0-752d-4a26-aeb2-76c619418bfd",
+				"id": "1bc13630-160f-4165-8ab2-1d1851ceb4c0",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -6465,7 +6459,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "6e662f49-d6e3-4a21-9036-71211265c2be",
+				"id": "0d2fb966-b5d9-4757-8421-0b93a9b67cb0",
 				"type": "text/javascript",
 				"exec": [
 					""
