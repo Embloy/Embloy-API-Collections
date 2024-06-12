@@ -928,13 +928,7 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n    \"title\": \"Android-Developer (m/w/x)\",\n    \"job_type\": \"Marketing\",\n    \"referrer_url\": \"https://www.tum-venture-labs.de/apply\",\n    \"start_slot\": \"2024-06-01T12:26:08.356Z\",\n    \"position\": \"Crossmedialer Korrespondent\",\n    \"key_skills\": \"Eigenständige Planung und Erstellung tagesaktueller und formatgerechter Beiträge für BR24 digital\",\n    \"duration\": 36,\n    \"salary\": 40,\n    \"description\": \"<div>Als mehrmedialer Korrespondent (w/m/d) des Bayerischen Rundfunks in der Region Westmittelfranken mit Standort Ansbach sind Sie für viele Programmnutzende sowie Persönlichkeiten des öffentlichen Lebens eine wichtige Ansprechperson.</div>\",\n    \"job_status\": \"listed\",\n    \"longitude\": 11.613942994844358,\n    \"latitude\": 48.1951076,\n    \"job_notifications\": 1,\n    \"currency\": \"EUR\",\n    \"cv_required\": true,\n    \"allowed_cv_formats\": [\n        \".pdf\",\n        \".docx\",\n        \".txt\",\n        \".xml\"\n    ],\n    \"application_options_attributes\": [\n        {\n            \"question\": \"Schwerbehinderung\",\n            \"question_type\": \"yes_no\",\n            \"required\": true,\n            \"options\": []\n        },\n        {\n            \"question\": \"Homepage\",\n            \"question_type\": \"link\",\n            \"required\": false\n        },\n        {\n            \"question\": \"Blog\",\n            \"question_type\": \"link\",\n            \"required\": false\n        },\n        {\n            \"question\": \"Publikation\",\n            \"question_type\": \"link\",\n            \"required\": false\n        },\n        {\n            \"question\": \"Privates Engagement (z.B. Vereinsmitgliedschaft)\",\n            \"question_type\": \"link\",\n            \"required\": false\n        },\n        {\n            \"question\": \"Andere Internetreferenz\",\n            \"question_type\": \"link\",\n            \"required\": false\n        },\n        {\n            \"question\": \"Filesharing (Dropbox etc.)\",\n            \"question_type\": \"link\",\n            \"required\": false\n        },\n        {\n            \"question\": \"Homepage\",\n            \"question_type\": \"link\",\n            \"required\": false\n        },\n        {\n            \"question\": \"Homepage\",\n            \"question_type\": \"link\",\n            \"required\": false\n        },\n        {\n            \"question\": \"Ausbildungsart\",\n            \"question_type\": \"single_choice\",\n            \"required\": true,\n            \"options\": [\n                \"(Fach-)Hochschule\",\n                \"Berufsausbildung\",\n                \"Schule\",\n                \"Sonstige Hochschule\",\n                \"Universität\",\n                \"Volontariat\"\n            ]\n        },\n        {\n            \"question\": \"Ausbildungseinrichtung\",\n            \"question_type\": \"text\",\n            \"required\": true\n        },\n        {\n            \"question\": \"Abschluss\",\n            \"question_type\": \"single_choice\",\n            \"required\": true,\n            \"options\": [\n                \"1. Staatsexamen\",\n                \"2. Staatsexamen\",\n                \"Abitur/Fachabitur/Matura\",\n                \"Bachelor\",\n                \"Berufsausbildung\",\n                \"Diplom\",\n                \"Hauptschulabschluss\",\n                \"Magister\",\n                \"Master\",\n                \"Mittlere(r) Reife/Realschulab.\",\n                \"Promotion\",\n                \"ohne Abschluss\",\n                \"sonstiger Abschluss\"\n            ]\n        },\n        {\n            \"question\": \"Abschlussnote\",\n            \"question_type\": \"text\",\n            \"required\": false\n        },\n        {\n            \"question\": \"Beschreibung\",\n            \"question_type\": \"text\",\n            \"required\": false\n        },\n        {\n            \"question\": \"1. Wie lautet Ihr frühestmöglicher Eintrittstermin?\",\n            \"question_type\": \"text\",\n            \"required\": true\n        },\n        {\n            \"question\": \"2. Welches Gehalt erwarten Sie (Angabe in Euro, brutto/Monat)?\",\n            \"question_type\": \"text\",\n            \"required\": true\n        },\n        {\n            \"question\": \"3. Waren Sie schon einmal im BR beschäftigt? *\",\n            \"question_type\": \"yes_no\",\n            \"required\": true,\n            \"options\": [\n                \"\"\n            ]\n        },\n        {\n            \"question\": \"4. Falls ja, in welchem Beschäftigungsverhältnis?\",\n            \"question_type\": \"multiple_choice\",\n            \"required\": false,\n            \"options\": [\n                \"Festangestellte/r\",\n                \"Freie/r Mitarbeiter/in\",\n                \"Gagenmitarbeiter/in\",\n                \"Auszubildende/r\",\n                \"Volontär/in\",\n                \"Praktikant/in\",\n                \"Hospitant/in\",\n                \"Aushilfe\"\n            ]\n        },\n        {\n            \"question\": \"Ich bin damit einverstanden, dass meine Bewerbung auch für andere Stellenausschreibungen berücksichtigt wird.\",\n            \"question_type\": \"yes_no\",\n            \"required\": true,\n            \"options\": [\n                \"\"\n            ]\n        }\n    ]\n}",
@@ -953,19 +947,7 @@
 							"name": "201 Created",
 							"originalRequest": {
 								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-										"type": "text"
-									},
-									{
-										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"body": {
 									"mode": "raw",
 									"raw": "{\n  \"title\": \"Organic coffee shop looking for a barista\",\n  \"job_type\": \"part_time\",\n  \"referrer_url\": \"https://embloy.com/\",\n  \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n  \"position\": \"Barista\",\n  \"key_skills\": \"Barista, Coffee, Customer Service\",\n  \"duration\": 20,\n  \"salary\": 18,\n  \"description\": \"<div>Work in the greatest espresso bar in town and make making others happy your paid job!</div>\",\n  \"job_status\": \"listed\",\n  \"longitude\": 11.613942994844358,\n  \"latitude\": 48.1951076,\n  \"job_notifications\": 1,\n  \"currency\": \"USD\",\n  \"cv_required\": true,\n  \"allowed_cv_formats\": [\n    \".pdf\",\n    \".docx\",\n    \".txt\",\n    \".xml\"\n  ],\n  \"application_options_attributes\": [\n    {\n      \"question\": \"Did you ever work as a barista?\",\n      \"question_type\": \"yes_no\",\n      \"required\": true,\n      \"options\": []\n    },\n    {\n      \"question\": \"If yes, where and for how long?\",\n      \"question_type\": \"text\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Upload an image of a perfect Espresso\",\n      \"question_type\": \"file\",\n      \"required\": false,\n      \"options\": [\"svg\", \"png\", \"jpeg\", \"jpg\"]\n    },\n        {\n      \"question\": \"Upload a detailled document of how you make coffee\",\n      \"question_type\": \"file\",\n      \"required\": false\n    },\n    {\n      \"question\": \"What is your favorite coffee?\",\n      \"question_type\": \"short_text\",\n      \"required\": true\n    },\n    {\n      \"question\": \"How many cups of coffee do you drink per day?\",\n      \"question_type\": \"number\",\n      \"required\": true\n    },\n    {\n      \"question\": \"What is the most important thing when preparing coffee?\",\n      \"question_type\": \"long_text\",\n      \"required\": true\n    },\n    { \n      \"question\": \"When did you last prepare coffee?\",\n      \"question_type\": \"date\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Provide a link to a video of you preparing coffee.\",\n      \"question_type\": \"link\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Should Capuccino be served after 11am?\",\n      \"question_type\": \"multiple_choice\",\n      \"required\": true,\n      \"options\": [\n        \"No way, it should be illegal\",\n        \"Yes, but for italians it should remain a crime\",\n        \"Yes, it's a free world\",\n        \"Is it 11am already?\"\n      ]\n    },\n    {\n      \"question\": \"Are you addicted to coffee?\",\n      \"question_type\": \"single_choice\",\n      \"required\": true,\n      \"options\": [\n        \"Yes\",\n        \"No\",\n        \"Maybe...\",\n        \"I can neither confirm nor deny.\"\n      ]\n    }\n  ]\n}",
@@ -975,7 +957,7 @@
 										}
 									}
 								},
-								"url": "{{root}}/api/{{api_version}}/jobs"
+								"url": "https://api.embloy.com/api/v0/jobs"
 							},
 							"status": "Created",
 							"code": 201,
@@ -990,20 +972,7 @@
 							"name": "400 Bad Request",
 							"originalRequest": {
 								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									},
-									{
-										"key": "Content-Type",
-										"name": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"body": {
 									"mode": "raw",
 									"raw": "[\n{\n  \"title\": \"Crossmedialer Korrespondent (w/m/d) der Regionalredaktion BR Mittelfranken / BR Oberfranken\",\n  \"job_type\": \"Marketing\",\n  \"referrer_url\": \"https://www.tum-venture-labs.de/apply\",\n  \"start_slot\": \"2024-03-01T12:26:08.356Z\",\n  \"position\": \"Crossmedialer Korrespondent\",\n  \"key_skills\": \"Eigenständige Planung und Erstellung tagesaktueller und formatgerechter Beiträge für BR24 digital\",\n  \"duration\": 36,\n  \"salary\": 40,\n  \"description\": \"<div>Als mehrmedialer Korrespondent (w/m/d) des Bayerischen Rundfunks in der Region Westmittelfranken mit Standort Ansbach sind Sie für viele Programmnutzende sowie Persönlichkeiten des öffentlichen Lebens eine wichtige Ansprechperson.</div>\",\n  \"job_status\": \"listed\",\n  \"longitude\": 11.613942994844358,\n  \"latitude\": 48.1951076,\n  \"job_notifications\": 1,\n  \"currency\": \"EUR\",\n  \"cv_required\": true,\n  \"allowed_cv_formats\": [\".pdf\", \".docx\", \".txt\", \".xml\"],\n  \"application_options_attributes\": [\n    {\n      \"question\": \"Schwerbehinderung\",\n      \"question_type\": \"yes_no\",\n      \"required\": true,\n      \"options\": []\n    },\n    {\n      \"question\": \"Homepage\",\n      \"question_type\": \"link\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Blog\",\n      \"question_type\": \"link\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Publikation\",\n      \"question_type\": \"link\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Privates Engagement (z.B. Vereinsmitgliedschaft)\",\n      \"question_type\": \"link\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Andere Internetreferenz\",\n      \"question_type\": \"link\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Filesharing (Dropbox etc.)\",\n      \"question_type\": \"link\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Homepage\",\n      \"question_type\": \"link\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Homepage\",\n      \"question_type\": \"link\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Ausbildungsart\",\n      \"question_type\": \"single_choice\",\n      \"required\": true,\n      \"options\": [\"(Fach-)Hochschule\", \"Berufsausbildung\", \"Schule\", \"Sonstige Hochschule\", \"Universität\", \"Volontariat\"]\n    },\n    {\n      \"question\": \"Ausbildungseinrichtung\",\n      \"question_type\": \"text\",\n      \"required\": true\n    },\n    {\n      \"question\": \"Abschluss\",\n      \"question_type\": \"single_choice\",\n      \"required\": true,\n      \"options\": [\"1. Staatsexamen\", \"2. Staatsexamen\", \"Abitur/Fachabitur/Matura\", \"Bachelor\", \"Berufsausbildung\", \"Diplom\", \"Hauptschulabschluss\", \"Magister\", \"Master\", \"Mittlere(r) Reife/Realschulab.\", \"Promotion\", \"ohne Abschluss\", \"sonstiger Abschluss\"]\n    },\n    {\n      \"question\": \"Abschlussnote\",\n      \"question_type\": \"text\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Beschreibung\",\n      \"question_type\": \"text\",\n      \"required\": false\n    },\n    {\n      \"question\": \"1. Wie lautet Ihr frühestmöglicher Eintrittstermin?\",\n      \"question_type\": \"text\",\n      \"required\": true\n    },\n    {\n      \"question\": \"2. Welches Gehalt erwarten Sie (Angabe in Euro, brutto/Monat)?\",\n      \"question_type\": \"text\",\n      \"required\": true\n    },\n    {\n      \"question\": \"3. Waren Sie schon einmal im BR beschäftigt? *\",\n      \"question_type\": \"yes_no\",\n      \"required\": true,\n      \"options\": [\"\"]\n    },\n    {\n      \"question\": \"4. Falls ja, in welchem Beschäftigungsverhältnis?\",\n      \"question_type\": \"multiple_choice\",\n      \"required\": false,\n      \"options\": [\"Festangestellte/r\", \"Freie/r Mitarbeiter/in\", \"Gagenmitarbeiter/in\", \"Auszubildende/r\", \"Volontär/in\", \"Praktikant/in\", \"Hospitant/in\", \"Aushilfe\"]\n    },\n    {\n      \"question\": \"Ich bin damit einverstanden, dass meine Bewerbung auch für andere Stellenausschreibungen berücksichtigt wird.\",\n      \"question_type\": \"yes_no\",\n      \"required\": true,\n      \"options\": [\"\"]\n    }\n  ]\n},\n{\n  \"title\": \"Crossmedialer Korrespondent (w/m/d) der Regionalredaktion BR Mittelfranken / BR Oberfranken\",\n  \"job_type\": \"Marketing\",\n  \"referrer_url\": \"https://www.tum-venture-labs.de/apply\",\n  \"start_slot\": \"2024-03-01T12:26:08.356Z\",\n  \"position\": \"Crossmedialer Korrespondent\",\n  \"key_skills\": \"Eigenständige Planung und Erstellung tagesaktueller und formatgerechter Beiträge für BR24 digital\",\n  \"duration\": 36,\n  \"salary\": 40,\n  \"description\": \"<div>Als mehrmedialer Korrespondent (w/m/d) des Bayerischen Rundfunks in der Region Westmittelfranken mit Standort Ansbach sind Sie für viele Programmnutzende sowie Persönlichkeiten des öffentlichen Lebens eine wichtige Ansprechperson.</div>\",\n  \"status\": \"public\",\n  \"longitude\": 11.613942994844358,\n  \"latitude\": 48.1951076,\n  \"job_notifications\": 1,\n  \"currency\": \"EUR\",\n  \"cv_required\": true,\n  \"allowed_cv_formats\": [\".pdf\", \".docx\", \".txt\", \".xml\"],\n  \"application_options_attributes\": [\n    {\n      \"question\": \"Schwerbehinderung\",\n      \"question_type\": \"yes_no\",\n      \"required\": true,\n      \"options\": []\n    },\n    {\n      \"question\": \"Homepage\",\n      \"question_type\": \"link\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Blog\",\n      \"question_type\": \"link\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Publikation\",\n      \"question_type\": \"link\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Privates Engagement (z.B. Vereinsmitgliedschaft)\",\n      \"question_type\": \"link\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Andere Internetreferenz\",\n      \"question_type\": \"link\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Filesharing (Dropbox etc.)\",\n      \"question_type\": \"link\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Homepage\",\n      \"question_type\": \"link\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Homepage\",\n      \"question_type\": \"link\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Ausbildungsart\",\n      \"question_type\": \"single_choice\",\n      \"required\": true,\n      \"options\": [\"(Fach-)Hochschule\", \"Berufsausbildung\", \"Schule\", \"Sonstige Hochschule\", \"Universität\", \"Volontariat\"]\n    },\n    {\n      \"question\": \"Ausbildungseinrichtung\",\n      \"question_type\": \"text\",\n      \"required\": true\n    },\n    {\n      \"question\": \"Abschluss\",\n      \"question_type\": \"single_choice\",\n      \"required\": true,\n      \"options\": [\"1. Staatsexamen\", \"2. Staatsexamen\", \"Abitur/Fachabitur/Matura\", \"Bachelor\", \"Berufsausbildung\", \"Diplom\", \"Hauptschulabschluss\", \"Magister\", \"Master\", \"Mittlere(r) Reife/Realschulab.\", \"Promotion\", \"ohne Abschluss\", \"sonstiger Abschluss\"]\n    },\n    {\n      \"question\": \"Abschlussnote\",\n      \"question_type\": \"text\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Beschreibung\",\n      \"question_type\": \"text\",\n      \"required\": false\n    },\n    {\n      \"question\": \"1. Wie lautet Ihr frühestmöglicher Eintrittstermin?\",\n      \"question_type\": \"text\",\n      \"required\": true\n    },\n    {\n      \"question\": \"2. Welches Gehalt erwarten Sie (Angabe in Euro, brutto/Monat)?\",\n      \"question_type\": \"text\",\n      \"required\": true\n    },\n    {\n      \"question\": \"3. Waren Sie schon einmal im BR beschäftigt? *\",\n      \"question_type\": \"yes_no\",\n      \"required\": true,\n      \"options\": [\"\"]\n    },\n    {\n      \"question\": \"4. Falls ja, in welchem Beschäftigungsverhältnis?\",\n      \"question_type\": \"multiple_choice\",\n      \"required\": false,\n      \"options\": [\"Festangestellte/r\", \"Freie/r Mitarbeiter/in\", \"Gagenmitarbeiter/in\", \"Auszubildende/r\", \"Volontär/in\", \"Praktikant/in\", \"Hospitant/in\", \"Aushilfe\"]\n    },\n    {\n      \"question\": \"Ich bin damit einverstanden, dass meine Bewerbung auch für andere Stellenausschreibungen berücksichtigt wird.\",\n      \"question_type\": \"yes_no\",\n      \"required\": true,\n      \"options\": [\"\"]\n    }\n  ]\n}\n]\n",
@@ -1028,19 +997,7 @@
 							"name": "429 Too Many Requests",
 							"originalRequest": {
 								"method": "POST",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-										"type": "text"
-									},
-									{
-										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"body": {
 									"mode": "raw",
 									"raw": "{\n  \"title\": \"Organic coffee shop looking for a barista\",\n  \"job_type\": \"part_time\",\n  \"referrer_url\": \"https://embloy.com/\",\n  \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n  \"position\": \"Barista\",\n  \"key_skills\": \"Barista, Coffee, Customer Service\",\n  \"duration\": 20,\n  \"salary\": 18,\n  \"description\": \"<div>Work in the greatest espresso bar in town and make making others happy your paid job!</div>\",\n  \"job_status\": \"listed\",\n  \"longitude\": 11.613942994844358,\n  \"latitude\": 48.1951076,\n  \"job_notifications\": 1,\n  \"currency\": \"USD\",\n  \"cv_required\": true,\n  \"allowed_cv_formats\": [\n    \".pdf\",\n    \".docx\",\n    \".txt\",\n    \".xml\"\n  ],\n  \"application_options_attributes\": [\n    {\n      \"question\": \"Did you ever work as a barista?\",\n      \"question_type\": \"yes_no\",\n      \"required\": true,\n      \"options\": []\n    },\n    {\n      \"question\": \"If yes, where and for how long?\",\n      \"question_type\": \"text\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Upload an image of a perfect Espresso\",\n      \"question_type\": \"file\",\n      \"required\": false,\n      \"options\": [\"svg\", \"png\", \"jpeg\", \"jpg\"]\n    },\n        {\n      \"question\": \"Upload a detailled document of how you make coffee\",\n      \"question_type\": \"file\",\n      \"required\": false\n    },\n    {\n      \"question\": \"What is your favorite coffee?\",\n      \"question_type\": \"short_text\",\n      \"required\": true\n    },\n    {\n      \"question\": \"How many cups of coffee do you drink per day?\",\n      \"question_type\": \"number\",\n      \"required\": true\n    },\n    {\n      \"question\": \"What is the most important thing when preparing coffee?\",\n      \"question_type\": \"long_text\",\n      \"required\": true\n    },\n    { \n      \"question\": \"When did you last prepare coffee?\",\n      \"question_type\": \"date\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Provide a link to a video of you preparing coffee.\",\n      \"question_type\": \"link\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Should Capuccino be served after 11am?\",\n      \"question_type\": \"multiple_choice\",\n      \"required\": true,\n      \"options\": [\n        \"No way, it should be illegal\",\n        \"Yes, but for italians it should remain a crime\",\n        \"Yes, it's a free world\",\n        \"Is it 11am already?\"\n      ]\n    },\n    {\n      \"question\": \"Are you addicted to coffee?\",\n      \"question_type\": \"single_choice\",\n      \"required\": true,\n      \"options\": [\n        \"Yes\",\n        \"No\",\n        \"Maybe...\",\n        \"I can neither confirm nor deny.\"\n      ]\n    }\n  ]\n}",
@@ -1070,14 +1027,7 @@
 					},
 					"request": {
 						"method": "PATCH",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "formdata",
 							"formdata": [
@@ -1207,14 +1157,7 @@
 							"name": "400 Bad Request",
 							"originalRequest": {
 								"method": "PATCH",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
+								"header": [],
 								"body": {
 									"mode": "formdata",
 									"formdata": [
@@ -1232,7 +1175,7 @@
 										},
 										{
 											"key": "start_slot",
-											"value": "{{$isoTimestamp}}",
+											"value": "2024-06-12T21:11:39.736Z",
 											"type": "text",
 											"description": "The timestamp of when the job starts"
 										},
@@ -1305,19 +1248,22 @@
 									]
 								},
 								"url": {
-									"raw": "{{root}}/api/{{api_version}}/jobs?id={{own_job_id}}",
+									"raw": "https://api.embloy.com/api/v0/jobs?id=1",
+									"protocol": "https",
 									"host": [
-										"{{root}}"
+										"api",
+										"embloy",
+										"com"
 									],
 									"path": [
 										"api",
-										"{{api_version}}",
+										"v0",
 										"jobs"
 									],
 									"query": [
 										{
 											"key": "id",
-											"value": "{{own_job_id}}",
+											"value": "1",
 											"description": "The id of the job you want to update"
 										}
 									]
@@ -1336,14 +1282,7 @@
 							"name": "400 Bad Request",
 							"originalRequest": {
 								"method": "PATCH",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
+								"header": [],
 								"body": {
 									"mode": "formdata",
 									"formdata": [
@@ -1484,14 +1423,7 @@
 					},
 					"request": {
 						"method": "DELETE",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
+						"header": [],
 						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}",
 						"description": "Please note that this method is not part of the standard usage and requires editor-level or above user permissions. Use with caution. The provided access token is first verified, and then a given job is irreversibly deleted from the system. To only remove a job post you can either use the PATCH /jobs method and change the job_status to 0."
 					},
@@ -1501,15 +1433,8 @@
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "DELETE",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
-								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}"
+								"header": [],
+								"url": "https://api.embloy.com/api/v0/jobs/1"
 							},
 							"status": "OK",
 							"code": 200,
@@ -1524,14 +1449,7 @@
 							"name": "Delete job",
 							"originalRequest": {
 								"method": "DELETE",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
+								"header": [],
 								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}"
 							},
 							"status": "Not Found",
@@ -1559,32 +1477,18 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
+						"header": [],
 						"url": "{{root}}/api/{{api_version}}/user",
 						"description": "This creates an user at its related records. In its entirety, this is referred to as an Embloy account. A freshly created Embloy account is inactive and first needs to be verified by the user."
 					},
 					"response": [
 						{
 							"id": "650a58af-0735-44c6-a701-59bc152ae9e9",
-							"name": "[200 OK]",
+							"name": "200 OK",
 							"originalRequest": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
-								"url": "{{root}}/api/{{api_version}}/user"
+								"header": [],
+								"url": "https://api.embloy.com/api/v0/user"
 							},
 							"status": "OK",
 							"code": 200,
@@ -1604,14 +1508,7 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [
-							{
-								"key": "access_token",
-								"value": "{{access_token}}",
-								"type": "text",
-								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-							}
-						],
+						"header": [],
 						"url": "{{root}}/api/{{api_version}}/user/jobs",
 						"description": "The provided access token is first verified, and then a list of all the jobs associated with its owner is generated."
 					},
@@ -1621,15 +1518,8 @@
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
-								"url": "{{root}}/api/{{api_version}}/user/jobs"
+								"header": [],
+								"url": "https://api.embloy.com/api/v0/user/jobs"
 							},
 							"status": "OK",
 							"code": 200,
@@ -1644,14 +1534,7 @@
 							"name": "204 No Content",
 							"originalRequest": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "access_token",
-										"value": "{{access_token}}",
-										"type": "text",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
-									}
-								],
+								"header": [],
 								"url": "{{root}}/api/{{api_version}}/user/jobs"
 							},
 							"status": "No Content",
