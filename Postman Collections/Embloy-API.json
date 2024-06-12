@@ -2895,7 +2895,7 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": "https://api.embloy.com/api/v0/user/notifications/unread"
+								"url": "{{root}}/api/{{api_version}}/user/notifications/unread"
 							},
 							"status": "OK",
 							"code": 200,
@@ -2932,7 +2932,25 @@
 					"request": {
 						"method": "PATCH",
 						"header": [],
-						"url": "{{root}}/api/{{api_version}}/user/notifications",
+						"url": {
+							"raw": "{{root}}/api/{{api_version}}/user/notifications/{{notification_id}}?read=1",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"api",
+								"{{api_version}}",
+								"user",
+								"notifications",
+								"{{notification_id}}"
+							],
+							"query": [
+								{
+									"key": "read",
+									"value": "1"
+								}
+							]
+						},
 						"description": "Mark a given notification as read/unread."
 					},
 					"response": [
@@ -2943,24 +2961,21 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://api.embloy.com/api/v0/user/notifications/27?read=0",
-									"protocol": "https",
+									"raw": "{{root}}/api/{{api_version}}/user/notifications/{{notification_id}}?read=1",
 									"host": [
-										"api",
-										"embloy",
-										"com"
+										"{{root}}"
 									],
 									"path": [
 										"api",
-										"v0",
+										"{{api_version}}",
 										"user",
 										"notifications",
-										"27"
+										"{{notification_id}}"
 									],
 									"query": [
 										{
 											"key": "read",
-											"value": "0"
+											"value": "1"
 										}
 									]
 								}
@@ -2980,7 +2995,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{root}}/api/{{api_version}}/user/notifications/27?read=1",
+									"raw": "{{root}}/api/{{api_version}}/user/notifications/{{notification_id}}?read=1",
 									"host": [
 										"{{root}}"
 									],
@@ -2989,7 +3004,7 @@
 										"{{api_version}}",
 										"user",
 										"notifications",
-										"27"
+										"{{notification_id}}"
 									],
 									"query": [
 										{
@@ -5656,12 +5671,6 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "{{access_token}}"
-							}
-						},
 						"method": "GET",
 						"header": [],
 						"url": "{{genius_root}}/api/{{genius_api_version}}/store"
@@ -6050,6 +6059,10 @@
 		{
 			"key": "username",
 			"value": "winston.smith@embloy.com"
+		},
+		{
+			"key": "notification_id",
+			"value": "27"
 		}
 	]
 }
