@@ -54,6 +54,9 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "noauth"
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -474,7 +477,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"token\": {\n        \"name\": \"\",\n        \"issuer\": \"\",\n        \"token\": \"\",\n        \"token_type\": \"\"\n    }\n}",
+									"raw": "{\n    \"name\": \"\",\n    \"issuer\": \"\",\n    \"token\": \"\",\n    \"token_type\": \"\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -508,6 +511,15 @@
 								"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 							}
 						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Automatically generated refresh token\",\n    \"token_type\": \"refresh_token\",\n    \"issuer\": \"embloy\",\n    \"issued_at\": \"2024-05-26T13:57:11.000Z\",\n    \"expires_at\": \"2024-06-09T13:57:11.000Z\",\n    \"last_used_at\": null,\n    \"active\": false,\n    \"scopes\": null,\n    \"created_at\": \"2024-05-26T13:57:11.649Z\",\n    \"updated_at\": \"2024-05-26T13:57:11.649Z\",\n    \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIidkuado98adn2o8dao2d2QzMSwianRpIjoiMWQxYmZiYzE4YTQ0ODA5ZjczNzQ1OTg3OGU3YmEyTEiLJpYXiOj3MT3E4MzEsImlzcyI6ImFwaS5lbWJsb3kuY29tIn0.cTjwoGtWLbONWeYwg6ahfKugrPV36irZpzsVEA\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "{{root}}/api/{{api_version}}/tokens/:token_id",
 							"host": [
@@ -548,7 +560,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"token\": {\n        \"name\": \"Automatically generated refresh token\",\n        \"token_type\": \"refresh_token\",\n        \"issuer\": \"embloy\",\n        \"issued_at\": \"2024-05-26T13:57:11.000Z\",\n        \"expires_at\": \"2024-06-09T13:57:11.000Z\",\n        \"last_used_at\": null,\n        \"active\": false,\n        \"scopes\": null,\n        \"created_at\": \"2024-05-26T13:57:11.649Z\",\n        \"updated_at\": \"2024-05-26T13:57:11.649Z\",\n        \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIidkuado98adn2o8dao2d2QzMSwianRpIjoiMWQxYmZiYzE4YTQ0ODA5ZjczNzQ1OTg3OGU3YmEyTEiLJpYXiOj3MT3E4MzEsImlzcyI6ImFwaS5lbWJsb3kuY29tIn0.cTjwoGtWLbONWeYwg6ahfKugrPV36irZpzsVEA\"\n    }\n}",
+									"raw": "{\n    \"name\": \"Automatically generated refresh token\",\n    \"token_type\": \"refresh_token\",\n    \"issuer\": \"embloy\",\n    \"issued_at\": \"2024-05-26T13:57:11.000Z\",\n    \"expires_at\": \"2024-06-09T13:57:11.000Z\",\n    \"last_used_at\": null,\n    \"active\": false,\n    \"scopes\": null,\n    \"created_at\": \"2024-05-26T13:57:11.649Z\",\n    \"updated_at\": \"2024-05-26T13:57:11.649Z\",\n    \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIidkuado98adn2o8dao2d2QzMSwianRpIjoiMWQxYmZiYzE4YTQ0ODA5ZjczNzQ1OTg3OGU3YmEyTEiLJpYXiOj3MT3E4MzEsImlzcyI6ImFwaS5lbWJsb3kuY29tIn0.cTjwoGtWLbONWeYwg6ahfKugrPV36irZpzsVEA\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -6390,11 +6402,17 @@
 			"id": "f548f0f8-eb62-4855-9d29-a72dedcefe8d"
 		}
 	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "{{access_token}}"
+		}
+	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "ee0982d5-a6a0-4054-b75e-867d59dbaa63",
+				"id": "3f2e52c0-752d-4a26-aeb2-76c619418bfd",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -6404,7 +6422,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "604ded1e-1b25-49fa-8817-88c7c0550a3e",
+				"id": "6e662f49-d6e3-4a21-9036-71211265c2be",
 				"type": "text/javascript",
 				"exec": [
 					""
