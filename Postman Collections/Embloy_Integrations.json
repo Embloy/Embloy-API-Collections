@@ -236,7 +236,7 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "{{root}}/integrations/lever/auth"
+						"url": "{{root}}/api/v0/integrations/lever/auth"
 					},
 					"response": []
 				},
