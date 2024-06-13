@@ -5421,7 +5421,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "2db9ff95-3a5b-4037-b00b-1fc5cb9b195a",
+				"id": "068db91d-39ad-424b-94d0-d9f987322ffc",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -5431,7 +5431,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "7b06094b-ea4e-4f78-9ed5-fe256070e1bd",
+				"id": "a9bab515-54ea-4128-a5ab-7787fb59f836",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -5511,11 +5511,11 @@
 		},
 		{
 			"key": "password",
-			"value": "doublethink"
+			"value": "password"
 		},
 		{
 			"key": "username",
-			"value": "winston.smith@embloy.com"
+			"value": "your-name@example.com"
 		},
 		{
 			"key": "notification_id",
