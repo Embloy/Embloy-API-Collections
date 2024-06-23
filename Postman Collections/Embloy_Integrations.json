@@ -339,7 +339,60 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"id": "aa9b5d87-479e-44b6-b28f-4cad5e90e42a",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"customQuestions\": [\n        {\n            \"id\": \"75f54523-ff77-4307-a868-08392ee02cab\",\n            \"fields\": [\n                {\n                    \"value\": \"I have extensive work experience over 10 years. Let me go into detail...\"\n                },\n                {\n                    \"value\": [\n                        \"JavaScript\",\n                        \"Ruby\"\n                    ]\n                }\n            ]\n        }\n    ],\n    \"eeoResponses\": {\n        \"gender\": \"Female\",\n        \"race\": \"Native Hawaiian or Other Pacific Islander (Not Hispanic or Latino)\",\n        \"veteran\": \"I am not a Protected Veteran\",\n        \"disability\": \"Yes, I have a disability, or have a history/record of having a disability\",\n        \"disabilitySignature\": \"Firstname Lastname\",\n        \"disabilitySignatureDate\": \"11/21/2022\"\n    },\n    \"diversitySurvey\": {\n        \"surveyId\": \"b0d26744-60b2-4015-b125-b09fd5b95c1d\",\n        \"candidateSelectedLocation\": \"CO\",\n        \"responses\": [\n            {\n                \"questionId\": \"62d6bd6a-be74-48d1-a7a5-5b9570b50bf8\",\n                \"questionText\": \"What gender do you identify as?\",\n                \"questionType\": \"multiple choice\",\n                \"answer\": \"Male\"\n            },\n            {\n                \"questionId\": \"72riOps2-48pt-48d1-b7v3-a49e1eae2c30\",\n                \"questionText\": \"What is your age range?\",\n                \"questionType\": \"multiple-select\",\n                \"answer\": \"18-25\"\n            }\n        ]\n    },\n    \"personalInformation\": [\n        {\n            \"name\": \"fullName\",\n            \"value\": \"Shane Smith\"\n        },\n        {\n            \"name\": \"email\",\n            \"value\": \"shane@exampleq3.com\"\n        },\n        {\n            \"name\": \"currentCompany\",\n            \"value\": \"Brickly LLC, Vandelay Industries, Inc, Central Perk\"\n        },\n        {\n            \"name\": \"currentLocation\",\n            \"value\": \"Oakland\"\n        },\n        {\n            \"name\": \"phone\",\n            \"value\": \"(123) 456-7891\"\n        },\n        {\n            \"name\": \"resume\",\n            \"value\": \"https://api.lever.co/v1/uploads/083d56ef-40c6-483a-9551-20ece8c4e776-resume.pdf\"\n        },\n        {\n            \"name\": \"preferredPostingLocation\",\n            \"value\": \"Oakland\"\n        },\n        {\n            \"name\": \"additionalInformation\",\n            \"value\": \"I am interested in discussing a remote working situation, if at all possible.\"\n        }\n    ],\n    \"urls\": [\n        {\n            \"name\": \"LinkedIn\",\n            \"value\": \"https://linkedin.com/shane-smith\"\n        },\n        {\n            \"name\": \"Other Website\",\n            \"value\": \"www.shane-smith.com\"\n        },\n        {\n            \"name\": \"Github\",\n            \"value\": \"https://github.com/shane-smith\"\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://api.sandbox.lever.co/v1/postings/:postingId?distribution=internal",
+									"protocol": "https",
+									"host": [
+										"api",
+										"sandbox",
+										"lever",
+										"co"
+									],
+									"path": [
+										"v1",
+										"postings",
+										":postingId"
+									],
+									"query": [
+										{
+											"key": "distribution",
+											"value": "internal",
+											"description": "This parameter is used to return internal or external custom application questions. If unspecified, it returns both (internal and external)."
+										}
+									],
+									"variable": [
+										{
+											"key": "postingId",
+											"value": "{{LEVER_POSTING_ID}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": {\n        \"id\": \"54d15a33-c024-4ba4-bc62-6f9588978758\",\n        \"text\": \"test\",\n        \"state\": \"published\",\n        \"distributionChannels\": [\n            \"public\"\n        ],\n        \"user\": \"715f7dbc-7e66-4bf6-949e-2d8bf368f9f5\",\n        \"owner\": \"715f7dbc-7e66-4bf6-949e-2d8bf368f9f5\",\n        \"hiringManager\": null,\n        \"categories\": {\n            \"commitment\": \"worktype1\",\n            \"department\": null,\n            \"level\": null,\n            \"location\": \"location1\",\n            \"team\": \"team1\",\n            \"allLocations\": [\n                \"location1\"\n            ]\n        },\n        \"tags\": [],\n        \"content\": {\n            \"description\": \"Hello World\\n\",\n            \"descriptionHtml\": \"<div>Hello World</div>\",\n            \"lists\": [],\n            \"closing\": \"\",\n            \"closingHtml\": \"\"\n        },\n        \"country\": \"DE\",\n        \"followers\": [\n            \"715f7dbc-7e66-4bf6-949e-2d8bf368f9f5\"\n        ],\n        \"reqCode\": null,\n        \"requisitionCodes\": [],\n        \"urls\": {\n            \"list\": \"https://jobs.sandbox.lever.co/de\",\n            \"show\": \"https://jobs.sandbox.lever.co/de/54d15a33-c024-4ba4-bc62-6f9588978758\",\n            \"apply\": \"https://jobs.sandbox.lever.co/de/54d15a33-c024-4ba4-bc62-6f9588978758/apply\"\n        },\n        \"confidentiality\": \"non-confidential\",\n        \"createdAt\": 1716466155252,\n        \"updatedAt\": 1716466155252,\n        \"workplaceType\": \"onsite\",\n        \"salaryRange\": {\n            \"min\": 1,\n            \"max\": 123,\n            \"currency\": \"EUR\",\n            \"interval\": \"per-year-salary\"\n        }\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "Retrieve single posting questions",
@@ -366,7 +419,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://api.sandbox.lever.co/v1/postings/:postingId?distribution=internal",
+							"raw": "https://api.sandbox.lever.co/v1/postings/:postingId/apply",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -377,25 +430,65 @@
 							"path": [
 								"v1",
 								"postings",
-								":postingId"
-							],
-							"query": [
-								{
-									"key": "distribution",
-									"value": "internal",
-									"description": "This parameter is used to return internal or external custom application questions. If unspecified, it returns both (internal and external)."
-								}
+								":postingId",
+								"apply"
 							],
 							"variable": [
 								{
-									"id": "9616fa56-d980-42e5-b42b-1bbd81d6e0af",
 									"key": "postingId",
-									"value": "{{LEVER_POSTING_ID}}"
+									"value": ""
 								}
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"id": "ad3b7811-8465-4f5b-85ce-0aee0059e09a",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"customQuestions\": [\n        {\n            \"id\": \"75f54523-ff77-4307-a868-08392ee02cab\",\n            \"fields\": [\n                {\n                    \"value\": \"I have extensive work experience over 10 years. Let me go into detail...\"\n                },\n                {\n                    \"value\": [\n                        \"JavaScript\",\n                        \"Ruby\"\n                    ]\n                }\n            ]\n        }\n    ],\n    \"eeoResponses\": {\n        \"gender\": \"Female\",\n        \"race\": \"Native Hawaiian or Other Pacific Islander (Not Hispanic or Latino)\",\n        \"veteran\": \"I am not a Protected Veteran\",\n        \"disability\": \"Yes, I have a disability, or have a history/record of having a disability\",\n        \"disabilitySignature\": \"Firstname Lastname\",\n        \"disabilitySignatureDate\": \"11/21/2022\"\n    },\n    \"diversitySurvey\": {\n        \"surveyId\": \"b0d26744-60b2-4015-b125-b09fd5b95c1d\",\n        \"candidateSelectedLocation\": \"CO\",\n        \"responses\": [\n            {\n                \"questionId\": \"62d6bd6a-be74-48d1-a7a5-5b9570b50bf8\",\n                \"questionText\": \"What gender do you identify as?\",\n                \"questionType\": \"multiple choice\",\n                \"answer\": \"Male\"\n            },\n            {\n                \"questionId\": \"72riOps2-48pt-48d1-b7v3-a49e1eae2c30\",\n                \"questionText\": \"What is your age range?\",\n                \"questionType\": \"multiple-select\",\n                \"answer\": \"18-25\"\n            }\n        ]\n    },\n    \"personalInformation\": [\n        {\n            \"name\": \"fullName\",\n            \"value\": \"Shane Smith\"\n        },\n        {\n            \"name\": \"email\",\n            \"value\": \"shane@exampleq3.com\"\n        },\n        {\n            \"name\": \"currentCompany\",\n            \"value\": \"Brickly LLC, Vandelay Industries, Inc, Central Perk\"\n        },\n        {\n            \"name\": \"currentLocation\",\n            \"value\": \"Oakland\"\n        },\n        {\n            \"name\": \"phone\",\n            \"value\": \"(123) 456-7891\"\n        },\n        {\n            \"name\": \"resume\",\n            \"value\": \"https://api.lever.co/v1/uploads/083d56ef-40c6-483a-9551-20ece8c4e776-resume.pdf\"\n        },\n        {\n            \"name\": \"preferredPostingLocation\",\n            \"value\": \"Oakland\"\n        },\n        {\n            \"name\": \"additionalInformation\",\n            \"value\": \"I am interested in discussing a remote working situation, if at all possible.\"\n        }\n    ],\n    \"urls\": [\n        {\n            \"name\": \"LinkedIn\",\n            \"value\": \"https://linkedin.com/shane-smith\"\n        },\n        {\n            \"name\": \"Other Website\",\n            \"value\": \"www.shane-smith.com\"\n        },\n        {\n            \"name\": \"Github\",\n            \"value\": \"https://github.com/shane-smith\"\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://api.sandbox.lever.co/v1/postings/:postingId/apply",
+									"protocol": "https",
+									"host": [
+										"api",
+										"sandbox",
+										"lever",
+										"co"
+									],
+									"path": [
+										"v1",
+										"postings",
+										":postingId",
+										"apply"
+									],
+									"variable": [
+										{
+											"key": "postingId",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": {\n        \"id\": \"54d15a33-c024-4ba4-bc62-6f9588978758\",\n        \"text\": \"test\",\n        \"customQuestions\": [],\n        \"personalInformation\": [\n            {\n                \"text\": \"Full name\",\n                \"name\": \"fullName\",\n                \"type\": \"text\",\n                \"required\": true,\n                \"value\": null\n            },\n            {\n                \"text\": \"Email\",\n                \"name\": \"email\",\n                \"type\": \"text\",\n                \"required\": true,\n                \"value\": null\n            },\n            {\n                \"text\": \"Current company\",\n                \"name\": \"currentCompany\",\n                \"type\": \"text\",\n                \"required\": false,\n                \"value\": null\n            },\n            {\n                \"text\": \"Current location\",\n                \"name\": \"currentLocation\",\n                \"type\": \"text\",\n                \"required\": true,\n                \"value\": null\n            },\n            {\n                \"text\": \"Phone\",\n                \"name\": \"phone\",\n                \"type\": \"text\",\n                \"required\": false,\n                \"value\": null\n            },\n            {\n                \"text\": \"Resume\",\n                \"name\": \"resume\",\n                \"type\": \"file-upload\",\n                \"required\": false,\n                \"value\": null\n            },\n            {\n                \"text\": \"Additional information\",\n                \"name\": \"additionalInformation\",\n                \"type\": \"textarea\",\n                \"required\": false,\n                \"value\": null\n            }\n        ],\n        \"urls\": [\n            {\n                \"text\": \"LinkedIn\",\n                \"name\": \"LinkedIn\",\n                \"type\": \"text\",\n                \"required\": false,\n                \"value\": null\n            },\n            {\n                \"text\": \"Twitter\",\n                \"name\": \"Twitter\",\n                \"type\": \"text\",\n                \"required\": false,\n                \"value\": null\n            },\n            {\n                \"text\": \"GitHub\",\n                \"name\": \"GitHub\",\n                \"type\": \"text\",\n                \"required\": false,\n                \"value\": null\n            },\n            {\n                \"text\": \"Portfolio\",\n                \"name\": \"Portfolio\",\n                \"type\": \"text\",\n                \"required\": false,\n                \"value\": null\n            },\n            {\n                \"text\": \"Other\",\n                \"name\": \"Other\",\n                \"type\": \"text\",\n                \"required\": false,\n                \"value\": null\n            }\n        ],\n        \"consentDisclosures\": null\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "Apply to a posting",
