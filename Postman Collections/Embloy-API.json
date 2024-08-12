@@ -557,7 +557,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"Automatically generated refresh token\",\n    \"token_type\": \"refresh_token\",\n    \"issuer\": \"embloy\",\n    \"issued_at\": \"2024-05-26T13:57:11.000Z\",\n    \"expires_at\": \"2024-06-09T13:57:11.000Z\",\n    \"last_used_at\": null,\n    \"active\": false,\n    \"scopes\": null,\n    \"created_at\": \"2024-05-26T13:57:11.649Z\",\n    \"updated_at\": \"2024-05-26T13:57:11.649Z\",\n    \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIidkuado98adn2o8dao2d2QzMSwianRpIjoiMWQxYmZiYzE4YTQ0ODA5ZjczNzQ1OTg3OGU3YmEyTEiLJpYXiOj3MT3E4MzEsImlzcyI6ImFwaS5lbWJsb3kuY29tIn0.cTjwoGtWLbONWeYwg6ahfKugrPV36irZpzsVEA\"\n}",
+							"raw": "{\n    \"name\": \"Automatically generated refresh token\",\n    \"token_type\": \"refresh_token\",\n    \"issuer\": \"embloy\",\n    \"issued_at\": \"2024-05-26T13:57:11.000Z\",\n    \"expires_at\": \"2024-06-09T13:57:11.000Z\",\n    \"last_used_at\": null,\n    \"active\": false,\n    \"scopes\": null,\n    \"created_at\": \"2024-05-26T13:57:11.649Z\",\n    \"updated_at\": \"2024-05-26T13:57:11.649Z\",\n    \"token\": \"...\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -594,7 +594,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"name\": \"Automatically generated refresh token\",\n    \"token_type\": \"refresh_token\",\n    \"issuer\": \"embloy\",\n    \"issued_at\": \"2024-05-26T13:57:11.000Z\",\n    \"expires_at\": \"2024-06-09T13:57:11.000Z\",\n    \"last_used_at\": null,\n    \"active\": false,\n    \"scopes\": null,\n    \"created_at\": \"2024-05-26T13:57:11.649Z\",\n    \"updated_at\": \"2024-05-26T13:57:11.649Z\",\n    \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIidkuado98adn2o8dao2d2QzMSwianRpIjoiMWQxYmZiYzE4YTQ0ODA5ZjczNzQ1OTg3OGU3YmEyTEiLJpYXiOj3MT3E4MzEsImlzcyI6ImFwaS5lbWJsb3kuY29tIn0.cTjwoGtWLbONWeYwg6ahfKugrPV36irZpzsVEA\"\n}",
+									"raw": "{\n    \"name\": \"Automatically generated refresh token\",\n    \"token_type\": \"refresh_token\",\n    \"issuer\": \"embloy\",\n    \"issued_at\": \"2024-05-26T13:57:11.000Z\",\n    \"expires_at\": \"2024-06-09T13:57:11.000Z\",\n    \"last_used_at\": null,\n    \"active\": false,\n    \"scopes\": null,\n    \"created_at\": \"2024-05-26T13:57:11.649Z\",\n    \"updated_at\": \"2024-05-26T13:57:11.649Z\",\n    \"token\": \"...\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -627,7 +627,7 @@
 							"header": null,
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"token\": {\n        \"user_id\": 1,\n        \"name\": \"Automatically generated refresh token\",\n        \"token_type\": \"refresh_token\",\n        \"issuer\": \"embloy\",\n        \"issued_at\": \"2024-05-26T13:57:11.000Z\",\n        \"expires_at\": \"2024-06-09T13:57:11.000Z\",\n        \"active\": false,\n        \"last_used_at\": null,\n        \"scopes\": null,\n        \"encrypted_token_iv\": \"mZWdugYJO4O6p3q8\\n\",\n        \"encrypted_token\": \"WKn+HYlSOPMkrF+SFvamfXMDIflvyrwk1uYf4O9R/whJbEU9YdPOZ1KGl7jk\\nwbBSeRx2OsenjQt7Mqc6T0RLduY5e36+F9VSNjk58KsOUdpBmA55SVJGj+sB\\nXecGbc2AR/r65Gl9KDYdI2DIB91J/tsumLD35TUSSDu1AbovS6hOWzmREs78\\nIQccQkC9LRrC7vtofZMKq/I2CcPvRpjBlsKkUabtc8JtOzdhOu8NhwYJzpwU\\nxfSPCtfLNncVrfj89LiNKwJqCSqmJxI5MTuhM45bav0HIdTLGiagwXNT2Mg=\\n\",\n        \"id\": 11,\n        \"created_at\": \"2024-05-26T14:12:55.902Z\",\n        \"updated_at\": \"2024-05-26T14:36:24.418Z\",\n        \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIidkuado98adn2o8dao2d2QzMSwianRpIjoiMWQxYmZiYzE4YTQ0ODA5ZjczNzQ1OTg3OGU3YmEyTEiLJpYXiOj3MT3E4MzEsImlzcyI6ImFwaS5lbWJsb3kuY29tIn0.cTjwoGtWLbONWeYwg6ahfKugrPV36irZpzsVEA\"\n    }\n}"
+							"body": "{\n    \"token\": {\n        \"user_id\": 1,\n        \"name\": \"Automatically generated refresh token\",\n        \"token_type\": \"refresh_token\",\n        \"issuer\": \"embloy\",\n        \"issued_at\": \"2024-05-26T13:57:11.000Z\",\n        \"expires_at\": \"2024-06-09T13:57:11.000Z\",\n        \"active\": false,\n        \"last_used_at\": null,\n        \"scopes\": null,\n        \"encrypted_token_iv\": \"mZWdugYJO4O6p3q8\\n\",\n        \"encrypted_token\": \"...\",\n        \"id\": 11,\n        \"created_at\": \"2024-05-26T14:12:55.902Z\",\n        \"updated_at\": \"2024-05-26T14:36:24.418Z\",\n        \"token\": \"...\"\n    }\n}"
 						},
 						{
 							"id": "52a688af-5599-48c2-9139-f4a34c70d70d",
@@ -3077,7 +3077,7 @@
 							"header": null,
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"client_token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTcwNzA3MDAwOSwidHlwIjoicHJlbWl1bSIsImlhdCI6MTcwNDM5NTM5MSwiaXNzIjoibWFua2RlIn0.sAA-GwLZwgYM5uhlpMJDRKb0b1qFDpb4Pv0EMsPIp0E\"\n}"
+							"body": "{\n    \"client_token\": \"...\"\n}"
 						},
 						{
 							"id": "c5a95498-c707-4753-8f36-986e9a0e9120",
@@ -3287,7 +3287,7 @@
 							"header": null,
 							"cookie": [],
 							"responseTime": null,
-							"body": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTcwNTA1Mzg4NSwic2Vzc2lvbiI6eyJjbGllbnRfaWQiOjEsInN1YnNjcmlwdGlvbl90eXBlIjoiZW50ZXJwcmlzZV8xIiwibW9kZSI6ImpvYiIsInN1Y2Nlc3NfdXJsIjoiL3N1Y2Nlc3MiLCJjYW5jZWxfdXJsIjoiL2ZhaWx1cmUiLCJqb2Jfc2x1ZyI6ImpvYiMxIn0sImlhdCI6MTcwNDk0NTg4NSwiaXNzIjoibWFua2RlIn0.yzzM0o-EtqXM3mt_hJTCFyUwnYZQAQYmyNHBvfI3d6s"
+							"body": "..."
 						},
 						{
 							"id": "fbaa3d6a-bcae-4513-b499-c57f69c1e8dd",
@@ -5219,7 +5219,7 @@
 							"header": null,
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"url\": \"https://embloy.com/sdk/apply?request_token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTcwNzI3MTE3Miwic2Vzc2lvbiI6eyJtb2RlIjoiam9iIiwiam9iX3NsdWciOiJ0ZXN0MTIzIiwidXNlcl9pZCI6MSwic3Vic2NyaXB0aW9uX3R5cGUiOiJlbnRlcnByaXNlXzEifSwiaWF0IjoxNzA3MTYzMTcyLCJpc3MiOiJzcnYtY21kZXJjdWQzbm1jNzNkamllbjAtaGliZXJuYXRlLTY5Y2Q2OWM0YmQtcWRtNngifQ.gLMwm4tH_uygVeYSyxunsEdBAqee3tsGb3g1T_MgYco\"\n}"
+							"body": "{\n    \"url\": \"https://embloy.com/sdk/apply?request_token=...\"\n}"
 						}
 					]
 				}
