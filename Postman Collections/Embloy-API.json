@@ -6182,7 +6182,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"triggeredAt\": 1431454330072,\n    \"event\": \"candidateStageChange\",\n    \"data\": {\n        \"opportunityId\": \"3410c8b9-5c31-4bab-b7e9-9f710206d647\",\n        \"candidateId\": \"daeaa038-cddb-4d69-9b8c-74b6c23be3f3\",\n        \"contactId\": \"05c248f9-ccb1-435f-bab5-0ec608aec263\",\n        \"toStageId\": \"7c2690d8-6308-4ed9-ae2a-cbfe7db26593\",\n        \"fromStageId\": \"992f01a9-ee19-41d2-ae79-1040701b195c\"\n    },\n    \"signature\": \"b2354e2c9668a484edceb6546eeb2c5d6de9155475ffbf68547f03a58c734203\",\n    \"token\": \"be58f711f349c7780e4579cd7c63341ac6f881e4dccc3154\"\n}",
+							"raw": "{\n    \"triggeredAt\": 1431454330072,\n    \"event\": \"candidateHired\",\n    \"data\": {\n        \"candidateId\": \"38c1c3de-5ed6-4b0d-a052-dd3b2e3dfd12\",\n        \"contactId\": \"0ebcac3f-a57c-4b79-81da-bad2ac4324b5\",\n        \"opportunityId\": \"38c1c3de-5ed6-4b0d-a052-dd3b2e3dfd12\"\n    },\n    \"signature\": \"121da16477f210be03026cd412f9482784bdcaec502198bc149eb8e27638112c\",\n    \"token\": \"be58f711f349c7780e4579cd7c63341ac6f881e4dccc3154\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -6326,6 +6326,61 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"error\": \"Invalid signature\"\n}"
+						},
+						{
+							"id": "3bddc214-de9b-4506-bf36-27d1b95875ed",
+							"name": "404 Not Found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"triggeredAt\": 1431454330072,\n    \"event\": \"candidateHired\",\n    \"data\": {\n        \"candidateId\": \"fc29952a-5b7e-4ce0-bca5-23aab339ec41\",\n        \"contactId\": \"05c248f9-ccb1-435f-bab5-0ec608aec263\",\n        \"opportunityId\": \"fc29952a-5b7e-4ce0-bca5-23aab339ec41\"\n    },\n    \"signature\": \"121da16477f210be03026cd412f9482784bdcaec502198bc149eb8e27638112c\",\n    \"token\": \"be58f711f349c7780e4579cd7c63341ac6f881e4dccc3154\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{root}}/api/v0/webhooks/:source/:id",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"v0",
+										"webhooks",
+										":source",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "source",
+											"value": "lever",
+											"description": "Source of incoming webhook call. Allowed values are:`embloy`,`lever`,`ashby`"
+										},
+										{
+											"key": "id",
+											"value": "9ff11de78818f1102de91b3621f4313c",
+											"description": "ID to keep track of webhook owner"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": ""
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"error\": \"Application not found\"\n}"
 						},
 						{
 							"id": "53f17b2b-1ced-45a4-82f5-14984292a5cc",
