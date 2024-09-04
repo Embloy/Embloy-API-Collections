@@ -222,6 +222,36 @@
 					"id": "00982fd2-74a8-48ad-80f5-a9432845c2c8"
 				},
 				{
+					"name": "Webhooks",
+					"item": [
+						{
+							"name": "Register webhook",
+							"id": "90114b8c-9430-4083-b364-b713bfd992ca",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "ff18bcc6-47e5-4724-acbf-2885de0315e1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
+					"id": "745163aa-7b78-461d-a03f-6a58f935c014"
+				},
+				{
 					"name": "Redirect to Lever OAuth",
 					"id": "e8387d79-a8ee-4240-97ee-07981be137c8",
 					"protocolProfileBehavior": {
