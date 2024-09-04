@@ -231,25 +231,66 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"url\": \"https://lever.co/webhookHandler\",\n    \"event\": \"candidateStageChange\",\n    \"configuration\": {\n        \"conditions\": {\n            \"origins\": [\n                \"applied\",\n                \"sourced\",\n                \"referred\",\n                \"university\",\n                \"agency\",\n                \"internal\"\n            ]\n        }\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://lever.co/webhookHandler"
 							},
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "List webhooks",
 							"id": "ff18bcc6-47e5-4724-acbf-2885de0315e1",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": "https://api.sandbox.lever.co/v1/webhooks"
 							},
 							"response": []
 						}
 					],
-					"id": "745163aa-7b78-461d-a03f-6a58f935c014"
+					"id": "745163aa-7b78-461d-a03f-6a58f935c014",
+					"auth": {
+						"type": "bearer",
+						"bearer": {
+							"token": "{{LEVER_ACCESS_TOKEN}}"
+						}
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "e50c6bee-ee45-403a-984d-747acd38c302",
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "7ce6b54a-6646-449c-a9a3-687808ed2631",
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									""
+								]
+							}
+						}
+					]
 				},
 				{
 					"name": "Redirect to Lever OAuth",
