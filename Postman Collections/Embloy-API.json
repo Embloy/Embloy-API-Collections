@@ -921,6 +921,82 @@
 					]
 				},
 				{
+					"name": "Synchronize ATS jobs",
+					"id": "6a6e9660-2216-4cf9-9f96-fd73cbbd0e62",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{root}}/api/v0/jobs/sync/:source",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"api",
+								"v0",
+								"jobs",
+								"sync",
+								":source"
+							],
+							"variable": [
+								{
+									"id": "596d8e25-1251-4a2e-b2a2-83edf4e620ad",
+									"key": "source",
+									"value": "lever",
+									"description": "ATS name (e.g. 'lever', 'ashby', 'softgarden',...)"
+								}
+							]
+						},
+						"description": "Trigger a synchronization of a your jobs which are hosted on a third party ATS. This endpoint needs to be triggered manually, unless the ATS provides a webhook for job synchronization."
+					},
+					"response": [
+						{
+							"id": "35020ee9-e4e9-49ae-a490-55d12c3480f8",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{root}}/api/v0/jobs/sync/:source",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"v0",
+										"jobs",
+										"sync",
+										":source"
+									],
+									"variable": [
+										{
+											"key": "source",
+											"value": "lever",
+											"description": "ATS name (e.g. 'lever', 'ashby', 'softgarden',...)"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": ""
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"Synchronization successful!\"\n}"
+						}
+					]
+				},
+				{
 					"name": "Create job",
 					"id": "7eb0d02b-4651-4024-8ffb-63a0fd7bfc41",
 					"protocolProfileBehavior": {
@@ -2418,6 +2494,112 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"application\": {\n        \"job_id\": 1,\n        \"user_id\": 2,\n        \"updated_at\": \"2023-02-27T23:06:10.000Z\",\n        \"created_at\": \"2023-02-27T23:06:10.000Z\",\n        \"status\": \"0\",\n        \"application_text\": \"Hello World\",\n        \"application_documents\": null,\n        \"response\": null,\n        \"deleted_at\": null\n    },\n    \"application_attachment\": {\n        \"attachment\": {\n            \"id\": 1,\n            \"user_id\": 2,\n            \"job_id\": 1,\n            \"created_at\": \"2024-01-27T01:30:21.712Z\",\n            \"updated_at\": \"2024-01-27T01:30:22.811Z\"\n        },\n        \"url\": \"http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3d581e72e10f8caf236c539a19ab324a9ca44106/Operations%20Research%20_%20Retake-Pr%C3%BCfung%20-%20assignment.pdf\"\n    },\n    \"application_answers\": [\n        {\n            \"id\": 33,\n            \"job_id\": 1,\n            \"user_id\": 2,\n            \"application_option_id\": 1,\n            \"answer\": \"Yes\",\n            \"created_at\": \"2024-01-27T01:30:20.107Z\",\n            \"updated_at\": \"2024-01-27T01:30:20.107Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 34,\n            \"job_id\": 1,\n            \"user_id\": 2,\n            \"application_option_id\": 2,\n            \"answer\": \"Master's Degree\",\n            \"created_at\": \"2024-01-27T01:30:20.152Z\",\n            \"updated_at\": \"2024-01-27T01:30:20.152Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 35,\n            \"job_id\": 1,\n            \"user_id\": 2,\n            \"application_option_id\": 3,\n            \"answer\": \"https://github.com/username\",\n            \"created_at\": \"2024-01-27T01:30:20.644Z\",\n            \"updated_at\": \"2024-01-27T01:30:20.644Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 36,\n            \"job_id\": 1,\n            \"user_id\": 2,\n            \"application_option_id\": 4,\n            \"answer\": \"I am very excited about this opportunity.\",\n            \"created_at\": \"2024-01-27T01:30:20.908Z\",\n            \"updated_at\": \"2024-01-27T01:30:20.908Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 37,\n            \"job_id\": 1,\n            \"user_id\": 2,\n            \"application_option_id\": 5,\n            \"answer\": \"[\\\"AI\\\", \\\"Scrum\\\"]\",\n            \"created_at\": \"2024-01-27T01:30:21.188Z\",\n            \"updated_at\": \"2024-01-27T01:30:21.188Z\",\n            \"deleted_at\": null\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get specific pipeline for specific application",
+					"id": "28c785fa-00cb-4d58-bc11-9163c94b4d7d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/pipeline",
+						"description": "Returns the current pipeline for an application submitted by a specifc user for a given job owned by the current user."
+					},
+					"response": [
+						{
+							"id": "ab40144c-7b2c-46d3-bb23-2ed79039f2ea",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/pipeline"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						},
+						{
+							"id": "7f92d1b6-fcbc-41c0-8f0d-f48fc0c4095d",
+							"name": "204 No Content",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/applications/{{application_id}}/pipeline"
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Get pipeline for submitted application",
+					"id": "7bf664cf-a178-4c45-9a7e-c83fe2046eb5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/application/pipeline",
+						"description": "Returns the current pipeline for an application submitted by the current user for a given job."
+					},
+					"response": [
+						{
+							"id": "0dede2c0-a4e6-4bc9-9242-b94cf1f2f30a",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/application/pipeline"
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": ""
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						},
+						{
+							"id": "e49cd773-c4b7-4b15-ac30-04f89fa99e09",
+							"name": "204 No Content",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/application/pipeline"
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": ""
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": null
 						}
 					]
 				},
@@ -6000,7 +6182,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"triggeredAt\": 1431454330072,\n    \"event\": \"candidateStageChange\",\n    \"data\": {\n        \"opportunityId\": \"3410c8b9-5c31-4bab-b7e9-9f710206d647\",\n        \"candidateId\": \"daeaa038-cddb-4d69-9b8c-74b6c23be3f3\",\n        \"contactId\": \"05c248f9-ccb1-435f-bab5-0ec608aec263\",\n        \"toStageId\": \"7c2690d8-6308-4ed9-ae2a-cbfe7db26593\",\n        \"fromStageId\": \"992f01a9-ee19-41d2-ae79-1040701b195c\"\n    },\n    \"signature\": \"28e3fbb90ce869c3695c4a9559ff43eae998389a48b42c509d1adbeea0897c16\",\n    \"token\": \"be58f711f349c7780e4579cd7c63341ac6f881e4dccc3154\"\n}",
+							"raw": "{\n    \"triggeredAt\": 1431454330072,\n    \"event\": \"candidateStageChange\",\n    \"data\": {\n        \"opportunityId\": \"3410c8b9-5c31-4bab-b7e9-9f710206d647\",\n        \"candidateId\": \"daeaa038-cddb-4d69-9b8c-74b6c23be3f3\",\n        \"contactId\": \"05c248f9-ccb1-435f-bab5-0ec608aec263\",\n        \"toStageId\": \"7c2690d8-6308-4ed9-ae2a-cbfe7db26593\",\n        \"fromStageId\": \"992f01a9-ee19-41d2-ae79-1040701b195c\"\n    },\n    \"signature\": \"b2354e2c9668a484edceb6546eeb2c5d6de9155475ffbf68547f03a58c734203\",\n    \"token\": \"be58f711f349c7780e4579cd7c63341ac6f881e4dccc3154\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -6008,7 +6190,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{root}}/api/v0/webhooks/:source",
+							"raw": "{{root}}/api/v0/webhooks/:source/:id",
 							"host": [
 								"{{root}}"
 							],
@@ -6016,19 +6198,191 @@
 								"api",
 								"v0",
 								"webhooks",
-								":source"
+								":source",
+								":id"
 							],
 							"variable": [
 								{
-									"id": "a6635812-66b4-44d8-8b13-64f0efb492b1",
 									"key": "source",
 									"value": "lever",
 									"description": "Source of incoming webhook call. Allowed values are:`embloy`,`lever`,`ashby`"
+								},
+								{
+									"key": "id",
+									"value": "9ff11de78818f1102de91b3621f4313c",
+									"description": "ID to keep track of webhook owner"
 								}
 							]
-						}
+						},
+						"description": "Endpoint listening to incoming webhook requests."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "ac122c40-d865-4c89-b6a7-ad635fceb002",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"triggeredAt\": 1431454330072,\n    \"event\": \"candidateStageChange\",\n    \"data\": {\n        \"opportunityId\": \"3410c8b9-5c31-4bab-b7e9-9f710206d647\",\n        \"candidateId\": \"daeaa038-cddb-4d69-9b8c-74b6c23be3f3\",\n        \"contactId\": \"05c248f9-ccb1-435f-bab5-0ec608aec263\",\n        \"toStageId\": \"7c2690d8-6308-4ed9-ae2a-cbfe7db26593\",\n        \"fromStageId\": \"992f01a9-ee19-41d2-ae79-1040701b195c\"\n    },\n    \"signature\": \"b2354e2c9668a484edceb6546eeb2c5d6de9155475ffbf68547f03a58c734203\",\n    \"token\": \"be58f711f349c7780e4579cd7c63341ac6f881e4dccc3154\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{root}}/api/v0/webhooks/:source/:id",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"v0",
+										"webhooks",
+										":source",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "source",
+											"value": "lever",
+											"description": "Source of incoming webhook call. Allowed values are:`embloy`,`lever`,`ashby`"
+										},
+										{
+											"key": "id",
+											"value": "9ff11de78818f1102de91b3621f4313c",
+											"description": "ID to keep track of webhook owner"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": ""
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"Event processed\"\n}"
+						},
+						{
+							"id": "a30e47bb-3351-42a4-9113-89498ece1737",
+							"name": "401 Unauthorized",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"triggeredAt\": 1431454330072,\n    \"event\": \"candidateStageChange\",\n    \"data\": {\n        \"opportunityId\": \"3410c8b9-5c31-4bab-b7e9-9f710206d647\",\n        \"candidateId\": \"daeaa038-cddb-4d69-9b8c-74b6c23be3f3\",\n        \"contactId\": \"05c248f9-ccb1-435f-bab5-0ec608aec263\",\n        \"toStageId\": \"7c2690d8-6308-4ed9-ae2a-cbfe7db26593\",\n        \"fromStageId\": \"992f01a9-ee19-41d2-ae79-1040701b195c\"\n    },\n    \"signature\": \"28e3fbb90ce869c3695c4a9559ff43eae998389a48b42c509d1adbeea0897c16\",\n    \"token\": \"be58f711f349c7780e4579cd7c63341ac6f881e4dccc3154\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{root}}/api/v0/webhooks/:source/:id",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"v0",
+										"webhooks",
+										":source",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "source",
+											"value": "lever",
+											"description": "Source of incoming webhook call. Allowed values are:`embloy`,`lever`,`ashby`"
+										},
+										{
+											"key": "id",
+											"value": "n_Ed54gY8RAt6Rs2IfQxPA",
+											"description": "ID to keep track of webhook owner"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": ""
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"error\": \"Invalid signature\"\n}"
+						},
+						{
+							"id": "53f17b2b-1ced-45a4-82f5-14984292a5cc",
+							"name": "422 Unprocessable Content",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"triggeredAt\": 1431454330072,\n    \"event\": \"candidateStageChange\",\n    \"data\": {\n        \"opportunityId\": \"3410c8b9-5c31-4bab-b7e9-9f710206d647\",\n        \"candidateId\": \"daeaa038-cddb-4d69-9b8c-74b6c23be3f3\",\n        \"contactId\": \"05c248f9-ccb1-435f-bab5-0ec608aec263\",\n        \"toStageId\": \"7c2690d8-6308-4ed9-ae2a-cbfe7db26593\",\n        \"fromStageId\": \"992f01a9-ee19-41d2-ae79-1040701b195c\"\n    },\n    \"signature\": \"0b6934720ba33eb9546eeefe23951cf5937400cd14cd64b6f626672c6b117f1e\",\n    \"token\": \"be58f711f349c7780e4579cd7c63341ac6f881e4dccc3154\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{root}}/api/v0/webhooks/:source/:id",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"v0",
+										"webhooks",
+										":source",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "source",
+											"value": "lever",
+											"description": "Source of incoming webhook call. Allowed values are:`embloy`,`lever`,`ashby`"
+										},
+										{
+											"key": "id",
+											"value": "9ff11de78818f1102de91b3621f4313c",
+											"description": "ID to keep track of webhook owner"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": ""
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"error\": \"Unknown event type\"\n}"
+						}
+					]
 				}
 			],
 			"id": "9e30c881-2d2a-4e75-aa3d-a5be0063dcf8"
