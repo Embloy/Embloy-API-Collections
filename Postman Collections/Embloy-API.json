@@ -1668,6 +1668,223 @@
 					]
 				},
 				{
+					"name": "List user's webhooks",
+					"id": "ae69a322-abde-4830-8550-d756f7ecaf5a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{root}}/api/v0/user/webhooks",
+						"description": "Returns all registered webhooks of a user known to Embloy. In case this is out of sync with the the third party service that provides the webhooks, see this endpoint."
+					},
+					"response": [
+						{
+							"id": "f55febee-148f-4bd5-8a1f-b1f538b84147",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{root}}/api/v0/user/webhooks"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": ""
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"webhooks\": [\n        {\n            \"id\": 8,\n            \"user_id\": 13,\n            \"url\": \"https://api.embloy.com/api/v0/webhooks/lever\",\n            \"event\": \"applicationCreated\",\n            \"source\": \"lever\",\n            \"ext_id\": \"lever__db1232b9-8c15-48d2-b21e-7c73fe2ff560\",\n            \"signatureToken\": \"331f0ba9ceb562aa9eb2053946fb927c50a2d1bf15cc5ebb\",\n            \"active\": true,\n            \"created_at\": \"2024-09-04T12:56:15.555Z\",\n            \"updated_at\": \"2024-09-04T12:56:15.555Z\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "1c0494c8-df13-46cc-846d-43aeb9144f9a",
+							"name": "204 No Content",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{root}}/api/v0/user/webhooks"
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": ""
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Rerfresh user's webhooks",
+					"id": "c12624c0-b9f6-4dcf-b04f-0049e7909cc0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{root}}/api/v0/user/webhooks/:source",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"api",
+								"v0",
+								"user",
+								"webhooks",
+								":source"
+							],
+							"variable": [
+								{
+									"id": "92ade7e4-c818-41eb-ac4f-9cc644d2375e",
+									"key": "source",
+									"value": "lever",
+									"description": "Service that needs to refresh its webhooks. Allowed values are:`embloy`,`lever`,`ashby`"
+								}
+							]
+						},
+						"description": "This endpoint is used to re-synchronize the webhook configurations between Embloy and a third party service. Resets all user's webhooks for a selected service. To do this, it first fetches the desired webhooks, compares them with the current webhooks registerd in the third party service, and then creates or updates them accordingly."
+					},
+					"response": [
+						{
+							"id": "8e4d1241-faeb-406f-937f-8e63da685ad8",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{root}}/api/v0/user/webhooks/:source",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"v0",
+										"user",
+										"webhooks",
+										":source"
+									],
+									"variable": [
+										{
+											"key": "source",
+											"value": "lever",
+											"description": "Service that needs to refresh its webhooks. Allowed values are:`embloy`,`lever`,`ashby`"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": ""
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"Webhooks refreshed successfully\"\n}"
+						},
+						{
+							"id": "7880db6b-66af-4d24-9145-6e2b3bd48e13",
+							"name": "401 Unauthorized",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{root}}/api/v0/user/webhooks/:source",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"v0",
+										"user",
+										"webhooks",
+										":source"
+									],
+									"variable": [
+										{
+											"key": "source",
+											"value": "lever",
+											"description": "Service that needs to refresh its webhooks. Allowed values are:`embloy`,`lever`,`ashby`"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": ""
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"oauth\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"OAUth flow not authorized\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "ba46560c-bcb8-45b4-8fed-66027974a4ab",
+							"name": "422 Unprocessable Content",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{root}}/api/v0/user/webhooks/:source",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"v0",
+										"user",
+										"webhooks",
+										":source"
+									],
+									"variable": [
+										{
+											"key": "source",
+											"value": "examplesourcethatdoesnotexist",
+											"description": "Service that needs to refresh its webhooks. Allowed values are:`embloy`,`lever`,`ashby`"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": ""
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"error\": \"Unknown source\"\n}"
+						}
+					]
+				},
+				{
 					"name": "Create user",
 					"id": "110d59f7-4ca3-4a6e-9832-be7083b056f3",
 					"protocolProfileBehavior": {
@@ -1678,7 +1895,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"user\": {\r\n    \"email\": \"jan.hummel@de.embloy.com\",\r\n    \"first_name\": \"Jan\",\r\n    \"last_name\": \"Hummel\",\r\n    \"password\": \"doublethink\",\r\n    \"password_confirmation\": \"doublethink\"\r\n  }\r\n}",
+							"raw": "{\r\n  \"user\": {\r\n    \"email\": \"carlo.bortolan@de.embloy.com\",\r\n    \"first_name\": \"Carlo\",\r\n    \"last_name\": \"Bortolan\",\r\n    \"password\": \"123123123\",\r\n    \"password_confirmation\": \"123123123\"\r\n  }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1732,7 +1949,7 @@
 									"key": "image_url",
 									"type": "file",
 									"description": "The user's new profile image as a file",
-									"src": "tJXv183KA/shadcn.png"
+									"src": "Q6BhGhGz1/1707818217188.jpg"
 								}
 							]
 						},
@@ -2012,8 +2229,7 @@
 									{
 										"key": "access_token",
 										"value": "",
-										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)",
-										"type": "text"
+										"description": "A valid access_token is needed to authenticate and authorize the current user. For further information see: [access_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#e29e5a54-533b-413a-9e04-b608cc4acd68)"
 									}
 								],
 								"body": {
@@ -2029,8 +2245,14 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": ""
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"message\": \"Successfully updated user.\"\n}"
@@ -3117,7 +3339,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"mode\": \"job\",\n    \"job_slug\": \"df074300-2627-4511-985e-e62c69dc0d7g\",\n    \"success_url\": \"https://example.com/success\",\n    \"cancel_url\": \"https://example.com/cancel\"\n}",
+							"raw": "{\n    \"mode\": \"lever\",\n    \"job_slug\": \"05157a89-866d-4c81-94a7-505ed163cc38\",\n    \"success_url\": \"https://example.com/success\",\n    \"cancel_url\": \"https://example.com/cancel\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3441,6 +3663,357 @@
 									]
 								},
 								"url": "{{root}}/api/{{api_version}}/sdk/request/auth/token"
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"token\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is invalid or expired\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Generate Request-Token Proxy",
+					"id": "df6d2517-1571-4752-a27d-3f1830b4ac7e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "client_token",
+								"value": "{{client_token}}",
+								"description": "A valid client_token is needed to authenticate and authorize the client. For further information see: [client_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#86b2cf1c-b02e-4d83-b65f-9c5e03cc89c4)"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"mode\": \"lever\",\n    \"success_url\": \"your-success-url\",\n    \"cancel_url\": \"your-cancel-url\",\n    \"job_slug\": \"5d658a8e-5724-4941-b938-f9ead14507b2\",\n    \"admin_token\": \"123456\",\n    \"origin\": \"https://jobs.sandbox.lever.co/de/5d658a8e-5724-4941-b938-f9ead14507b2\"\n  ,  \"user_id\": \"13\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{root}}/api/{{api_version}}/sdk/request/auth/proxy",
+						"description": "This endpoint can be ignored and is for internal use only."
+					},
+					"response": [
+						{
+							"id": "a9e75663-bc4b-464b-90c6-c862aacc5367",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "client_token",
+										"value": "",
+										"description": "A valid client_token is needed to authenticate and authorize the client. For further information see: [client_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#86b2cf1c-b02e-4d83-b65f-9c5e03cc89c4)"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "mode",
+											"value": "job",
+											"type": "text",
+											"description": "Describes what type of Quicklink service the portal is needed for. Allowed values: 'job'"
+										},
+										{
+											"key": "job_slug",
+											"value": "df074300-2627-4511-985e-e62c69dc0d7e",
+											"type": "text",
+											"description": "User gets redirected to this URL if application process succeeds "
+										},
+										{
+											"key": "success_url",
+											"value": "https://jobs.br.de/cui(bD1kZSZjPTUxMg==)/default.htm?configurationId=ZBR_SEARCH#!ZBR_SEARCH/PM_POSTING&cGd1aWQ9NDZENzJCNUZCOTEwMUVERUFEREExNDlGNUJCMTAwMjQ%3D",
+											"type": "text",
+											"description": "User gets redirected to this URL if application process fails"
+										},
+										{
+											"key": "cancel_url",
+											"value": "/failure",
+											"type": "text",
+											"description": "Combined with the client's ID, this is used as an unique identifier for the client's job. ",
+											"disabled": true
+										},
+										{
+											"key": "title",
+											"value": "TestTitle",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "job_type",
+											"value": "Retail",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "start_slot",
+											"value": "2024-06-12T21:51:32.077Z",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "position",
+											"value": "CEO",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "key_skills",
+											"value": "Entrepreneurship",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "duration",
+											"value": "9",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "salary",
+											"value": "9",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "description",
+											"value": "<div>This is the description</div>",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "status",
+											"value": "public",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "longitude",
+											"value": "11.613942994844358",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "latitude",
+											"value": "48.1951076",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "job_notifications",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "currency",
+											"value": "EUR",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "cv_required",
+											"value": "true",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "allowed_cv_formats[]",
+											"value": ".pdf",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "allowed_cv_formats[]",
+											"value": ".docx",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "allowed_cv_formats[]",
+											"value": ".txt",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "allowed_cv_formats[]",
+											"value": ".xml",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/sdk/request/auth/proxy"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "..."
+						},
+						{
+							"id": "1e8e12f7-88aa-44a3-a36e-7e11f8ef58d6",
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "client_token",
+										"value": "{{client_token}}",
+										"description": "A valid client_token is needed to authenticate and authorize the client. For further information see: [client_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#86b2cf1c-b02e-4d83-b65f-9c5e03cc89c4)"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "mode",
+											"value": "job",
+											"description": "Describes what type of Quicklink service the portal is needed for. Allowed values: 'job'",
+											"type": "text"
+										},
+										{
+											"key": "success_url",
+											"value": "/success",
+											"description": "User gets redirected to this URL if application process succeeds ",
+											"type": "text"
+										},
+										{
+											"key": "cancel_url",
+											"value": "/failure",
+											"description": "User gets redirected to this URL if application process fails",
+											"type": "text"
+										},
+										{
+											"key": "job_slug",
+											"value": "job#1",
+											"description": "Combined with the client's ID, this is used as an unique identifier for the client's job. ",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/sdk/request/auth/proxy"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"mode\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is malformed or unknown\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "cde4e1f5-90d3-4be1-944b-049e007b4284",
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "client_token",
+										"value": "{{client_token}}",
+										"description": "A valid client_token is needed to authenticate and authorize the client. For further information see: [client_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#86b2cf1c-b02e-4d83-b65f-9c5e03cc89c4)"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "mode",
+											"value": "job",
+											"description": "Describes what type of Quicklink service the portal is needed for. Allowed values: 'job'",
+											"type": "text"
+										},
+										{
+											"key": "success_url",
+											"value": "/success",
+											"description": "User gets redirected to this URL if application process succeeds ",
+											"type": "text"
+										},
+										{
+											"key": "cancel_url",
+											"value": "/failure",
+											"description": "User gets redirected to this URL if application process fails",
+											"type": "text"
+										},
+										{
+											"key": "job_slug",
+											"value": "job#3",
+											"description": "Combined with the client's ID, this is used as an unique identifier for the client's job. ",
+											"type": "text"
+										},
+										{
+											"key": "job_type",
+											"value": "retail",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/sdk/request/auth/proxy"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"job_slug\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is malformed or unknown\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "b56f76be-1b43-4898-b5f4-947320001ca3",
+							"name": "401 Unauthorized",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "client_token",
+										"value": "{{client_token}}",
+										"description": "A valid client_token is needed to authenticate and authorize the client. For further information see: [client_token endpoint](https://documenter.getpostman.com/view/24977803/2s9YRB2rkE#86b2cf1c-b02e-4d83-b65f-9c5e03cc89c4)"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "mode",
+											"value": "job",
+											"description": "Describes what type of Quicklink service the portal is needed for. Allowed values: 'job'",
+											"type": "text"
+										},
+										{
+											"key": "success_url",
+											"value": "/success",
+											"description": "User gets redirected to this URL if application process succeeds ",
+											"type": "text"
+										},
+										{
+											"key": "cancel_url",
+											"value": "/failure",
+											"description": "User gets redirected to this URL if application process fails",
+											"type": "text"
+										},
+										{
+											"key": "job_slug",
+											"value": "job#1",
+											"description": "Combined with the client's ID, this is used as an unique identifier for the client's job. ",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/sdk/request/auth/proxy"
 							},
 							"status": "Unauthorized",
 							"code": 401,
@@ -4658,7 +5231,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "{{root}}/api/{{api_version}}/checkout?tier=enterprise_3&payment_mode=subscription",
+							"raw": "{{root}}/api/{{api_version}}/checkout?tier=enterprise_1&payment_mode=subscription",
 							"host": [
 								"{{root}}"
 							],
@@ -4670,7 +5243,7 @@
 							"query": [
 								{
 									"key": "tier",
-									"value": "enterprise_3",
+									"value": "enterprise_1",
 									"description": "Subscription tier (basic, premium, enterprise_1, enterprise_2, enterprise_3)"
 								},
 								{
@@ -5409,6 +5982,56 @@
 				}
 			],
 			"id": "f548f0f8-eb62-4855-9d29-a72dedcefe8d"
+		},
+		{
+			"name": "Webhooks",
+			"item": [
+				{
+					"name": "Handle incoming hook",
+					"id": "f88d7d9f-bdd7-4ce0-a04e-37d25d1d1357",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"triggeredAt\": 1431454330072,\n    \"event\": \"candidateStageChange\",\n    \"data\": {\n        \"opportunityId\": \"3410c8b9-5c31-4bab-b7e9-9f710206d647\",\n        \"candidateId\": \"daeaa038-cddb-4d69-9b8c-74b6c23be3f3\",\n        \"contactId\": \"05c248f9-ccb1-435f-bab5-0ec608aec263\",\n        \"toStageId\": \"7c2690d8-6308-4ed9-ae2a-cbfe7db26593\",\n        \"fromStageId\": \"992f01a9-ee19-41d2-ae79-1040701b195c\"\n    },\n    \"signature\": \"28e3fbb90ce869c3695c4a9559ff43eae998389a48b42c509d1adbeea0897c16\",\n    \"token\": \"be58f711f349c7780e4579cd7c63341ac6f881e4dccc3154\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{root}}/api/v0/webhooks/:source",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"api",
+								"v0",
+								"webhooks",
+								":source"
+							],
+							"variable": [
+								{
+									"id": "a6635812-66b4-44d8-8b13-64f0efb492b1",
+									"key": "source",
+									"value": "lever",
+									"description": "Source of incoming webhook call. Allowed values are:`embloy`,`lever`,`ashby`"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "9e30c881-2d2a-4e75-aa3d-a5be0063dcf8"
 		}
 	],
 	"auth": {
