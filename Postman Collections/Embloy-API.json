@@ -1874,7 +1874,48 @@
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"message\": \"Webhooks refreshed successfully\"\n}"
+							"body": "{\n    \"message\": \"Found 5 existing webhooks...\\nUpdating webhook for event 'applicationCreated':\\n\\tCreating webhook for event 'applicationCreated'...webhook created successfully 🚀\\nMissing webhook for event 'candidateHired':\\n\\tCreating webhook for event 'candidateHired'...webhook created successfully 🚀\\nMissing webhook for event 'candidateStageChange':\\n\\tCreating webhook for event 'candidateStageChange'...webhook created successfully 🚀\\nUpdating webhook for event 'candidateArchiveChange':\\n\\tCreating webhook for event 'candidateArchiveChange'...webhook created successfully 🚀\\nUpdating webhook for event 'candidateDeleted':\\n\\tCreating webhook for event 'candidateDeleted'...webhook created successfully 🚀\\nUpdating webhook for event 'interviewCreated':\\n\\tDeleting webhook for event 'interviewCreated'... webhook deleted successfully 🚀\\n\\tCreating webhook for event 'interviewCreated'...webhook created successfully 🚀\\nMissing webhook for event 'interviewUpdated':\\n\\tCreating webhook for event 'interviewUpdated'...webhook created successfully 🚀\\nUpdating webhook for event 'interviewDeleted':\\n\\tCreating webhook for event 'interviewDeleted'...webhook created successfully 🚀\\n\"\n}"
+						},
+						{
+							"id": "84e66520-31d1-4c33-aad2-8f0d27855e66",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{root}}/api/v0/user/webhooks/:source",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"v0",
+										"user",
+										"webhooks",
+										":source"
+									],
+									"variable": [
+										{
+											"key": "source",
+											"value": "lever",
+											"description": "Service that needs to refresh its webhooks. Allowed values are:`embloy`,`lever`,`ashby`"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": ""
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"Found 0 existing webhooks...\\nMissing webhook for event 'applicationSubmit':\\n\\tCreating webhook for event 'applicationSubmit...failed to create webhook for event 'applicationSubmit' 💥\\nMissing webhook for event 'applicationUpdate':\\n\\tCreating webhook for event 'applicationUpdate...failed to create webhook for event 'applicationUpdate' 💥\\nMissing webhook for event 'candidateHire':\\n\\tCreating webhook for event 'candidateHire...failed to create webhook for event 'candidateHire' 💥\\nMissing webhook for event 'candidateStageChange':\\n\\tCreating webhook for event 'candidateStageChange...failed to create webhook for event 'candidateStageChange' 💥\\nMissing webhook for event 'candidateDelete':\\n\\tCreating webhook for event 'candidateDelete...failed to create webhook for event 'candidateDelete' 💥\\nMissing webhook for event 'candidateMerge':\\n\\tCreating webhook for event 'candidateMerge...failed to create webhook for event 'candidateMerge' 💥\\nMissing webhook for event 'interviewPlanTransition':\\n\\tCreating webhook for event 'interviewPlanTransition...failed to create webhook for event 'interviewPlanTransition' 💥\\nMissing webhook for event 'interviewScheduleCreate':\\n\\tCreating webhook for event 'interviewScheduleCreate...failed to create webhook for event 'interviewScheduleCreate' 💥\\nMissing webhook for event 'interviewScheduleUpdate':\\n\\tCreating webhook for event 'interviewScheduleUpdate...failed to create webhook for event 'interviewScheduleUpdate' 💥\\nMissing webhook for event 'jobPostingUpdate':\\n\\tCreating webhook for event 'jobPostingUpdate...failed to create webhook for event 'jobPostingUpdate' 💥\\nMissing webhook for event 'jobPostingPublish':\\n\\tCreating webhook for event 'jobPostingPublish...failed to create webhook for event 'jobPostingPublish' 💥\\nMissing webhook for event 'jobPostingUnpublish':\\n\\tCreating webhook for event 'jobPostingUnpublish...failed to create webhook for event 'jobPostingUnpublish' 💥\\nMissing webhook for event 'offerCreate':\\n\\tCreating webhook for event 'offerCreate...failed to create webhook for event 'offerCreate' 💥\\nMissing webhook for event 'offerUpdate':\\n\\tCreating webhook for event 'offerUpdate...failed to create webhook for event 'offerUpdate' 💥\\nMissing webhook for event 'offerDelete':\\n\\tCreating webhook for event 'offerDelete...failed to create webhook for event 'offerDelete' 💥\\nMissing webhook for event 'pushToHRIS':\\n\\tCreating webhook for event 'pushToHRIS...failed to create webhook for event 'pushToHRIS' 💥\\nMissing webhook for event 'surveySubmit':\\n\\tCreating webhook for event 'surveySubmit...failed to create webhook for event 'surveySubmit' 💥\\n\"\n}"
 						},
 						{
 							"id": "7880db6b-66af-4d24-9145-6e2b3bd48e13",
