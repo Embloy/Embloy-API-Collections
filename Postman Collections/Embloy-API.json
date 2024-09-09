@@ -39,11 +39,18 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{ \"message\": \"Account verified. Please check your email for the activation link.\" }"
+							"body": "{\n    \"message\": \"Account verified. Please check your email for the activation link.\"\n}"
 						}
 					]
 				},
@@ -139,8 +146,15 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"refresh_token\": \"...\"\n}"
@@ -155,8 +169,15 @@
 							},
 							"status": "Forbidden",
 							"code": 403,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"user\": [\n        {\n            \"error\": \"ERR_RAC\",\n            \"description\": \"Proceeding is inhibited by an access restriction\"\n        }\n    ]\n}"
@@ -171,8 +192,15 @@
 							},
 							"status": "Service Unavailable",
 							"code": 503,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "Rate limit exceeded. Please try again later."
@@ -431,8 +459,15 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"tokens\": [\n        {\n            \"id\": 6,\n            \"name\": \"Automatically generated refresh token\",\n            \"token_type\": \"refresh_token\",\n            \"issuer\": \"embloy\",\n            \"encrypted_token\": \"...\",\n            \"issued_at\": \"2024-05-26T13:57:11.000Z\",\n            \"expires_at\": \"2024-06-09T13:57:11.000Z\",\n            \"last_used_at\": null,\n            \"active\": true,\n            \"scopes\": null,\n            \"user_id\": 1,\n            \"created_at\": \"2024-05-26T13:57:11.649Z\",\n            \"updated_at\": \"2024-05-26T13:57:11.649Z\",\n            \"encrypted_token_iv\": \"trOhbshSadRNhVT6\\n\",\n            \"token\": \"...\"\n        },\n        {\n            \"id\": 11,\n            \"name\": \"Automatically generated client token\",\n            \"token_type\": \"client_token\",\n            \"issuer\": \"embloy\",\n            \"encrypted_token\": \"...\",\n            \"issued_at\": \"2024-05-26T14:12:55.000Z\",\n            \"expires_at\": \"2025-02-23T08:31:54.000Z\",\n            \"last_used_at\": null,\n            \"active\": true,\n            \"scopes\": null,\n            \"user_id\": 1,\n            \"created_at\": \"2024-05-26T14:12:55.902Z\",\n            \"updated_at\": \"2024-05-26T14:12:55.902Z\",\n            \"encrypted_token_iv\": \"D08x6VWc0Uq6RJmD\\n\",\n            \"token\": \"...\"\n        },\n        {\n            \"id\": 12,\n            \"name\": \"Automatically generated access token\",\n            \"token_type\": \"access_token\",\n            \"issuer\": \"embloy\",\n            \"encrypted_token\": \"...\",\n            \"issued_at\": \"2024-05-26T14:29:36.045Z\",\n            \"expires_at\": \"2024-05-26T14:49:36.000Z\",\n            \"last_used_at\": null,\n            \"active\": true,\n            \"scopes\": null,\n            \"user_id\": 1,\n            \"created_at\": \"2024-05-26T14:29:36.067Z\",\n            \"updated_at\": \"2024-05-26T14:29:36.067Z\",\n            \"encrypted_token_iv\": \"aWo3cvqnXJQ949up\\n\",\n            \"token\": \"...\"\n        },\n        {\n            \"id\": 13,\n            \"name\": \"Custom Job Board API key\",\n            \"token_type\": \"api_key\",\n            \"issuer\": \"ashby\",\n            \"encrypted_token\": \"...\",\n            \"issued_at\": \"2024-05-26T00:00:00.000Z\",\n            \"expires_at\": \"2025-05-26T14:32:31.230Z\",\n            \"last_used_at\": null,\n            \"active\": true,\n            \"scopes\": null,\n            \"user_id\": 1,\n            \"created_at\": \"2024-05-26T14:32:31.231Z\",\n            \"updated_at\": \"2024-05-26T14:32:31.231Z\",\n            \"encrypted_token_iv\": \"oiA/iiahdwhdlaw\\n\",\n            \"token\": \"...\"\n        }\n    ]\n}"
@@ -464,8 +499,15 @@
 							},
 							"status": "No Content",
 							"code": 204,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "[]"
@@ -502,7 +544,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"name\": \"Custom Job Board API key\",\n    \"issuer\": \"Ashby\",\n    \"token\": \"e484fbfdhdga1h2aheh6vh96h2h9fh8g1hc9jgb27j8t79j7ejc7j7g37e3992eb6c5ccf\",\n    \"token_type\": \"api_key\"\n}\n",
+									"raw": "{\n    \"name\": \"Custom Job Board API key\",\n    \"issuer\": \"Ashby\",\n    \"token\": \"...\",\n    \"token_type\": \"api_key\"\n}\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -513,11 +555,18 @@
 							},
 							"status": "Created",
 							"code": 201,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"token\": {\n        \"id\": 13,\n        \"name\": \"Custom Job Board API key\",\n        \"token_type\": \"api_key\",\n        \"issuer\": \"ashby\",\n        \"encrypted_token\": \"c8W2106adawda3er4f4f4EdsWrLnYswcKaF7mSi+VpmtM1MQHzxwR3c/rqxtwG\\ncs2f4WIEG0w/4Etixcad45t3\\DScBrXRLCwU1D7cX3folQq8=\\n\",\n        \"issued_at\": \"2024-05-26T00:00:00.000Z\",\n        \"expires_at\": \"2025-05-26T14:32:31.230Z\",\n        \"last_used_at\": null,\n        \"active\": true,\n        \"scopes\": null,\n        \"user_id\": 1,\n        \"created_at\": \"2024-05-26T14:32:31.231Z\",\n        \"updated_at\": \"2024-05-26T14:32:31.231Z\",\n        \"encrypted_token_iv\": \"wdX/irXY7pF79n5c\\n\",\n        \"token\": \"e484fbfdhdga1h2aheh6vh96h2h9fh8g1hc9jgb27j8t79j7ejc7j7g37e3992eb6c5ccf\"\n    }\n}"
+							"body": "{\n    \"token\": {\n        \"id\": 13,\n        \"name\": \"Custom Job Board API key\",\n        \"token_type\": \"api_key\",\n        \"issuer\": \"ashby\",\n        \"encrypted_token\": \"...\",\n        \"issued_at\": \"2024-05-26T00:00:00.000Z\",\n        \"expires_at\": \"2025-05-26T14:32:31.230Z\",\n        \"last_used_at\": null,\n        \"active\": true,\n        \"scopes\": null,\n        \"user_id\": 1,\n        \"created_at\": \"2024-05-26T14:32:31.231Z\",\n        \"updated_at\": \"2024-05-26T14:32:31.231Z\",\n        \"encrypted_token_iv\": \"wdX/irXY7pF79n5c\\n\",\n        \"token\": \"...\"\n    }\n}"
 						},
 						{
 							"id": "3f9ab5a1-ba84-4dbd-a0cb-c7c2868a79f1",
@@ -538,11 +587,18 @@
 							},
 							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
 							"code": 422,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"name\": [\n        \"can't be blank\"\n    ],\n    \"issuer\": [\n        \"can't be blank\"\n        \"is not included in the list\"\n    ],\n    \"token\": [\n        \"can't be blank\"\n    ],\n    \"expires_at\": [\n        \"can't be blank\"\n    ],\n    \"token_type\": [\n        \"can't be blank\",\n        \"is not included in the list\"\n    ]\n}"
+							"body": "{\n    \"name\": [\n        \"can't be blank\"\n    ],\n    \"issuer\": [\n        \"can't be blank\",\n        \"is not included in the list\"\n    ],\n    \"token\": [\n        \"can't be blank\"\n    ],\n    \"expires_at\": [\n        \"can't be blank\"\n    ],\n    \"token_type\": [\n        \"can't be blank\",\n        \"is not included in the list\"\n    ]\n}"
 						}
 					]
 				},
@@ -623,8 +679,15 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"token\": {\n        \"user_id\": 1,\n        \"name\": \"Automatically generated refresh token\",\n        \"token_type\": \"refresh_token\",\n        \"issuer\": \"embloy\",\n        \"issued_at\": \"2024-05-26T13:57:11.000Z\",\n        \"expires_at\": \"2024-06-09T13:57:11.000Z\",\n        \"active\": false,\n        \"last_used_at\": null,\n        \"scopes\": null,\n        \"encrypted_token_iv\": \"mZWdugYJO4O6p3q8\\n\",\n        \"encrypted_token\": \"...\",\n        \"id\": 11,\n        \"created_at\": \"2024-05-26T14:12:55.902Z\",\n        \"updated_at\": \"2024-05-26T14:36:24.418Z\",\n        \"token\": \"...\"\n    }\n}"
@@ -657,8 +720,15 @@
 							},
 							"status": "Not Found",
 							"code": 404,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"token\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute can not be retrieved\"\n        }\n    ]\n}"
@@ -724,11 +794,18 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "\n{\n    \"message\": \"Token deleted!\"\n}"
+							"body": "{\n    \"message\": \"Token deleted!\"\n}"
 						},
 						{
 							"id": "853cf105-fa39-4d65-a519-0263080f99d8",
@@ -758,8 +835,15 @@
 							},
 							"status": "Not Found",
 							"code": 404,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"token\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute can not be retrieved\"\n        }\n    ]\n}"
@@ -912,8 +996,15 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"job\": {\n        \"job_id\": 3,\n        \"job_type\": \"Marketing\",\n        \"job_slug\": \"92fc00f6-8a3d-46ce-a485-371ab1588347\",\n        \"job_type_value\": 25,\n        \"job_status\": 0,\n        \"status\": \"public\",\n        \"user_id\": 2,\n        \"referrer_url\": \"https://example.embloy.com\",\n        \"duration\": 9,\n        \"code_lang\": null,\n        \"title\": \"CEO Wanted\",\n        \"position\": \"CEO\",\n        \"description\": {\n            \"id\": 3,\n            \"name\": \"description\",\n            \"body\": \"<div>This is the description</div>\",\n            \"record_type\": \"Job\",\n            \"record_id\": 3,\n            \"created_at\": \"2024-01-26T12:26:08.356Z\",\n            \"updated_at\": \"2024-01-26T12:26:08.356Z\"\n        },\n        \"key_skills\": \"Entrepreneurship\",\n        \"salary\": 9,\n        \"euro_salary\": null,\n        \"relevance_score\": null,\n        \"currency\": \"EUR\",\n        \"start_slot\": \"2024-10-20T15:36:42.000Z\",\n        \"longitude\": 11.613942994844358,\n        \"latitude\": 48.1951076,\n        \"country_code\": null,\n        \"postal_code\": null,\n        \"city\": null,\n        \"address\": null,\n        \"view_count\": 0,\n        \"created_at\": \"2024-01-26T12:26:08.243Z\",\n        \"updated_at\": \"2024-01-26T12:26:11.448Z\",\n        \"applications_count\": 0,\n        \"employer_rating\": 0,\n        \"job_notifications\": \"1\",\n        \"boost\": 0,\n        \"cv_required\": true,\n        \"allowed_cv_formats\": [\n            \".pdf\",\n            \".docx\",\n            \".txt\",\n            \".xml\"\n        ],\n        \"deleted_at\": null,\n        \"job_value\": \"01010000A0E6100000BC992C49F9184840FCED78BC563A27400000000000003940\",\n        \"application_options\": [\n            {\n                \"id\": 1,\n                \"job_id\": 3,\n                \"question\": \"Do you have experience with marketing?\",\n                \"question_type\": \"yes_no\",\n                \"required\": true,\n                \"options\": [\n                    \"\"\n                ],\n                \"created_at\": \"2024-01-26T12:26:08.277Z\",\n                \"updated_at\": \"2024-01-26T12:26:08.277Z\",\n                \"deleted_at\": null\n            },\n            {\n                \"id\": 2,\n                \"job_id\": 3,\n                \"question\": \"What is your highest level of education?\",\n                \"question_type\": \"single_choice\",\n                \"required\": true,\n                \"options\": [\n                    \"High School\",\n                    \"Bachelor's Degree\",\n                    \"Master's Degree\"\n                ],\n                \"created_at\": \"2024-01-26T12:26:08.301Z\",\n                \"updated_at\": \"2024-01-26T12:26:08.301Z\",\n                \"deleted_at\": null\n            },\n            {\n                \"id\": 3,\n                \"job_id\": 3,\n                \"question\": \"Link to your GitHub profile:\",\n                \"question_type\": \"link\",\n                \"required\": true,\n                \"options\": [],\n                \"created_at\": \"2024-01-26T12:26:08.320Z\",\n                \"updated_at\": \"2024-01-26T12:26:08.320Z\",\n                \"deleted_at\": null\n            },\n            {\n                \"id\": 4,\n                \"job_id\": 3,\n                \"question\": \"Is there anything else you want to tell us?\",\n                \"question_type\": \"text\",\n                \"required\": false,\n                \"options\": [],\n                \"created_at\": \"2024-01-26T12:26:08.335Z\",\n                \"updated_at\": \"2024-01-26T12:26:08.335Z\",\n                \"deleted_at\": null\n            }\n        ],\n        \"image_url\": \"https://f005.backblazeb2.com/file/TestEmbloy/517k9e5v7onnobx1wnbhj1mmabsd?Authorization=3_20240126123048_1bcc78f4b5d24597f061ccf0_843b06e8854a7137b013f64a2280851b285a2329_005_20240202123048_0028_dnld\"\n    }\n}"
@@ -987,7 +1078,8 @@
 								{
 									"key": "Content-Type",
 									"value": "application/json",
-									"description": ""
+									"description": "",
+									"type": "text"
 								}
 							],
 							"cookie": [],
@@ -1037,8 +1129,15 @@
 							},
 							"status": "Created",
 							"code": 201,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"message\": \"Job created!\"\n}"
@@ -1062,8 +1161,15 @@
 							},
 							"status": "Bad Request",
 							"code": 400,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"options\": [\n        {\n            \"error\": \"At most 25 options can be set\"\n        }\n    ]\n}"
@@ -1085,11 +1191,18 @@
 								},
 								"url": "{{root}}/api/{{api_version}}/jobs"
 							},
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
-							"body": null
+							"body": "{\n    \"error\": \"Invalid question_type: bool\"\n}"
 						},
 						{
 							"id": "59aa4c2f-e338-4e53-b400-f1445dce69e8",
@@ -1110,8 +1223,15 @@
 							},
 							"status": "Too Many Requests",
 							"code": 429,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"subscription\": [\n        {\n            \"error\": \"ERR_LIMIT\",\n            \"description\": \"You've reached the maximum number of allowed resources for your subscription type\"\n        }\n    ]\n}"
