@@ -2879,11 +2879,18 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
-							"body": null
+							"body": ""
 						},
 						{
 							"id": "7f92d1b6-fcbc-41c0-8f0d-f48fc0c4095d",
@@ -2895,11 +2902,18 @@
 							},
 							"status": "No Content",
 							"code": 204,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -3117,8 +3131,15 @@
 							},
 							"status": "Created",
 							"code": 201,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"message\": \"Application submitted!\"\n}"
@@ -3198,8 +3219,15 @@
 							},
 							"status": "Bad Request",
 							"code": 400,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"errors\": {\n        \"application_text\": [\n            {\n                \"error\": \"ERR_LENGTH\",\n                \"description\": \"Attribute length is invalid\",\n                \"count\": 0\n            },\n            {\n                \"error\": \"blank\"\n            }\n        ]\n    }\n}"
@@ -3279,8 +3307,15 @@
 							},
 							"status": "Unprocessable Content",
 							"code": 422,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"application\": [\n        {\n            \"error\": \"ERR_UNNECESSARY\",\n            \"description\": \"Attribute is already submitted\"\n        }\n    ]\n}"
@@ -3361,8 +3396,15 @@
 							},
 							"status": "Unprocessable Content",
 							"code": 422,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"errors\": {\n        \"application_attachment\": [\n            \"CV is required\"\n        ]\n    }\n}"
@@ -3433,8 +3475,15 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"message\": \"Application successfully accepted.\"\n}"
@@ -3469,8 +3518,15 @@
 							},
 							"status": "Bad Request",
 							"code": 400,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"message\": \"Already accepted.\"\n}"
@@ -3541,8 +3597,15 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"message\": \"Application successfully rejected.\"\n}"
@@ -3577,8 +3640,15 @@
 							},
 							"status": "Bad Request",
 							"code": 400,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"message\": \"Already rejected.\"\n}"
@@ -3615,8 +3685,15 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"notifications\": [\n        {\n            \"id\": 27,\n            \"recipient_type\": \"User\",\n            \"recipient_id\": 1,\n            \"type\": \"ApplicationNotification\",\n            \"params\": {\n                \"job_title\": \"job.title || job.job_slug\",\n                \"application\": {\n                    \"job_id\": 1,\n                    \"user_id\": 1\n                },\n                \"job_notifications\": 0\n            },\n            \"read_at\": null,\n            \"created_at\": \"2024-03-05T03:33:51.676Z\",\n            \"updated_at\": \"2024-03-05T03:33:51.676Z\"\n        },\n        {\n            \"id\": 26,\n            \"recipient_type\": \"User\",\n            \"recipient_id\": 1,\n            \"type\": \"ApplicationStatusNotification\",\n            \"params\": {\n                \"status\": -1,\n                \"response\": \"GG\",\n                \"job_title\": \"d140d411-9426-4ea1-89db-b0cffd690c66\",\n                \"user_email\": \"winston.smith@embloy.com\",\n                \"application\": {\n                    \"job\": 4,\n                    \"user_id\": 4\n                },\n                \"user_first_name\": \"Winston\"\n            },\n            \"read_at\": null,\n            \"created_at\": \"2024-03-05T03:33:41.564Z\",\n            \"updated_at\": \"2024-03-05T03:33:41.564Z\"\n        },\n        {\n            \"id\": 25,\n            \"recipient_type\": \"User\",\n            \"recipient_id\": 1,\n            \"type\": \"ApplicationStatusNotification\",\n            \"params\": {\n                \"status\": -1,\n                \"response\": \"GG\",\n                \"job_title\": \"d140d411-9426-4ea1-89db-b0cffd690c66\",\n                \"user_email\": \"winston.smith@embloy.com\",\n                \"application\": {\n                    \"job\": 2,\n                    \"user_id\": 1\n                },\n                \"user_first_name\": \"Winston\"\n            },\n            \"read_at\": null,\n            \"created_at\": \"2024-03-05T03:33:33.240Z\",\n            \"updated_at\": \"2024-03-05T03:33:33.240Z\"\n        },\n        {\n            \"id\": 24,\n            \"recipient_type\": \"User\",\n            \"recipient_id\": 1,\n            \"type\": \"ApplicationStatusNotification\",\n            \"params\": {\n                \"status\": -1,\n                \"response\": \"GG\",\n                \"job_title\": \"d140d411-9426-4ea1-89db-b0cffd690c66\",\n                \"user_email\": \"winston.smith@embloy.com\",\n                \"application\": {\n                    \"job\": 1,\n                    \"user_id\": 1\n                },\n                \"user_first_name\": \"Winston\"\n            },\n            \"read_at\": null,\n            \"created_at\": \"2024-03-05T03:33:24.343Z\",\n            \"updated_at\": \"2024-03-05T03:33:24.343Z\"\n        }\n    ]\n}"
@@ -3631,8 +3708,15 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"notifications\": [\n        {\n            \"id\": 27,\n            \"recipient_type\": \"User\",\n            \"recipient_id\": 1,\n            \"type\": \"ApplicationNotification\",\n            \"params\": {\n                \"job_title\": \"job.title || job.job_slug\",\n                \"application\": {\n                    \"job_id\": 1,\n                    \"user_id\": 1\n                },\n                \"job_notifications\": 0\n            },\n            \"read_at\": null,\n            \"created_at\": \"2024-03-05T03:33:51.676Z\",\n            \"updated_at\": \"2024-03-05T03:33:51.676Z\"\n        },\n        {\n            \"id\": 26,\n            \"recipient_type\": \"User\",\n            \"recipient_id\": 1,\n            \"type\": \"ApplicationStatusNotification\",\n            \"params\": {\n                \"status\": -1,\n                \"response\": \"GG\",\n                \"job_title\": \"d140d411-9426-4ea1-89db-b0cffd690c66\",\n                \"user_email\": \"winston.smith@embloy.com\",\n                \"application\": {\n                    \"job\": 4,\n                    \"user_id\": 4\n                },\n                \"user_first_name\": \"Winston\"\n            },\n            \"read_at\": null,\n            \"created_at\": \"2024-03-05T03:33:41.564Z\",\n            \"updated_at\": \"2024-03-05T03:33:41.564Z\"\n        },\n        {\n            \"id\": 25,\n            \"recipient_type\": \"User\",\n            \"recipient_id\": 1,\n            \"type\": \"ApplicationStatusNotification\",\n            \"params\": {\n                \"status\": -1,\n                \"response\": \"GG\",\n                \"job_title\": \"d140d411-9426-4ea1-89db-b0cffd690c66\",\n                \"user_email\": \"winston.smith@embloy.com\",\n                \"application\": {\n                    \"job\": 2,\n                    \"user_id\": 1\n                },\n                \"user_first_name\": \"Winston\"\n            },\n            \"read_at\": null,\n            \"created_at\": \"2024-03-05T03:33:33.240Z\",\n            \"updated_at\": \"2024-03-05T03:33:33.240Z\"\n        },\n        {\n            \"id\": 24,\n            \"recipient_type\": \"User\",\n            \"recipient_id\": 1,\n            \"type\": \"ApplicationStatusNotification\",\n            \"params\": {\n                \"status\": -1,\n                \"response\": \"GG\",\n                \"job_title\": \"d140d411-9426-4ea1-89db-b0cffd690c66\",\n                \"user_email\": \"winston.smith@embloy.com\",\n                \"application\": {\n                    \"job\": 1,\n                    \"user_id\": 1\n                },\n                \"user_first_name\": \"Winston\"\n            },\n            \"read_at\": null,\n            \"created_at\": \"2024-03-05T03:33:24.343Z\",\n            \"updated_at\": \"2024-03-05T03:33:24.343Z\"\n        }\n    ]\n}"
@@ -3662,8 +3746,15 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"job_ids\": [\n        1,\n        2\n    ]\n}"
@@ -3678,8 +3769,15 @@
 							},
 							"status": "No Content",
 							"code": 204,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"job_ids\": [\n        1,\n        2\n    ]\n}"
@@ -3745,8 +3843,15 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"success\": true\n}"
@@ -3779,8 +3884,15 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"success\": true\n}"
@@ -3836,8 +3948,15 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"client_token\": \"...\"\n}"
@@ -3852,8 +3971,15 @@
 							},
 							"status": "Unauthorized",
 							"code": 401,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"token\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is invalid or expired\"\n        }\n    ]\n}"
@@ -4046,11 +4172,18 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "..."
+							"body": "\"...\""
 						},
 						{
 							"id": "fbaa3d6a-bcae-4513-b499-c57f69c1e8dd",
@@ -4098,8 +4231,15 @@
 							},
 							"status": "Bad Request",
 							"code": 400,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"mode\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is malformed or unknown\"\n        }\n    ]\n}"
@@ -4155,8 +4295,15 @@
 							},
 							"status": "Bad Request",
 							"code": 400,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"job_slug\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is malformed or unknown\"\n        }\n    ]\n}"
@@ -4207,8 +4354,15 @@
 							},
 							"status": "Unauthorized",
 							"code": 401,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"token\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is invalid or expired\"\n        }\n    ]\n}"
@@ -4400,11 +4554,18 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "..."
+							"body": "\"...\""
 						},
 						{
 							"id": "1e8e12f7-88aa-44a3-a36e-7e11f8ef58d6",
@@ -4451,8 +4612,15 @@
 							},
 							"status": "Bad Request",
 							"code": 400,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"mode\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is malformed or unknown\"\n        }\n    ]\n}"
@@ -4507,8 +4675,15 @@
 							},
 							"status": "Bad Request",
 							"code": 400,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"job_slug\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is malformed or unknown\"\n        }\n    ]\n}"
@@ -4558,8 +4733,15 @@
 							},
 							"status": "Unauthorized",
 							"code": 401,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"token\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is invalid or expired\"\n        }\n    ]\n}"
@@ -4611,8 +4793,15 @@
 							},
 							"status": "Bad Request",
 							"code": 400,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"job\": [\n        {\n            \"error\": \"Job is either archived or deactivated\"\n        }\n    ]\n}"
@@ -4638,8 +4827,15 @@
 							},
 							"status": "Bad Request",
 							"code": 400,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"api_key\": [\n        {\n            \"error\": \"ERR_BLANK\",\n            \"description\": \"Attribute can't be blank\"\n        }\n    ]\n}"
@@ -4665,8 +4861,15 @@
 							},
 							"status": "Forbidden",
 							"code": 403,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"api_key\": [\n        {\n            \"error\": \"ERR_RAC\",\n            \"description\": \"API key is inactive\"\n        }\n    ]\n}"
@@ -4692,8 +4895,15 @@
 							},
 							"status": "Not Found",
 							"code": 404,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"client\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute can not be retrieved\"\n        }\n    ]\n}"
@@ -4812,8 +5022,15 @@
 							},
 							"status": "Created",
 							"code": 201,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"message\": \"Application submitted!\"\n}"
@@ -4845,8 +5062,15 @@
 							},
 							"status": "Bad Request",
 							"code": 400,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"errors\": {\n        \"application_text\": [\n            {\n                \"error\": \"ERR_LENGTH\",\n                \"description\": \"Attribute length is invalid\",\n                \"count\": 0\n            },\n            {\n                \"error\": \"blank\"\n            }\n        ]\n    }\n}"
