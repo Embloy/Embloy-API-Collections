@@ -267,8 +267,15 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"access_token\": \"...\",\n    \"token_type\": \"Bearer\",\n    \"scope\": \"https://api.embloy.com/auth/core.write\",\n    \"expires_in\": 1200\n}"
@@ -300,8 +307,15 @@
 							},
 							"status": "Bad Request",
 							"code": 400,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"error\": \"Invalid request\"\n}"
@@ -327,8 +341,15 @@
 							},
 							"status": "Unauthorized",
 							"code": 401,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"token\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute is invalid or expired\"\n        }\n    ]\n}"
@@ -360,8 +381,15 @@
 							},
 							"status": "Forbidden",
 							"code": 403,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"user\": [\n        {\n            \"error\": \"ERR_RAC\",\n            \"description\": \"Proceeding is inhibited by an access restriction\"\n        }\n    ]\n}"
@@ -1487,8 +1515,15 @@
 							},
 							"status": "Bad Request",
 							"code": 400,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"job_slug\": [\n        {\n            \"error\": \"ERR_BLANK\",\n            \"description\": \"Should be unique per user\",\n            \"value\": \"11_CEO Wanted_17056829072\"\n        }\n    ]\n}"
@@ -1623,8 +1658,15 @@
 							},
 							"status": "Bad Request",
 							"code": 400,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"base\": [\n        {\n            \"error\": \"You've reached the maximum number of allowed jobs for your subscription type (basic).\"\n        }\n    ]\n}"
@@ -1654,8 +1696,15 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"message\": \"Job deleted!\"\n}"
@@ -1670,8 +1719,15 @@
 							},
 							"status": "Not Found",
 							"code": 404,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"job\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute can not be retrieved\"\n        }\n    ]\n}"
@@ -1708,8 +1764,15 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"user\": {\n        \"id\": 1,\n        \"email\": \"winston.smith@embloy.com\",\n        \"password_digest\": \"$2a$12$2rlRIdcSWUGvtGyxmlHXS.cwFV5JZRuH.jaJZhbUposkYDH19Yjyy\",\n        \"activity_status\": 1,\n        \"first_name\": \"Winston\",\n        \"last_name\": \"Smith\",\n        \"longitude\": null,\n        \"latitude\": null,\n        \"country_code\": null,\n        \"postal_code\": null,\n        \"city\": null,\n        \"address\": null,\n        \"date_of_birth\": null,\n        \"user_type\": \"private\",\n        \"view_count\": 0,\n        \"created_at\": \"2024-01-07T18:22:47.965Z\",\n        \"updated_at\": \"2024-01-07T19:48:53.804Z\",\n        \"applications_count\": 0,\n        \"jobs_count\": 0,\n        \"user_role\": \"verified\",\n        \"application_notifications\": true,\n        \"twitter_url\": null,\n        \"facebook_url\": null,\n        \"instagram_url\": null,\n        \"phone\": null,\n        \"degree\": null,\n        \"linkedin_url\": null,\n        \"image_url\": \"https://f005.backblazeb2.com/file/TestEmbloy/hrv0t9t8hd57p2f183n0phhx6tf5?Authorization=3_20240107200242_474278ba550b47eb0ed2a7f7_f596e41ae1f9563846101b2623150ef208a775e8_005_20240114200242_0028_dnld\"\n    }\n}"
@@ -1739,8 +1802,15 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"jobs\": [\n        {\n            \"job_id\": 3,\n            \"job_type\": \"Marketing\",\n            \"job_slug\": \"92fc00f6-8a3d-46ce-a485-371ab1588347\",\n            \"job_type_value\": 25,\n            \"job_status\": 0,\n            \"status\": \"public\",\n            \"user_id\": 2,\n            \"referrer_url\": \"https://example.embloy.com\",\n            \"duration\": 9,\n            \"code_lang\": null,\n            \"title\": \"CEO Wanted\",\n            \"position\": \"CEO\",\n            \"description\": {\n                \"id\": 3,\n                \"name\": \"description\",\n                \"body\": \"<div>This is the description</div>\",\n                \"record_type\": \"Job\",\n                \"record_id\": 3,\n                \"created_at\": \"2024-01-26T12:26:08.356Z\",\n                \"updated_at\": \"2024-01-26T12:26:08.356Z\"\n            },\n            \"key_skills\": \"Entrepreneurship\",\n            \"salary\": 9,\n            \"euro_salary\": null,\n            \"relevance_score\": null,\n            \"currency\": \"EUR\",\n            \"start_slot\": \"2024-10-20T15:36:42.000Z\",\n            \"longitude\": 11.613942994844358,\n            \"latitude\": 48.1951076,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"created_at\": \"2024-01-26T12:26:08.243Z\",\n            \"updated_at\": \"2024-01-26T12:26:11.448Z\",\n            \"applications_count\": 0,\n            \"employer_rating\": 0,\n            \"job_notifications\": \"1\",\n            \"boost\": 0,\n            \"cv_required\": true,\n            \"allowed_cv_formats\": [\n                \".pdf\",\n                \".docx\",\n                \".txt\",\n                \".xml\"\n            ],\n            \"deleted_at\": null,\n            \"job_value\": \"01010000A0E6100000BC992C49F9184840FCED78BC563A27400000000000003940\",\n            \"application_options\": [\n                {\n                    \"id\": 1,\n                    \"job_id\": 3,\n                    \"question\": \"Do you have experience with marketing?\",\n                    \"question_type\": \"yes_no\",\n                    \"required\": true,\n                    \"options\": [\n                        \"\"\n                    ],\n                    \"created_at\": \"2024-01-26T12:26:08.277Z\",\n                    \"updated_at\": \"2024-01-26T12:26:08.277Z\",\n                    \"deleted_at\": null\n                },\n                {\n                    \"id\": 2,\n                    \"job_id\": 3,\n                    \"question\": \"What is your highest level of education?\",\n                    \"question_type\": \"single_choice\",\n                    \"required\": true,\n                    \"options\": [\n                        \"High School\",\n                        \"Bachelor's Degree\",\n                        \"Master's Degree\"\n                    ],\n                    \"created_at\": \"2024-01-26T12:26:08.301Z\",\n                    \"updated_at\": \"2024-01-26T12:26:08.301Z\",\n                    \"deleted_at\": null\n                },\n                {\n                    \"id\": 3,\n                    \"job_id\": 3,\n                    \"question\": \"Link to your GitHub profile:\",\n                    \"question_type\": \"link\",\n                    \"required\": true,\n                    \"options\": [],\n                    \"created_at\": \"2024-01-26T12:26:08.320Z\",\n                    \"updated_at\": \"2024-01-26T12:26:08.320Z\",\n                    \"deleted_at\": null\n                },\n                {\n                    \"id\": 4,\n                    \"job_id\": 3,\n                    \"question\": \"Is there anything else you want to tell us?\",\n                    \"question_type\": \"text\",\n                    \"required\": false,\n                    \"options\": [],\n                    \"created_at\": \"2024-01-26T12:26:08.335Z\",\n                    \"updated_at\": \"2024-01-26T12:26:08.335Z\",\n                    \"deleted_at\": null\n                }\n            ],\n            \"image_url\": \"https://f005.backblazeb2.com/file/TestEmbloy/517k9e5v7onnobx1wnbhj1mmabsd?Authorization=3_20240126122937_807889b1223ef09a6c6aa224_018f88ce4739a6be5b7703ad431ff90188525822_005_20240202122937_0028_dnld\"\n        },\n        {\n            \"job_id\": 2,\n            \"job_type\": \"Marketing\",\n            \"job_slug\": \"b627a33a-c724-431b-9ae1-8b293eaeabba\",\n            \"job_type_value\": 25,\n            \"job_status\": 0,\n            \"status\": \"public\",\n            \"user_id\": 2,\n            \"referrer_url\": \"https://example.embloy.com\",\n            \"duration\": 9,\n            \"code_lang\": null,\n            \"title\": \"CEO Wanted\",\n            \"position\": \"CEO\",\n            \"description\": {\n                \"id\": 2,\n                \"name\": \"description\",\n                \"body\": \"<div>This is the description</div>\",\n                \"record_type\": \"Job\",\n                \"record_id\": 2,\n                \"created_at\": \"2024-01-26T12:20:40.020Z\",\n                \"updated_at\": \"2024-01-26T12:20:40.020Z\"\n            },\n            \"key_skills\": \"Entrepreneurship\",\n            \"salary\": 9,\n            \"euro_salary\": null,\n            \"relevance_score\": null,\n            \"currency\": \"EUR\",\n            \"start_slot\": \"2024-12-18T21:23:20.000Z\",\n            \"longitude\": 11.613942994844358,\n            \"latitude\": 48.1951076,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"created_at\": \"2024-01-26T12:20:39.980Z\",\n            \"updated_at\": \"2024-01-26T12:20:42.715Z\",\n            \"applications_count\": 0,\n            \"employer_rating\": 0,\n            \"job_notifications\": \"1\",\n            \"boost\": 0,\n            \"cv_required\": true,\n            \"allowed_cv_formats\": [\n                \".pdf\",\n                \".docx\",\n                \".txt\",\n                \".xml\"\n            ],\n            \"deleted_at\": null,\n            \"job_value\": \"01010000A0E6100000BC992C49F9184840FCED78BC563A27400000000000003940\",\n            \"application_options\": [],\n            \"image_url\": \"https://f005.backblazeb2.com/file/TestEmbloy/lco966ljfq78423wz26zy654nkuu?Authorization=3_20240126122938_ec0e6c912248be76c8743024_224b05738b575e1cda4bf072cbfb9cca7d898281_005_20240202122938_0028_dnld\"\n        }\n    ]\n}"
@@ -1755,11 +1825,18 @@
 							},
 							"status": "No Content",
 							"code": 204,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -1800,8 +1877,15 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"applications\": [\n        {\n            \"job_id\": 2,\n            \"user_id\": 1,\n            \"updated_at\": \"2023-02-27T23:06:10.000Z\",\n            \"created_at\": \"2023-02-27T23:06:10.000Z\",\n            \"status\": \"-1\",\n            \"application_text\": \"Hello World\",\n            \"application_documents\": null,\n            \"response\": \"Not good enough!\",\n            \"deleted_at\": null\n        }\n    ]\n}"
@@ -1816,11 +1900,18 @@
 							},
 							"status": "No Content",
 							"code": 204,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -1847,11 +1938,18 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"preferences\": {\n        \"id\": null,\n        \"user_id\": 1,\n        \"interests\": null,\n        \"experience\": null,\n        \"degree\": null,\n        \"num_jobs_done\": 0,\n        \"gender\": null,\n        \"spontaneity\": null,\n        \"job_types\": {\n            \"1\": 0,\n            \"2\": 0,\n            \"3\": 0\n        },\n        \"key_skills\": null,\n        \"salary_range\": [\n            0.0,\n            0.0\n        ],\n        \"cv_url\": null\n    }\n}"
+							"body": "{\n    \"preferences\": {\n        \"id\": null,\n        \"user_id\": 1,\n        \"interests\": null,\n        \"experience\": null,\n        \"degree\": null,\n        \"num_jobs_done\": 0,\n        \"gender\": null,\n        \"spontaneity\": null,\n        \"job_types\": {\n            \"1\": 0,\n            \"2\": 0,\n            \"3\": 0\n        },\n        \"key_skills\": null,\n        \"salary_range\": [\n            0,\n            0\n        ],\n        \"cv_url\": null\n    }\n}"
 						}
 					]
 				},
@@ -1878,11 +1976,18 @@
 							},
 							"status": "No Content",
 							"code": 204,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -2185,8 +2290,15 @@
 							},
 							"status": "Created",
 							"code": 201,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"message\": \"Account registered! Please activate your account and claim your refresh token via GET /api/v0/user/verify \"\n}"
@@ -2239,8 +2351,15 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"image_url\": \"https://f005.backblazeb2.com/file/TestEmbloy/hrv0t9t8hd57p2f183n0phhx6tf5?Authorization=3_20240107194856_b385897f84e043696cf90c7c_5e0788424bb9485c44398f2bd7faa77df14bdaee_005_20240114194856_0028_dnld\"\n}"
@@ -2311,8 +2430,15 @@
 							},
 							"status": "Accepted",
 							"code": 202,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"message\": \"Password reset process initiated! Please check your mailbox.\"\n}"
@@ -2401,8 +2527,15 @@
 							},
 							"status": "Bad Request",
 							"code": 400,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"message\": \"Token has either expired, has a purpose mismatch, is for another record, or has been tampered with\"\n}"
@@ -2450,8 +2583,15 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"message\": \"Password updated\"\n}"
@@ -2542,8 +2682,15 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"message\": \"User deleted!\"\n}"
@@ -2580,8 +2727,15 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"applications\": [\n        {\n            \"job_id\": 2,\n            \"user_id\": 2,\n            \"application_text\": \"Hello World\",\n            \"status\": \"0\",\n            \"answer\": null,\n            \"created_at\": \"2023-02-27T23:06:10.000Z\",\n            \"update_at\": \"2023-02-27T23:06:10.000Z\",\n            \"job\":\"{\\\"job_id\\\":2,\\\"job_type\\\":\\\"Marketing\\\",\\\"job_slug\\\":\\\"c6fda247-061a-43cf-8271-1ff4033de2fb\\\",\\\"job_type_value\\\":25,\\\"job_status\\\":1,\\\"status\\\":\\\"public\\\",\\\"user_id\\\":1,\\\"referrer_url\\\":\\\"https://example.embloy.com\\\",\\\"duration\\\":9,\\\"code_lang\\\":null,\\\"title\\\":\\\"CEO Wanted\\\",\\\"position\\\":\\\"CEO\\\",\\\"description\\\":{\\\"id\\\":2,\\\"name\\\":\\\"description\\\",\\\"body\\\":\\\"\\<div\\>This is the description\\</div\\>\\\",\\\"record_type\\\":\\\"Job\\\",\\\"record_id\\\":2,\\\"created_at\\\":\\\"2024-01-27T01:35:49.334Z\\\",\\\"updated_at\\\":\\\"2024-01-27T01:35:49.334Z\\\"},\\\"key_skills\\\":\\\"Entrepreneurship\\\",\\\"salary\\\":9,\\\"euro_salary\\\":null,\\\"relevance_score\\\":null,\\\"currency\\\":\\\"EUR\\\",\\\"start_slot\\\":\\\"2024-08-02T12:01:55.000Z\\\",\\\"longitude\\\":11.613942994844358,\\\"latitude\\\":48.1951076,\\\"country_code\\\":null,\\\"postal_code\\\":null,\\\"city\\\":null,\\\"address\\\":null,\\\"view_count\\\":0,\\\"created_at\\\":\\\"2024-01-27T01:35:49.214Z\\\",\\\"updated_at\\\":\\\"2024-01-27T01:36:07.178Z\\\",\\\"applications_count\\\":1,\\\"employer_rating\\\":0,\\\"job_notifications\\\":\\\"1\\\",\\\"boost\\\":0,\\\"cv_required\\\":true,\\\"allowed_cv_formats\\\":[\\\".pdf\\\",\\\".docx\\\",\\\".txt\\\",\\\".xml\\\"],\\\"deleted_at\\\":null,\\\"job_value\\\":\\\"01010000A0E6100000BC992C49F9184840FCED78BC563A27400000000000003940\\\",\\\"application_options\\\":[{\\\"id\\\":6,\\\"job_id\\\":2,\\\"question\\\":\\\"Do you have experience with marketing?\\\",\\\"question_type\\\":\\\"yes_no\\\",\\\"required\\\":true,\\\"options\\\":[\\\"\\\"],\\\"created_at\\\":\\\"2024-01-27T01:35:49.250Z\\\",\\\"updated_at\\\":\\\"2024-01-27T01:35:49.250Z\\\",\\\"deleted_at\\\":null},{\\\"id\\\":7,\\\"job_id\\\":2,\\\"question\\\":\\\"What is your highest level of education?\\\",\\\"question_type\\\":\\\"single_choice\\\",\\\"required\\\":true,\\\"options\\\":[\\\"High School\\\",\\\"Bachelor's Degree\\\",\\\"Master's Degree\\\"],\\\"created_at\\\":\\\"2024-01-27T01:35:49.265Z\\\",\\\"updated_at\\\":\\\"2024-01-27T01:35:49.265Z\\\",\\\"deleted_at\\\":null},{\\\"id\\\":8,\\\"job_id\\\":2,\\\"question\\\":\\\"Link to your GitHub profile:\\\",\\\"question_type\\\":\\\"link\\\",\\\"required\\\":true,\\\"options\\\":[],\\\"created_at\\\":\\\"2024-01-27T01:35:49.283Z\\\",\\\"updated_at\\\":\\\"2024-01-27T01:35:49.283Z\\\",\\\"deleted_at\\\":null},{\\\"id\\\":9,\\\"job_id\\\":2,\\\"question\\\":\\\"Is there anything else you want to tell us?\\\",\\\"question_type\\\":\\\"text\\\",\\\"required\\\":false,\\\"options\\\":[],\\\"created_at\\\":\\\"2024-01-27T01:35:49.303Z\\\",\\\"updated_at\\\":\\\"2024-01-27T01:35:49.303Z\\\",\\\"deleted_at\\\":null},{\\\"id\\\":10,\\\"job_id\\\":2,\\\"question\\\":\\\"What are your interests?\\\",\\\"question_type\\\":\\\"multiple_choice\\\",\\\"required\\\":true,\\\"options\\\":[\\\"AI\\\",\\\"Blockchain\\\",\\\"Scrum\\\",\\\"Tesla\\\"],\\\"created_at\\\":\\\"2024-01-27T01:35:49.318Z\\\",\\\"updated_at\\\":\\\"2024-01-27T01:35:49.318Z\\\",\\\"deleted_at\\\":null}],\\\"image_url\\\":\\\"https://f005.backblazeb2.com/file/TestEmbloy/1n29gtt0v3kqium5s3thmnuy8pu3?Authorization=3_20240211052726_a3e8c11ed0f459afe328bd98_89602c2c63f2e24eced1d9135b6977571f1dd441_005_20240218052726_0028_dnld\\\"}\",\n            \"application_attachments\": {\n                \"attachment\": {\n                    \"id\": 2,\n                    \"user_id\": 2,\n                    \"job_id\": 2,\n                    \"created_at\": \"2024-01-27T01:52:49.596Z\",\n                    \"updated_at\": \"2024-01-27T01:52:50.215Z\"\n                },\n                \"url\": \"http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--777db3e4681f6ee7002532c0dc4b9042f7203330/CV__EN.pdf\"\n            },\n            \"application_answers\": []\n        }\n    ]\n}"
@@ -2611,8 +2765,15 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"applications\": [\n        {\n            \"job_id\": 2,\n            \"user_id\": 2,\n            \"application_text\": \"Hello World\",\n            \"status\": \"0\",\n            \"answer\": null,\n            \"created_at\": \"2023-02-27T23:06:10.000Z\",\n            \"update_at\": \"2023-02-27T23:06:10.000Z\",\n            \"job\":\"{\\\"job_id\\\":2,\\\"job_type\\\":\\\"Marketing\\\",\\\"job_slug\\\":\\\"c6fda247-061a-43cf-8271-1ff4033de2fb\\\",\\\"job_type_value\\\":25,\\\"job_status\\\":1,\\\"status\\\":\\\"public\\\",\\\"user_id\\\":1,\\\"referrer_url\\\":\\\"https://example.embloy.com\\\",\\\"duration\\\":9,\\\"code_lang\\\":null,\\\"title\\\":\\\"CEO Wanted\\\",\\\"position\\\":\\\"CEO\\\",\\\"description\\\":{\\\"id\\\":2,\\\"name\\\":\\\"description\\\",\\\"body\\\":\\\"\\<div\\>This is the description\\</div\\>\\\",\\\"record_type\\\":\\\"Job\\\",\\\"record_id\\\":2,\\\"created_at\\\":\\\"2024-01-27T01:35:49.334Z\\\",\\\"updated_at\\\":\\\"2024-01-27T01:35:49.334Z\\\"},\\\"key_skills\\\":\\\"Entrepreneurship\\\",\\\"salary\\\":9,\\\"euro_salary\\\":null,\\\"relevance_score\\\":null,\\\"currency\\\":\\\"EUR\\\",\\\"start_slot\\\":\\\"2024-08-02T12:01:55.000Z\\\",\\\"longitude\\\":11.613942994844358,\\\"latitude\\\":48.1951076,\\\"country_code\\\":null,\\\"postal_code\\\":null,\\\"city\\\":null,\\\"address\\\":null,\\\"view_count\\\":0,\\\"created_at\\\":\\\"2024-01-27T01:35:49.214Z\\\",\\\"updated_at\\\":\\\"2024-01-27T01:36:07.178Z\\\",\\\"applications_count\\\":1,\\\"employer_rating\\\":0,\\\"job_notifications\\\":\\\"1\\\",\\\"boost\\\":0,\\\"cv_required\\\":true,\\\"allowed_cv_formats\\\":[\\\".pdf\\\",\\\".docx\\\",\\\".txt\\\",\\\".xml\\\"],\\\"deleted_at\\\":null,\\\"job_value\\\":\\\"01010000A0E6100000BC992C49F9184840FCED78BC563A27400000000000003940\\\",\\\"application_options\\\":[{\\\"id\\\":6,\\\"job_id\\\":2,\\\"question\\\":\\\"Do you have experience with marketing?\\\",\\\"question_type\\\":\\\"yes_no\\\",\\\"required\\\":true,\\\"options\\\":[\\\"\\\"],\\\"created_at\\\":\\\"2024-01-27T01:35:49.250Z\\\",\\\"updated_at\\\":\\\"2024-01-27T01:35:49.250Z\\\",\\\"deleted_at\\\":null},{\\\"id\\\":7,\\\"job_id\\\":2,\\\"question\\\":\\\"What is your highest level of education?\\\",\\\"question_type\\\":\\\"single_choice\\\",\\\"required\\\":true,\\\"options\\\":[\\\"High School\\\",\\\"Bachelor's Degree\\\",\\\"Master's Degree\\\"],\\\"created_at\\\":\\\"2024-01-27T01:35:49.265Z\\\",\\\"updated_at\\\":\\\"2024-01-27T01:35:49.265Z\\\",\\\"deleted_at\\\":null},{\\\"id\\\":8,\\\"job_id\\\":2,\\\"question\\\":\\\"Link to your GitHub profile:\\\",\\\"question_type\\\":\\\"link\\\",\\\"required\\\":true,\\\"options\\\":[],\\\"created_at\\\":\\\"2024-01-27T01:35:49.283Z\\\",\\\"updated_at\\\":\\\"2024-01-27T01:35:49.283Z\\\",\\\"deleted_at\\\":null},{\\\"id\\\":9,\\\"job_id\\\":2,\\\"question\\\":\\\"Is there anything else you want to tell us?\\\",\\\"question_type\\\":\\\"text\\\",\\\"required\\\":false,\\\"options\\\":[],\\\"created_at\\\":\\\"2024-01-27T01:35:49.303Z\\\",\\\"updated_at\\\":\\\"2024-01-27T01:35:49.303Z\\\",\\\"deleted_at\\\":null},{\\\"id\\\":10,\\\"job_id\\\":2,\\\"question\\\":\\\"What are your interests?\\\",\\\"question_type\\\":\\\"multiple_choice\\\",\\\"required\\\":true,\\\"options\\\":[\\\"AI\\\",\\\"Blockchain\\\",\\\"Scrum\\\",\\\"Tesla\\\"],\\\"created_at\\\":\\\"2024-01-27T01:35:49.318Z\\\",\\\"updated_at\\\":\\\"2024-01-27T01:35:49.318Z\\\",\\\"deleted_at\\\":null}],\\\"image_url\\\":\\\"https://f005.backblazeb2.com/file/TestEmbloy/1n29gtt0v3kqium5s3thmnuy8pu3?Authorization=3_20240211052726_a3e8c11ed0f459afe328bd98_89602c2c63f2e24eced1d9135b6977571f1dd441_005_20240218052726_0028_dnld\\\"}\",\n            \"application_attachments\": {\n                \"attachment\": {\n                    \"id\": 2,\n                    \"user_id\": 2,\n                    \"job_id\": 2,\n                    \"created_at\": \"2024-01-27T01:52:49.596Z\",\n                    \"updated_at\": \"2024-01-27T01:52:50.215Z\"\n                },\n                \"url\": \"http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--777db3e4681f6ee7002532c0dc4b9042f7203330/CV__EN.pdf\"\n            },\n            \"application_answers\": []\n        }\n    ]\n}"
@@ -2642,8 +2803,15 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"application\": {\n        \"job_id\": 1,\n        \"user_id\": 2,\n        \"updated_at\": \"2023-02-27T23:06:10.000Z\",\n        \"created_at\": \"2023-02-27T23:06:10.000Z\",\n        \"status\": \"0\",\n        \"application_text\": \"Hello World\",\n        \"application_documents\": null,\n        \"response\": null,\n        \"deleted_at\": null\n    },\n    \"application_attachment\": {\n        \"attachment\": {\n            \"id\": 1,\n            \"user_id\": 2,\n            \"job_id\": 1,\n            \"created_at\": \"2024-01-27T01:30:21.712Z\",\n            \"updated_at\": \"2024-01-27T01:30:22.811Z\"\n        },\n        \"url\": \"http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3d581e72e10f8caf236c539a19ab324a9ca44106/Operations%20Research%20_%20Retake-Pr%C3%BCfung%20-%20assignment.pdf\"\n    },\n    \"application_answers\": [\n        {\n            \"id\": 33,\n            \"job_id\": 1,\n            \"user_id\": 2,\n            \"application_option_id\": 1,\n            \"answer\": \"Yes\",\n            \"created_at\": \"2024-01-27T01:30:20.107Z\",\n            \"updated_at\": \"2024-01-27T01:30:20.107Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 34,\n            \"job_id\": 1,\n            \"user_id\": 2,\n            \"application_option_id\": 2,\n            \"answer\": \"Master's Degree\",\n            \"created_at\": \"2024-01-27T01:30:20.152Z\",\n            \"updated_at\": \"2024-01-27T01:30:20.152Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 35,\n            \"job_id\": 1,\n            \"user_id\": 2,\n            \"application_option_id\": 3,\n            \"answer\": \"https://github.com/username\",\n            \"created_at\": \"2024-01-27T01:30:20.644Z\",\n            \"updated_at\": \"2024-01-27T01:30:20.644Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 36,\n            \"job_id\": 1,\n            \"user_id\": 2,\n            \"application_option_id\": 4,\n            \"answer\": \"I am very excited about this opportunity.\",\n            \"created_at\": \"2024-01-27T01:30:20.908Z\",\n            \"updated_at\": \"2024-01-27T01:30:20.908Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 37,\n            \"job_id\": 1,\n            \"user_id\": 2,\n            \"application_option_id\": 5,\n            \"answer\": \"[\\\"AI\\\", \\\"Scrum\\\"]\",\n            \"created_at\": \"2024-01-27T01:30:21.188Z\",\n            \"updated_at\": \"2024-01-27T01:30:21.188Z\",\n            \"deleted_at\": null\n        }\n    ]\n}"
@@ -2673,8 +2841,15 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"application\": {\n        \"job_id\": 1,\n        \"user_id\": 2,\n        \"updated_at\": \"2023-02-27T23:06:10.000Z\",\n        \"created_at\": \"2023-02-27T23:06:10.000Z\",\n        \"status\": \"0\",\n        \"application_text\": \"Hello World\",\n        \"application_documents\": null,\n        \"response\": null,\n        \"deleted_at\": null\n    },\n    \"application_attachment\": {\n        \"attachment\": {\n            \"id\": 1,\n            \"user_id\": 2,\n            \"job_id\": 1,\n            \"created_at\": \"2024-01-27T01:30:21.712Z\",\n            \"updated_at\": \"2024-01-27T01:30:22.811Z\"\n        },\n        \"url\": \"http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3d581e72e10f8caf236c539a19ab324a9ca44106/Operations%20Research%20_%20Retake-Pr%C3%BCfung%20-%20assignment.pdf\"\n    },\n    \"application_answers\": [\n        {\n            \"id\": 33,\n            \"job_id\": 1,\n            \"user_id\": 2,\n            \"application_option_id\": 1,\n            \"answer\": \"Yes\",\n            \"created_at\": \"2024-01-27T01:30:20.107Z\",\n            \"updated_at\": \"2024-01-27T01:30:20.107Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 34,\n            \"job_id\": 1,\n            \"user_id\": 2,\n            \"application_option_id\": 2,\n            \"answer\": \"Master's Degree\",\n            \"created_at\": \"2024-01-27T01:30:20.152Z\",\n            \"updated_at\": \"2024-01-27T01:30:20.152Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 35,\n            \"job_id\": 1,\n            \"user_id\": 2,\n            \"application_option_id\": 3,\n            \"answer\": \"https://github.com/username\",\n            \"created_at\": \"2024-01-27T01:30:20.644Z\",\n            \"updated_at\": \"2024-01-27T01:30:20.644Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 36,\n            \"job_id\": 1,\n            \"user_id\": 2,\n            \"application_option_id\": 4,\n            \"answer\": \"I am very excited about this opportunity.\",\n            \"created_at\": \"2024-01-27T01:30:20.908Z\",\n            \"updated_at\": \"2024-01-27T01:30:20.908Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 37,\n            \"job_id\": 1,\n            \"user_id\": 2,\n            \"application_option_id\": 5,\n            \"answer\": \"[\\\"AI\\\", \\\"Scrum\\\"]\",\n            \"created_at\": \"2024-01-27T01:30:21.188Z\",\n            \"updated_at\": \"2024-01-27T01:30:21.188Z\",\n            \"deleted_at\": null\n        }\n    ]\n}"
