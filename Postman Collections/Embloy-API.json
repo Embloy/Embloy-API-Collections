@@ -561,7 +561,7 @@
 							}
 						},
 						"url": "{{root}}/api/{{api_version}}/tokens",
-						"description": "Creates and stores a new token for the current user.\n\n- Valid token types are `refresh_token`, `access_token`, `request_token`, `client_token`, `api_key`.\n    \n- Valid token issuers are `embloy`, `ashby`, `lever`, `softgarden`"
+						"description": "Creates and stores a new token for the current user.\n\n- Valid token types are `refresh_token`, `access_token`, `request_token`, `client_token`, `api_key`.\n    \n- Valid token issuers are `embloy`, `ashby`, `lever`, `softgarden`\n    \n\nPlease note that only users with a valid Embloy subscription are allowed to create new tokens."
 					},
 					"response": [
 						{
@@ -667,7 +667,7 @@
 								}
 							]
 						},
-						"description": "Updates a token if owned by the current user"
+						"description": "Updates a token if owned by the current user.\n\nPlease note that only users with a valid Embloy subscription are allowed to update tokens."
 					},
 					"response": [
 						{
@@ -5336,7 +5336,7 @@
 				}
 			],
 			"id": "fef972ad-96ec-4bcd-a33e-c37d2735c964",
-			"description": "All requests for the \"_Embloy Button_\" and related token creation and application capturing functionalities."
+			"description": "All requests for the \"_Embloy Button_\" and related token creation and application capturing functionalities.\n\n#### Note:\n\nThese endpoints are disabled for sandbox users."
 		},
 		{
 			"name": "Subscriptions",
