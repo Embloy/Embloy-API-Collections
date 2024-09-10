@@ -2051,6 +2051,43 @@
 					]
 				},
 				{
+					"name": "Get user's events",
+					"id": "6b378149-9394-485e-a5c4-d5fec63208ad",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{root}}/api/v0/user/events",
+						"description": "Returns all application events linked to a user."
+					},
+					"response": [
+						{
+							"id": "78a4e734-225c-4398-b863-03e61a4d991f",
+							"name": "204 No Content",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{root}}/api/v0/user/webhooks"
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": ""
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						}
+					]
+				},
+				{
 					"name": "Rerfresh user's webhooks",
 					"id": "c12624c0-b9f6-4dcf-b04f-0049e7909cc0",
 					"protocolProfileBehavior": {
