@@ -2750,7 +2750,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{root}}/api/{{api_version}}/company/jobs/123",
+						"url": "{{root}}/api/{{api_version}}/company/{{company_id}}/jobs",
 						"description": "This endpoint returns all listed jobs including relevant information for a company's job page."
 					},
 					"response": [
@@ -7362,7 +7362,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "28a7610f-58df-43e4-8a6a-0e3ed84a3aeb",
+				"id": "a8c1c929-e2b0-4542-8f56-b76650088416",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -7372,7 +7372,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "b7b27622-7e05-429e-85bf-b482070b104c",
+				"id": "b3355140-5efb-47f2-a0ff-9f6a1b2529e3",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -7461,6 +7461,11 @@
 		{
 			"key": "notification_id",
 			"value": ""
+		},
+		{
+			"key": "company_id",
+			"value": "1",
+			"type": "string"
 		}
 	]
 }
