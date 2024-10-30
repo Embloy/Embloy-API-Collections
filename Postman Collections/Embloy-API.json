@@ -1048,8 +1048,8 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}",
-						"description": "The provided access token is first verified, and then the job is returned. (Only if the the user is authorized to access the resource and if the resource exists)"
+						"url": "{{root}}/api/{{api_version}}/company/jobs/123",
+						"description": "This endpoint returns all listed jobs including relevant information for a company's job page."
 					},
 					"response": [
 						{
