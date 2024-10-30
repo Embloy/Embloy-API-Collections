@@ -2742,7 +2742,7 @@
 			"name": "Company",
 			"item": [
 				{
-					"name": "Get job page",
+					"name": "Get company job feed",
 					"id": "64569df3-92b1-4c45-8ee9-5f2f257b8938",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -2750,7 +2750,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{root}}/api/{{api_version}}/company/{{company_id}}/jobs",
+						"url": "{{root}}/api/{{api_version}}/company/{{company_id}}/feed",
 						"description": "This endpoint returns all listed jobs including relevant information for a company's job page."
 					},
 					"response": [
