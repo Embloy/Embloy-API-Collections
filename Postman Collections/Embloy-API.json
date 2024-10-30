@@ -7570,7 +7570,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "cc41ee73-afca-4da2-a187-aa6f328fc481",
+				"id": "86ceace5-7e13-4bfe-8e90-23a3afea2551",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -7580,7 +7580,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "1d76e8f2-e198-482f-86eb-0e24bf7534d4",
+				"id": "dff18eae-ac42-418e-a21e-3b8eec274946",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -7610,37 +7610,37 @@
 		},
 		{
 			"key": "client_token",
-			"value": "",
+			"value": "insert-client-token",
 			"type": "string"
 		},
 		{
 			"key": "request_token",
-			"value": "",
+			"value": "insert-request-token",
 			"type": "string"
 		},
 		{
 			"key": "password_reset_token",
-			"value": "",
+			"value": "insert-password-reset-token",
 			"type": "string"
 		},
 		{
 			"key": "own_job_id",
-			"value": "",
+			"value": "insert-your-job-id",
 			"type": "string"
 		},
 		{
 			"key": "application_id",
-			"value": "",
+			"value": "insert-application-id",
 			"type": "string"
 		},
 		{
 			"key": "checkout_session_id",
-			"value": "",
+			"value": "insert-checkout-session-id",
 			"type": "string"
 		},
 		{
 			"key": "job_id",
-			"value": "",
+			"value": "insert-job-id",
 			"type": "string"
 		},
 		{
@@ -7655,12 +7655,12 @@
 		},
 		{
 			"key": "activation_token",
-			"value": "",
+			"value": "insert-your-activation-token",
 			"type": "string"
 		},
 		{
 			"key": "password",
-			"value": "password"
+			"value": "insert-password"
 		},
 		{
 			"key": "username",
@@ -7668,11 +7668,11 @@
 		},
 		{
 			"key": "notification_id",
-			"value": ""
+			"value": "insert-notification-id"
 		},
 		{
 			"key": "company_id",
-			"value": "",
+			"value": "insert-company-id",
 			"type": "string"
 		}
 	]
