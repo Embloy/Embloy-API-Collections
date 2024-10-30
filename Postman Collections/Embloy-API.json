@@ -2753,31 +2753,7 @@
 						"url": "{{root}}/api/{{api_version}}/company/{{company_id}}/feed",
 						"description": "This endpoint returns all listed jobs including relevant information for a company's job page."
 					},
-					"response": [
-						{
-							"id": "7ddbc563-721f-4ded-a43c-a0bd544eaf8f",
-							"name": "200 OK",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}"
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json",
-									"description": "",
-									"type": "text"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"job\": {\n        \"job_id\": 3,\n        \"job_type\": \"Marketing\",\n        \"job_slug\": \"92fc00f6-8a3d-46ce-a485-371ab1588347\",\n        \"job_type_value\": 25,\n        \"job_status\": 0,\n        \"status\": \"public\",\n        \"user_id\": 2,\n        \"referrer_url\": \"https://example.embloy.com\",\n        \"duration\": 9,\n        \"code_lang\": null,\n        \"title\": \"CEO Wanted\",\n        \"position\": \"CEO\",\n        \"description\": {\n            \"id\": 3,\n            \"name\": \"description\",\n            \"body\": \"<div>This is the description</div>\",\n            \"record_type\": \"Job\",\n            \"record_id\": 3,\n            \"created_at\": \"2024-01-26T12:26:08.356Z\",\n            \"updated_at\": \"2024-01-26T12:26:08.356Z\"\n        },\n        \"key_skills\": \"Entrepreneurship\",\n        \"salary\": 9,\n        \"euro_salary\": null,\n        \"relevance_score\": null,\n        \"currency\": \"EUR\",\n        \"start_slot\": \"2024-10-20T15:36:42.000Z\",\n        \"longitude\": 11.613942994844358,\n        \"latitude\": 48.1951076,\n        \"country_code\": null,\n        \"postal_code\": null,\n        \"city\": null,\n        \"address\": null,\n        \"view_count\": 0,\n        \"created_at\": \"2024-01-26T12:26:08.243Z\",\n        \"updated_at\": \"2024-01-26T12:26:11.448Z\",\n        \"applications_count\": 0,\n        \"employer_rating\": 0,\n        \"job_notifications\": \"1\",\n        \"boost\": 0,\n        \"cv_required\": true,\n        \"allowed_cv_formats\": [\n            \".pdf\",\n            \".docx\",\n            \".txt\",\n            \".xml\"\n        ],\n        \"deleted_at\": null,\n        \"job_value\": \"01010000A0E6100000BC992C49F9184840FCED78BC563A27400000000000003940\",\n        \"application_options\": [\n            {\n                \"id\": 1,\n                \"job_id\": 3,\n                \"question\": \"Do you have experience with marketing?\",\n                \"question_type\": \"yes_no\",\n                \"required\": true,\n                \"options\": [\n                    \"\"\n                ],\n                \"created_at\": \"2024-01-26T12:26:08.277Z\",\n                \"updated_at\": \"2024-01-26T12:26:08.277Z\",\n                \"deleted_at\": null\n            },\n            {\n                \"id\": 2,\n                \"job_id\": 3,\n                \"question\": \"What is your highest level of education?\",\n                \"question_type\": \"single_choice\",\n                \"required\": true,\n                \"options\": [\n                    \"High School\",\n                    \"Bachelor's Degree\",\n                    \"Master's Degree\"\n                ],\n                \"created_at\": \"2024-01-26T12:26:08.301Z\",\n                \"updated_at\": \"2024-01-26T12:26:08.301Z\",\n                \"deleted_at\": null\n            },\n            {\n                \"id\": 3,\n                \"job_id\": 3,\n                \"question\": \"Link to your GitHub profile:\",\n                \"question_type\": \"link\",\n                \"required\": true,\n                \"options\": [],\n                \"created_at\": \"2024-01-26T12:26:08.320Z\",\n                \"updated_at\": \"2024-01-26T12:26:08.320Z\",\n                \"deleted_at\": null\n            },\n            {\n                \"id\": 4,\n                \"job_id\": 3,\n                \"question\": \"Is there anything else you want to tell us?\",\n                \"question_type\": \"text\",\n                \"required\": false,\n                \"options\": [],\n                \"created_at\": \"2024-01-26T12:26:08.335Z\",\n                \"updated_at\": \"2024-01-26T12:26:08.335Z\",\n                \"deleted_at\": null\n            }\n        ],\n        \"image_url\": \"https://f005.backblazeb2.com/file/TestEmbloy/517k9e5v7onnobx1wnbhj1mmabsd?Authorization=3_20240126123048_1bcc78f4b5d24597f061ccf0_843b06e8854a7137b013f64a2280851b285a2329_005_20240202123048_0028_dnld\"\n    }\n}"
-						}
-					]
+					"response": []
 				}
 			],
 			"id": "b2f75630-ba15-48af-a243-8cebecca76a3"
