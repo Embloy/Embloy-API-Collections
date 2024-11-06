@@ -169,7 +169,7 @@
 								{
 									"key": "email",
 									"value": "{{username}}",
-									"description": "Your account email to which the activation link will be sent.",
+									"description": "Your account email to which the OTP was sent.",
 									"type": "text"
 								}
 							]
