@@ -117,6 +117,69 @@
 					"response": []
 				},
 				{
+					"name": "Generate OTP",
+					"id": "421b8a54-9a8b-48a6-899e-a876805c07d3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "carlo.bortolan@de.embloy.com",
+									"description": "Your account email to which the OTP will be sent.",
+									"type": "text"
+								},
+								{
+									"key": "request_token",
+									"value": "",
+									"description": "Optional request_token for special application sessions",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": "{{root}}/api/{{api_version}}/auth/token/otp",
+						"description": "Re-request an activation link for the case that the activation link sent upon account creation has expired.\n\nActivation links have a validity of one day."
+					},
+					"response": []
+				},
+				{
+					"name": "Verify OTP",
+					"id": "686decbc-988f-49aa-9843-1a1c618bcbf2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "{{username}}",
+									"description": "Your account email to which the activation link will be sent.",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{root}}/api/{{api_version}}/auth/token/otp",
+						"description": "Re-request an activation link for the case that the activation link sent upon account creation has expired.\n\nActivation links have a validity of one day."
+					},
+					"response": []
+				},
+				{
 					"name": "Generate Refresh-Token",
 					"id": "2c38042b-45e7-4de4-8171-ddc3f53a0182",
 					"protocolProfileBehavior": {
