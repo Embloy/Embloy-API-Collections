@@ -133,7 +133,7 @@
 							"formdata": [
 								{
 									"key": "email",
-									"value": "carlo.bortolan@de.embloy.com",
+									"value": "carlo.bortolan2@de.embloy.com",
 									"description": "Your account email to which the OTP will be sent.",
 									"type": "text"
 								},
@@ -147,7 +147,7 @@
 							]
 						},
 						"url": "{{root}}/api/{{api_version}}/auth/token/otp",
-						"description": "Re-request an activation link for the case that the activation link sent upon account creation has expired.\n\nActivation links have a validity of one day."
+						"description": "Generates and sends a new One-Time Password (OTP) to your email if the email is linked to an account.\n\nThe OTP is valid for 30 minutes and can only be used once."
 					},
 					"response": []
 				},
@@ -181,7 +181,7 @@
 							]
 						},
 						"url": "{{root}}/api/{{api_version}}/auth/token/otp",
-						"description": "Re-request an activation link for the case that the activation link sent upon account creation has expired.\n\nActivation links have a validity of one day."
+						"description": "Verifies a given OTP for an email. The OTP is valid for 30 minutes and can only be used once."
 					},
 					"response": []
 				},
