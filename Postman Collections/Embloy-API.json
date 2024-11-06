@@ -143,6 +143,18 @@
 									"description": "Optional request_token for special application sessions",
 									"type": "text",
 									"disabled": true
+								},
+								{
+									"key": "first_name",
+									"value": "Test",
+									"description": "Optional first name for special application sessions",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Name",
+									"description": "Optional last name for special application sessions",
+									"type": "text"
 								}
 							]
 						},
@@ -174,7 +186,7 @@
 								},
 								{
 									"key": "otp_code",
-									"value": "123652",
+									"value": "582177",
 									"description": "The OTP included sent to your email.",
 									"type": "text"
 								}
