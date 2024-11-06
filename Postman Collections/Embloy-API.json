@@ -133,7 +133,7 @@
 							"formdata": [
 								{
 									"key": "email",
-									"value": "{{username}}",
+									"value": "carlobortolan@gmail.com",
 									"description": "Your account email to which the OTP will be sent.",
 									"type": "text"
 								},
