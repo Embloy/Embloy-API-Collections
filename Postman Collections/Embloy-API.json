@@ -133,7 +133,7 @@
 							"formdata": [
 								{
 									"key": "email",
-									"value": "carlo.bortolan2@de.embloy.com",
+									"value": "{{username}}",
 									"description": "Your account email to which the OTP will be sent.",
 									"type": "text"
 								},
@@ -146,14 +146,14 @@
 								},
 								{
 									"key": "first_name",
-									"value": "Test",
+									"value": "",
 									"description": "Optional first name for special application sessions",
 									"type": "text",
 									"disabled": true
 								},
 								{
 									"key": "last_name",
-									"value": "Name",
+									"value": "",
 									"description": "Optional last name for special application sessions",
 									"type": "text",
 									"disabled": true
@@ -163,7 +163,113 @@
 						"url": "{{root}}/api/{{api_version}}/auth/token/otp",
 						"description": "Generates and sends a new One-Time Password (OTP) to your email if the email is linked to an account.\n\nThe OTP is valid for 30 minutes and can only be used once."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "33eee29c-a4cf-4ad0-8cff-2a9b778134e5",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "{{username}}",
+											"description": "Your account email to which the OTP will be sent.",
+											"type": "text"
+										},
+										{
+											"key": "request_token",
+											"value": "",
+											"description": "Optional request_token for special application sessions",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "first_name",
+											"value": "",
+											"description": "Optional first name for special application sessions",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "last_name",
+											"value": "",
+											"description": "Optional last name for special application sessions",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/auth/token/otp"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b8adcae17f9a16d7cc597ca88b7d863f\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "065e87eb-e028-4d91-a70d-38f8b6677a3d"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "2.687383"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "sql.active_record;dur=1448.88, cache_read.active_support;dur=0.20, cache_write.active_support;dur=0.19, start_processing.action_controller;dur=0.69, unpermitted_parameters.action_controller;dur=1.56, instantiation.active_record;dur=0.12, process_action.action_controller;dur=1103.07"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Length",
+									"value": "465"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"OTP sent successfully. Please check your emails.\"\n}"
+						}
+					]
 				},
 				{
 					"name": "Verify OTP",
@@ -182,13 +288,13 @@
 							"formdata": [
 								{
 									"key": "email",
-									"value": "carlo.bortolan2@de.embloy.com",
+									"value": "{{username}}",
 									"description": "Your account email to which the OTP was sent.",
 									"type": "text"
 								},
 								{
 									"key": "otp_code",
-									"value": "582177",
+									"value": "{{otp_code}}",
 									"description": "The OTP included sent to your email.",
 									"type": "text"
 								}
@@ -197,7 +303,184 @@
 						"url": "{{root}}/api/{{api_version}}/auth/token/otp",
 						"description": "Verifies a given OTP for an email. The OTP is valid for 30 minutes and can only be used once."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "a0aebabf-2250-419f-9d4f-eceef002bf79",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "{{username}}",
+											"description": "Your account email to which the OTP was sent.",
+											"type": "text"
+										},
+										{
+											"key": "otp_code",
+											"value": "{{otp_code}}",
+											"description": "The OTP included sent to your email.",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/auth/token/otp"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7926fd3335cdaa07b390a13699260652\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "ee736fa8-0a42-40fe-b3ee-2fdaf358bd1c"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.824950"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "cache_read.active_support;dur=0.17, cache_write.active_support;dur=0.07, start_processing.action_controller;dur=0.21, unpermitted_parameters.action_controller;dur=0.29, sql.active_record;dur=672.36, instantiation.active_record;dur=0.78, process_action.action_controller;dur=621.15"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Length",
+									"value": "229"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"refresh_token\": \"...\"\n}"
+						},
+						{
+							"id": "7e317aa1-dacd-4939-9589-ff874c90ce69",
+							"name": "401 Unauthorized",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "{{username}}",
+											"description": "Your account email to which the OTP was sent.",
+											"type": "text"
+										},
+										{
+											"key": "otp_code",
+											"value": "{{otp_code}}",
+											"description": "The OTP included sent to your email.",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/auth/token/otp"
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "f9d038ac-93d5-4df4-8ef1-483cdc338d8c"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "1.029242"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "cache_read.active_support;dur=0.47, cache_write.active_support;dur=0.11, start_processing.action_controller;dur=0.59, unpermitted_parameters.action_controller;dur=0.72, sql.active_record;dur=331.67, instantiation.active_record;dur=0.09, process_action.action_controller;dur=121.10"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"error\": \"Invalid OTP\"\n}"
+						}
+					]
 				},
 				{
 					"name": "Generate Refresh-Token",
@@ -7653,7 +7936,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "fc2d7acc-e543-4149-b8ff-e5d3332c65d4",
+				"id": "03513ab3-7c9f-4c80-9014-7255f2116fb5",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -7663,7 +7946,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "cfd81051-48f1-4037-8840-51f1e3ce648b",
+				"id": "e3aba77b-241f-4e73-b70e-e945291bee0a",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -7756,6 +8039,11 @@
 		{
 			"key": "company_id",
 			"value": "insert-company-id",
+			"type": "string"
+		},
+		{
+			"key": "otp_code",
+			"value": "insert-otp-code",
 			"type": "string"
 		}
 	]
