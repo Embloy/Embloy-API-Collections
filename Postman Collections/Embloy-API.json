@@ -168,8 +168,14 @@
 							"formdata": [
 								{
 									"key": "email",
-									"value": "{{username}}",
+									"value": "carlo.bortolan@de.embloy.com",
 									"description": "Your account email to which the OTP was sent.",
+									"type": "text"
+								},
+								{
+									"key": "otp_code",
+									"value": "497827",
+									"description": "The OTP included sent to your email.",
 									"type": "text"
 								}
 							]
