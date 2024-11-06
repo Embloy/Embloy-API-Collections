@@ -148,13 +148,15 @@
 									"key": "first_name",
 									"value": "Test",
 									"description": "Optional first name for special application sessions",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "last_name",
 									"value": "Name",
 									"description": "Optional last name for special application sessions",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								}
 							]
 						},
