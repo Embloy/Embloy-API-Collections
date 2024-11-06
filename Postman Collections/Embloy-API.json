@@ -161,7 +161,7 @@
 							]
 						},
 						"url": "{{root}}/api/{{api_version}}/auth/token/otp",
-						"description": "Generates and sends a new One-Time Password (OTP) to your email if the email is linked to an account.\n\nThe OTP is valid for 30 minutes and can only be used once."
+						"description": "Generates and sends a new One-Time Passcode (OTP) to your email if the email is linked to an account.\n\nThe OTP is valid for 30 minutes and can only be used once."
 					},
 					"response": [
 						{
