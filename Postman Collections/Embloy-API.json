@@ -3485,108 +3485,7 @@
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"company\": {\n        \"id\": 1,\n        \"first_name\": \"Carlo\",\n        \"last_name\": \"Bortolan\",\n        \"email\": \"carlo.bortolan@de.embloy.com\",\n        \"phone\": null,\n        \"linkedin_url\": null,\n        \"instagram_url\": null,\n        \"twitter_url\": null,\n        \"facebook_url\": null,\n        \"github_url\": null,\n        \"portfolio_url\": null,\n        \"user_role\": \"admin\",\n        \"user_type\": \"user_private\"\n    },\n    \"job\": {\n        \"job_id\": 20,\n        \"title\": \"Organic coffee shop looking for a barista\",\n        \"job_type\": \"Retail\",\n        \"job_slug\": \"86abfd45-3112-46b8-b01e-6f84d84713c9\",\n        \"job_status\": \"listed\",\n        \"referrer_url\": \"https://embloy.com/\",\n        \"salary\": 18,\n        \"currency\": \"USD\",\n        \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n        \"duration\": 20,\n        \"code_lang\": null,\n        \"longitude\": 11.613942994844358,\n        \"latitude\": 48.1951076,\n        \"country_code\": null,\n        \"postal_code\": null,\n        \"city\": null,\n        \"address\": null,\n        \"view_count\": 0,\n        \"applications_count\": 3,\n        \"created_at\": \"2024-09-11T23:19:18.759Z\",\n        \"updated_at\": \"2024-09-12T22:48:41.214Z\",\n        \"image_url\": null\n    }\n}"
-						},
-						{
-							"id": "8ef5383e-2845-4680-b888-4e1eb032a3d0",
-							"name": "204 No Content",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{root}}/api/{{api_version}}/company/{{company_id}}/board/{{job_id}}?include_company=1",
-									"host": [
-										"{{root}}"
-									],
-									"path": [
-										"api",
-										"{{api_version}}",
-										"company",
-										"{{company_id}}",
-										"board",
-										"{{job_id}}"
-									],
-									"query": [
-										{
-											"key": "include_company",
-											"value": "1",
-											"description": "Include company details in response."
-										}
-									]
-								}
-							},
-							"status": "No Content",
-							"code": 204,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Frame-Options",
-									"value": "SAMEORIGIN"
-								},
-								{
-									"key": "X-XSS-Protection",
-									"value": "0"
-								},
-								{
-									"key": "X-Content-Type-Options",
-									"value": "nosniff"
-								},
-								{
-									"key": "X-Download-Options",
-									"value": "noopen"
-								},
-								{
-									"key": "X-Permitted-Cross-Domain-Policies",
-									"value": "none"
-								},
-								{
-									"key": "Referrer-Policy",
-									"value": "strict-origin-when-cross-origin"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "X-bullet-footer-text",
-									"value": "[\"user: cb  USE eager loading detected    Job =\\u003e [:rich_text_description]\\n  Add to your query: .includes([:rich_text_description])\"]"
-								},
-								{
-									"key": "X-bullet-console-text",
-									"value": "[\"user: cb\\nUSE eager loading detected\\n  Job =\\u003e [:rich_text_description]\\n  Add to your query: .includes([:rich_text_description])\\nCall stack\\n  /home/cb/github/Embloy-Core-Server/app/controllers/api/v0/company_controller.rb:18:in `feed'\\n\\n\"]"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"dfabd38a56c01e6670629a3760ac8916\""
-								},
-								{
-									"key": "Cache-Control",
-									"value": "max-age=0, private, must-revalidate"
-								},
-								{
-									"key": "X-Request-Id",
-									"value": "e7d5af77-9d45-4890-8686-c4bc4e1f3f54"
-								},
-								{
-									"key": "X-Runtime",
-									"value": "1.223968"
-								},
-								{
-									"key": "Server-Timing",
-									"value": "cache_read.active_support;dur=0.17, cache_write.active_support;dur=0.11, start_processing.action_controller;dur=0.48, sql.active_record;dur=735.47, instantiation.active_record;dur=12.61, process_action.action_controller;dur=1185.22"
-								},
-								{
-									"key": "vary",
-									"value": "Origin"
-								},
-								{
-									"key": "Content-Length",
-									"value": "82692"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": ""
+							"body": "{\n    \"company\": {\n        \"id\": 1,\n        \"first_name\": \"Carlo\",\n        \"last_name\": \"Bortolan\",\n        \"email\": \"carlo.bortolan@de.embloy.com\",\n        \"phone\": null,\n        \"linkedin_url\": null,\n        \"instagram_url\": null,\n        \"twitter_url\": null,\n        \"facebook_url\": null,\n        \"github_url\": null,\n        \"portfolio_url\": null,\n        \"user_role\": \"admin\",\n        \"user_type\": \"user_private\"\n    },\n    \"job\": {\n        \"job_id\": 20,\n        \"title\": \"Organic coffee shop looking for a barista\",\n        \"job_type\": \"Retail\",\n        \"job_slug\": \"86abfd45-3112-46b8-b01e-6f84d84713c9\",\n        \"job_status\": \"listed\",\n        \"referrer_url\": \"https://embloy.com/\",\n        \"salary\": 18,\n        \"currency\": \"USD\",\n        \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n        \"duration\": 20,\n        \"code_lang\": null,\n        \"longitude\": 11.613942994844358,\n        \"latitude\": 48.1951076,\n        \"country_code\": null,\n        \"postal_code\": null,\n        \"city\": null,\n        \"address\": null,\n        \"view_count\": 0,\n        \"applications_count\": 3,\n        \"description\": {\n            \"id\": 20,\n            \"name\": \"description\",\n            \"body\": \"<div>Work in the greatest espresso bar in town and make making others happy your paid job!</div>\",\n            \"record_type\": \"Job\",\n            \"record_id\": 20,\n            \"created_at\": \"2024-09-11T23:19:19.673Z\",\n            \"updated_at\": \"2024-09-11T23:19:19.673Z\"\n        },\n        \"created_at\": \"2024-09-11T23:19:18.759Z\",\n        \"updated_at\": \"2024-09-12T22:48:41.214Z\",\n        \"image_url\": null\n    }\n}"
 						},
 						{
 							"id": "09ccc9fd-c7b4-4277-b7c3-5828745d147e",
@@ -3765,6 +3664,95 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"job\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute can not be retrieved\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "12d6c063-6e61-47f3-b2ad-61106ed80e08",
+							"name": "409 Conflict",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{root}}/api/{{api_version}}/company/{{company_id}}/board/{{job_id}}?include_company=1",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"{{api_version}}",
+										"company",
+										"{{company_id}}",
+										"board",
+										"{{job_id}}"
+									],
+									"query": [
+										{
+											"key": "include_company",
+											"value": "1",
+											"description": "Include company details in response (allowed values are 0 and 1)."
+										}
+									]
+								}
+							},
+							"status": "Conflict",
+							"code": 409,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "c04b103b-adc0-47cf-ad56-2c5130bcd598"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "1.379757"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "sql.active_record;dur=694.26, cache_read.active_support;dur=0.17, cache_write.active_support;dur=0.17, start_processing.action_controller;dur=0.54, instantiation.active_record;dur=31.29, halted_callback.action_controller;dur=0.53, process_action.action_controller;dur=304.02"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"job\": [\n        {\n            \"error\": \"ERR_REMOVED\",\n            \"description\": \"Attribute was removed and cannot be accessed anymore\"\n        }\n    ]\n}"
 						}
 					]
 				}
