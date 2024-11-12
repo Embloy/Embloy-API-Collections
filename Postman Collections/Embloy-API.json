@@ -3383,7 +3383,7 @@
 								}
 							]
 						},
-						"description": "This endpoint returns all listed jobs, including relevant information for a company's job page.\n\nOnly accessible for subscribed company users or sandbox users."
+						"description": "This endpoint returns a single listed job, including relevant information for a company's job page.\n\nOnly accessible for jobs created by subscribed company users or sandbox users."
 					},
 					"response": [
 						{
