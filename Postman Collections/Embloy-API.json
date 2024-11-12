@@ -3362,8 +3362,8 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{root}}/api/{{api_version}}/company/{{company_id}}/board/{{job_id}}",
-						"description": "This endpoint returns a single listed job, including relevant information for a company's job page.\n\nOnly accessible for jobs created by subscribed company users or sandbox users."
+						"url": "{{root}}/api/{{api_version}}/company/{{company_id}}/board/{{job_slug}}",
+						"description": "This endpoint returns a single listed job, including relevant information for a company's job page, given a job's `job_slug`.\n\nOnly accessible for jobs created by subscribed company users or sandbox users."
 					},
 					"response": [
 						{
@@ -3591,7 +3591,7 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": "{{root}}/api/{{api_version}}/company/{{company_id}}/board/{{job_id}}"
+								"url": "{{root}}/api/{{api_version}}/company/{{company_id}}/board/{{job_slug}}"
 							},
 							"status": "Conflict",
 							"code": 409,
@@ -8239,7 +8239,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "b72562da-3cb5-434e-a6a9-b818f740e8d7",
+				"id": "f01c787b-1f81-4afc-9c7c-143f2609e37d",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -8249,7 +8249,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "9c0baeef-6c87-4078-88c6-b5825b586634",
+				"id": "392f4137-ac15-46d4-a874-57b60522b377",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -8348,6 +8348,11 @@
 			"key": "otp_code",
 			"value": "insert-otp-code",
 			"type": "string"
+		},
+		{
+			"key": "job_slug",
+			"value": "insert-job-slug",
+			"type": "default"
 		}
 	]
 }
