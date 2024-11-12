@@ -3126,7 +3126,7 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": "https://api.embloy.com/api/v0/company/insert-company-id/board"
+								"url": "{{root}}/api/{{api_version}}/company/{{company_id}}/board"
 							},
 							"status": "OK",
 							"code": 200,
@@ -3392,7 +3392,26 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": "https://api.embloy.com/api/v0/company/insert-company-id/board"
+								"url": {
+									"raw": "{{root}}/api/{{api_version}}/company/{{company_id}}/board/{{job_id}}?include_company=1",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"{{api_version}}",
+										"company",
+										"{{company_id}}",
+										"board",
+										"{{job_id}}"
+									],
+									"query": [
+										{
+											"key": "include_company",
+											"value": "1"
+										}
+									]
+								}
 							},
 							"status": "OK",
 							"code": 200,
@@ -3473,7 +3492,26 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": "{{root}}/api/{{api_version}}/company/{{company_id}}/board/{{job_id}}"
+								"url": {
+									"raw": "{{root}}/api/{{api_version}}/company/{{company_id}}/board/{{job_id}}?include_company=1",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"{{api_version}}",
+										"company",
+										"{{company_id}}",
+										"board",
+										"{{job_id}}"
+									],
+									"query": [
+										{
+											"key": "include_company",
+											"value": "1"
+										}
+									]
+								}
 							},
 							"status": "No Content",
 							"code": 204,
@@ -3554,7 +3592,26 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": "{{root}}/api/{{api_version}}/company/{{company_id}}/board/{{job_id}}"
+								"url": {
+									"raw": "{{root}}/api/{{api_version}}/company/{{company_id}}/board/{{job_id}}?include_company=1",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"{{api_version}}",
+										"company",
+										"{{company_id}}",
+										"board",
+										"{{job_id}}"
+									],
+									"query": [
+										{
+											"key": "include_company",
+											"value": "1"
+										}
+									]
+								}
 							},
 							"status": "Forbidden",
 							"code": 403,
