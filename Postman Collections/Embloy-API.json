@@ -3362,27 +3362,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{root}}/api/{{api_version}}/company/{{company_id}}/board/{{job_id}}?include_company=1",
-							"host": [
-								"{{root}}"
-							],
-							"path": [
-								"api",
-								"{{api_version}}",
-								"company",
-								"{{company_id}}",
-								"board",
-								"{{job_id}}"
-							],
-							"query": [
-								{
-									"key": "include_company",
-									"value": "1",
-									"description": "Include company details in response (allowed values are 0 and 1)."
-								}
-							]
-						},
+						"url": "{{root}}/api/{{api_version}}/company/{{company_id}}/board/{{job_id}}",
 						"description": "This endpoint returns a single listed job, including relevant information for a company's job page.\n\nOnly accessible for jobs created by subscribed company users or sandbox users."
 					},
 					"response": [
@@ -3392,27 +3372,7 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "{{root}}/api/{{api_version}}/company/{{company_id}}/board/{{job_id}}?include_company=1",
-									"host": [
-										"{{root}}"
-									],
-									"path": [
-										"api",
-										"{{api_version}}",
-										"company",
-										"{{company_id}}",
-										"board",
-										"{{job_id}}"
-									],
-									"query": [
-										{
-											"key": "include_company",
-											"value": "1",
-											"description": "Include company details in response."
-										}
-									]
-								}
+								"url": "{{root}}/api/{{api_version}}/company/{{company_id}}/board/{{job_slug}}"
 							},
 							"status": "OK",
 							"code": 200,
@@ -3493,27 +3453,7 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "{{root}}/api/{{api_version}}/company/{{company_id}}/board/{{job_id}}?include_company=1",
-									"host": [
-										"{{root}}"
-									],
-									"path": [
-										"api",
-										"{{api_version}}",
-										"company",
-										"{{company_id}}",
-										"board",
-										"{{job_id}}"
-									],
-									"query": [
-										{
-											"key": "include_company",
-											"value": "1",
-											"description": "Include company details in response."
-										}
-									]
-								}
+								"url": "{{root}}/api/{{api_version}}/company/{{company_id}}/board/{{job_slug}}"
 							},
 							"status": "Forbidden",
 							"code": 403,
@@ -3582,27 +3522,7 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "{{root}}/api/{{api_version}}/company/{{company_id}}/board/{{job_id}}?include_company=1",
-									"host": [
-										"{{root}}"
-									],
-									"path": [
-										"api",
-										"{{api_version}}",
-										"company",
-										"{{company_id}}",
-										"board",
-										"{{job_id}}"
-									],
-									"query": [
-										{
-											"key": "include_company",
-											"value": "1",
-											"description": "Include company details in response."
-										}
-									]
-								}
+								"url": "{{root}}/api/{{api_version}}/company/{{company_id}}/board/{{job_slug}}"
 							},
 							"status": "Not Found",
 							"code": 404,
@@ -3671,27 +3591,7 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "{{root}}/api/{{api_version}}/company/{{company_id}}/board/{{job_id}}?include_company=1",
-									"host": [
-										"{{root}}"
-									],
-									"path": [
-										"api",
-										"{{api_version}}",
-										"company",
-										"{{company_id}}",
-										"board",
-										"{{job_id}}"
-									],
-									"query": [
-										{
-											"key": "include_company",
-											"value": "1",
-											"description": "Include company details in response (allowed values are 0 and 1)."
-										}
-									]
-								}
+								"url": "{{root}}/api/{{api_version}}/company/{{company_id}}/board/{{job_id}}"
 							},
 							"status": "Conflict",
 							"code": 409,
