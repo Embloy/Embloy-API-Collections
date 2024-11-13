@@ -3102,7 +3102,7 @@
 				}
 			],
 			"id": "bcb60e9d-92d7-4f5b-8e72-137270f96af3",
-			"description": "All requests related to user's own jobs, applications, profile, preferences and reviews."
+			"description": "All requests related to users' own jobs, applications, profile, preferences and reviews."
 		},
 		{
 			"name": "Company",
@@ -3664,12 +3664,27 @@
 				}
 			],
 			"id": "b2f75630-ba15-48af-a243-8cebecca76a3",
-			"description": "Requests related to fetching company data."
+			"description": "All requests related to fetching company data."
 		},
 		{
 			"name": "Joblists",
-			"item": [],
-			"id": "0fb4b401-09cb-4853-92a6-514be2ac76db"
+			"item": [
+				{
+					"name": "New Request",
+					"id": "96e0c7ab-4a73-4a48-92ef-7efe130a8dc3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{root}}/api/{{api_version}}/job_lists"
+					},
+					"response": []
+				}
+			],
+			"id": "0fb4b401-09cb-4853-92a6-514be2ac76db",
+			"description": "All requests related to job lists and entries."
 		},
 		{
 			"name": "Applications",
