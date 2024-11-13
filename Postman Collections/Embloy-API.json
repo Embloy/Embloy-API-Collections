@@ -3663,7 +3663,13 @@
 					]
 				}
 			],
-			"id": "b2f75630-ba15-48af-a243-8cebecca76a3"
+			"id": "b2f75630-ba15-48af-a243-8cebecca76a3",
+			"description": "Requests related to fetching company data."
+		},
+		{
+			"name": "Joblists",
+			"item": [],
+			"id": "0fb4b401-09cb-4853-92a6-514be2ac76db"
 		},
 		{
 			"name": "Applications",
