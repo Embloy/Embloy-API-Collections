@@ -3886,7 +3886,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"name\": \"Bookmarks\"\n}",
+									"raw": "{\n    \"job_id\": 20,\n    \"notes\": \"This is a great job!\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3908,37 +3908,29 @@
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"id\": 1,\n    \"name\": \"Bookmarks\",\n    \"user_id\": 1,\n    \"created_at\": \"2024-11-13T13:37:27.041Z\",\n    \"updated_at\": \"2024-11-13T13:37:27.041Z\"\n}"
-						},
-						{
-							"id": "aeffc587-b75e-436c-96a3-bdab3f678e24",
-							"name": "400 Bad Request",
-							"originalRequest": {
-								"method": "POST",
-								"header": [],
-								"url": "{{root}}/api/{{api_version}}/job_lists/{{job_list_id}}/items"
-							},
-							"status": "Bad Request",
-							"code": 400,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json",
-									"description": "",
-									"type": "text"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"job\": [\n        \"must exist\"\n    ],\n    \"job_id\": [\n        \"can't be blank\"\n    ]\n}"
+							"body": "{\n    \"id\": 1,\n    \"job_id\": 20,\n    \"job_list_id\": 3,\n    \"notes\": \"This is a great job!\",\n    \"created_at\": \"2024-11-13T13:58:47.305Z\",\n    \"updated_at\": \"2024-11-13T13:58:47.305Z\"\n}"
 						},
 						{
 							"id": "650a2a4c-f089-43ab-b605-1ef64907af61",
 							"name": "400 Bad Request",
 							"originalRequest": {
 								"method": "POST",
-								"header": [],
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"notes\": \"exampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexampleexample\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": "{{root}}/api/{{api_version}}/job_lists/{{job_list_id}}/items"
 							},
 							"status": "Bad Request",
@@ -3954,7 +3946,45 @@
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"job\": [\n        \"must exist\"\n    ],\n    \"job_id\": [\n        \"can't be blank\"\n    ]\n}"
+							"body": "{\n    \"job\": [\n        \"must exist\"\n    ],\n    \"job_id\": [\n        \"can't be blank\"\n    ],\n    \"notes\": [\n        \"cannot have more than 255 characters\"\n    ]\n}"
+						},
+						{
+							"id": "f6318f39-e4ef-4cc5-8a87-3c659d44aecd",
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"job_id\": 20\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{root}}/api/{{api_version}}/job_lists/{{job_list_id}}/items"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"job_id\": [\n        \"has already been taken\"\n    ]\n}"
 						},
 						{
 							"id": "0c9bc24f-e2a2-4244-9f87-593a051479aa",
@@ -4137,7 +4167,7 @@
 							"originalRequest": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{root}}/api/{{api_version}}/job_lists/{{job_list_id}}"
+								"url": "{{root}}/api/{{api_version}}/job_lists/{{job_list_id}}/items/{{job_list_item_id}}"
 							},
 							"status": "OK",
 							"code": 200,
@@ -4152,7 +4182,7 @@
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"message\": \"Job list deleted!\"\n}"
+							"body": "{\n    \"message\": \"Job list item deleted!\"\n}"
 						},
 						{
 							"id": "703a2adb-8552-47e7-af21-170eef02963d",
@@ -4160,7 +4190,7 @@
 							"originalRequest": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{root}}/api/{{api_version}}/job_lists/{{job_list_id}}"
+								"url": "{{root}}/api/{{api_version}}/job_lists/{{job_list_id}}/items/{{job_list_item_id}}"
 							},
 							"status": "Not Found",
 							"code": 404,
@@ -8903,6 +8933,11 @@
 		},
 		{
 			"key": "job_list_id",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "job_list_item_id",
 			"value": "",
 			"type": "default"
 		}
