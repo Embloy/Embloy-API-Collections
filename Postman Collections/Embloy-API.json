@@ -3670,7 +3670,7 @@
 			"name": "Joblists",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "Get all lists",
 					"id": "96e0c7ab-4a73-4a48-92ef-7efe130a8dc3",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -3680,7 +3680,54 @@
 						"header": [],
 						"url": "{{root}}/api/{{api_version}}/job_lists"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "979a7fbe-2b90-41b2-a743-bdeb66b04185",
+							"name": "204 No Content",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{root}}/api/{{api_version}}/job_lists"
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Get single list",
+					"id": "58f8a3aa-ad32-41fc-bf3a-c5c2335a69ba",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{root}}/api/{{api_version}}/job_lists/{{job_list_id}}"
+					},
+					"response": [
+						{
+							"id": "4c8b7301-0d8c-43cf-b548-fc76024efc0c",
+							"name": "204 No Content",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{root}}/api/{{api_version}}/job_lists"
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						}
+					]
 				}
 			],
 			"id": "0fb4b401-09cb-4853-92a6-514be2ac76db",
@@ -8379,6 +8426,11 @@
 		{
 			"key": "job_slug",
 			"value": "insert-job-slug",
+			"type": "default"
+		},
+		{
+			"key": "job_list_id",
+			"value": "",
 			"type": "default"
 		}
 	]
