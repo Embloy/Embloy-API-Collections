@@ -3931,7 +3931,30 @@
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"name\": [\n        \"can't be blank\"\n    ]\n}"
+							"body": "{\n    \"job\": [\n        \"must exist\"\n    ],\n    \"job_id\": [\n        \"can't be blank\"\n    ]\n}"
+						},
+						{
+							"id": "650a2a4c-f089-43ab-b605-1ef64907af61",
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": "{{root}}/api/{{api_version}}/job_lists/{{job_list_id}}/items"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"job\": [\n        \"must exist\"\n    ],\n    \"job_id\": [\n        \"can't be blank\"\n    ]\n}"
 						},
 						{
 							"id": "0c9bc24f-e2a2-4244-9f87-593a051479aa",
