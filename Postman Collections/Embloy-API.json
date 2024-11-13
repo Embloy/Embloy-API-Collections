@@ -3932,6 +3932,29 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"name\": [\n        \"can't be blank\"\n    ]\n}"
+						},
+						{
+							"id": "0c9bc24f-e2a2-4244-9f87-593a051479aa",
+							"name": "404 Not Found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": "{{root}}/api/{{api_version}}/job_lists/{{job_list_id}}/items"
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"job_list\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute can not be retrieved\"\n        }\n    ]\n}"
 						}
 					]
 				},
@@ -4110,6 +4133,29 @@
 						},
 						{
 							"id": "703a2adb-8552-47e7-af21-170eef02963d",
+							"name": "404 Not Found",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{root}}/api/{{api_version}}/job_lists/{{job_list_id}}"
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"job_list\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute can not be retrieved\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "ae51dcb4-da98-4990-b309-cd94d6a90f09",
 							"name": "404 Not Found",
 							"originalRequest": {
 								"method": "DELETE",
