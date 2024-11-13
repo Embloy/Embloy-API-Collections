@@ -3683,19 +3683,26 @@
 					"response": [
 						{
 							"id": "0a80105f-61dd-4798-a0b1-ce127c977875",
-							"name": "204 No Content Copy",
+							"name": "200 OK",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"url": "{{root}}/api/{{api_version}}/job_lists"
 							},
-							"status": "No Content",
-							"code": 204,
-							"_postman_previewlanguage": null,
-							"header": null,
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
-							"body": null
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Bookmarks\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-11-13T13:37:27.041Z\",\n        \"updated_at\": \"2024-11-13T13:37:27.041Z\"\n    }\n]"
 						},
 						{
 							"id": "979a7fbe-2b90-41b2-a743-bdeb66b04185",
@@ -3865,6 +3872,44 @@
 						"description": "This endpoint updates an existing job list created by the current user"
 					},
 					"response": [
+						{
+							"id": "e4d15a8a-3371-4990-b1d8-5940cad4d3f1",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Watchlist\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{root}}/api/{{api_version}}/job_lists/{{job_list_id}}"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"user_id\": 1,\n    \"name\": \"Watchlist\",\n    \"id\": 1,\n    \"created_at\": \"2024-11-13T13:37:27.041Z\",\n    \"updated_at\": \"2024-11-13T13:41:21.564Z\"\n}"
+						},
 						{
 							"id": "17d90af0-7c70-4aea-8184-411e6c239bad",
 							"name": "404 Not Found",
