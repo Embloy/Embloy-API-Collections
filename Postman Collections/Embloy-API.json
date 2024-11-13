@@ -3723,7 +3723,7 @@
 					]
 				},
 				{
-					"name": "Get list details",
+					"name": "Get single list",
 					"id": "58f8a3aa-ad32-41fc-bf3a-c5c2335a69ba",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -3836,6 +3836,82 @@
 						},
 						{
 							"id": "9a143e26-cea5-451d-88e7-84d5b332e42b",
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": "{{root}}/api/{{api_version}}/job_lists"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"name\": [\n        \"can't be blank\"\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create list item",
+					"id": "5f005800-7651-45eb-9a3a-1012e9c83a8b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "{{root}}/api/{{api_version}}/job_lists/{{job_list_id}}",
+						"description": "This endpoint creates a new job list item, which is added to an existing job list."
+					},
+					"response": [
+						{
+							"id": "2872d814-b3be-44a1-af87-028a1a5f7480",
+							"name": "201 Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Bookmarks\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{root}}/api/{{api_version}}/job_lists"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"id\": 1,\n    \"name\": \"Bookmarks\",\n    \"user_id\": 1,\n    \"created_at\": \"2024-11-13T13:37:27.041Z\",\n    \"updated_at\": \"2024-11-13T13:37:27.041Z\"\n}"
+						},
+						{
+							"id": "aeffc587-b75e-436c-96a3-bdab3f678e24",
 							"name": "400 Bad Request",
 							"originalRequest": {
 								"method": "POST",
@@ -3973,6 +4049,67 @@
 						},
 						{
 							"id": "60964e13-aac1-42d7-92fb-fe0b9d0502a4",
+							"name": "404 Not Found",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{root}}/api/{{api_version}}/job_lists/{{job_list_id}}"
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"job_list\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute can not be retrieved\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete list item",
+					"id": "27cb961d-6219-4f2d-a808-2c50cf481acf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{root}}/api/{{api_version}}/job_lists/{{job_list_id}}/{{job_list_item_id}}",
+						"description": "This endpoint deletes an item from a job list created by the current user."
+					},
+					"response": [
+						{
+							"id": "4167f669-2c83-42ac-bd61-43a17f5df5e8",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{root}}/api/{{api_version}}/job_lists/{{job_list_id}}"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"Job list deleted!\"\n}"
+						},
+						{
+							"id": "703a2adb-8552-47e7-af21-170eef02963d",
 							"name": "404 Not Found",
 							"originalRequest": {
 								"method": "DELETE",
