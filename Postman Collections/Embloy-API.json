@@ -3738,6 +3738,20 @@
 					]
 				},
 				{
+					"name": "Create list",
+					"id": "5a8e103f-c81c-4e1b-b474-391bd09b34dd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "{{root}}/api/{{api_version}}/job_lists",
+						"description": "This endpoint creates a new job list."
+					},
+					"response": []
+				},
+				{
 					"name": "Update list",
 					"id": "26bfcb31-2f16-4d3a-a223-15569cba758b",
 					"protocolProfileBehavior": {
@@ -3746,7 +3760,8 @@
 					"request": {
 						"method": "PATCH",
 						"header": [],
-						"url": "{{root}}/api/{{api_version}}/job_lists/{{job_list_id}}"
+						"url": "{{root}}/api/{{api_version}}/job_lists/{{job_list_id}}",
+						"description": "This endpoint updates an existing job list created by the current user"
 					},
 					"response": [
 						{
@@ -3783,7 +3798,8 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{root}}/api/{{api_version}}/job_lists/{{job_list_id}}"
+						"url": "{{root}}/api/{{api_version}}/job_lists/{{job_list_id}}",
+						"description": "This endpoint deletes an existing job list created by the current user."
 					},
 					"response": [
 						{
