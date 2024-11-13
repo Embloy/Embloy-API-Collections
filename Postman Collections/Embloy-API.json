@@ -4157,7 +4157,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{root}}/api/{{api_version}}/job_lists/{{job_list_id}}/{{job_list_item_id}}",
+						"url": "{{root}}/api/{{api_version}}/job_lists/{{job_list_id}}/items/{{job_list_item_id}}",
 						"description": "This endpoint deletes an item from a job list created by the current user."
 					},
 					"response": [
@@ -8816,7 +8816,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "f01c787b-1f81-4afc-9c7c-143f2609e37d",
+				"id": "2273814f-b2db-4a00-ac53-1638f549d91a",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -8826,7 +8826,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "392f4137-ac15-46d4-a874-57b60522b377",
+				"id": "dd2db7bf-7f87-4c0b-80ce-f707dba23aa1",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -8933,12 +8933,12 @@
 		},
 		{
 			"key": "job_list_id",
-			"value": "",
+			"value": "insert-job-list-id",
 			"type": "default"
 		},
 		{
 			"key": "job_list_item_id",
-			"value": "",
+			"value": "insert-job-list-item-id",
 			"type": "default"
 		}
 	]
