@@ -3669,9 +3669,6 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"auth": {
-							"type": "noauth"
-						},
 						"method": "GET",
 						"header": [],
 						"url": "{{root}}/api/{{api_version}}/company/{{company_id}}",
