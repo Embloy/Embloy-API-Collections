@@ -3661,6 +3661,23 @@
 							"body": "{\n    \"job\": [\n        {\n            \"error\": \"ERR_REMOVED\",\n            \"description\": \"Attribute was removed and cannot be accessed anymore\"\n        }\n    ]\n}"
 						}
 					]
+				},
+				{
+					"name": "Get company",
+					"id": "bb16e173-ecd5-4806-9345-d20d26b6606e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{root}}/api/{{api_version}}/company/{{company_id}}",
+						"description": "This endpoint returns a single listed job, including relevant information for a company's job page, given a job's `job_slug`.\n\nOnly accessible for jobs created by subscribed company users or sandbox users."
+					},
+					"response": []
 				}
 			],
 			"id": "b2f75630-ba15-48af-a243-8cebecca76a3",
