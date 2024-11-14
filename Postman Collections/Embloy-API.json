@@ -3674,7 +3674,150 @@
 						"url": "{{root}}/api/{{api_version}}/company/{{company_id}}",
 						"description": "This endpoint returns a single listed job, including relevant information for a company's job page, given a job's `job_slug`.\n\nOnly accessible for jobs created by subscribed company users or sandbox users."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "eae6d6ac-e97f-4e2a-b371-8d0ad9c2384f",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{root}}/api/{{api_version}}/company/{{company_id}}"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"967957e212871810d0f37daf1dacdb41\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "bf7ef0bd-9876-423d-badb-60d16a47d4a6"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.365297"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "cache_read.active_support;dur=0.22, cache_write.active_support;dur=0.12, start_processing.action_controller;dur=1.24, sql.active_record;dur=230.40, instantiation.active_record;dur=0.65, process_action.action_controller;dur=326.23"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Length",
+									"value": "860"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"company\": {\n        \"user\": {\n            \"id\": 3,\n            \"first_name\": \"Carlo\",\n            \"last_name\": \"Bortolan\",\n            \"email\": \"carlo.bortolan@de.embloy.com\",\n            \"date_of_birth\": null,\n            \"longitude\": null,\n            \"latitude\": null,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"linkedin_url\": null,\n            \"instagram_url\": null,\n            \"twitter_url\": null,\n            \"facebook_url\": null,\n            \"github_url\": null,\n            \"portfolio_url\": null,\n            \"phone\": null,\n            \"user_role\": \"admin\",\n            \"type\": \"CompanyUser\",\n            \"image_url\": null,\n            \"created_at\": \"2024-09-14T20:31:13.725Z\",\n            \"updated_at\": \"2024-11-14T01:43:08.817Z\"\n        },\n        \"company\": {\n            \"company_name\": \"Example Inc.\",\n            \"company_phone\": \"123-456-7890\",\n            \"company_email\": \"contact@example.com\",\n            \"company_urls\": null,\n            \"company_industry\": \"Technology\",\n            \"company_description\": {\n                \"id\": null,\n                \"name\": \"company_description\",\n                \"body\": null,\n                \"record_type\": \"User\",\n                \"record_id\": 3,\n                \"created_at\": null,\n                \"updated_at\": null\n            },\n            \"company_logo\": null,\n            \"company_slug\": \"example-inc\"\n        }\n    }\n}"
+						},
+						{
+							"id": "a76267d1-12c8-46a6-84ce-b6875413d60b",
+							"name": "404 Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{root}}/api/{{api_version}}/company/{{company_id}}"
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "e2b76c3a-a35e-42a9-914a-a9b47ed6de7a"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.940316"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "cache_read.active_support;dur=0.25, cache_write.active_support;dur=0.11, start_processing.action_controller;dur=0.58, sql.active_record;dur=300.54, instantiation.active_record;dur=33.37, halted_callback.action_controller;dur=0.44, process_action.action_controller;dur=284.16"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"company\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute can not be retrieved\"\n        }\n    ]\n}"
+						}
+					]
 				}
 			],
 			"id": "b2f75630-ba15-48af-a243-8cebecca76a3",
@@ -8830,7 +8973,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "b8bd1c7b-c4bb-415a-bca4-0b74d2fd0ca8",
+				"id": "37805702-8328-48a0-856e-29d351339d7f",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -8840,7 +8983,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "8af476ea-5a87-4f6e-8767-a604c7aeb008",
+				"id": "7387b341-4cdb-41fc-bad5-23317deebc90",
 				"type": "text/javascript",
 				"exec": [
 					""
