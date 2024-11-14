@@ -3834,13 +3834,31 @@
 								{
 									"key": "company_name",
 									"value": "Example Inc",
-									"description": "Your company's official name which will be shown to applicants. ",
+									"description": "Your company's official name which will be shown to applicants.",
 									"type": "text"
 								},
 								{
 									"key": "company_slug",
 									"value": "example-inc",
 									"description": "A unique username for your company account which will be used for your company board's url.",
+									"type": "text"
+								},
+								{
+									"key": "company_phone",
+									"value": "004912345678910",
+									"description": "A phone number for the applicants to contact your recruiting team for general inquiries.",
+									"type": "text"
+								},
+								{
+									"key": "company_email",
+									"value": "contact@example.com",
+									"description": "An email for the applicants to contact your recruiting team for general inquiries.",
+									"type": "text"
+								},
+								{
+									"key": "company_industry",
+									"value": "Technology",
+									"description": "An optional tag for your company's field.",
 									"type": "text"
 								}
 							]
