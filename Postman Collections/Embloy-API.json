@@ -3905,22 +3905,21 @@
 									"key": "company_description",
 									"value": "This is a great company!!!",
 									"type": "text",
-									"description": "A description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML.",
+									"description": "An optional description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML.",
 									"disabled": true
 								},
 								{
 									"key": "company_urls[]",
 									"value": "https://www.github.com/example",
 									"type": "text",
-									"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)",
+									"description": "An optional JSON array of URLs (e.g., for your social media accounts, websites, etc.)",
 									"disabled": true
 								},
 								{
 									"key": "company_urls[]",
-									"value": "https://www.linkedin.com/company/example",
+									"value": "",
 									"type": "text",
-									"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)",
-									"disabled": true
+									"description": "An optional JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
 								},
 								{
 									"key": "company_logo",
