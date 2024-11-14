@@ -4320,47 +4320,47 @@
 									"key": "company_name",
 									"value": "Example Inc",
 									"description": "Your company's official name which will be shown to applicants.",
-									"type": "text",
-									"disabled": true
+									"type": "text"
 								},
 								{
 									"key": "company_slug",
 									"value": "example-inc",
 									"description": "A unique username for your company account which will be used for your company board's url.",
-									"type": "text",
-									"disabled": true
+									"type": "text"
 								},
 								{
 									"key": "company_phone",
 									"value": "004912345678910",
 									"description": "A phone number for the applicants to contact your recruiting team for general inquiries.",
-									"type": "text",
-									"disabled": true
+									"type": "text"
 								},
 								{
 									"key": "company_email",
 									"value": "contact@example.com",
 									"description": "An email for the applicants to contact your recruiting team for general inquiries.",
-									"type": "text",
-									"disabled": true
+									"type": "text"
 								},
 								{
 									"key": "company_industry",
 									"value": "Technology",
 									"description": "An optional tag for your company's field.",
-									"type": "text",
-									"disabled": true
+									"type": "text"
 								},
 								{
 									"key": "company_description",
 									"value": "This is a great company!!!",
 									"description": "A description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML.",
-									"type": "text",
-									"disabled": true
+									"type": "text"
 								},
 								{
-									"key": "company_urls[0]",
+									"key": "company_urls[]",
 									"value": "https://www.github.com/example",
+									"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)",
+									"type": "text"
+								},
+								{
+									"key": "company_urls[]",
+									"value": "https://www.linkedin.com/company/example",
 									"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)",
 									"type": "text"
 								},
@@ -4368,8 +4368,7 @@
 									"key": "company_logo",
 									"description": "A square image of your company logo. Allowed formats are PNG, JPEG and JPG with a maximum size of 2 megabytes.",
 									"type": "file",
-									"src": "2V6EuNpsa/ImageSignature.png",
-									"disabled": true
+									"src": "2V6EuNpsa/ImageSignature.png"
 								}
 							]
 						},
@@ -4389,44 +4388,50 @@
 										{
 											"key": "company_name",
 											"value": "Example Inc",
-											"description": "Your company's official name which will be shown to applicants.",
-											"type": "text"
+											"type": "text",
+											"description": "Your company's official name which will be shown to applicants."
 										},
 										{
 											"key": "company_slug",
 											"value": "example-inc",
-											"description": "A unique username for your company account which will be used for your company board's url.",
-											"type": "text"
+											"type": "text",
+											"description": "A unique username for your company account which will be used for your company board's url."
 										},
 										{
 											"key": "company_phone",
 											"value": "004912345678910",
-											"description": "A phone number for the applicants to contact your recruiting team for general inquiries.",
-											"type": "text"
+											"type": "text",
+											"description": "A phone number for the applicants to contact your recruiting team for general inquiries."
 										},
 										{
 											"key": "company_email",
 											"value": "contact@example.com",
-											"description": "An email for the applicants to contact your recruiting team for general inquiries.",
-											"type": "text"
+											"type": "text",
+											"description": "An email for the applicants to contact your recruiting team for general inquiries."
 										},
 										{
 											"key": "company_industry",
 											"value": "Technology",
-											"description": "An optional tag for your company's field.",
-											"type": "text"
+											"type": "text",
+											"description": "An optional tag for your company's field."
 										},
 										{
 											"key": "company_description",
 											"value": "This is a great company!!!",
-											"description": "A description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML.",
-											"type": "text"
+											"type": "text",
+											"description": "A description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML."
 										},
 										{
 											"key": "company_urls[]",
-											"value": "\"https://www.github.com/example\"",
-											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)",
-											"type": "text"
+											"value": "https://www.github.com/example",
+											"type": "text",
+											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://www.linkedin.com/company/example",
+											"type": "text",
+											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
 										},
 										{
 											"key": "company_logo",
@@ -4515,44 +4520,50 @@
 										{
 											"key": "company_name",
 											"value": "Example Inc",
-											"description": "Your company's official name which will be shown to applicants.",
-											"type": "text"
+											"type": "text",
+											"description": "Your company's official name which will be shown to applicants."
 										},
 										{
 											"key": "company_slug",
 											"value": "example-inc",
-											"description": "A unique username for your company account which will be used for your company board's url.",
-											"type": "text"
+											"type": "text",
+											"description": "A unique username for your company account which will be used for your company board's url."
 										},
 										{
 											"key": "company_phone",
 											"value": "004912345678910",
-											"description": "A phone number for the applicants to contact your recruiting team for general inquiries.",
-											"type": "text"
+											"type": "text",
+											"description": "A phone number for the applicants to contact your recruiting team for general inquiries."
 										},
 										{
 											"key": "company_email",
 											"value": "contact@example.com",
-											"description": "An email for the applicants to contact your recruiting team for general inquiries.",
-											"type": "text"
+											"type": "text",
+											"description": "An email for the applicants to contact your recruiting team for general inquiries."
 										},
 										{
 											"key": "company_industry",
 											"value": "Technology",
-											"description": "An optional tag for your company's field.",
-											"type": "text"
+											"type": "text",
+											"description": "An optional tag for your company's field."
 										},
 										{
 											"key": "company_description",
 											"value": "This is a great company!!!",
-											"description": "A description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML.",
-											"type": "text"
+											"type": "text",
+											"description": "A description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML."
 										},
 										{
-											"key": "company_urls",
-											"value": "[\"https://www.example.com\", \"https://www.linkedin.com/company/example\"]",
-											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)",
-											"type": "text"
+											"key": "company_urls[]",
+											"value": "https://www.github.com/example",
+											"type": "text",
+											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://www.linkedin.com/company/example",
+											"type": "text",
+											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
 										},
 										{
 											"key": "company_logo",
@@ -4637,44 +4648,50 @@
 										{
 											"key": "company_name",
 											"value": "Example Inc",
-											"description": "Your company's official name which will be shown to applicants.",
-											"type": "text"
+											"type": "text",
+											"description": "Your company's official name which will be shown to applicants."
 										},
 										{
 											"key": "company_slug",
 											"value": "example-inc",
-											"description": "A unique username for your company account which will be used for your company board's url.",
-											"type": "text"
+											"type": "text",
+											"description": "A unique username for your company account which will be used for your company board's url."
 										},
 										{
 											"key": "company_phone",
 											"value": "004912345678910",
-											"description": "A phone number for the applicants to contact your recruiting team for general inquiries.",
-											"type": "text"
+											"type": "text",
+											"description": "A phone number for the applicants to contact your recruiting team for general inquiries."
 										},
 										{
 											"key": "company_email",
 											"value": "contact@example.com",
-											"description": "An email for the applicants to contact your recruiting team for general inquiries.",
-											"type": "text"
+											"type": "text",
+											"description": "An email for the applicants to contact your recruiting team for general inquiries."
 										},
 										{
 											"key": "company_industry",
 											"value": "Technology",
-											"description": "An optional tag for your company's field.",
-											"type": "text"
+											"type": "text",
+											"description": "An optional tag for your company's field."
 										},
 										{
 											"key": "company_description",
 											"value": "This is a great company!!!",
-											"description": "A description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML.",
-											"type": "text"
+											"type": "text",
+											"description": "A description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML."
 										},
 										{
-											"key": "company_urls",
-											"value": "[\"https://www.example.com\", \"https://www.linkedin.com/company/example\"]",
-											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)",
-											"type": "text"
+											"key": "company_urls[]",
+											"value": "https://www.github.com/example",
+											"type": "text",
+											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://www.linkedin.com/company/example",
+											"type": "text",
+											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
 										},
 										{
 											"key": "company_logo",
