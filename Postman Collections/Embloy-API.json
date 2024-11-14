@@ -3869,7 +3869,7 @@
 								},
 								{
 									"key": "company_urls",
-									"value": "\"https://www.example.com\"",
+									"value": "[\"https://www.example.com\", \"https://linkedin.com/company/example\"]",
 									"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)",
 									"type": "text"
 								},
@@ -4318,8 +4318,8 @@
 									"type": "text"
 								},
 								{
-									"key": "company_urls[]",
-									"value": "\"https://www.github.com/example\"",
+									"key": "company_urls",
+									"value": "[\"https://www.github.com/example\"]",
 									"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)",
 									"type": "text"
 								},
