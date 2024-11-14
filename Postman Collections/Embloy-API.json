@@ -3868,9 +3868,14 @@
 									"type": "text"
 								},
 								{
-									"key": "company_urls",
-									"value": "[https://www.example.com, https://www.linkedin.com/company/example]",
+									"key": "company_urls[]",
+									"value": "\"https://www.example.com\"",
 									"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)",
+									"type": "text"
+								},
+								{
+									"key": "company_urls[]",
+									"value": "\"https://www.linkedin.com/company/example\"",
 									"type": "text"
 								},
 								{
