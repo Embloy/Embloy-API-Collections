@@ -3870,43 +3870,43 @@
 									"key": "company_name",
 									"value": "Example Inc",
 									"type": "text",
-									"description": "Your company's official name which will be shown to applicants.",
-									"disabled": true
-								},
-								{
-									"key": "company_slug",
-									"value": "example-inc",
-									"type": "text",
-									"description": "A unique username for your company account which will be used for your company board's url.",
-									"disabled": true
+									"description": "Your company's official name which will be shown to applicants."
 								},
 								{
 									"key": "company_phone",
 									"value": "004912345678910",
 									"type": "text",
-									"description": "A phone number for the applicants to contact your recruiting team for general inquiries.",
-									"disabled": true
+									"description": "A phone number for the applicants to contact your recruiting team for general inquiries."
 								},
 								{
 									"key": "company_email",
-									"value": "contact@example.com",
+									"value": "test",
 									"type": "text",
-									"description": "An email for the applicants to contact your recruiting team for general inquiries.",
-									"disabled": true
+									"description": "An email for the applicants to contact your recruiting team for general inquiries."
 								},
 								{
-									"key": "company_industry",
-									"value": "Technology",
+									"key": "company_slug",
+									"value": "example-inc",
 									"type": "text",
-									"description": "An optional tag for your company's field.",
-									"disabled": true
+									"description": "A unique username for your company account which will be used for your company board's url."
+								},
+								{
+									"key": "company_logo",
+									"description": "A square image of your company logo. Allowed formats are PNG, JPEG and JPG with a maximum size of 2 megabytes.",
+									"type": "file",
+									"src": "2V6EuNpsa/ImageSignature.png"
 								},
 								{
 									"key": "company_description",
 									"value": "This is a great company!!!",
 									"type": "text",
-									"description": "An optional description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML.",
-									"disabled": true
+									"description": "An optional description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML."
+								},
+								{
+									"key": "company_industry",
+									"value": "Technology",
+									"type": "text",
+									"description": "An optional tag for your company's field."
 								},
 								{
 									"key": "company_urls[]",
@@ -3919,13 +3919,6 @@
 									"value": "https://www.linkedin.com/company/example",
 									"type": "text",
 									"description": "An optional JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
-								},
-								{
-									"key": "company_logo",
-									"description": "A square image of your company logo. Allowed formats are PNG, JPEG and JPG with a maximum size of 2 megabytes.",
-									"type": "file",
-									"src": "2V6EuNpsa/ImageSignature.png",
-									"disabled": true
 								}
 							]
 						},
@@ -4194,141 +4187,6 @@
 							"body": "{\n    \"subscription\": [\n        {\n            \"error\": \"ERR_RAC\",\n            \"description\": \"Proceeding is inhibited by an access restriction\"\n        }\n    ]\n}"
 						},
 						{
-							"id": "58f8ba3e-b648-41c5-84b5-c028bebe5eeb",
-							"name": "400 Bad Request",
-							"originalRequest": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "company_name",
-											"value": "Example Inc",
-											"type": "text",
-											"description": "Your company's official name which will be shown to applicants.",
-											"disabled": true
-										},
-										{
-											"key": "company_slug",
-											"value": "example-inc",
-											"type": "text",
-											"description": "A unique username for your company account which will be used for your company board's url.",
-											"disabled": true
-										},
-										{
-											"key": "company_phone",
-											"value": "004912345678910",
-											"type": "text",
-											"description": "A phone number for the applicants to contact your recruiting team for general inquiries.",
-											"disabled": true
-										},
-										{
-											"key": "company_email",
-											"value": "contact@example.com",
-											"type": "text",
-											"description": "An email for the applicants to contact your recruiting team for general inquiries.",
-											"disabled": true
-										},
-										{
-											"key": "company_industry",
-											"value": "TechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnology",
-											"type": "text",
-											"description": "An optional tag for your company's field."
-										},
-										{
-											"key": "company_description",
-											"value": "This is a great company!!!",
-											"type": "text",
-											"description": "An optional description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML.",
-											"disabled": true
-										},
-										{
-											"key": "company_urls[]",
-											"value": "https://www.github.com/example",
-											"type": "text",
-											"description": "An optional JSON array of URLs (e.g., for your social media accounts, websites, etc.)",
-											"disabled": true
-										},
-										{
-											"key": "company_urls[]",
-											"value": "not-a-url",
-											"type": "text",
-											"description": "An optional JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
-										},
-										{
-											"key": "company_logo",
-											"description": "A square image of your company logo. Allowed formats are PNG, JPEG and JPG with a maximum size of 2 megabytes.",
-											"type": "file",
-											"src": "2V6EuNpsa/ImageSignature.png",
-											"disabled": true
-										}
-									]
-								},
-								"url": "{{root}}/api/{{api_version}}/company"
-							},
-							"status": "Bad Request",
-							"code": 400,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Frame-Options",
-									"value": "SAMEORIGIN"
-								},
-								{
-									"key": "X-XSS-Protection",
-									"value": "0"
-								},
-								{
-									"key": "X-Content-Type-Options",
-									"value": "nosniff"
-								},
-								{
-									"key": "X-Download-Options",
-									"value": "noopen"
-								},
-								{
-									"key": "X-Permitted-Cross-Domain-Policies",
-									"value": "none"
-								},
-								{
-									"key": "Referrer-Policy",
-									"value": "strict-origin-when-cross-origin"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Cache-Control",
-									"value": "no-cache"
-								},
-								{
-									"key": "X-Request-Id",
-									"value": "c17e3155-84df-49c5-9540-449d55602a7e"
-								},
-								{
-									"key": "X-Runtime",
-									"value": "0.977400"
-								},
-								{
-									"key": "Server-Timing",
-									"value": "cache_read.active_support;dur=0.34, cache_write.active_support;dur=0.14, start_processing.action_controller;dur=0.53, sql.active_record;dur=820.96, instantiation.active_record;dur=1.74, unpermitted_parameters.action_controller;dur=0.32, render_partial.action_view;dur=3.03, process_action.action_controller;dur=707.14"
-								},
-								{
-									"key": "vary",
-									"value": "Origin"
-								},
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"error\": \"Bad request\",\n    \"details\": {\n        \"company_name\": [\n            \"can't be blank\"\n        ],\n        \"company_phone\": [\n            \"can't be blank\"\n        ],\n        \"company_email\": [\n            \"can't be blank\",\n            \"is invalid\"\n        ],\n        \"company_industry\": [\n            \"is too long (maximum is 150 characters)\"\n        ],\n        \"company_urls\": [\n            {\n                \"error\": \"ERR_INVALID\",\n                \"description\": \"must be an array of valid URLs\"\n            }\n        ]\n    }\n}"
-						},
-						{
 							"id": "467b2161-0380-49f6-8dab-445b2af5f10b",
 							"name": "409 Conflict",
 							"originalRequest": {
@@ -4455,6 +4313,143 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"company\": [\n        {\n            \"error\": \"ERR_REMOVED\",\n            \"description\": \"You already have a company account\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "65b1da42-887f-48e9-95b7-975d0b5fb306",
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "company_name",
+											"value": "Example Inc",
+											"type": "text",
+											"description": "Your company's official name which will be shown to applicants.",
+											"disabled": true
+										},
+										{
+											"key": "company_phone",
+											"value": "004912345678910",
+											"type": "text",
+											"description": "A phone number for the applicants to contact your recruiting team for general inquiries.",
+											"disabled": true
+										},
+										{
+											"key": "company_email",
+											"value": "contact@example.com",
+											"type": "text",
+											"description": "An email for the applicants to contact your recruiting team for general inquiries.",
+											"disabled": true
+										},
+										{
+											"key": "company_slug",
+											"value": "",
+											"type": "text",
+											"description": "A unique username for your company account which will be used for your company board's url.",
+											"disabled": true
+										},
+										{
+											"key": "company_logo",
+											"description": "A square image of your company logo. Allowed formats are PNG, JPEG and JPG with a maximum size of 2 megabytes.",
+											"type": "file",
+											"src": "2V6EuNpsa/ImageSignature.png",
+											"disabled": true
+										},
+										{
+											"key": "company_description",
+											"value": "This is a great company!!!",
+											"type": "text",
+											"description": "An optional description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML.",
+											"disabled": true
+										},
+										{
+											"key": "company_industry",
+											"value": "Technology",
+											"type": "text",
+											"description": "An optional tag for your company's field.",
+											"disabled": true
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://www.github.com/example",
+											"type": "text",
+											"description": "An optional JSON array of URLs (e.g., for your social media accounts, websites, etc.)",
+											"disabled": true
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://www.linkedin.com/company/example",
+											"type": "text",
+											"description": "An optional JSON array of URLs (e.g., for your social media accounts, websites, etc.)",
+											"disabled": true
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/company"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "96a47dd8-5624-4aaa-a088-c45bc26b2f10"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.333395"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "cache_read.active_support;dur=0.18, cache_write.active_support;dur=0.09, start_processing.action_controller;dur=0.39, sql.active_record;dur=210.32, instantiation.active_record;dur=0.37, unpermitted_parameters.action_controller;dur=0.31, process_action.action_controller;dur=124.56"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"error\": \"Bad request\",\n    \"details\": [\n        {\n            \"error\": \"ERR_MISSING\",\n            \"description\": \"The key 'company_name' is missing\"\n        },\n        {\n            \"error\": \"ERR_MISSING\",\n            \"description\": \"The key 'company_phone' is missing\"\n        },\n        {\n            \"error\": \"ERR_MISSING\",\n            \"description\": \"The key 'company_email' is missing\"\n        },\n        {\n            \"error\": \"ERR_MISSING\",\n            \"description\": \"The key 'company_slug' is missing\"\n        },\n        {\n            \"error\": \"ERR_MISSING\",\n            \"description\": \"The key 'company_logo' is missing\"\n        }\n    ]\n}"
 						}
 					]
 				},
