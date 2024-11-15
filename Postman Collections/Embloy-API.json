@@ -2407,7 +2407,7 @@
 					},
 					"response": [
 						{
-							"id": "c06dab56-074b-4ef6-8f8c-6957a083aa41",
+							"id": "f8944110-4ee7-48b8-be64-3bdaa4b4e738",
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "GET",
@@ -2447,16 +2447,8 @@
 									"value": "application/json; charset=utf-8"
 								},
 								{
-									"key": "X-bullet-footer-text",
-									"value": "[\"user: cb  AVOID eager loading detected    Job =\\u003e [:application_options]\\n  Remove from your query: .includes([:application_options])\"]"
-								},
-								{
-									"key": "X-bullet-console-text",
-									"value": "[\"user: cb\\nAVOID eager loading detected\\n  Job =\\u003e [:application_options]\\n  Remove from your query: .includes([:application_options])\\nCall stack\\n  /home/cb/github/tmp/Embloy-Core-Server/app/models/dao/job_dao.rb:35:in `dao'\\n  /home/cb/github/tmp/Embloy-Core-Server/app/controllers/api/v0/user_controller.rb:24:in `block in own_jobs'\\n  /home/cb/github/tmp/Embloy-Core-Server/app/controllers/api/v0/user_controller.rb:24:in `map'\\n  /home/cb/github/tmp/Embloy-Core-Server/app/controllers/api/v0/user_controller.rb:24:in `own_jobs'\\n\\n\"]"
-								},
-								{
 									"key": "ETag",
-									"value": "W/\"bb86fb60717b6339fdba2fa2630edc97\""
+									"value": "W/\"4dc232d854d9d54d16afd877bd1aa0ea\""
 								},
 								{
 									"key": "Cache-Control",
@@ -2464,15 +2456,15 @@
 								},
 								{
 									"key": "X-Request-Id",
-									"value": "a09d031d-3724-43f7-9ab8-b7d7f3c63dca"
+									"value": "d5632f15-074c-4756-a74d-d962871332c0"
 								},
 								{
 									"key": "X-Runtime",
-									"value": "1.366807"
+									"value": "1.697704"
 								},
 								{
 									"key": "Server-Timing",
-									"value": "cache_read.active_support;dur=0.34, cache_write.active_support;dur=0.18, start_processing.action_controller;dur=0.48, sql.active_record;dur=463.18, instantiation.active_record;dur=125.21, process_action.action_controller;dur=760.92"
+									"value": "sql.active_record;dur=773.33, cache_read.active_support;dur=0.14, cache_write.active_support;dur=0.13, start_processing.action_controller;dur=0.38, instantiation.active_record;dur=216.85, process_action.action_controller;dur=763.15"
 								},
 								{
 									"key": "vary",
@@ -2480,12 +2472,12 @@
 								},
 								{
 									"key": "Content-Length",
-									"value": "13253"
+									"value": "8418"
 								}
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"jobs\": [\n        {\n            \"id\": 3,\n            \"title\": \"Organic coffee shop looking for a barista\",\n            \"job_type\": \"Food\",\n            \"job_slug\": \"23fc4850-c26d-4770-bf26-5864c47e0492\",\n            \"job_status\": \"listed\",\n            \"referrer_url\": \"https://embloy.com/\",\n            \"salary\": 18,\n            \"description\": {\n                \"id\": 6,\n                \"name\": \"description\",\n                \"body\": \"<div>Work in the greatest espresso bar in town and make making others happy your paid job!</div>\",\n                \"record_type\": \"Job\",\n                \"record_id\": 3,\n                \"created_at\": \"2024-11-15T15:54:41.058Z\",\n                \"updated_at\": \"2024-11-15T15:54:41.058Z\"\n            },\n            \"currency\": \"USD\",\n            \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n            \"duration\": 20,\n            \"code_lang\": null,\n            \"longitude\": 11.613942994844358,\n            \"latitude\": 48.1951076,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"applications_count\": 0,\n            \"created_at\": \"2024-11-15T15:54:40.328Z\",\n            \"updated_at\": \"2024-11-15T15:54:41.085Z\",\n            \"image_url\": null\n        },\n        {\n            \"id\": 2,\n            \"title\": \"Organic coffee shop looking for a barista\",\n            \"job_type\": \"Food\",\n            \"job_slug\": \"72f6d01e-55e5-4fa7-97dd-65af26494695\",\n            \"job_status\": \"listed\",\n            \"referrer_url\": \"https://embloy.com/\",\n            \"salary\": 18,\n            \"description\": {\n                \"id\": 5,\n                \"name\": \"description\",\n                \"body\": \"<div>Work in the greatest espresso bar in town and make making others happy your paid job!</div>\",\n                \"record_type\": \"Job\",\n                \"record_id\": 2,\n                \"created_at\": \"2024-11-15T15:20:36.306Z\",\n                \"updated_at\": \"2024-11-15T15:20:36.306Z\"\n            },\n            \"currency\": \"USD\",\n            \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n            \"duration\": 20,\n            \"code_lang\": null,\n            \"longitude\": 11.613942994844358,\n            \"latitude\": 48.1951076,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"applications_count\": 0,\n            \"created_at\": \"2024-11-15T15:20:35.491Z\",\n            \"updated_at\": \"2024-11-15T15:20:36.334Z\",\n            \"image_url\": null\n        }\n    ]\n}"
+							"body": "{\n    \"jobs\": [\n        {\n            \"id\": 5,\n            \"title\": \"Organic coffee shop looking for a barista\",\n            \"job_type\": \"Food\",\n            \"job_slug\": \"279e9dde-30cd-4cae-9728-1f9776be3cbe\",\n            \"job_status\": \"listed\",\n            \"referrer_url\": \"https://embloy.com/\",\n            \"salary\": 18,\n            \"currency\": \"USD\",\n            \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n            \"duration\": 20,\n            \"code_lang\": null,\n            \"longitude\": 11.613942994844358,\n            \"latitude\": 48.1951076,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"applications_count\": 0,\n            \"created_at\": \"2024-11-15T15:57:34.960Z\",\n            \"updated_at\": \"2024-11-15T15:57:35.756Z\"\n        },\n        {\n            \"id\": 4,\n            \"title\": \"Organic coffee shop looking for a barista\",\n            \"job_type\": \"Food\",\n            \"job_slug\": \"a341e95f-a766-4273-9a6f-0e41ec5dbeba\",\n            \"job_status\": \"listed\",\n            \"referrer_url\": \"https://embloy.com/\",\n            \"salary\": 18,\n            \"currency\": \"USD\",\n            \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n            \"duration\": 20,\n            \"code_lang\": null,\n            \"longitude\": 11.613942994844358,\n            \"latitude\": 48.1951076,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"applications_count\": 0,\n            \"created_at\": \"2024-11-15T15:55:05.311Z\",\n            \"updated_at\": \"2024-11-15T15:55:06.080Z\"\n        },\n        {\n            \"id\": 3,\n            \"title\": \"Organic coffee shop looking for a barista\",\n            \"job_type\": \"Food\",\n            \"job_slug\": \"23fc4850-c26d-4770-bf26-5864c47e0492\",\n            \"job_status\": \"listed\",\n            \"referrer_url\": \"https://embloy.com/\",\n            \"salary\": 18,\n            \"currency\": \"USD\",\n            \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n            \"duration\": 20,\n            \"code_lang\": null,\n            \"longitude\": 11.613942994844358,\n            \"latitude\": 48.1951076,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"applications_count\": 0,\n            \"created_at\": \"2024-11-15T15:54:40.328Z\",\n            \"updated_at\": \"2024-11-15T15:54:41.085Z\"\n        },\n        {\n            \"id\": 2,\n            \"title\": \"Organic coffee shop looking for a barista\",\n            \"job_type\": \"Food\",\n            \"job_slug\": \"72f6d01e-55e5-4fa7-97dd-65af26494695\",\n            \"job_status\": \"listed\",\n            \"referrer_url\": \"https://embloy.com/\",\n            \"salary\": 18,\n            \"currency\": \"USD\",\n            \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n            \"duration\": 20,\n            \"code_lang\": null,\n            \"longitude\": 11.613942994844358,\n            \"latitude\": 48.1951076,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"applications_count\": 0,\n            \"created_at\": \"2024-11-15T15:20:35.491Z\",\n            \"updated_at\": \"2024-11-15T15:20:36.334Z\"\n        }\n    ]\n}"
 						},
 						{
 							"id": "9ff6606f-872a-4364-8649-b13f072a443b",
