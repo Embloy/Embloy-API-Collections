@@ -5304,6 +5304,182 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"company\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute can not be retrieved\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "628581ff-9df8-46a0-a8d6-d8a20249ee9f",
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "company_name",
+											"value": "Example Inc",
+											"type": "text",
+											"description": "Your company's official name which will be shown to applicants.",
+											"disabled": true
+										},
+										{
+											"key": "company_slug",
+											"value": "example-inc",
+											"type": "text",
+											"description": "A unique username for your company account which will be used for your company board's url.",
+											"disabled": true
+										},
+										{
+											"key": "company_phone",
+											"value": "004912345678910",
+											"type": "text",
+											"description": "A phone number for the applicants to contact your recruiting team for general inquiries.",
+											"disabled": true
+										},
+										{
+											"key": "company_email",
+											"value": "contact@example.com",
+											"type": "text",
+											"description": "An email for the applicants to contact your recruiting team for general inquiries.",
+											"disabled": true
+										},
+										{
+											"key": "company_industry",
+											"value": "Technology",
+											"type": "text",
+											"description": "An optional tag for your company's field.",
+											"disabled": true
+										},
+										{
+											"key": "company_description",
+											"value": "This is a great company!!!",
+											"type": "text",
+											"description": "An optional description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML.",
+											"disabled": true
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://www.github.com/embloy",
+											"type": "text",
+											"description": "An optional JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://www.linkedin.com/company/embloy",
+											"type": "text",
+											"description": "An optional JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://www.embloy.com",
+											"type": "text",
+											"description": "A square image of your company logo. Allowed formats are PNG, JPEG and JPG with a maximum size of 2 megabytes."
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://about.embloy.com",
+											"type": "text"
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://instagram.com/embloy",
+											"type": "text"
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://facebook.com/embloy",
+											"type": "text"
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://genius.embloy.com",
+											"type": "text"
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://docs.embloy.com",
+											"type": "text"
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://developers.embloy.com",
+											"type": "text"
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://api.embloy.com",
+											"type": "text"
+										},
+										{
+											"key": "company_logo",
+											"description": "A square image of your company logo. Allowed formats are PNG, JPEG and JPG with a maximum size of 2 megabytes.",
+											"type": "file",
+											"src": "X-RwCrznl/ImageSignature.png",
+											"disabled": true
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/company/{{company_id}}"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "97b950f4-c9eb-4961-9d54-14d337997929"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.645685"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "cache_read.active_support;dur=0.23, cache_write.active_support;dur=0.14, start_processing.action_controller;dur=0.53, sql.active_record;dur=495.12, instantiation.active_record;dur=1.98, unpermitted_parameters.action_controller;dur=0.65, render_partial.action_view;dur=3.19, process_action.action_controller;dur=375.87"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"error\": \"Bad request\",\n    \"details\": {\n        \"company_urls\": [\n            {\n                \"error\": \"ERR_LENGTH\",\n                \"description\": \"Attribute length is invalid\",\n                \"count\": 10\n            }\n        ]\n    }\n}"
 						}
 					]
 				},
@@ -10687,7 +10863,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "f6bd42cc-8a01-409a-9e40-d4e068d47b84",
+				"id": "bdc544f9-ca3c-49e4-9e06-d331c4a6066b",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -10697,7 +10873,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "77430ab1-49f1-4e5d-8752-536a7c527119",
+				"id": "31cb01d3-906d-4ae7-9d51-192cbd4a9959",
 				"type": "text/javascript",
 				"exec": [
 					""
