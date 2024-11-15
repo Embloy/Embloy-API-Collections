@@ -2724,7 +2724,7 @@
 									"key": "image_url",
 									"type": "file",
 									"description": "The user's new profile image as a file",
-									"src": "fbht2-ZAJ/logo-light.png"
+									"src": "SROBuQXwo/logo-light.png"
 								}
 							]
 						},
@@ -2766,6 +2766,166 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"image_url\": \"https://f005.backblazeb2.com/file/TestEmbloy/hrv0t9t8hd57p2f183n0phhx6tf5?Authorization=3_20240107194856_b385897f84e043696cf90c7c_5e0788424bb9485c44398f2bd7faa77df14bdaee_005_20240114194856_0028_dnld\"\n}"
+						},
+						{
+							"id": "6e74318f-8278-4981-a7ed-9ee4b270ae0a",
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image_url",
+											"type": "file",
+											"description": "The user's new profile image as a file",
+											"src": "1WUVUGVEJ/merged-123.pdf"
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/user/image"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "92bac14d-0ae9-4547-943a-1f04b4150ad7"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "1.175759"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "cache_read.active_support;dur=0.24, cache_write.active_support;dur=0.12, start_processing.action_controller;dur=0.48, sql.active_record;dur=418.80, instantiation.active_record;dur=0.37, process_action.action_controller;dur=967.95"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"error\": \"Bad request\",\n    \"details\": {\n        \"image_url\": [\n            {\n                \"error\": {\n                    \"error\": \"ERR_INVALID\",\n                    \"description\": \"is too large (max is 2 MB)\"\n                }\n            }\n        ]\n    }\n}"
+						},
+						{
+							"id": "ba40edec-2991-4c70-99ad-5e02bcfe32f1",
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image_url",
+											"type": "file",
+											"description": "The user's new profile image as a file",
+											"src": "OXRCu8xlC/Japanisch12.pdf"
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/user/image"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "1fb4b30f-18b4-423b-85c0-71a914f165a2"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.421723"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "cache_read.active_support;dur=0.36, cache_write.active_support;dur=0.08, start_processing.action_controller;dur=0.46, sql.active_record;dur=282.29, instantiation.active_record;dur=0.33, process_action.action_controller;dur=249.01"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"error\": \"Bad request\",\n    \"details\": {\n        \"image_url\": [\n            {\n                \"error\": {\n                    \"error\": \"ERR_INVALID\",\n                    \"description\": \"must be a PNG, JPG, or JPEG image\"\n                }\n            }\n        ]\n    }\n}"
 						}
 					]
 				},
@@ -10955,7 +11115,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "ce800773-c65c-4dc6-9e11-5f7b578dab9e",
+				"id": "f17bf625-f2a8-4c55-bb50-9b6279bb3f6d",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -10965,7 +11125,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "e726b2ac-bc63-49fa-90f7-bf46ce90da07",
+				"id": "187175f3-9c16-4c82-89a0-f513c67da0af",
 				"type": "text/javascript",
 				"exec": [
 					""
