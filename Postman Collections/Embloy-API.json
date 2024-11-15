@@ -2656,7 +2656,154 @@
 						"url": "{{root}}/api/{{api_version}}/user/upcoming",
 						"description": "The provided access token is first verified, and then a list of all the job for which the current user has applied for an then has been accepted is generated."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "afc2adda-300b-4b8d-a3e3-bde870788700",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{root}}/api/{{api_version}}/user/upcoming"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9866cd940add7df186fee80b78dbc2bf\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "2879eb13-b0a3-4292-aab1-eb27aa851ed7"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "1.221040"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "cache_read.active_support;dur=0.19, cache_write.active_support;dur=0.12, start_processing.action_controller;dur=0.38, sql.active_record;dur=381.08, instantiation.active_record;dur=109.62, service_url.active_storage;dur=20.21, process_action.action_controller;dur=688.70"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Length",
+									"value": "20419"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"jobs\": [\n        {\n            \"id\": 4,\n            \"title\": \"Organic coffee shop looking for a barista\",\n            \"job_type\": \"Food\",\n            \"job_slug\": \"a341e95f-a766-4273-9a6f-0e41ec5dbeba\",\n            \"job_status\": \"listed\",\n            \"referrer_url\": \"https://embloy.com/\",\n            \"salary\": 18,\n            \"currency\": \"USD\",\n            \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n            \"duration\": 20,\n            \"code_lang\": null,\n            \"longitude\": 11.613942994844358,\n            \"latitude\": 48.1951076,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"applications_count\": 0,\n            \"created_at\": \"2024-11-15T15:55:05.311Z\",\n            \"updated_at\": \"2024-11-15T15:55:06.080Z\",\n            \"employer\": {\n                \"employer_email\": \"info@embloy.com\",\n                \"employer_name\": \"Embloy Platforms\",\n                \"employer_phone\": \"004912345678910\",\n                \"employer_image_url\": \"http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhNblZqT0dGb2JqaG5lVE5qYVhobGFXZDBPR3A1YkRRMGEySmhkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW14dloyOHRiR2xuYUhRdWNHNW5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRzYjJkdkxXeHBaMmgwTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkVYTmxjblpwWTJWZmJtRnRaVG9LYkc5allXdz0iLCJleHAiOiIyMDI0LTExLTE1VDE2OjU1OjI4LjU1NFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--4c6a74382bd283607a42e4e08cd9591faba22bca/logo-light.png\"\n            }\n        },\n        {\n            \"id\": 3,\n            \"title\": \"Organic coffee shop looking for a barista\",\n            \"job_type\": \"Food\",\n            \"job_slug\": \"23fc4850-c26d-4770-bf26-5864c47e0492\",\n            \"job_status\": \"listed\",\n            \"referrer_url\": \"https://embloy.com/\",\n            \"salary\": 18,\n            \"currency\": \"USD\",\n            \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n            \"duration\": 20,\n            \"code_lang\": null,\n            \"longitude\": 11.613942994844358,\n            \"latitude\": 48.1951076,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"applications_count\": 0,\n            \"created_at\": \"2024-11-15T15:54:40.328Z\",\n            \"updated_at\": \"2024-11-15T15:54:41.085Z\",\n            \"employer\": {\n                \"employer_email\": \"info@embloy.com\",\n                \"employer_name\": \"Embloy Platforms\",\n                \"employer_phone\": \"004912345678910\",\n                \"employer_image_url\": \"http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhNblZqT0dGb2JqaG5lVE5qYVhobGFXZDBPR3A1YkRRMGEySmhkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW14dloyOHRiR2xuYUhRdWNHNW5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRzYjJkdkxXeHBaMmgwTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkVYTmxjblpwWTJWZmJtRnRaVG9LYkc5allXdz0iLCJleHAiOiIyMDI0LTExLTE1VDE2OjU1OjI4LjU1OVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--10aa3492c35a5f3aa2dc194af6c54ba203f15684/logo-light.png\"\n            }\n        },\n        {\n            \"id\": 5,\n            \"title\": \"Organic coffee shop looking for a barista\",\n            \"job_type\": \"Food\",\n            \"job_slug\": \"279e9dde-30cd-4cae-9728-1f9776be3cbe\",\n            \"job_status\": \"listed\",\n            \"referrer_url\": \"https://embloy.com/\",\n            \"salary\": 18,\n            \"currency\": \"USD\",\n            \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n            \"duration\": 20,\n            \"code_lang\": null,\n            \"longitude\": 11.613942994844358,\n            \"latitude\": 48.1951076,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"applications_count\": 0,\n            \"created_at\": \"2024-11-15T15:57:34.960Z\",\n            \"updated_at\": \"2024-11-15T15:57:35.756Z\",\n            \"employer\": {\n                \"employer_email\": \"info@embloy.com\",\n                \"employer_name\": \"Embloy Platforms\",\n                \"employer_phone\": \"004912345678910\",\n                \"employer_image_url\": \"http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhNblZqT0dGb2JqaG5lVE5qYVhobGFXZDBPR3A1YkRRMGEySmhkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW14dloyOHRiR2xuYUhRdWNHNW5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRzYjJkdkxXeHBaMmgwTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkVYTmxjblpwWTJWZmJtRnRaVG9LYkc5allXdz0iLCJleHAiOiIyMDI0LTExLTE1VDE2OjU1OjI4LjU2NFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--74a5366d7783f143a15549797dc1578831c86ad5/logo-light.png\"\n            }\n        }\n    ]\n}"
+						},
+						{
+							"id": "87b87602-f3a6-47ce-bbcf-434c601074c0",
+							"name": "204 No Content",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{root}}/api/{{api_version}}/user/upcoming"
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9866cd940add7df186fee80b78dbc2bf\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "2879eb13-b0a3-4292-aab1-eb27aa851ed7"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "1.221040"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "cache_read.active_support;dur=0.19, cache_write.active_support;dur=0.12, start_processing.action_controller;dur=0.38, sql.active_record;dur=381.08, instantiation.active_record;dur=109.62, service_url.active_storage;dur=20.21, process_action.action_controller;dur=688.70"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Length",
+									"value": "20419"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": ""
+						}
+					]
 				},
 				{
 					"name": "Get user's applications",
