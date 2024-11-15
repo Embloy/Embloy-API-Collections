@@ -3874,7 +3874,7 @@
 								},
 								{
 									"key": "company_phone",
-									"value": "abc",
+									"value": "004912345678910",
 									"type": "text",
 									"description": "A phone number for the applicants to contact your recruiting team for general inquiries."
 								},
@@ -4614,7 +4614,7 @@
 								},
 								{
 									"key": "company_email",
-									"value": "",
+									"value": "contact@example.com",
 									"description": "An email for the applicants to contact your recruiting team for general inquiries.",
 									"type": "text"
 								},
@@ -4646,7 +4646,7 @@
 									"key": "company_logo",
 									"description": "A square image of your company logo. Allowed formats are PNG, JPEG and JPG with a maximum size of 2 megabytes.",
 									"type": "file",
-									"src": "2V6EuNpsa/ImageSignature.png"
+									"src": "X-RwCrznl/ImageSignature.png"
 								}
 							]
 						},
@@ -5041,6 +5041,263 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"company\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute can not be retrieved\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "ed1db39d-03dd-4ff3-961e-e7d642abc141",
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "company_name",
+											"value": "",
+											"description": "Your company's official name which will be shown to applicants.",
+											"type": "text"
+										},
+										{
+											"key": "company_slug",
+											"value": "",
+											"description": "A unique username for your company account which will be used for your company board's url.",
+											"type": "text"
+										},
+										{
+											"key": "company_phone",
+											"value": "",
+											"description": "A phone number for the applicants to contact your recruiting team for general inquiries.",
+											"type": "text"
+										},
+										{
+											"key": "company_email",
+											"value": "",
+											"description": "An email for the applicants to contact your recruiting team for general inquiries.",
+											"type": "text"
+										},
+										{
+											"key": "company_industry",
+											"value": "Technology",
+											"description": "An optional tag for your company's field.",
+											"type": "text"
+										},
+										{
+											"key": "company_description",
+											"value": "This is a great company!!!",
+											"description": "A description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML.",
+											"type": "text"
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://www.github.com/example",
+											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)",
+											"type": "text"
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://www.linkedin.com/company/example",
+											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)",
+											"type": "text"
+										},
+										{
+											"key": "company_logo",
+											"description": "A square image of your company logo. Allowed formats are PNG, JPEG and JPG with a maximum size of 2 megabytes.",
+											"type": "file",
+											"value": null
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/company/{{company_id}}"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "bb5e53d6-5304-471c-812b-e329b50035d1"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.298984"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "cache_read.active_support;dur=0.16, cache_write.active_support;dur=0.07, start_processing.action_controller;dur=0.55, sql.active_record;dur=218.10, instantiation.active_record;dur=0.71, unpermitted_parameters.action_controller;dur=0.38, process_action.action_controller;dur=149.77"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"error\": \"Bad request\",\n    \"details\": [\n        {\n            \"error\": \"ERR_BLANK\",\n            \"description\": \"The key 'company_name' can't be blank\"\n        },\n        {\n            \"error\": \"ERR_BLANK\",\n            \"description\": \"The key 'company_phone' can't be blank\"\n        },\n        {\n            \"error\": \"ERR_BLANK\",\n            \"description\": \"The key 'company_email' can't be blank\"\n        },\n        {\n            \"error\": \"ERR_BLANK\",\n            \"description\": \"The key 'company_slug' can't be blank\"\n        },\n        {\n            \"error\": \"ERR_BLANK\",\n            \"description\": \"The key 'company_logo' can't be blank\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "c869b4a8-26a4-4057-888c-a4227531536e",
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "company_name",
+											"value": "Example Inc",
+											"description": "Your company's official name which will be shown to applicants.",
+											"type": "text"
+										},
+										{
+											"key": "company_slug",
+											"value": "example-inc",
+											"description": "A unique username for your company account which will be used for your company board's url.",
+											"type": "text"
+										},
+										{
+											"key": "company_phone",
+											"value": "not-a-phone",
+											"description": "A phone number for the applicants to contact your recruiting team for general inquiries.",
+											"type": "text"
+										},
+										{
+											"key": "company_email",
+											"value": "not-a-email",
+											"description": "An email for the applicants to contact your recruiting team for general inquiries.",
+											"type": "text"
+										},
+										{
+											"key": "company_industry",
+											"value": "TechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnology",
+											"description": "An optional tag for your company's field.",
+											"type": "text"
+										},
+										{
+											"key": "company_description",
+											"value": "This is a great company!!!",
+											"description": "A description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML.",
+											"type": "text"
+										},
+										{
+											"key": "company_urls[]",
+											"value": "not-a-url",
+											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)",
+											"type": "text"
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://www.linkedin.com/company/example",
+											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "company_logo",
+											"description": "A square image of your company logo. Allowed formats are PNG, JPEG and JPG with a maximum size of 2 megabytes.",
+											"type": "file",
+											"src": "BqJ_iNMN9/Japan-city-cityscape-building-sky-skyline-780207-wallhere.com1.jpg"
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/company/{{company_id}}"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "382adc59-d973-4009-9fbc-49e19dca0561"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "1.358521"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "cache_read.active_support;dur=0.36, cache_write.active_support;dur=0.15, start_processing.action_controller;dur=0.53, sql.active_record;dur=1053.54, instantiation.active_record;dur=2.28, unpermitted_parameters.action_controller;dur=0.91, render_partial.action_view;dur=3.89, process_action.action_controller;dur=943.75"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"error\": \"Bad request\",\n    \"details\": {\n        \"company_email\": [\n            {\n                \"error\": \"ERR_INVALID\",\n                \"description\": \"Attribute is malformed or unknown\",\n                \"value\": \"not-a-email\"\n            }\n        ],\n        \"company_industry\": [\n            {\n                \"error\": \"ERR_LENGTH\",\n                \"description\": \"Attribute length is invalid\",\n                \"count\": 150\n            }\n        ],\n        \"company_logo\": [\n            {\n                \"error\": {\n                    \"error\": \"ERR_INVALID\",\n                    \"description\": \"is too large (max is 2 MB)\"\n                }\n            }\n        ],\n        \"company_urls\": [\n            {\n                \"error\": {\n                    \"error\": \"ERR_INVALID\",\n                    \"description\": \"must be an array of valid URLs\"\n                }\n            }\n        ]\n    }\n}"
 						}
 					]
 				},
