@@ -3868,7 +3868,7 @@
 							"formdata": [
 								{
 									"key": "company_name",
-									"value": "Example Inc",
+									"value": "Embloy Platforms",
 									"type": "text",
 									"description": "Your company's official name which will be shown to applicants."
 								},
@@ -3880,13 +3880,13 @@
 								},
 								{
 									"key": "company_email",
-									"value": "contact@example.com",
+									"value": "info@embloy.com",
 									"type": "text",
 									"description": "An email for the applicants to contact your recruiting team for general inquiries."
 								},
 								{
 									"key": "company_slug",
-									"value": "example-inc",
+									"value": "embloy",
 									"type": "text",
 									"description": "A unique username for your company account which will be used for your company board's url."
 								},
@@ -3894,7 +3894,7 @@
 									"key": "company_logo",
 									"description": "A square image of your company logo. Allowed formats are PNG, JPEG and JPG with a maximum size of 2 megabytes.",
 									"type": "file",
-									"src": "u534kK0HP/ImageSignature.png"
+									"src": "XZrBlDMFy/logo-light.png"
 								},
 								{
 									"key": "company_description",
