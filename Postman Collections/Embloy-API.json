@@ -2724,7 +2724,7 @@
 									"key": "image_url",
 									"type": "file",
 									"description": "The user's new profile image as a file",
-									"src": "Q6BhGhGz1/1707818217188.jpg"
+									"src": "fbht2-ZAJ/logo-light.png"
 								}
 							]
 						},
@@ -10863,7 +10863,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "08efba36-7bd2-4635-962c-b8a9999f5683",
+				"id": "66d607c5-98e0-4b44-8df7-e742bd7bf9b1",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -10873,7 +10873,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "b9210080-5c1f-40a3-8413-5279999f159b",
+				"id": "3225ee30-38ac-489f-88a4-8cf943ca5a97",
 				"type": "text/javascript",
 				"exec": [
 					""
