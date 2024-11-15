@@ -3120,7 +3120,7 @@
 						"method": "GET",
 						"header": [],
 						"url": "{{root}}/api/{{api_version}}/company/{{company_id}}/board",
-						"description": "This endpoint returns all listed jobs, including relevant information for a company's job page.\n\nOnly accessible for subscribed company users or sandbox users."
+						"description": "This endpoint returns all listed jobs, including relevant information for a company's job page.\n\nOnly accessible for job boards created by subscribed company users or sandbox users."
 					},
 					"response": [
 						{
@@ -3202,7 +3202,7 @@
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"company\": {\n        \"id\": 3,\n        \"company_name\": \"Example Inc\",\n        \"company_phone\": \"004912345678910\",\n        \"company_email\": \"contact@example.com\",\n        \"company_urls\": [\n            \"https://www.example.com\",\n            \"https://linkedin.com/company/example\"\n        ],\n        \"company_industry\": \"Technology\",\n        \"company_description\": {\n            \"id\": 3,\n            \"name\": \"company_description\",\n            \"body\": \"This is a great company!!!\",\n            \"record_type\": \"User\",\n            \"record_id\": 3,\n            \"created_at\": \"2024-11-14T21:10:58.625Z\",\n            \"updated_at\": \"2024-11-14T21:19:42.226Z\"\n        },\n        \"company_logo\": \"http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--52196d01ed246be8301b5a58f4120307da9eddc1/ImageSignature.png\",\n        \"company_slug\": \"example-inc\"\n    },\n    \"jobs\": [\n        {\n            \"job_id\": 20,\n            \"title\": \"testjob\",\n            \"job_type\": \"Retail\",\n            \"job_slug\": \"testjob\",\n            \"job_status\": \"listed\",\n            \"referrer_url\": null,\n            \"salary\": null,\n            \"currency\": null,\n            \"start_slot\": \"2024-11-16T12:00:00.000Z\",\n            \"duration\": 1,\n            \"code_lang\": null,\n            \"longitude\": 1.0,\n            \"latitude\": 1.0,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"applications_count\": 0,\n            \"created_at\": \"2024-11-14T10:53:06.031Z\",\n            \"updated_at\": \"2024-11-14T10:54:41.314Z\"\n        }\n    ]\n}"
+							"body": "{\n    \"company\": {\n        \"id\": 3,\n        \"company_name\": \"Example Inc\",\n        \"company_phone\": \"004912345678910\",\n        \"company_email\": \"contact@example.com\",\n        \"company_urls\": [\n            \"https://www.github.com/example\",\n            \"https://www.linkedin.com/company/example\"\n        ],\n        \"company_industry\": \"Technology\",\n        \"company_description\": {\n            \"id\": 3,\n            \"name\": \"company_description\",\n            \"body\": \"This is a great company!!!\",\n            \"record_type\": \"User\",\n            \"record_id\": 3,\n            \"created_at\": \"2024-11-14T21:10:58.625Z\",\n            \"updated_at\": \"2024-11-15T00:33:59.002Z\"\n        },\n        \"company_logo\": \"http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBHdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--57f125d9ab2c94b63f84acd6a9eac33f3d18de9c/ImageSignature.png\",\n        \"company_slug\": \"example-inc\"\n    },\n    \"jobs\": [\n        {\n            \"job_id\": 20,\n            \"title\": \"testjob\",\n            \"job_type\": \"Retail\",\n            \"job_slug\": \"testjob\",\n            \"job_status\": \"listed\",\n            \"referrer_url\": null,\n            \"salary\": null,\n            \"currency\": null,\n            \"start_slot\": \"2024-11-16T12:00:00.000Z\",\n            \"duration\": 1,\n            \"code_lang\": null,\n            \"longitude\": 1.0,\n            \"latitude\": 1.0,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"applications_count\": 0,\n            \"created_at\": \"2024-11-14T10:53:06.031Z\",\n            \"updated_at\": \"2024-11-14T10:54:41.314Z\"\n        }\n    ]\n}"
 						},
 						{
 							"id": "352619f0-737f-4aac-8b3e-96b6e44fa51c",
@@ -3451,7 +3451,7 @@
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"company\": {\n        \"id\": 3,\n        \"company_name\": \"Example Inc\",\n        \"company_phone\": \"004912345678910\",\n        \"company_email\": \"contact@example.com\",\n        \"company_urls\": [\n            \"https://www.example.com\",\n            \"https://linkedin.com/company/example\"\n        ],\n        \"company_industry\": \"Technology\",\n        \"company_description\": {\n            \"id\": 3,\n            \"name\": \"company_description\",\n            \"body\": \"This is a great company!!!\",\n            \"record_type\": \"User\",\n            \"record_id\": 3,\n            \"created_at\": \"2024-11-14T21:10:58.625Z\",\n            \"updated_at\": \"2024-11-14T21:19:42.226Z\"\n        },\n        \"company_logo\": \"http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--52196d01ed246be8301b5a58f4120307da9eddc1/ImageSignature.png\",\n        \"company_slug\": \"example-inc\"\n    },\n    \"job\": {\n        \"job_id\": 20,\n        \"title\": \"testjob\",\n        \"job_type\": \"Retail\",\n        \"job_slug\": \"testjob\",\n        \"job_status\": \"listed\",\n        \"referrer_url\": null,\n        \"salary\": null,\n        \"currency\": null,\n        \"start_slot\": \"2024-11-16T12:00:00.000Z\",\n        \"duration\": 1,\n        \"code_lang\": null,\n        \"longitude\": 1.0,\n        \"latitude\": 1.0,\n        \"country_code\": null,\n        \"postal_code\": null,\n        \"city\": null,\n        \"address\": null,\n        \"view_count\": 0,\n        \"applications_count\": 0,\n        \"description\": {\n            \"id\": 2,\n            \"name\": \"description\",\n            \"body\": null,\n            \"record_type\": \"Job\",\n            \"record_id\": 20,\n            \"created_at\": \"2024-11-14T10:53:46.222Z\",\n            \"updated_at\": \"2024-11-14T10:53:46.222Z\"\n        },\n        \"created_at\": \"2024-11-14T10:53:06.031Z\",\n        \"updated_at\": \"2024-11-14T10:54:41.314Z\",\n        \"image_url\": null\n    }\n}"
+							"body": "{\n    \"company\": {\n        \"id\": 3,\n        \"company_name\": \"Example Inc\",\n        \"company_phone\": \"004912345678910\",\n        \"company_email\": \"contact@example.com\",\n        \"company_urls\": [\n            \"https://www.github.com/example\",\n            \"https://www.linkedin.com/company/example\"\n        ],\n        \"company_industry\": \"Technology\",\n        \"company_description\": {\n            \"id\": 3,\n            \"name\": \"company_description\",\n            \"body\": \"This is a great company!!!\",\n            \"record_type\": \"User\",\n            \"record_id\": 3,\n            \"created_at\": \"2024-11-14T21:10:58.625Z\",\n            \"updated_at\": \"2024-11-15T00:33:59.002Z\"\n        },\n        \"company_logo\": \"http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBHdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--57f125d9ab2c94b63f84acd6a9eac33f3d18de9c/ImageSignature.png\",\n        \"company_slug\": \"example-inc\"\n    },\n    \"job\": {\n        \"job_id\": 20,\n        \"title\": \"testjob\",\n        \"job_type\": \"Retail\",\n        \"job_slug\": \"testjob\",\n        \"job_status\": \"listed\",\n        \"referrer_url\": null,\n        \"salary\": null,\n        \"currency\": null,\n        \"start_slot\": \"2024-11-16T12:00:00.000Z\",\n        \"duration\": 1,\n        \"code_lang\": null,\n        \"longitude\": 1.0,\n        \"latitude\": 1.0,\n        \"country_code\": null,\n        \"postal_code\": null,\n        \"city\": null,\n        \"address\": null,\n        \"view_count\": 0,\n        \"applications_count\": 0,\n        \"description\": {\n            \"id\": 2,\n            \"name\": \"description\",\n            \"body\": null,\n            \"record_type\": \"Job\",\n            \"record_id\": 20,\n            \"created_at\": \"2024-11-14T10:53:46.222Z\",\n            \"updated_at\": \"2024-11-14T10:53:46.222Z\"\n        },\n        \"created_at\": \"2024-11-14T10:53:06.031Z\",\n        \"updated_at\": \"2024-11-14T10:54:41.314Z\",\n        \"image_url\": null\n    }\n}"
 						},
 						{
 							"id": "09ccc9fd-c7b4-4277-b7c3-5828745d147e",
@@ -3927,8 +3927,8 @@
 					},
 					"response": [
 						{
-							"id": "0fa221fc-9538-4831-95d7-b30ab4b99d45",
-							"name": "403 Forbidden",
+							"id": "dc713dd6-a241-47c4-a042-e3334a8e8c67",
+							"name": "201 Created",
 							"originalRequest": {
 								"method": "POST",
 								"header": [],
@@ -3940,12 +3940,6 @@
 											"value": "Example Inc",
 											"type": "text",
 											"description": "Your company's official name which will be shown to applicants."
-										},
-										{
-											"key": "company_slug",
-											"value": "example-inc",
-											"type": "text",
-											"description": "A unique username for your company account which will be used for your company board's url."
 										},
 										{
 											"key": "company_phone",
@@ -3960,41 +3954,47 @@
 											"description": "An email for the applicants to contact your recruiting team for general inquiries."
 										},
 										{
+											"key": "company_slug",
+											"value": "example-inc",
+											"type": "text",
+											"description": "A unique username for your company account which will be used for your company board's url."
+										},
+										{
+											"key": "company_logo",
+											"description": "A square image of your company logo. Allowed formats are PNG, JPEG and JPG with a maximum size of 2 megabytes.",
+											"type": "file",
+											"src": "u534kK0HP/ImageSignature.png"
+										},
+										{
+											"key": "company_description",
+											"value": "This is a great company!!!",
+											"type": "text",
+											"description": "An optional description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML."
+										},
+										{
 											"key": "company_industry",
 											"value": "Technology",
 											"type": "text",
 											"description": "An optional tag for your company's field."
 										},
 										{
-											"key": "company_description",
-											"value": "This is a great company!!!",
-											"type": "text",
-											"description": "A description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML."
-										},
-										{
 											"key": "company_urls[]",
 											"value": "https://www.github.com/example",
 											"type": "text",
-											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
+											"description": "An optional JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
 										},
 										{
 											"key": "company_urls[]",
 											"value": "https://www.linkedin.com/company/example",
 											"type": "text",
-											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
-										},
-										{
-											"key": "company_logo",
-											"description": "A square image of your company logo. Allowed formats are PNG, JPEG and JPG with a maximum size of 2 megabytes.",
-											"type": "file",
-											"src": "2V6EuNpsa/ImageSignature.png"
+											"description": "An optional JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
 										}
 									]
 								},
 								"url": "{{root}}/api/{{api_version}}/company"
 							},
-							"status": "Forbidden",
-							"code": 403,
+							"status": "Created",
+							"code": 201,
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
@@ -4026,161 +4026,37 @@
 									"value": "application/json; charset=utf-8"
 								},
 								{
+									"key": "ETag",
+									"value": "W/\"cf336d7c86fdc791866d76a7208e4f52\""
+								},
+								{
 									"key": "Cache-Control",
-									"value": "no-cache"
+									"value": "max-age=0, private, must-revalidate"
 								},
 								{
 									"key": "X-Request-Id",
-									"value": "c8a0c772-431f-493e-b357-53f75acbd677"
+									"value": "f6207b7e-d89a-43f5-8101-db2cc34f790b"
 								},
 								{
 									"key": "X-Runtime",
-									"value": "1.888589"
+									"value": "1.472871"
 								},
 								{
 									"key": "Server-Timing",
-									"value": "cache_read.active_support;dur=0.25, cache_write.active_support;dur=0.13, start_processing.action_controller;dur=0.54, sql.active_record;dur=697.70, instantiation.active_record;dur=199.13, process_action.action_controller;dur=1294.97"
+									"value": "cache_read.active_support;dur=0.24, cache_write.active_support;dur=0.12, start_processing.action_controller;dur=0.57, sql.active_record;dur=1075.59, instantiation.active_record;dur=16.13, unpermitted_parameters.action_controller;dur=0.64, render_partial.action_view;dur=2.98, service_upload.active_storage;dur=1.87, enqueue.active_job;dur=1.84, process_action.action_controller;dur=1175.95"
 								},
 								{
 									"key": "vary",
 									"value": "Origin"
 								},
 								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
+									"key": "Content-Length",
+									"value": "703"
 								}
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"subscription\": [\n        {\n            \"error\": \"ERR_RAC\",\n            \"description\": \"Proceeding is inhibited by an access restriction\"\n        }\n    ]\n}"
-						},
-						{
-							"id": "467b2161-0380-49f6-8dab-445b2af5f10b",
-							"name": "409 Conflict",
-							"originalRequest": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "company_name",
-											"value": "Example Inc",
-											"description": "Your company's official name which will be shown to applicants.",
-											"type": "text"
-										},
-										{
-											"key": "company_slug",
-											"value": "example-inc",
-											"description": "A unique username for your company account which will be used for your company board's url.",
-											"type": "text"
-										},
-										{
-											"key": "company_phone",
-											"value": "004912345678910",
-											"description": "A phone number for the applicants to contact your recruiting team for general inquiries.",
-											"type": "text"
-										},
-										{
-											"key": "company_email",
-											"value": "contact@example.com",
-											"description": "An email for the applicants to contact your recruiting team for general inquiries.",
-											"type": "text"
-										},
-										{
-											"key": "company_industry",
-											"value": "Technology",
-											"description": "An optional tag for your company's field.",
-											"type": "text"
-										},
-										{
-											"key": "company_description",
-											"value": "This is a great company!!!",
-											"description": "A description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML.",
-											"type": "text"
-										},
-										{
-											"key": "company_urls[]",
-											"value": "https://www.example.com",
-											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)",
-											"type": "text"
-										},
-										{
-											"key": "company_urls[]",
-											"value": "https://www.linkedin.com/company/example",
-											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)",
-											"type": "text"
-										},
-										{
-											"key": "company_logo",
-											"description": "A square image of your company logo. Allowed formats are PNG, JPEG and JPG with a maximum size of 2 megabytes.",
-											"type": "file",
-											"src": "2V6EuNpsa/ImageSignature.png"
-										}
-									]
-								},
-								"url": "{{root}}/api/{{api_version}}/company"
-							},
-							"status": "Conflict",
-							"code": 409,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Frame-Options",
-									"value": "SAMEORIGIN"
-								},
-								{
-									"key": "X-XSS-Protection",
-									"value": "0"
-								},
-								{
-									"key": "X-Content-Type-Options",
-									"value": "nosniff"
-								},
-								{
-									"key": "X-Download-Options",
-									"value": "noopen"
-								},
-								{
-									"key": "X-Permitted-Cross-Domain-Policies",
-									"value": "none"
-								},
-								{
-									"key": "Referrer-Policy",
-									"value": "strict-origin-when-cross-origin"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Cache-Control",
-									"value": "no-cache"
-								},
-								{
-									"key": "X-Request-Id",
-									"value": "a2b4b494-f03a-4b72-a721-dc9e2b24aed0"
-								},
-								{
-									"key": "X-Runtime",
-									"value": "1.736371"
-								},
-								{
-									"key": "Server-Timing",
-									"value": "cache_read.active_support;dur=0.20, cache_write.active_support;dur=0.13, start_processing.action_controller;dur=0.52, sql.active_record;dur=641.64, instantiation.active_record;dur=55.99, process_action.action_controller;dur=1128.31"
-								},
-								{
-									"key": "vary",
-									"value": "Origin"
-								},
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"company\": [\n        {\n            \"error\": \"ERR_REMOVED\",\n            \"description\": \"You already have a company account\"\n        }\n    ]\n}"
+							"body": "{\n    \"company\": {\n        \"id\": 3,\n        \"company_name\": \"Example Inc\",\n        \"company_phone\": \"004912345678910\",\n        \"company_email\": \"contact@example.com\",\n        \"company_urls\": [\n            \"https://www.github.com/example\",\n            \"https://www.linkedin.com/company/example\"\n        ],\n        \"company_industry\": \"Technology\",\n        \"company_description\": {\n            \"record_id\": 3,\n            \"body\": \"This is a great company!!!\",\n            \"id\": 3,\n            \"name\": \"company_description\",\n            \"record_type\": \"User\",\n            \"created_at\": \"2024-11-14T21:10:58.625Z\",\n            \"updated_at\": \"2024-11-15T00:33:59.002Z\"\n        },\n        \"company_logo\": \"http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBHdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--57f125d9ab2c94b63f84acd6a9eac33f3d18de9c/ImageSignature.png\",\n        \"company_slug\": \"example-inc\"\n    }\n}"
 						},
 						{
 							"id": "65b1da42-887f-48e9-95b7-975d0b5fb306",
@@ -4449,8 +4325,8 @@
 							"body": "{\n    \"error\": \"Bad request\",\n    \"details\": {\n        \"company_email\": [\n            \"is invalid\"\n        ],\n        \"company_industry\": [\n            \"is too long (maximum is 150 characters)\"\n        ],\n        \"company_logo\": [\n            {\n                \"error\": \"ERR_INVALID\",\n                \"description\": \"is too large (max is 2 MB)\"\n            }\n        ],\n        \"company_urls\": [\n            {\n                \"error\": \"ERR_INVALID\",\n                \"description\": \"must be an array of valid URLs\"\n            }\n        ]\n    }\n}"
 						},
 						{
-							"id": "dc713dd6-a241-47c4-a042-e3334a8e8c67",
-							"name": "201 Created",
+							"id": "0fa221fc-9538-4831-95d7-b30ab4b99d45",
+							"name": "403 Forbidden",
 							"originalRequest": {
 								"method": "POST",
 								"header": [],
@@ -4462,6 +4338,12 @@
 											"value": "Example Inc",
 											"type": "text",
 											"description": "Your company's official name which will be shown to applicants."
+										},
+										{
+											"key": "company_slug",
+											"value": "example-inc",
+											"type": "text",
+											"description": "A unique username for your company account which will be used for your company board's url."
 										},
 										{
 											"key": "company_phone",
@@ -4476,47 +4358,41 @@
 											"description": "An email for the applicants to contact your recruiting team for general inquiries."
 										},
 										{
-											"key": "company_slug",
-											"value": "example-inc",
-											"type": "text",
-											"description": "A unique username for your company account which will be used for your company board's url."
-										},
-										{
-											"key": "company_logo",
-											"description": "A square image of your company logo. Allowed formats are PNG, JPEG and JPG with a maximum size of 2 megabytes.",
-											"type": "file",
-											"src": "u534kK0HP/ImageSignature.png"
-										},
-										{
-											"key": "company_description",
-											"value": "This is a great company!!!",
-											"type": "text",
-											"description": "An optional description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML."
-										},
-										{
 											"key": "company_industry",
 											"value": "Technology",
 											"type": "text",
 											"description": "An optional tag for your company's field."
 										},
 										{
+											"key": "company_description",
+											"value": "This is a great company!!!",
+											"type": "text",
+											"description": "A description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML."
+										},
+										{
 											"key": "company_urls[]",
 											"value": "https://www.github.com/example",
 											"type": "text",
-											"description": "An optional JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
+											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
 										},
 										{
 											"key": "company_urls[]",
 											"value": "https://www.linkedin.com/company/example",
 											"type": "text",
-											"description": "An optional JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
+											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
+										},
+										{
+											"key": "company_logo",
+											"description": "A square image of your company logo. Allowed formats are PNG, JPEG and JPG with a maximum size of 2 megabytes.",
+											"type": "file",
+											"src": "2V6EuNpsa/ImageSignature.png"
 										}
 									]
 								},
 								"url": "{{root}}/api/{{api_version}}/company"
 							},
-							"status": "Created",
-							"code": 201,
+							"status": "Forbidden",
+							"code": 403,
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
@@ -4548,37 +4424,161 @@
 									"value": "application/json; charset=utf-8"
 								},
 								{
-									"key": "ETag",
-									"value": "W/\"cf336d7c86fdc791866d76a7208e4f52\""
-								},
-								{
 									"key": "Cache-Control",
-									"value": "max-age=0, private, must-revalidate"
+									"value": "no-cache"
 								},
 								{
 									"key": "X-Request-Id",
-									"value": "f6207b7e-d89a-43f5-8101-db2cc34f790b"
+									"value": "c8a0c772-431f-493e-b357-53f75acbd677"
 								},
 								{
 									"key": "X-Runtime",
-									"value": "1.472871"
+									"value": "1.888589"
 								},
 								{
 									"key": "Server-Timing",
-									"value": "cache_read.active_support;dur=0.24, cache_write.active_support;dur=0.12, start_processing.action_controller;dur=0.57, sql.active_record;dur=1075.59, instantiation.active_record;dur=16.13, unpermitted_parameters.action_controller;dur=0.64, render_partial.action_view;dur=2.98, service_upload.active_storage;dur=1.87, enqueue.active_job;dur=1.84, process_action.action_controller;dur=1175.95"
+									"value": "cache_read.active_support;dur=0.25, cache_write.active_support;dur=0.13, start_processing.action_controller;dur=0.54, sql.active_record;dur=697.70, instantiation.active_record;dur=199.13, process_action.action_controller;dur=1294.97"
 								},
 								{
 									"key": "vary",
 									"value": "Origin"
 								},
 								{
-									"key": "Content-Length",
-									"value": "703"
+									"key": "Transfer-Encoding",
+									"value": "chunked"
 								}
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"company\": {\n        \"id\": 3,\n        \"company_name\": \"Example Inc\",\n        \"company_phone\": \"004912345678910\",\n        \"company_email\": \"contact@example.com\",\n        \"company_urls\": [\n            \"https://www.github.com/example\",\n            \"https://www.linkedin.com/company/example\"\n        ],\n        \"company_industry\": \"Technology\",\n        \"company_description\": {\n            \"record_id\": 3,\n            \"body\": \"This is a great company!!!\",\n            \"id\": 3,\n            \"name\": \"company_description\",\n            \"record_type\": \"User\",\n            \"created_at\": \"2024-11-14T21:10:58.625Z\",\n            \"updated_at\": \"2024-11-15T00:33:59.002Z\"\n        },\n        \"company_logo\": \"http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBHdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--57f125d9ab2c94b63f84acd6a9eac33f3d18de9c/ImageSignature.png\",\n        \"company_slug\": \"example-inc\"\n    }\n}"
+							"body": "{\n    \"subscription\": [\n        {\n            \"error\": \"ERR_RAC\",\n            \"description\": \"Proceeding is inhibited by an access restriction\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "467b2161-0380-49f6-8dab-445b2af5f10b",
+							"name": "409 Conflict",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "company_name",
+											"value": "Example Inc",
+											"description": "Your company's official name which will be shown to applicants.",
+											"type": "text"
+										},
+										{
+											"key": "company_slug",
+											"value": "example-inc",
+											"description": "A unique username for your company account which will be used for your company board's url.",
+											"type": "text"
+										},
+										{
+											"key": "company_phone",
+											"value": "004912345678910",
+											"description": "A phone number for the applicants to contact your recruiting team for general inquiries.",
+											"type": "text"
+										},
+										{
+											"key": "company_email",
+											"value": "contact@example.com",
+											"description": "An email for the applicants to contact your recruiting team for general inquiries.",
+											"type": "text"
+										},
+										{
+											"key": "company_industry",
+											"value": "Technology",
+											"description": "An optional tag for your company's field.",
+											"type": "text"
+										},
+										{
+											"key": "company_description",
+											"value": "This is a great company!!!",
+											"description": "A description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML.",
+											"type": "text"
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://www.example.com",
+											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)",
+											"type": "text"
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://www.linkedin.com/company/example",
+											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)",
+											"type": "text"
+										},
+										{
+											"key": "company_logo",
+											"description": "A square image of your company logo. Allowed formats are PNG, JPEG and JPG with a maximum size of 2 megabytes.",
+											"type": "file",
+											"src": "2V6EuNpsa/ImageSignature.png"
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/company"
+							},
+							"status": "Conflict",
+							"code": 409,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "a2b4b494-f03a-4b72-a721-dc9e2b24aed0"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "1.736371"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "cache_read.active_support;dur=0.20, cache_write.active_support;dur=0.13, start_processing.action_controller;dur=0.52, sql.active_record;dur=641.64, instantiation.active_record;dur=55.99, process_action.action_controller;dur=1128.31"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"company\": [\n        {\n            \"error\": \"ERR_REMOVED\",\n            \"description\": \"You already have a company account\"\n        }\n    ]\n}"
 						}
 					]
 				},
@@ -4785,262 +4785,6 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"company\": {\n        \"id\": 3,\n        \"company_name\": \"Example Inc\",\n        \"company_phone\": \"004912345678910\",\n        \"company_email\": \"contact@example.com\",\n        \"company_urls\": [\n            \"https://www.example.com\",\n            \"https://linkedin.com/company/example\"\n        ],\n        \"company_industry\": \"Technology\",\n        \"company_description\": {\n            \"id\": 3,\n            \"name\": \"company_description\",\n            \"body\": \"This is a great company!!!\",\n            \"record_type\": \"User\",\n            \"record_id\": 3,\n            \"created_at\": \"2024-11-14T21:10:58.625Z\",\n            \"updated_at\": \"2024-11-14T21:19:42.226Z\"\n        },\n        \"company_logo\": \"http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--52196d01ed246be8301b5a58f4120307da9eddc1/ImageSignature.png\",\n        \"company_slug\": \"example-inc\"\n    }\n}"
-						},
-						{
-							"id": "404ff9c2-ca85-4c29-aade-1a88e88f3ced",
-							"name": "403 Forbidden",
-							"originalRequest": {
-								"method": "PATCH",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "company_name",
-											"value": "Example Inc",
-											"type": "text",
-											"description": "Your company's official name which will be shown to applicants."
-										},
-										{
-											"key": "company_slug",
-											"value": "example-inc",
-											"type": "text",
-											"description": "A unique username for your company account which will be used for your company board's url."
-										},
-										{
-											"key": "company_phone",
-											"value": "004912345678910",
-											"type": "text",
-											"description": "A phone number for the applicants to contact your recruiting team for general inquiries."
-										},
-										{
-											"key": "company_email",
-											"value": "contact@example.com",
-											"type": "text",
-											"description": "An email for the applicants to contact your recruiting team for general inquiries."
-										},
-										{
-											"key": "company_industry",
-											"value": "Technology",
-											"type": "text",
-											"description": "An optional tag for your company's field."
-										},
-										{
-											"key": "company_description",
-											"value": "This is a great company!!!",
-											"type": "text",
-											"description": "A description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML."
-										},
-										{
-											"key": "company_urls[]",
-											"value": "https://www.github.com/example",
-											"type": "text",
-											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
-										},
-										{
-											"key": "company_urls[]",
-											"value": "https://www.linkedin.com/company/example",
-											"type": "text",
-											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
-										},
-										{
-											"key": "company_logo",
-											"description": "A square image of your company logo. Allowed formats are PNG, JPEG and JPG with a maximum size of 2 megabytes.",
-											"type": "file",
-											"src": "2V6EuNpsa/ImageSignature.png"
-										}
-									]
-								},
-								"url": "{{root}}/api/{{api_version}}/company/{{company_id}}"
-							},
-							"status": "Forbidden",
-							"code": 403,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Frame-Options",
-									"value": "SAMEORIGIN"
-								},
-								{
-									"key": "X-XSS-Protection",
-									"value": "0"
-								},
-								{
-									"key": "X-Content-Type-Options",
-									"value": "nosniff"
-								},
-								{
-									"key": "X-Download-Options",
-									"value": "noopen"
-								},
-								{
-									"key": "X-Permitted-Cross-Domain-Policies",
-									"value": "none"
-								},
-								{
-									"key": "Referrer-Policy",
-									"value": "strict-origin-when-cross-origin"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Cache-Control",
-									"value": "no-cache"
-								},
-								{
-									"key": "X-Request-Id",
-									"value": "c8a0c772-431f-493e-b357-53f75acbd677"
-								},
-								{
-									"key": "X-Runtime",
-									"value": "1.888589"
-								},
-								{
-									"key": "Server-Timing",
-									"value": "cache_read.active_support;dur=0.25, cache_write.active_support;dur=0.13, start_processing.action_controller;dur=0.54, sql.active_record;dur=697.70, instantiation.active_record;dur=199.13, process_action.action_controller;dur=1294.97"
-								},
-								{
-									"key": "vary",
-									"value": "Origin"
-								},
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"subscription\": [\n        {\n            \"error\": \"ERR_RAC\",\n            \"description\": \"Proceeding is inhibited by an access restriction\"\n        }\n    ]\n}"
-						},
-						{
-							"id": "ba3ca3b7-189d-4042-957f-07b3f1719be3",
-							"name": "404 Not Found",
-							"originalRequest": {
-								"method": "PATCH",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "company_name",
-											"value": "Example Inc",
-											"type": "text",
-											"description": "Your company's official name which will be shown to applicants."
-										},
-										{
-											"key": "company_slug",
-											"value": "example-inc",
-											"type": "text",
-											"description": "A unique username for your company account which will be used for your company board's url."
-										},
-										{
-											"key": "company_phone",
-											"value": "004912345678910",
-											"type": "text",
-											"description": "A phone number for the applicants to contact your recruiting team for general inquiries."
-										},
-										{
-											"key": "company_email",
-											"value": "contact@example.com",
-											"type": "text",
-											"description": "An email for the applicants to contact your recruiting team for general inquiries."
-										},
-										{
-											"key": "company_industry",
-											"value": "Technology",
-											"type": "text",
-											"description": "An optional tag for your company's field."
-										},
-										{
-											"key": "company_description",
-											"value": "This is a great company!!!",
-											"type": "text",
-											"description": "A description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML."
-										},
-										{
-											"key": "company_urls[]",
-											"value": "https://www.github.com/example",
-											"type": "text",
-											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
-										},
-										{
-											"key": "company_urls[]",
-											"value": "https://www.linkedin.com/company/example",
-											"type": "text",
-											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
-										},
-										{
-											"key": "company_logo",
-											"description": "A square image of your company logo. Allowed formats are PNG, JPEG and JPG with a maximum size of 2 megabytes.",
-											"type": "file",
-											"src": "2V6EuNpsa/ImageSignature.png"
-										}
-									]
-								},
-								"url": "{{root}}/api/{{api_version}}/company/{{company_id}}"
-							},
-							"status": "Not Found",
-							"code": 404,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Frame-Options",
-									"value": "SAMEORIGIN"
-								},
-								{
-									"key": "X-XSS-Protection",
-									"value": "0"
-								},
-								{
-									"key": "X-Content-Type-Options",
-									"value": "nosniff"
-								},
-								{
-									"key": "X-Download-Options",
-									"value": "noopen"
-								},
-								{
-									"key": "X-Permitted-Cross-Domain-Policies",
-									"value": "none"
-								},
-								{
-									"key": "Referrer-Policy",
-									"value": "strict-origin-when-cross-origin"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Cache-Control",
-									"value": "no-cache"
-								},
-								{
-									"key": "X-Request-Id",
-									"value": "32d6cbfb-afed-438d-811a-60ac0271c017"
-								},
-								{
-									"key": "X-Runtime",
-									"value": "0.305263"
-								},
-								{
-									"key": "Server-Timing",
-									"value": "cache_read.active_support;dur=0.28, cache_write.active_support;dur=0.12, start_processing.action_controller;dur=0.48, sql.active_record;dur=162.23, instantiation.active_record;dur=60.55, halted_callback.action_controller;dur=0.20, process_action.action_controller;dur=182.04"
-								},
-								{
-									"key": "vary",
-									"value": "Origin"
-								},
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"company\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute can not be retrieved\"\n        }\n    ]\n}"
 						},
 						{
 							"id": "ed1db39d-03dd-4ff3-961e-e7d642abc141",
@@ -5298,6 +5042,262 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"error\": \"Bad request\",\n    \"details\": {\n        \"company_email\": [\n            {\n                \"error\": \"ERR_INVALID\",\n                \"description\": \"Attribute is malformed or unknown\",\n                \"value\": \"not-a-email\"\n            }\n        ],\n        \"company_industry\": [\n            {\n                \"error\": \"ERR_LENGTH\",\n                \"description\": \"Attribute length is invalid\",\n                \"count\": 150\n            }\n        ],\n        \"company_logo\": [\n            {\n                \"error\": {\n                    \"error\": \"ERR_INVALID\",\n                    \"description\": \"is too large (max is 2 MB)\"\n                }\n            }\n        ],\n        \"company_urls\": [\n            {\n                \"error\": {\n                    \"error\": \"ERR_INVALID\",\n                    \"description\": \"must be an array of valid URLs\"\n                }\n            }\n        ]\n    }\n}"
+						},
+						{
+							"id": "404ff9c2-ca85-4c29-aade-1a88e88f3ced",
+							"name": "403 Forbidden",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "company_name",
+											"value": "Example Inc",
+											"type": "text",
+											"description": "Your company's official name which will be shown to applicants."
+										},
+										{
+											"key": "company_slug",
+											"value": "example-inc",
+											"type": "text",
+											"description": "A unique username for your company account which will be used for your company board's url."
+										},
+										{
+											"key": "company_phone",
+											"value": "004912345678910",
+											"type": "text",
+											"description": "A phone number for the applicants to contact your recruiting team for general inquiries."
+										},
+										{
+											"key": "company_email",
+											"value": "contact@example.com",
+											"type": "text",
+											"description": "An email for the applicants to contact your recruiting team for general inquiries."
+										},
+										{
+											"key": "company_industry",
+											"value": "Technology",
+											"type": "text",
+											"description": "An optional tag for your company's field."
+										},
+										{
+											"key": "company_description",
+											"value": "This is a great company!!!",
+											"type": "text",
+											"description": "A description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML."
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://www.github.com/example",
+											"type": "text",
+											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://www.linkedin.com/company/example",
+											"type": "text",
+											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
+										},
+										{
+											"key": "company_logo",
+											"description": "A square image of your company logo. Allowed formats are PNG, JPEG and JPG with a maximum size of 2 megabytes.",
+											"type": "file",
+											"src": "2V6EuNpsa/ImageSignature.png"
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/company/{{company_id}}"
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "c8a0c772-431f-493e-b357-53f75acbd677"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "1.888589"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "cache_read.active_support;dur=0.25, cache_write.active_support;dur=0.13, start_processing.action_controller;dur=0.54, sql.active_record;dur=697.70, instantiation.active_record;dur=199.13, process_action.action_controller;dur=1294.97"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"subscription\": [\n        {\n            \"error\": \"ERR_RAC\",\n            \"description\": \"Proceeding is inhibited by an access restriction\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "ba3ca3b7-189d-4042-957f-07b3f1719be3",
+							"name": "404 Not Found",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "company_name",
+											"value": "Example Inc",
+											"type": "text",
+											"description": "Your company's official name which will be shown to applicants."
+										},
+										{
+											"key": "company_slug",
+											"value": "example-inc",
+											"type": "text",
+											"description": "A unique username for your company account which will be used for your company board's url."
+										},
+										{
+											"key": "company_phone",
+											"value": "004912345678910",
+											"type": "text",
+											"description": "A phone number for the applicants to contact your recruiting team for general inquiries."
+										},
+										{
+											"key": "company_email",
+											"value": "contact@example.com",
+											"type": "text",
+											"description": "An email for the applicants to contact your recruiting team for general inquiries."
+										},
+										{
+											"key": "company_industry",
+											"value": "Technology",
+											"type": "text",
+											"description": "An optional tag for your company's field."
+										},
+										{
+											"key": "company_description",
+											"value": "This is a great company!!!",
+											"type": "text",
+											"description": "A description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML."
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://www.github.com/example",
+											"type": "text",
+											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://www.linkedin.com/company/example",
+											"type": "text",
+											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
+										},
+										{
+											"key": "company_logo",
+											"description": "A square image of your company logo. Allowed formats are PNG, JPEG and JPG with a maximum size of 2 megabytes.",
+											"type": "file",
+											"src": "2V6EuNpsa/ImageSignature.png"
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/company/{{company_id}}"
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "32d6cbfb-afed-438d-811a-60ac0271c017"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.305263"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "cache_read.active_support;dur=0.28, cache_write.active_support;dur=0.12, start_processing.action_controller;dur=0.48, sql.active_record;dur=162.23, instantiation.active_record;dur=60.55, halted_callback.action_controller;dur=0.20, process_action.action_controller;dur=182.04"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"company\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute can not be retrieved\"\n        }\n    ]\n}"
 						}
 					]
 				},
