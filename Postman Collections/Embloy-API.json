@@ -1283,7 +1283,97 @@
 						},
 						"description": "The provided access token is first verified, and then a user specific job feed is generated and returned."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "dd2dcedc-ee95-46a0-ae19-f01c5cfdf9d3",
+							"name": "410 Gone",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{root}}/api/{{api_version}}/jobs?longitude=-0.1293754&latitude=51.5207794",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"{{api_version}}",
+										"jobs"
+									],
+									"query": [
+										{
+											"key": "longitude",
+											"value": "-0.1293754"
+										},
+										{
+											"key": "latitude",
+											"value": "51.5207794"
+										}
+									]
+								}
+							},
+							"status": "Gone",
+							"code": 410,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "88bac9be-87c8-4821-95ae-6e38032c1254"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.260798"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "cache_read.active_support;dur=0.23, cache_write.active_support;dur=0.11, start_processing.action_controller;dur=0.49, sql.active_record;dur=154.48, instantiation.active_record;dur=0.31, process_action.action_controller;dur=143.05"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"This endpoint is deprecated.\"\n}"
+						}
+					]
 				},
 				{
 					"name": "Search jobs",
@@ -1561,7 +1651,7 @@
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"jobs\": [\n        {\n            \"id\": 3,\n            \"title\": \"Organic coffee shop looking for a barista\",\n            \"job_type\": \"Food\",\n            \"job_slug\": \"23fc4850-c26d-4770-bf26-5864c47e0492\",\n            \"job_status\": \"listed\",\n            \"referrer_url\": \"https://embloy.com/\",\n            \"salary\": 18,\n            \"currency\": \"USD\",\n            \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n            \"duration\": 20,\n            \"code_lang\": null,\n            \"longitude\": 11.613942994844358,\n            \"latitude\": 48.1951076,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"applications_count\": 0,\n            \"created_at\": \"2024-11-15T15:54:40.328Z\",\n            \"updated_at\": \"2024-11-15T15:54:41.085Z\",\n            \"employer\": {\n                \"employer_email\": \"info@embloy.com\",\n                \"employer_name\": \"Embloy Platforms\",\n                \"employer_phone\": \"004912345678910\",\n                \"employer_image_url\": \"http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhNblZqT0dGb2JqaG5lVE5qYVhobGFXZDBPR3A1YkRRMGEySmhkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW14dloyOHRiR2xuYUhRdWNHNW5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRzYjJkdkxXeHBaMmgwTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkVYTmxjblpwWTJWZmJtRnRaVG9LYkc5allXdz0iLCJleHAiOiIyMDI0LTExLTE1VDE2OjQ3OjAwLjUzNFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--9ff69bddb64fefd270c8532678aab3e1af38f6e6/logo-light.png\"\n            }\n        },\n        {\n            \"id\": 6,\n            \"title\": \"Organic coffee shop looking for a barista\",\n            \"job_type\": \"Food\",\n            \"job_slug\": \"44c382f2-c5d9-4e39-8843-f39ade63a756\",\n            \"job_status\": \"listed\",\n            \"referrer_url\": \"https://embloy.com/\",\n            \"salary\": 18,\n            \"currency\": \"USD\",\n            \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n            \"duration\": 20,\n            \"code_lang\": null,\n            \"longitude\": 11.613942994844358,\n            \"latitude\": 48.1951076,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"applications_count\": 0,\n            \"created_at\": \"2024-11-15T16:02:35.523Z\",\n            \"updated_at\": \"2024-11-15T16:02:36.269Z\",\n            \"employer\": {\n                \"employer_email\": \"info@embloy.com\",\n                \"employer_name\": \"Embloy Platforms\",\n                \"employer_phone\": \"004912345678910\",\n                \"employer_image_url\": \"http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhNblZqT0dGb2JqaG5lVE5qYVhobGFXZDBPR3A1YkRRMGEySmhkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW14dloyOHRiR2xuYUhRdWNHNW5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRzYjJkdkxXeHBaMmgwTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkVYTmxjblpwWTJWZmJtRnRaVG9LYkc5allXdz0iLCJleHAiOiIyMDI0LTExLTE1VDE2OjQ3OjAwLjU1M1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--227d1892126395b972b534d102c4c45ea13fffd1/logo-light.png\"\n            }\n        }\n    ]\n}"
+							"body": "{\n    \"jobs\": [\n        {\n            \"id\": 2,\n            \"title\": \"Organic coffee shop looking for a barista\",\n            \"job_type\": \"Food\",\n            \"job_slug\": \"72f6d01e-55e5-4fa7-97dd-65af26494695\",\n            \"job_status\": \"listed\",\n            \"referrer_url\": \"https://embloy.com/\",\n            \"salary\": 18,\n            \"currency\": \"USD\",\n            \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n            \"duration\": 20,\n            \"code_lang\": null,\n            \"longitude\": 11.613942994844358,\n            \"latitude\": 48.1951076,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"applications_count\": 0,\n            \"created_at\": \"2024-11-15T15:20:35.491Z\",\n            \"updated_at\": \"2024-11-15T15:20:36.334Z\"\n        },\n        {\n            \"id\": 3,\n            \"title\": \"Organic coffee shop looking for a barista\",\n            \"job_type\": \"Food\",\n            \"job_slug\": \"23fc4850-c26d-4770-bf26-5864c47e0492\",\n            \"job_status\": \"listed\",\n            \"referrer_url\": \"https://embloy.com/\",\n            \"salary\": 18,\n            \"currency\": \"USD\",\n            \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n            \"duration\": 20,\n            \"code_lang\": null,\n            \"longitude\": 11.613942994844358,\n            \"latitude\": 48.1951076,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"applications_count\": 0,\n            \"created_at\": \"2024-11-15T15:54:40.328Z\",\n            \"updated_at\": \"2024-11-15T15:54:41.085Z\"\n        }\n    ]\n}"
 						}
 					]
 				},
@@ -11581,7 +11671,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "bb7a6472-4921-42cc-9cd4-c4445c694eef",
+				"id": "04d4ce4c-dcfc-4dea-9869-e6b69074174b",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -11591,7 +11681,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "7be3b22d-ec04-4dc8-9e58-3424f070957c",
+				"id": "35704ff0-4e10-490a-a0be-047af6ca1816",
 				"type": "text/javascript",
 				"exec": [
 					""
