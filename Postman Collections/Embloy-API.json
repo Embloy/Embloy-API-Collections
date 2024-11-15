@@ -3134,7 +3134,7 @@
 						"method": "GET",
 						"header": [],
 						"url": "{{root}}/api/{{api_version}}/company/{{company_id}}/board",
-						"description": "This endpoint returns all listed jobs, including relevant information for a company's job page.\n\nOnly accessible for job boards created by subscribed company users or sandbox users."
+						"description": "This endpoint returns all listed jobs, including relevant information for a company's job page.\n\nOnly accessible for job boards created by subscribed company users or sandbox users.\n\nNote that you can replace the `company_id` with the `company_slug` in this endpoint."
 					},
 					"response": [
 						{
