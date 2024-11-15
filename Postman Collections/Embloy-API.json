@@ -10851,7 +10851,7 @@
 					},
 					"response": [
 						{
-							"id": "3a12aba6-d662-404d-8b58-c161a1b2cacf",
+							"id": "86fdaf32-5381-4940-a285-f15a2b272e67",
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "GET",
@@ -10863,15 +10863,65 @@
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
 									"key": "Content-Type",
-									"value": "application/json",
-									"description": "",
-									"type": "text"
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3ffb9bd472bb59ade696ff24d3618d4b\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "b2cdcfa9-d434-429a-a60e-54d4aec8f407"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "1.330632"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "cache_read.active_support;dur=0.20, cache_write.active_support;dur=0.09, start_processing.action_controller;dur=0.59, sql.active_record;dur=551.97, instantiation.active_record;dur=115.30, service_url.active_storage;dur=1.92, process_action.action_controller;dur=787.17"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Length",
+									"value": "5116"
 								}
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"query_result\": {\n        \"job\": \"{\\\"job_id\\\":2,\\\"job_type\\\":null,\\\"job_slug\\\":\\\"ada5b44d-e389-47a0-ab7f-7fd8fcd048cf\\\",\\\"job_type_value\\\":null,\\\"activity_status\\\":1,\\\"job_status\\\":\\\"listed\\\",\\\"user_id\\\":1,\\\"referrer_url\\\":null,\\\"duration\\\":1,\\\"code_lang\\\":null,\\\"title\\\":null,\\\"position\\\":null,\\\"description\\\":{\\\"id\\\":2,\\\"name\\\":\\\"description\\\",\\\"body\\\":null,\\\"record_type\\\":\\\"Job\\\",\\\"record_id\\\":2,\\\"created_at\\\":\\\"2024-02-13T13:05:26.477Z\\\",\\\"updated_at\\\":\\\"2024-02-13T13:05:26.477Z\\\"},\\\"key_skills\\\":null,\\\"salary\\\":null,\\\"euro_salary\\\":null,\\\"relevance_score\\\":null,\\\"currency\\\":null,\\\"start_slot\\\":null,\\\"longitude\\\":0.0,\\\"latitude\\\":0.0,\\\"country_code\\\":null,\\\"postal_code\\\":null,\\\"city\\\":null,\\\"address\\\":null,\\\"view_count\\\":0,\\\"created_at\\\":\\\"2024-02-13T13:05:26.380Z\\\",\\\"updated_at\\\":\\\"2024-02-13T13:05:27.104Z\\\",\\\"applications_count\\\":0,\\\"employer_rating\\\":0,\\\"job_notifications\\\":\\\"1\\\",\\\"boost\\\":0,\\\"cv_required\\\":false,\\\"allowed_cv_formats\\\":[\\\".pdf\\\",\\\".docx\\\",\\\".txt\\\",\\\".xml\\\"],\\\"deleted_at\\\":null,\\\"job_value\\\":\\\"01010000A0E6100000000000000000000000000000000000000000000000001440\\\",\\\"allowed_cv_format\\\":null,\\\"application_options\\\":[],\\\"image_url\\\":\\\"https://embloy.onrender.com/assets/img/features_3.png\\\"}\"\n    }\n}"
+							"body": "{\n    \"job\": {\n        \"id\": 2,\n        \"title\": \"Organic coffee shop looking for a barista\",\n        \"job_type\": \"Food\",\n        \"job_slug\": \"72f6d01e-55e5-4fa7-97dd-65af26494695\",\n        \"job_status\": \"listed\",\n        \"referrer_url\": \"https://embloy.com/\",\n        \"salary\": 18,\n        \"currency\": \"USD\",\n        \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n        \"duration\": 20,\n        \"code_lang\": null,\n        \"longitude\": 11.613942994844358,\n        \"latitude\": 48.1951076,\n        \"country_code\": null,\n        \"postal_code\": null,\n        \"city\": null,\n        \"address\": null,\n        \"view_count\": 0,\n        \"applications_count\": 0,\n        \"created_at\": \"2024-11-15T15:20:35.491Z\",\n        \"updated_at\": \"2024-11-15T15:20:36.334Z\",\n        \"image_url\": null,\n        \"description\": {\n            \"id\": 5,\n            \"name\": \"description\",\n            \"body\": \"<div>Work in the greatest espresso bar in town and make making others happy your paid job!</div>\",\n            \"record_type\": \"Job\",\n            \"record_id\": 2,\n            \"created_at\": \"2024-11-15T15:20:36.306Z\",\n            \"updated_at\": \"2024-11-15T15:20:36.306Z\"\n        },\n        \"employer\": {\n            \"employer_email\": \"info@embloy.com\",\n            \"employer_name\": \"Embloy Platforms\",\n            \"employer_phone\": \"004912345678910\",\n            \"employer_image_url\": \"http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhNblZqT0dGb2JqaG5lVE5qYVhobGFXZDBPR3A1YkRRMGEySmhkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW14dloyOHRiR2xuYUhRdWNHNW5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRzYjJkdkxXeHBaMmgwTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkVYTmxjblpwWTJWZmJtRnRaVG9LYkc5allXdz0iLCJleHAiOiIyMDI0LTExLTE1VDE2OjM5OjQ3LjYyOFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--d69558a6c8060199e26bb02fbd4f74f28b8f55cd/logo-light.png\"\n        },\n        \"application_options\": [\n            {\n                \"id\": 1,\n                \"job_id\": 2,\n                \"ext_id\": \"embloy__ab53adff-e7d7-47e3-be24-9a6c80ffe446\",\n                \"question\": \"Did you ever work as a barista?\",\n                \"question_type\": \"yes_no\",\n                \"required\": true,\n                \"options\": [],\n                \"created_at\": \"2024-11-15T15:20:35.554Z\",\n                \"updated_at\": \"2024-11-15T15:20:35.554Z\",\n                \"deleted_at\": null\n            },\n            {\n                \"id\": 2,\n                \"job_id\": 2,\n                \"ext_id\": \"embloy__03df6ef9-b589-4aaf-b1be-a41eeae4ae3a\",\n                \"question\": \"If yes, where and for how long?\",\n                \"question_type\": \"long_text\",\n                \"required\": false,\n                \"options\": [],\n                \"created_at\": \"2024-11-15T15:20:35.610Z\",\n                \"updated_at\": \"2024-11-15T15:20:35.610Z\",\n                \"deleted_at\": null\n            },\n            {\n                \"id\": 3,\n                \"job_id\": 2,\n                \"ext_id\": \"embloy__f8e869c6-2f77-4c65-accf-3d00554d1257\",\n                \"question\": \"What is your favorite coffee?\",\n                \"question_type\": \"short_text\",\n                \"required\": true,\n                \"options\": [],\n                \"created_at\": \"2024-11-15T15:20:35.668Z\",\n                \"updated_at\": \"2024-11-15T15:20:35.668Z\",\n                \"deleted_at\": null\n            },\n            {\n                \"id\": 4,\n                \"job_id\": 2,\n                \"ext_id\": \"embloy__1772d194-552e-43bd-95da-e51b9edbc092\",\n                \"question\": \"How many cups of coffee do you drink per day?\",\n                \"question_type\": \"number\",\n                \"required\": true,\n                \"options\": [],\n                \"created_at\": \"2024-11-15T15:20:35.724Z\",\n                \"updated_at\": \"2024-11-15T15:20:35.724Z\",\n                \"deleted_at\": null\n            },\n            {\n                \"id\": 5,\n                \"job_id\": 2,\n                \"ext_id\": \"embloy__1a0f4293-3a10-436b-84f7-fc03930825a5\",\n                \"question\": \"What is the most important thing when preparing coffee?\",\n                \"question_type\": \"long_text\",\n                \"required\": true,\n                \"options\": [],\n                \"created_at\": \"2024-11-15T15:20:35.784Z\",\n                \"updated_at\": \"2024-11-15T15:20:35.784Z\",\n                \"deleted_at\": null\n            },\n            {\n                \"id\": 6,\n                \"job_id\": 2,\n                \"ext_id\": \"embloy__7dbca07e-1672-4cb7-9b1a-ca6f31da8d00\",\n                \"question\": \"When did you last prepare coffee?\",\n                \"question_type\": \"date\",\n                \"required\": false,\n                \"options\": [],\n                \"created_at\": \"2024-11-15T15:20:35.840Z\",\n                \"updated_at\": \"2024-11-15T15:20:35.840Z\",\n                \"deleted_at\": null\n            },\n            {\n                \"id\": 7,\n                \"job_id\": 2,\n                \"ext_id\": \"embloy__0d00738a-82b7-42b5-82c6-17d631ff8f09\",\n                \"question\": \"Provide a link to a video of you preparing coffee.\",\n                \"question_type\": \"link\",\n                \"required\": false,\n                \"options\": [],\n                \"created_at\": \"2024-11-15T15:20:35.892Z\",\n                \"updated_at\": \"2024-11-15T15:20:35.892Z\",\n                \"deleted_at\": null\n            },\n            {\n                \"id\": 8,\n                \"job_id\": 2,\n                \"ext_id\": \"embloy__aee562a1-5809-4002-be0f-002ec8023528\",\n                \"question\": \"Should Capuccino be served after 11am?\",\n                \"question_type\": \"multiple_choice\",\n                \"required\": true,\n                \"options\": [\n                    \"No way, it should be illegal\",\n                    \"Yes, but for italians it should remain a crime\",\n                    \"Yes, it's a free world\",\n                    \"Is it 11am already?\"\n                ],\n                \"created_at\": \"2024-11-15T15:20:35.945Z\",\n                \"updated_at\": \"2024-11-15T15:20:35.945Z\",\n                \"deleted_at\": null\n            },\n            {\n                \"id\": 9,\n                \"job_id\": 2,\n                \"ext_id\": \"embloy__43d3671d-a254-4cca-956b-86bc7f60a281\",\n                \"question\": \"Are you addicted to coffee?\",\n                \"question_type\": \"single_choice\",\n                \"required\": true,\n                \"options\": [\n                    \"Yes\",\n                    \"No\",\n                    \"Maybe...\",\n                    \"I can neither confirm nor deny.\"\n                ],\n                \"created_at\": \"2024-11-15T15:20:36.046Z\",\n                \"updated_at\": \"2024-11-15T15:20:36.046Z\",\n                \"deleted_at\": null\n            },\n            {\n                \"id\": 10,\n                \"job_id\": 2,\n                \"ext_id\": \"embloy__98f02371-ae26-49fe-ba58-8ba95e468211\",\n                \"question\": \"Upload your CV\",\n                \"question_type\": \"file\",\n                \"required\": false,\n                \"options\": [\n                    \"pdf\"\n                ],\n                \"created_at\": \"2024-11-15T15:20:36.110Z\",\n                \"updated_at\": \"2024-11-15T15:20:36.110Z\",\n                \"deleted_at\": null\n            },\n            {\n                \"id\": 11,\n                \"job_id\": 2,\n                \"ext_id\": \"embloy__9957ca0a-f3a0-4199-b2de-dc07376153f9\",\n                \"question\": \"Upload an image of a perfect Espresso\",\n                \"question_type\": \"file\",\n                \"required\": false,\n                \"options\": [\n                    \"svg\",\n                    \"png\",\n                    \"jpeg\",\n                    \"jpg\"\n                ],\n                \"created_at\": \"2024-11-15T15:20:36.176Z\",\n                \"updated_at\": \"2024-11-15T15:20:36.176Z\",\n                \"deleted_at\": null\n            },\n            {\n                \"id\": 12,\n                \"job_id\": 2,\n                \"ext_id\": \"embloy__eea0876f-5e2b-49b6-bb6c-3d77470b3fd9\",\n                \"question\": \"Upload a video of you preparing coffee\",\n                \"question_type\": \"file\",\n                \"required\": false,\n                \"options\": [\n                    \"mp4\",\n                    \"avi\",\n                    \"mov\"\n                ],\n                \"created_at\": \"2024-11-15T15:20:36.229Z\",\n                \"updated_at\": \"2024-11-15T15:20:36.229Z\",\n                \"deleted_at\": null\n            }\n        ]\n    }\n}"
 						},
 						{
 							"id": "136f7641-0ebc-4f21-85fe-71f49b1889f3",
