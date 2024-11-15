@@ -2154,6 +2154,194 @@
 					},
 					"response": [
 						{
+							"id": "8080212f-4019-4f06-927d-4732dd199638",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "TestTitle",
+											"type": "text",
+											"description": "Job's title."
+										},
+										{
+											"key": "job_type",
+											"value": "Retail",
+											"type": "text",
+											"description": "Job category"
+										},
+										{
+											"key": "start_slot",
+											"value": "{{$randomDateFuture}}",
+											"type": "text",
+											"description": "The timestamp of when the job starts"
+										},
+										{
+											"key": "position",
+											"value": "CEO",
+											"type": "text",
+											"description": "The open position"
+										},
+										{
+											"key": "key_skills",
+											"value": "Entrepreneurship",
+											"type": "text",
+											"description": "Key skills relevant for this job"
+										},
+										{
+											"key": "duration",
+											"value": "9",
+											"type": "text",
+											"description": "The job duration in days",
+											"disabled": true
+										},
+										{
+											"key": "salary",
+											"value": "9",
+											"type": "text",
+											"description": "The job's salary",
+											"disabled": true
+										},
+										{
+											"key": "description",
+											"value": "<div>Hier steht die Desription</div>",
+											"type": "text",
+											"description": "A brief description (<500characters) of the job",
+											"disabled": true
+										},
+										{
+											"key": "job_status",
+											"value": "unlisted",
+											"type": "text",
+											"description": "Visibility status",
+											"disabled": true
+										},
+										{
+											"key": "longitude",
+											"value": "11.613942994844358",
+											"type": "text",
+											"description": "The job's longitde",
+											"disabled": true
+										},
+										{
+											"key": "latitude",
+											"value": "48.1951076",
+											"type": "text",
+											"description": "The job's latitude",
+											"disabled": true
+										},
+										{
+											"key": "job_notifications",
+											"value": "1",
+											"type": "text",
+											"description": "Enable/Disable notifications for this job",
+											"disabled": true
+										},
+										{
+											"key": "currency",
+											"value": "EUR",
+											"type": "text",
+											"description": "Your preferred currency",
+											"disabled": true
+										},
+										{
+											"key": "image_url",
+											"type": "file",
+											"description": "Cover image of your job posting",
+											"src": "2xKuRUK3o/logo-light.png"
+										},
+										{
+											"key": "job_slug",
+											"value": "44b52dd0-48f2-4c1f-a657-facd405c905fabcv",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{root}}/api/{{api_version}}/jobs?id={{own_job_id}}",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"{{api_version}}",
+										"jobs"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "{{own_job_id}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"81dc57cda3d27ed5d61ba285a11282f6\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "0c9f7bbc-c768-4c9f-846d-208a1879aa2f"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "3.380276"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1872"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"job\": {\n        \"id\": 19,\n        \"title\": \"TestTitle\",\n        \"job_type\": \"Retail\",\n        \"job_slug\": \"lever__2d461a67-0c28-49b1-abc2-51d4b1c26b79__sandbox\",\n        \"job_status\": \"listed\",\n        \"referrer_url\": \"https://jobs.sandbox.lever.co/de/2d461a67-0c28-49b1-abc2-51d4b1c26b79\",\n        \"salary\": null,\n        \"currency\": null,\n        \"start_slot\": \"2025-08-03T23:38:32.000Z\",\n        \"duration\": 1,\n        \"code_lang\": null,\n        \"longitude\": 0,\n        \"latitude\": 0,\n        \"country_code\": \"AS\",\n        \"postal_code\": null,\n        \"city\": \"STUTTGART\",\n        \"address\": null,\n        \"view_count\": 0,\n        \"applications_count\": 0,\n        \"created_at\": \"2024-09-11T19:37:47.116Z\",\n        \"updated_at\": \"2024-11-15T16:56:37.231Z\",\n        \"image_url\": \"https://embloy.s3.eu-central-1.amazonaws.com/66ntaisxzh0k6w28jrrsxohxiqg2?response-content-disposition=inline%3B%20filename%3D%22logo-light.png%22%3B%20filename%2A%3DUTF-8%27%27logo-light.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA47CRXKRHNYNTRWHT%2F20241115%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20241115T165637Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=47090c7ee80e00015fa20369cb568a90a75ca91e67998b9b8260e47da6c39970\",\n        \"employer\": {\n            \"employer_email\": \"sadmin@levertest.com\",\n            \"employer_name\": \"Lever Sandbox Team\",\n            \"employer_phone\": \"123456789.0\",\n            \"employer_image_url\": \"https://embloy.s3.eu-central-1.amazonaws.com/d6or2jox1jgxmrdxy2ghmjytt5hg?response-content-disposition=inline%3B%20filename%3D%22291963462_416164237106500_3224816745991309615_n.jpg%22%3B%20filename%2A%3DUTF-8%27%27291963462_416164237106500_3224816745991309615_n.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA47CRXKRHNYNTRWHT%2F20241115%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20241115T165637Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=ce02643e5831c5f7782c937e37ce57da79f0de9a1e28e882a52f664b60aa983c\"\n        },\n        \"application_options\": []\n    }\n}"
+						},
+						{
 							"id": "02711095-d497-41e7-9be7-4bcd89f62385",
 							"name": "400 Bad Request",
 							"originalRequest": {
@@ -2818,29 +3006,6 @@
 						"description": "The provided access token is first verified, and then a list of all the job applications associated with its owner is generated."
 					},
 					"response": [
-						{
-							"id": "3fec3698-4e0c-47aa-bbc3-a91f81778fda",
-							"name": "200 OK",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": "{{root}}/api/{{api_version}}/user/applications"
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json",
-									"description": "",
-									"type": "text"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"applications\": [\n        {\n            \"job_id\": 2,\n            \"user_id\": 1,\n            \"updated_at\": \"2023-02-27T23:06:10.000Z\",\n            \"created_at\": \"2023-02-27T23:06:10.000Z\",\n            \"status\": \"-1\",\n            \"application_text\": \"Hello World\",\n            \"application_documents\": null,\n            \"response\": \"Not good enough!\",\n            \"deleted_at\": null\n        }\n    ]\n}"
-						},
 						{
 							"id": "f9054ce0-56f7-4971-a515-939fcbd1d57b",
 							"name": "204 No Content",
