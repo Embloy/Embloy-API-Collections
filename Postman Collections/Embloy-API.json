@@ -2407,7 +2407,7 @@
 					},
 					"response": [
 						{
-							"id": "8d852d8b-5278-4254-9d25-11d239ff28d8",
+							"id": "c06dab56-074b-4ef6-8f8c-6957a083aa41",
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "GET",
@@ -2419,15 +2419,73 @@
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
 									"key": "Content-Type",
-									"value": "application/json",
-									"description": "",
-									"type": "text"
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "X-bullet-footer-text",
+									"value": "[\"user: cb  AVOID eager loading detected    Job =\\u003e [:application_options]\\n  Remove from your query: .includes([:application_options])\"]"
+								},
+								{
+									"key": "X-bullet-console-text",
+									"value": "[\"user: cb\\nAVOID eager loading detected\\n  Job =\\u003e [:application_options]\\n  Remove from your query: .includes([:application_options])\\nCall stack\\n  /home/cb/github/tmp/Embloy-Core-Server/app/models/dao/job_dao.rb:35:in `dao'\\n  /home/cb/github/tmp/Embloy-Core-Server/app/controllers/api/v0/user_controller.rb:24:in `block in own_jobs'\\n  /home/cb/github/tmp/Embloy-Core-Server/app/controllers/api/v0/user_controller.rb:24:in `map'\\n  /home/cb/github/tmp/Embloy-Core-Server/app/controllers/api/v0/user_controller.rb:24:in `own_jobs'\\n\\n\"]"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"bb86fb60717b6339fdba2fa2630edc97\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "a09d031d-3724-43f7-9ab8-b7d7f3c63dca"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "1.366807"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "cache_read.active_support;dur=0.34, cache_write.active_support;dur=0.18, start_processing.action_controller;dur=0.48, sql.active_record;dur=463.18, instantiation.active_record;dur=125.21, process_action.action_controller;dur=760.92"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Length",
+									"value": "13253"
 								}
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"jobs\": [\n        {\n            \"job_id\": 3,\n            \"job_type\": \"Marketing\",\n            \"job_slug\": \"92fc00f6-8a3d-46ce-a485-371ab1588347\",\n            \"job_type_value\": 25,\n            \"job_status\": 0,\n            \"status\": \"public\",\n            \"user_id\": 2,\n            \"referrer_url\": \"https://example.embloy.com\",\n            \"duration\": 9,\n            \"code_lang\": null,\n            \"title\": \"CEO Wanted\",\n            \"position\": \"CEO\",\n            \"description\": {\n                \"id\": 3,\n                \"name\": \"description\",\n                \"body\": \"<div>This is the description</div>\",\n                \"record_type\": \"Job\",\n                \"record_id\": 3,\n                \"created_at\": \"2024-01-26T12:26:08.356Z\",\n                \"updated_at\": \"2024-01-26T12:26:08.356Z\"\n            },\n            \"key_skills\": \"Entrepreneurship\",\n            \"salary\": 9,\n            \"euro_salary\": null,\n            \"relevance_score\": null,\n            \"currency\": \"EUR\",\n            \"start_slot\": \"2024-10-20T15:36:42.000Z\",\n            \"longitude\": 11.613942994844358,\n            \"latitude\": 48.1951076,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"created_at\": \"2024-01-26T12:26:08.243Z\",\n            \"updated_at\": \"2024-01-26T12:26:11.448Z\",\n            \"applications_count\": 0,\n            \"employer_rating\": 0,\n            \"job_notifications\": \"1\",\n            \"boost\": 0,\n            \"cv_required\": true,\n            \"allowed_cv_formats\": [\n                \".pdf\",\n                \".docx\",\n                \".txt\",\n                \".xml\"\n            ],\n            \"deleted_at\": null,\n            \"job_value\": \"01010000A0E6100000BC992C49F9184840FCED78BC563A27400000000000003940\",\n            \"application_options\": [\n                {\n                    \"id\": 1,\n                    \"job_id\": 3,\n                    \"question\": \"Do you have experience with marketing?\",\n                    \"question_type\": \"yes_no\",\n                    \"required\": true,\n                    \"options\": [\n                        \"\"\n                    ],\n                    \"created_at\": \"2024-01-26T12:26:08.277Z\",\n                    \"updated_at\": \"2024-01-26T12:26:08.277Z\",\n                    \"deleted_at\": null\n                },\n                {\n                    \"id\": 2,\n                    \"job_id\": 3,\n                    \"question\": \"What is your highest level of education?\",\n                    \"question_type\": \"single_choice\",\n                    \"required\": true,\n                    \"options\": [\n                        \"High School\",\n                        \"Bachelor's Degree\",\n                        \"Master's Degree\"\n                    ],\n                    \"created_at\": \"2024-01-26T12:26:08.301Z\",\n                    \"updated_at\": \"2024-01-26T12:26:08.301Z\",\n                    \"deleted_at\": null\n                },\n                {\n                    \"id\": 3,\n                    \"job_id\": 3,\n                    \"question\": \"Link to your GitHub profile:\",\n                    \"question_type\": \"link\",\n                    \"required\": true,\n                    \"options\": [],\n                    \"created_at\": \"2024-01-26T12:26:08.320Z\",\n                    \"updated_at\": \"2024-01-26T12:26:08.320Z\",\n                    \"deleted_at\": null\n                },\n                {\n                    \"id\": 4,\n                    \"job_id\": 3,\n                    \"question\": \"Is there anything else you want to tell us?\",\n                    \"question_type\": \"text\",\n                    \"required\": false,\n                    \"options\": [],\n                    \"created_at\": \"2024-01-26T12:26:08.335Z\",\n                    \"updated_at\": \"2024-01-26T12:26:08.335Z\",\n                    \"deleted_at\": null\n                }\n            ],\n            \"image_url\": \"https://f005.backblazeb2.com/file/TestEmbloy/517k9e5v7onnobx1wnbhj1mmabsd?Authorization=3_20240126122937_807889b1223ef09a6c6aa224_018f88ce4739a6be5b7703ad431ff90188525822_005_20240202122937_0028_dnld\"\n        },\n        {\n            \"job_id\": 2,\n            \"job_type\": \"Marketing\",\n            \"job_slug\": \"b627a33a-c724-431b-9ae1-8b293eaeabba\",\n            \"job_type_value\": 25,\n            \"job_status\": 0,\n            \"status\": \"public\",\n            \"user_id\": 2,\n            \"referrer_url\": \"https://example.embloy.com\",\n            \"duration\": 9,\n            \"code_lang\": null,\n            \"title\": \"CEO Wanted\",\n            \"position\": \"CEO\",\n            \"description\": {\n                \"id\": 2,\n                \"name\": \"description\",\n                \"body\": \"<div>This is the description</div>\",\n                \"record_type\": \"Job\",\n                \"record_id\": 2,\n                \"created_at\": \"2024-01-26T12:20:40.020Z\",\n                \"updated_at\": \"2024-01-26T12:20:40.020Z\"\n            },\n            \"key_skills\": \"Entrepreneurship\",\n            \"salary\": 9,\n            \"euro_salary\": null,\n            \"relevance_score\": null,\n            \"currency\": \"EUR\",\n            \"start_slot\": \"2024-12-18T21:23:20.000Z\",\n            \"longitude\": 11.613942994844358,\n            \"latitude\": 48.1951076,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"created_at\": \"2024-01-26T12:20:39.980Z\",\n            \"updated_at\": \"2024-01-26T12:20:42.715Z\",\n            \"applications_count\": 0,\n            \"employer_rating\": 0,\n            \"job_notifications\": \"1\",\n            \"boost\": 0,\n            \"cv_required\": true,\n            \"allowed_cv_formats\": [\n                \".pdf\",\n                \".docx\",\n                \".txt\",\n                \".xml\"\n            ],\n            \"deleted_at\": null,\n            \"job_value\": \"01010000A0E6100000BC992C49F9184840FCED78BC563A27400000000000003940\",\n            \"application_options\": [],\n            \"image_url\": \"https://f005.backblazeb2.com/file/TestEmbloy/lco966ljfq78423wz26zy654nkuu?Authorization=3_20240126122938_ec0e6c912248be76c8743024_224b05738b575e1cda4bf072cbfb9cca7d898281_005_20240202122938_0028_dnld\"\n        }\n    ]\n}"
+							"body": "{\n    \"jobs\": [\n        {\n            \"id\": 3,\n            \"title\": \"Organic coffee shop looking for a barista\",\n            \"job_type\": \"Food\",\n            \"job_slug\": \"23fc4850-c26d-4770-bf26-5864c47e0492\",\n            \"job_status\": \"listed\",\n            \"referrer_url\": \"https://embloy.com/\",\n            \"salary\": 18,\n            \"description\": {\n                \"id\": 6,\n                \"name\": \"description\",\n                \"body\": \"<div>Work in the greatest espresso bar in town and make making others happy your paid job!</div>\",\n                \"record_type\": \"Job\",\n                \"record_id\": 3,\n                \"created_at\": \"2024-11-15T15:54:41.058Z\",\n                \"updated_at\": \"2024-11-15T15:54:41.058Z\"\n            },\n            \"currency\": \"USD\",\n            \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n            \"duration\": 20,\n            \"code_lang\": null,\n            \"longitude\": 11.613942994844358,\n            \"latitude\": 48.1951076,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"applications_count\": 0,\n            \"created_at\": \"2024-11-15T15:54:40.328Z\",\n            \"updated_at\": \"2024-11-15T15:54:41.085Z\",\n            \"image_url\": null\n        },\n        {\n            \"id\": 2,\n            \"title\": \"Organic coffee shop looking for a barista\",\n            \"job_type\": \"Food\",\n            \"job_slug\": \"72f6d01e-55e5-4fa7-97dd-65af26494695\",\n            \"job_status\": \"listed\",\n            \"referrer_url\": \"https://embloy.com/\",\n            \"salary\": 18,\n            \"description\": {\n                \"id\": 5,\n                \"name\": \"description\",\n                \"body\": \"<div>Work in the greatest espresso bar in town and make making others happy your paid job!</div>\",\n                \"record_type\": \"Job\",\n                \"record_id\": 2,\n                \"created_at\": \"2024-11-15T15:20:36.306Z\",\n                \"updated_at\": \"2024-11-15T15:20:36.306Z\"\n            },\n            \"currency\": \"USD\",\n            \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n            \"duration\": 20,\n            \"code_lang\": null,\n            \"longitude\": 11.613942994844358,\n            \"latitude\": 48.1951076,\n            \"country_code\": null,\n            \"postal_code\": null,\n            \"city\": null,\n            \"address\": null,\n            \"view_count\": 0,\n            \"applications_count\": 0,\n            \"created_at\": \"2024-11-15T15:20:35.491Z\",\n            \"updated_at\": \"2024-11-15T15:20:36.334Z\",\n            \"image_url\": null\n        }\n    ]\n}"
 						},
 						{
 							"id": "9ff6606f-872a-4364-8649-b13f072a443b",
