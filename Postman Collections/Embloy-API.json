@@ -3927,138 +3927,6 @@
 					},
 					"response": [
 						{
-							"id": "6712d9d3-d666-4182-b853-03ff4633757b",
-							"name": "201 Created",
-							"originalRequest": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "company_name",
-											"value": "Example Inc",
-											"description": "Your company's official name which will be shown to applicants.",
-											"type": "text"
-										},
-										{
-											"key": "company_slug",
-											"value": "example-inc",
-											"description": "A unique username for your company account which will be used for your company board's url.",
-											"type": "text"
-										},
-										{
-											"key": "company_phone",
-											"value": "004912345678910",
-											"description": "A phone number for the applicants to contact your recruiting team for general inquiries.",
-											"type": "text"
-										},
-										{
-											"key": "company_email",
-											"value": "contact@example.com",
-											"description": "An email for the applicants to contact your recruiting team for general inquiries.",
-											"type": "text"
-										},
-										{
-											"key": "company_industry",
-											"value": "Technology",
-											"description": "An optional tag for your company's field.",
-											"type": "text"
-										},
-										{
-											"key": "company_description",
-											"value": "This is a great company!!!",
-											"description": "A description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML.",
-											"type": "text"
-										},
-										{
-											"key": "company_urls[]",
-											"value": "\"https://www.example.com\"",
-											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)",
-											"type": "text"
-										},
-										{
-											"key": "company_urls[]",
-											"value": "\"https://www.linkedin.com/company/example\"",
-											"description": "A JSON array of URLs (e.g., for your social media accounts, websites, etc.)",
-											"type": "text"
-										},
-										{
-											"key": "company_logo",
-											"description": "A square image of your company logo. Allowed formats are PNG, JPEG and JPG with a maximum size of 2 megabytes.",
-											"type": "file",
-											"src": "2V6EuNpsa/ImageSignature.png"
-										}
-									]
-								},
-								"url": "{{root}}/api/{{api_version}}/company"
-							},
-							"status": "Created",
-							"code": 201,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Frame-Options",
-									"value": "SAMEORIGIN"
-								},
-								{
-									"key": "X-XSS-Protection",
-									"value": "0"
-								},
-								{
-									"key": "X-Content-Type-Options",
-									"value": "nosniff"
-								},
-								{
-									"key": "X-Download-Options",
-									"value": "noopen"
-								},
-								{
-									"key": "X-Permitted-Cross-Domain-Policies",
-									"value": "none"
-								},
-								{
-									"key": "Referrer-Policy",
-									"value": "strict-origin-when-cross-origin"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"67b74dbe401a64148f9fac075adcae57\""
-								},
-								{
-									"key": "Cache-Control",
-									"value": "max-age=0, private, must-revalidate"
-								},
-								{
-									"key": "X-Request-Id",
-									"value": "7e2e6d3f-4bf7-44a2-82a3-95dc3117db36"
-								},
-								{
-									"key": "X-Runtime",
-									"value": "1.285517"
-								},
-								{
-									"key": "Server-Timing",
-									"value": "cache_read.active_support;dur=0.20, cache_write.active_support;dur=0.12, start_processing.action_controller;dur=0.64, sql.active_record;dur=489.63, instantiation.active_record;dur=91.48, unpermitted_parameters.action_controller;dur=0.32, process_action.action_controller;dur=629.89"
-								},
-								{
-									"key": "vary",
-									"value": "Origin"
-								},
-								{
-									"key": "Content-Length",
-									"value": "689"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"company\": {\n        \"company_name\": \"Example Inc\",\n        \"company_phone\": \"004912345678910\",\n        \"company_email\": \"contact@example.com\",\n        \"company_urls\": [\n            \"https://www.example.com\",\n            \"https://www.linkedin.com/company/example\"\n        ],\n        \"company_industry\": \"Technology\",\n        \"company_description\": {\n            \"id\": 3,\n            \"name\": \"company_description\",\n            \"body\": \"This is a great company!!!\",\n            \"record_type\": \"User\",\n            \"record_id\": 3,\n            \"created_at\": \"2024-11-14T21:10:58.625Z\",\n            \"updated_at\": \"2024-11-14T21:19:42.226Z\"\n        },\n        \"company_logo\": \"http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4edfc21832fb9aa2a3350a7febd739e25acf0082/ImageSignature.png\",\n        \"company_slug\": \"example-inc\"\n    }\n}"
-						},
-						{
 							"id": "0fa221fc-9538-4831-95d7-b30ab4b99d45",
 							"name": "403 Forbidden",
 							"originalRequest": {
@@ -4579,6 +4447,138 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"error\": \"Bad request\",\n    \"details\": {\n        \"company_email\": [\n            \"is invalid\"\n        ],\n        \"company_industry\": [\n            \"is too long (maximum is 150 characters)\"\n        ],\n        \"company_logo\": [\n            {\n                \"error\": \"ERR_INVALID\",\n                \"description\": \"is too large (max is 2 MB)\"\n            }\n        ],\n        \"company_urls\": [\n            {\n                \"error\": \"ERR_INVALID\",\n                \"description\": \"must be an array of valid URLs\"\n            }\n        ]\n    }\n}"
+						},
+						{
+							"id": "dc713dd6-a241-47c4-a042-e3334a8e8c67",
+							"name": "201 Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "company_name",
+											"value": "Example Inc",
+											"type": "text",
+											"description": "Your company's official name which will be shown to applicants."
+										},
+										{
+											"key": "company_phone",
+											"value": "004912345678910",
+											"type": "text",
+											"description": "A phone number for the applicants to contact your recruiting team for general inquiries."
+										},
+										{
+											"key": "company_email",
+											"value": "contact@example.com",
+											"type": "text",
+											"description": "An email for the applicants to contact your recruiting team for general inquiries."
+										},
+										{
+											"key": "company_slug",
+											"value": "example-inc",
+											"type": "text",
+											"description": "A unique username for your company account which will be used for your company board's url."
+										},
+										{
+											"key": "company_logo",
+											"description": "A square image of your company logo. Allowed formats are PNG, JPEG and JPG with a maximum size of 2 megabytes.",
+											"type": "file",
+											"src": "u534kK0HP/ImageSignature.png"
+										},
+										{
+											"key": "company_description",
+											"value": "This is a great company!!!",
+											"type": "text",
+											"description": "An optional description which will be shown on for your company profile. Needs to be between 10 and 10,000 characters and can be either plaintext or HTML."
+										},
+										{
+											"key": "company_industry",
+											"value": "Technology",
+											"type": "text",
+											"description": "An optional tag for your company's field."
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://www.github.com/example",
+											"type": "text",
+											"description": "An optional JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
+										},
+										{
+											"key": "company_urls[]",
+											"value": "https://www.linkedin.com/company/example",
+											"type": "text",
+											"description": "An optional JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
+										}
+									]
+								},
+								"url": "{{root}}/api/{{api_version}}/company"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"cf336d7c86fdc791866d76a7208e4f52\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "f6207b7e-d89a-43f5-8101-db2cc34f790b"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "1.472871"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "cache_read.active_support;dur=0.24, cache_write.active_support;dur=0.12, start_processing.action_controller;dur=0.57, sql.active_record;dur=1075.59, instantiation.active_record;dur=16.13, unpermitted_parameters.action_controller;dur=0.64, render_partial.action_view;dur=2.98, service_upload.active_storage;dur=1.87, enqueue.active_job;dur=1.84, process_action.action_controller;dur=1175.95"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Length",
+									"value": "703"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"company\": {\n        \"id\": 3,\n        \"company_name\": \"Example Inc\",\n        \"company_phone\": \"004912345678910\",\n        \"company_email\": \"contact@example.com\",\n        \"company_urls\": [\n            \"https://www.github.com/example\",\n            \"https://www.linkedin.com/company/example\"\n        ],\n        \"company_industry\": \"Technology\",\n        \"company_description\": {\n            \"record_id\": 3,\n            \"body\": \"This is a great company!!!\",\n            \"id\": 3,\n            \"name\": \"company_description\",\n            \"record_type\": \"User\",\n            \"created_at\": \"2024-11-14T21:10:58.625Z\",\n            \"updated_at\": \"2024-11-15T00:33:59.002Z\"\n        },\n        \"company_logo\": \"http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBHdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--57f125d9ab2c94b63f84acd6a9eac33f3d18de9c/ImageSignature.png\",\n        \"company_slug\": \"example-inc\"\n    }\n}"
 						}
 					]
 				},
@@ -10681,7 +10681,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "ac299615-5fca-472c-8165-5123795f8938",
+				"id": "08cf2308-79b8-4361-a5cb-dfb9f6aa5911",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -10691,7 +10691,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "a5068b67-3c21-422a-ada3-51a66ec8f7d5",
+				"id": "d490814d-e9a5-4d87-ad20-c738bb421569",
 				"type": "text/javascript",
 				"exec": [
 					""
