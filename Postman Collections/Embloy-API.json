@@ -3910,15 +3910,21 @@
 								},
 								{
 									"key": "company_urls[]",
-									"value": "https://www.github.com/example",
+									"value": "https://github.com/embloy",
 									"type": "text",
 									"description": "An optional JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
 								},
 								{
 									"key": "company_urls[]",
-									"value": "https://www.linkedin.com/company/example",
+									"value": "https://www.linkedin.com/company/embloy",
 									"type": "text",
 									"description": "An optional JSON array of URLs (e.g., for your social media accounts, websites, etc.)"
+								},
+								{
+									"key": "company_urls[]",
+									"value": "https://about.embloy.com",
+									"description": "An optional JSON array of URLs (e.g., for your social media accounts, websites, etc.)",
+									"type": "text"
 								}
 							]
 						},
