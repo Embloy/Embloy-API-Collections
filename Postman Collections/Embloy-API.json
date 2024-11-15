@@ -3099,6 +3099,20 @@
 							"body": "{\n    \"message\": \"User deleted!\"\n}"
 						}
 					]
+				},
+				{
+					"name": "Delete profile image",
+					"id": "1bcaaf10-d984-4574-9283-aaa850983e4f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{root}}/api/{{api_version}}/user/image",
+						"description": "The provided access token is first verified, and then the current user's profile image is deleted permanently."
+					},
+					"response": []
 				}
 			],
 			"id": "bcb60e9d-92d7-4f5b-8e72-137270f96af3",
@@ -10863,7 +10877,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "8b27493b-9fda-4f4d-88df-3b419becfe45",
+				"id": "73c656fc-cfea-469a-b380-277fe98a0f29",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -10873,7 +10887,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "a2f5937b-11df-4602-b998-fa8972396a2d",
+				"id": "0a79f51b-10e3-4e14-89a2-5f44454ee8d4",
 				"type": "text/javascript",
 				"exec": [
 					""
