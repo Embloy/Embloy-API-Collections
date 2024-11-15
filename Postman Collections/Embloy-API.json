@@ -3112,7 +3112,85 @@
 						"url": "{{root}}/api/{{api_version}}/user/image",
 						"description": "The provided access token is first verified, and then the current user's profile image is deleted permanently."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "ffc2d177-61c9-4db9-b2f7-567f7510daf5",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{root}}/api/{{api_version}}/user/image"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "x-frame-options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "0"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "x-download-options",
+									"value": "noopen"
+								},
+								{
+									"key": "x-permitted-cross-domain-policies",
+									"value": "none"
+								},
+								{
+									"key": "referrer-policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"d28582a4311a36c0c2ccc4b3cd1efa3a\""
+								},
+								{
+									"key": "cache-control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "x-request-id",
+									"value": "93b3254d-b992-4b46-99dc-8a4f7d1522fb"
+								},
+								{
+									"key": "x-runtime",
+									"value": "0.171789"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=63072000; includeSubDomains"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "content-length",
+									"value": "49"
+								},
+								{
+									"key": "date",
+									"value": "Fri, 15 Nov 2024 04:32:32 GMT"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"Profile image successfully removed.\"\n}"
+						}
+					]
 				}
 			],
 			"id": "bcb60e9d-92d7-4f5b-8e72-137270f96af3",
@@ -10877,7 +10955,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "3fcfe556-0aaf-4bbc-9040-0e35d9705065",
+				"id": "ce800773-c65c-4dc6-9e11-5f7b578dab9e",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -10887,7 +10965,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "c040cc64-0978-4033-a52d-979ca952fe75",
+				"id": "e726b2ac-bc63-49fa-90f7-bf46ce90da07",
 				"type": "text/javascript",
 				"exec": [
 					""
