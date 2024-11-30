@@ -2063,109 +2063,21 @@
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "PATCH",
-								"header": [],
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
 								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "title",
-											"value": "TestTitle",
-											"type": "text",
-											"description": "Job's title."
-										},
-										{
-											"key": "job_type",
-											"value": "Retail",
-											"type": "text",
-											"description": "Job category"
-										},
-										{
-											"key": "start_slot",
-											"value": "{{$randomDateFuture}}",
-											"type": "text",
-											"description": "The timestamp of when the job starts"
-										},
-										{
-											"key": "position",
-											"value": "CEO",
-											"type": "text",
-											"description": "The open position"
-										},
-										{
-											"key": "key_skills",
-											"value": "Entrepreneurship",
-											"type": "text",
-											"description": "Key skills relevant for this job"
-										},
-										{
-											"key": "duration",
-											"value": "9",
-											"type": "text",
-											"description": "The job duration in days",
-											"disabled": true
-										},
-										{
-											"key": "salary",
-											"value": "9",
-											"type": "text",
-											"description": "The job's salary",
-											"disabled": true
-										},
-										{
-											"key": "description",
-											"value": "<div>Hier steht die Desription</div>",
-											"type": "text",
-											"description": "A brief description (<500characters) of the job",
-											"disabled": true
-										},
-										{
-											"key": "job_status",
-											"value": "unlisted",
-											"type": "text",
-											"description": "Visibility status",
-											"disabled": true
-										},
-										{
-											"key": "longitude",
-											"value": "11.613942994844358",
-											"type": "text",
-											"description": "The job's longitde",
-											"disabled": true
-										},
-										{
-											"key": "latitude",
-											"value": "48.1951076",
-											"type": "text",
-											"description": "The job's latitude",
-											"disabled": true
-										},
-										{
-											"key": "job_notifications",
-											"value": "1",
-											"type": "text",
-											"description": "Enable/Disable notifications for this job",
-											"disabled": true
-										},
-										{
-											"key": "currency",
-											"value": "EUR",
-											"type": "text",
-											"description": "Your preferred currency",
-											"disabled": true
-										},
-										{
-											"key": "image_url",
-											"type": "file",
-											"description": "Cover image of your job posting",
-											"src": "2xKuRUK3o/logo-light.png"
-										},
-										{
-											"key": "job_slug",
-											"value": "44b52dd0-48f2-4c1f-a657-facd405c905fabcv",
-											"type": "text",
-											"disabled": true
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Organic coffee shop looking for a barista\",\n    \"job_type\": \"Food\",\n    \"referrer_url\": \"https://embloy.com/\",\n    \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n    \"position\": \"Barista\",\n    \"key_skills\": \"Barista, Coffee, Customer Service\",\n    \"duration\": 20,\n    \"salary\": 18,\n    \"description\": \"<div>Work in the greatest espresso bar in town and make making others happy your paid job!</div>\",\n    \"job_status\": \"listed\",\n    \"longitude\": 11.613942994844358,\n    \"latitude\": 48.1951076,\n    \"job_notifications\": 1,\n    \"currency\": \"USD\",\n    \"application_options_attributes\": [\n        {\n            \"id\": 16497,\n            \"job_id\": 161,\n            \"ext_id\": \"embloy__534cfcd1-dd02-48da-b619-98dc7ef4f3f2\",\n            \"question\": \"aDid you ever work as a barista?\",\n            \"question_type\": \"yes_no\",\n            \"required\": true,\n            \"options\": [],\n            \"created_at\": \"2024-11-30T21:46:53.693Z\",\n            \"updated_at\": \"2024-11-30T21:46:53.693Z\",\n            \"deleted_at\": null\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
 										}
-									]
+									}
 								},
 								"url": {
 									"raw": "{{root}}/api/{{api_version}}/jobs?id={{own_job_id}}",
