@@ -1831,7 +1831,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"title\": \"Organic coffee shop looking for a barista\",\n  \"job_type\": \"Food\",\n  \"referrer_url\": \"https://embloy.com/\",\n  \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n  \"position\": \"Barista\",\n  \"key_skills\": \"Barista, Coffee, Customer Service\",\n  \"duration\": 20,\n  \"salary\": 18,\n  \"description\": \"<div>Work in the greatest espresso bar in town and make making others happy your paid job!</div>\",\n  \"job_status\": \"listed\",\n  \"longitude\": 11.613942994844358,\n  \"latitude\": 48.1951076,\n  \"job_notifications\": 1,\n  \"currency\": \"USD\",\n  \"application_options_attributes\": [\n    {\n      \"question\": \"Did you ever work as a barista?\",\n      \"question_type\": \"yes_no\",\n      \"required\": true,\n      \"options\": []\n    },\n    {\n      \"question\": \"If yes, where and for how long?\",\n      \"question_type\": \"long_text\",\n      \"required\": false\n    },\n    {\n      \"question\": \"What is your favorite coffee?\",\n      \"question_type\": \"short_text\",\n      \"required\": true\n    },\n    {\n      \"question\": \"How many cups of coffee do you drink per day?\",\n      \"question_type\": \"number\",\n      \"required\": true\n    },\n    {\n      \"question\": \"What is the most important thing when preparing coffee?\",\n      \"question_type\": \"long_text\",\n      \"required\": true\n    },\n    { \n      \"question\": \"When did you last prepare coffee?\",\n      \"question_type\": \"date\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Provide a link to a video of you preparing coffee.\",\n      \"question_type\": \"link\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Should Capuccino be served after 11am?\",\n      \"question_type\": \"multiple_choice\",\n      \"required\": true,\n      \"options\": [\n        \"No way, it should be illegal\",\n        \"Yes, but for italians it should remain a crime\",\n        \"Yes, it's a free world\",\n        \"Is it 11am already?\"\n      ]\n    },\n    {\n      \"question\": \"Are you addicted to coffee?\",\n      \"question_type\": \"single_choice\",\n      \"required\": true,\n      \"options\": [\n        \"Yes\",\n        \"No\",\n        \"Maybe...\",\n        \"I can neither confirm nor deny.\"\n      ]\n    },\n    {\n      \"question\": \"Upload your CV\",\n      \"question_type\": \"file\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Upload an image of a perfect Espresso\",\n      \"question_type\": \"file\",\n      \"required\": false,\n      \"options\": [\"svg\", \"png\", \"jpeg\", \"jpg\"]\n    },\n    {\n      \"question\": \"Upload a video of you preparing coffee\",\n      \"question_type\": \"file\",\n      \"required\": false,\n      \"options\": [\"mp4\", \"avi\", \"mov\"]\n    }\n  ]\n}",
+							"raw": "{\n  \"title\": \"Organic coffee shop looking for a barista\",\n  \"job_type\": \"Food\",\n  \"referrer_url\": \"https://embloy.com/\",\n  \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n  \"position\": \"Barista\",\n  \"key_skills\": \"Barista, Coffee, Customer Service\",\n  \"duration\": 20,\n  \"salary\": 18,\n  \"description\": \"<div>Work in the greatest espresso bar in town and make making others happy your paid job!</div>\",\n  \"job_status\": \"listed\",\n  \"longitude\": 11.613942994844358,\n  \"latitude\": 48.1951076,\n  \"job_notifications\": 1,\n  \"currency\": \"USD\"\n  }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2038,23 +2038,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{root}}/api/{{api_version}}/jobs?id={{own_job_id}}",
-							"host": [
-								"{{root}}"
-							],
-							"path": [
-								"api",
-								"{{api_version}}",
-								"jobs"
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": "{{own_job_id}}"
-								}
-							]
-						},
+						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}",
 						"description": "The provided access token is first verified, and then an existing job is updated."
 					},
 					"response": [
@@ -2079,23 +2063,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "{{root}}/api/{{api_version}}/jobs?id={{own_job_id}}",
-									"host": [
-										"{{root}}"
-									],
-									"path": [
-										"api",
-										"{{api_version}}",
-										"jobs"
-									],
-									"query": [
-										{
-											"key": "id",
-											"value": "{{own_job_id}}"
-										}
-									]
-								}
+								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}"
 							},
 							"status": "OK",
 							"code": 200,
@@ -2470,6 +2438,67 @@
 						},
 						{
 							"id": "5065c1d9-2afc-45e7-a202-20f4e0bc79b6",
+							"name": "404 Not Found",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}"
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"job\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute can not be retrieved\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete job Copy",
+					"id": "dd71310d-b758-4a70-9c78-6689312ff6c3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/options/{{job_option_id}}",
+						"description": "Please note that this method is not part of the standard usage and requires editor-level or above user permissions. Use with caution. The provided access token is first verified, and then a given job is irreversibly deleted from the system. To only remove a job post you can either use the PATCH /jobs method and change the job_status to 0."
+					},
+					"response": [
+						{
+							"id": "fb7030ea-fded-44eb-baa9-e802b1c8efa8",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"Job deleted!\"\n}"
+						},
+						{
+							"id": "c3a3e32d-0b5e-400b-8a2a-6c4383791b80",
 							"name": "404 Not Found",
 							"originalRequest": {
 								"method": "DELETE",
@@ -11790,7 +11819,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "360cb571-8e8e-4e10-8e64-d666f519595f",
+				"id": "f2396c4f-801a-458c-a840-faf5bbd8c5ed",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -11800,7 +11829,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "07c465c2-2587-4d75-871b-4e4e99f899df",
+				"id": "dbfa3573-eafb-4943-ae79-258c8a988334",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -11913,6 +11942,11 @@
 		{
 			"key": "job_list_item_id",
 			"value": "insert-job-list-item-id",
+			"type": "default"
+		},
+		{
+			"key": "job_option_id",
+			"value": "16497",
 			"type": "default"
 		}
 	]
