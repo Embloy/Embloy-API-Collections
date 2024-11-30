@@ -2475,50 +2475,73 @@
 					},
 					"response": [
 						{
-							"id": "fb7030ea-fded-44eb-baa9-e802b1c8efa8",
-							"name": "200 OK",
+							"id": "3e3eb7c8-c1ae-4c1c-8226-773841123343",
+							"name": "Delete job Copy",
 							"originalRequest": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}"
+								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/options/{{job_option_id}}"
 							},
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
-									"key": "Content-Type",
-									"value": "application/json",
-									"description": "",
-									"type": "text"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"message\": \"Job deleted!\"\n}"
-						},
-						{
-							"id": "c3a3e32d-0b5e-400b-8a2a-6c4383791b80",
-							"name": "404 Not Found",
-							"originalRequest": {
-								"method": "DELETE",
-								"header": [],
-								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}"
-							},
-							"status": "Not Found",
-							"code": 404,
-							"_postman_previewlanguage": "json",
-							"header": [
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
 								{
 									"key": "Content-Type",
-									"value": "application/json",
-									"description": "",
-									"type": "text"
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"35919ce087ab042a07126ebfb641a69c\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "808b1d29-5c54-4c8a-bbaf-eae73ad30037"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "1.609332"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Length",
+									"value": "34"
 								}
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"job\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute can not be retrieved\"\n        }\n    ]\n}"
+							"body": "{\n    \"message\": \"All options deleted!\"\n}"
 						}
 					]
 				}
