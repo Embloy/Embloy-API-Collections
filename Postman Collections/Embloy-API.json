@@ -2031,7 +2031,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\": \"Organic coffee shop looking for a barista\",\n    \"job_type\": \"Food\",\n    \"referrer_url\": \"https://embloy.com/\",\n    \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n    \"position\": \"Barista\",\n    \"key_skills\": \"Barista, Coffee, Customer Service\",\n    \"duration\": 20,\n    \"salary\": 18,\n    \"description\": \"<div>Work in the greatest espresso bar in town and make making others happy your paid job!</div>\",\n    \"job_status\": \"listed\",\n    \"longitude\": 11.613942994844358,\n    \"latitude\": 48.1951076,\n    \"job_notifications\": 1,\n    \"currency\": \"USD\",\n    \"application_options_attributes\": [\n        {\n            \"question\": \"Is this working?\",\n            \"question_type\": \"yes_no\",\n            \"required\": true,\n            \"options\": []\n        },\n        {\n            \"id\": 16557,\n            \"job_id\": 162,\n            \"ext_id\": \"embloy__21ab3403-4e1c-4b41-b8fa-f859d2846086\",\n            \"question\": \"Did you ever work as a barista?\",\n            \"question_type\": \"yes_no\",\n            \"required\": false,\n            \"options\": [],\n            \"created_at\": \"2024-11-30T21:57:50.874Z\",\n            \"updated_at\": \"2024-11-30T21:57:50.874Z\",\n            \"deleted_at\": null\n        }\n    ]\n}",
+							"raw": "{\n    \"title\": \"Organic coffee shop looking for a barista\",\n    \"job_type\": \"Food\",\n    \"referrer_url\": \"https://embloy.com/\",\n    \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n    \"position\": \"Barista\",\n    \"key_skills\": \"Barista, Coffee, Customer Service\",\n    \"duration\": 20,\n    \"salary\": 18,\n    \"description\": \"<div>Work in the greatest espresso bar in town and make making others happy your paid job!</div>\",\n    \"job_status\": \"listed\",\n    \"longitude\": 11.613942994844358,\n    \"latitude\": 48.1951076,\n    \"job_notifications\": 1,\n    \"currency\": \"USD\",\n    \"application_options_attributes\": [\n        {\n            \"question\": \"Is this working?\",\n            \"question_type\": \"yes_no\",\n            \"required\": true,\n            \"options\": []\n        }\n    ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2400,7 +2400,7 @@
 						},
 						{
 							"id": "269a63a9-f237-43af-be6f-2d341c2bb8ea",
-							"name": "Update job",
+							"name": "404 Not Found",
 							"originalRequest": {
 								"method": "PATCH",
 								"header": [],
@@ -2526,7 +2526,7 @@
 							"originalRequest": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/options/{{job_option_id}}"
+								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/options"
 							},
 							"status": "OK",
 							"code": 200,
@@ -2588,6 +2588,140 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"message\": \"All options deleted!\"\n}"
+						},
+						{
+							"id": "6165855e-f23d-4795-8283-e18ec79df9b4",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/options/{{job_option_id}}"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"6116b07993bf26a2350a73d30fd09dec\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "b0121dd1-0ffd-43d6-b7d9-c1b54285787f"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.290843"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Length",
+									"value": "29"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"Option deleted!\"\n}"
+						},
+						{
+							"id": "2620f096-1604-424e-9d17-e5acd97e42c6",
+							"name": "404 Not Found",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/options/{{job_option_id}}"
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "b01b578a-323b-4aaa-9118-6c93b485a843"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.235362"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"option\": [\n        {\n            \"error\": \"ERR_INVALID\",\n            \"description\": \"Attribute can not be retrieved\"\n        }\n    ]\n}"
 						}
 					]
 				}
