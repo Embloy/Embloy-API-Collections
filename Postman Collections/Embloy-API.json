@@ -2030,108 +2030,13 @@
 						"method": "PATCH",
 						"header": [],
 						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "title",
-									"value": "TestTitle",
-									"type": "text",
-									"description": "Job's title."
-								},
-								{
-									"key": "job_type",
-									"value": "Retail",
-									"type": "text",
-									"description": "Job category"
-								},
-								{
-									"key": "start_slot",
-									"value": "{{$randomDateFuture}}",
-									"type": "text",
-									"description": "The timestamp of when the job starts"
-								},
-								{
-									"key": "position",
-									"value": "CEO",
-									"type": "text",
-									"description": "The open position"
-								},
-								{
-									"key": "key_skills",
-									"value": "Entrepreneurship",
-									"type": "text",
-									"description": "Key skills relevant for this job"
-								},
-								{
-									"key": "duration",
-									"value": "9",
-									"type": "text",
-									"description": "The job duration in days",
-									"disabled": true
-								},
-								{
-									"key": "salary",
-									"value": "9",
-									"type": "text",
-									"description": "The job's salary",
-									"disabled": true
-								},
-								{
-									"key": "description",
-									"value": "<div>Hier steht die Desription</div>",
-									"type": "text",
-									"description": "A brief description (<500characters) of the job",
-									"disabled": true
-								},
-								{
-									"key": "job_status",
-									"value": "unlisted",
-									"type": "text",
-									"description": "Visibility status",
-									"disabled": true
-								},
-								{
-									"key": "longitude",
-									"value": "11.613942994844358",
-									"type": "text",
-									"description": "The job's longitde",
-									"disabled": true
-								},
-								{
-									"key": "latitude",
-									"value": "48.1951076",
-									"type": "text",
-									"description": "The job's latitude",
-									"disabled": true
-								},
-								{
-									"key": "job_notifications",
-									"value": "1",
-									"type": "text",
-									"description": "Enable/Disable notifications for this job",
-									"disabled": true
-								},
-								{
-									"key": "currency",
-									"value": "EUR",
-									"type": "text",
-									"description": "Your preferred currency",
-									"disabled": true
-								},
-								{
-									"key": "image_url",
-									"type": "file",
-									"description": "Cover image of your job posting",
-									"src": "Pda0ojbZI/test_image.png",
-									"disabled": true
-								},
-								{
-									"key": "job_slug",
-									"value": "44b52dd0-48f2-4c1f-a657-facd405c905fabcv",
-									"type": "text",
-									"disabled": true
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"Organic coffee shop looking for a barista\",\n  \"job_type\": \"Food\",\n  \"referrer_url\": \"https://embloy.com/\",\n  \"start_slot\": \"2042-10-02T20:42:42.356Z\",\n  \"position\": \"Barista\",\n  \"key_skills\": \"Barista, Coffee, Customer Service\",\n  \"duration\": 20,\n  \"salary\": 18,\n  \"description\": \"<div>Work in the greatest espresso bar in town and make making others happy your paid job!</div>\",\n  \"job_status\": \"listed\",\n  \"longitude\": 11.613942994844358,\n  \"latitude\": 48.1951076,\n  \"job_notifications\": 1,\n  \"currency\": \"USD\",\n  \"application_options_attributes\": [\n    {\n      \"question\": \"Did you ever work as a barista?\",\n      \"question_type\": \"yes_no\",\n      \"required\": true,\n      \"options\": []\n    },\n    {\n      \"question\": \"If yes, where and for how long?\",\n      \"question_type\": \"long_text\",\n      \"required\": false\n    },\n    {\n      \"question\": \"What is your favorite coffee?\",\n      \"question_type\": \"short_text\",\n      \"required\": true\n    },\n    {\n      \"question\": \"How many cups of coffee do you drink per day?\",\n      \"question_type\": \"number\",\n      \"required\": true\n    },\n    {\n      \"question\": \"What is the most important thing when preparing coffee?\",\n      \"question_type\": \"long_text\",\n      \"required\": true\n    },\n    { \n      \"question\": \"When did you last prepare coffee?\",\n      \"question_type\": \"date\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Provide a link to a video of you preparing coffee.\",\n      \"question_type\": \"link\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Should Capuccino be served after 11am?\",\n      \"question_type\": \"multiple_choice\",\n      \"required\": true,\n      \"options\": [\n        \"No way, it should be illegal\",\n        \"Yes, but for italians it should remain a crime\",\n        \"Yes, it's a free world\",\n        \"Is it 11am already?\"\n      ]\n    },\n    {\n      \"question\": \"Are you addicted to coffee?\",\n      \"question_type\": \"single_choice\",\n      \"required\": true,\n      \"options\": [\n        \"Yes\",\n        \"No\",\n        \"Maybe...\",\n        \"I can neither confirm nor deny.\"\n      ]\n    },\n    {\n      \"question\": \"Upload your CV\",\n      \"question_type\": \"file\",\n      \"required\": false\n    },\n    {\n      \"question\": \"Upload an image of a perfect Espresso\",\n      \"question_type\": \"file\",\n      \"required\": false,\n      \"options\": [\"svg\", \"png\", \"jpeg\", \"jpg\"]\n    },\n    {\n      \"question\": \"Upload a video of you preparing coffee\",\n      \"question_type\": \"file\",\n      \"required\": false,\n      \"options\": [\"mp4\", \"avi\", \"mov\"]\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
 								}
-							]
+							}
 						},
 						"url": {
 							"raw": "{{root}}/api/{{api_version}}/jobs?id={{own_job_id}}",
@@ -11973,7 +11878,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "c0693c7f-328e-46a3-9b00-7b7e670465f4",
+				"id": "360cb571-8e8e-4e10-8e64-d666f519595f",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -11983,7 +11888,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "86dda3ed-0153-40cd-af07-3c37d7aeae3a",
+				"id": "07c465c2-2587-4d75-871b-4e4e99f899df",
 				"type": "text/javascript",
 				"exec": [
 					""
