@@ -7383,7 +7383,7 @@
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"applications\": [\n        {\n            \"job_id\": 130,\n            \"user_id\": 1,\n            \"ext_id\": \"lever__0fbebc22-7d75-4c41-b2a7-2aa89d9c6920\",\n            \"updated_at\": \"2024-09-19T19:01:18.263Z\",\n            \"created_at\": \"2024-09-17T23:48:31.973Z\",\n            \"status\": \"accepted\",\n            \"response\": \"Accepted\",\n            \"deleted_at\": null,\n            \"version\": 5\n        }\n    ]\n}"
+							"body": "{\n    \"applications\": [\n        {\n            \"job_id\": 130,\n            \"user_id\": 1,\n            \"ext_id\": \"lever__0fbebc22-7d75-4c41-b2a7-2aa89d9c6920\",\n            \"updated_at\": \"2024-09-19T19:01:18.263Z\",\n            \"created_at\": \"2024-09-17T23:48:31.973Z\",\n            \"status\": \"accepted\",\n            \"response\": \"Accepted\",\n            \"deleted_at\": null,\n            \"version\": 5,\n            \"applicant\": {\n                \"id\": 1,\n                \"first_name\": \"Carlo\",\n                \"last_name\": \"Bortolan\",\n                \"activity_status\": 1,\n                \"user_role\": \"admin\",\n                \"date_of_birth\": null,\n                \"linkedin_url\": \"https://linkedin.com/in/carlobortolan\",\n                \"instagram_url\": \"\",\n                \"twitter_url\": null,\n                \"facebook_url\": null,\n                \"github_url\": \"https://github.com/carlobortolan\",\n                \"portfolio_url\": \"https://carlobortolan.com\",\n                \"image_url\": \"https://embloy.s3.eu-central-1.amazonaws.com/09qxhad4poqjuohkth3yp7e3iab4?response-content-disposition=inline%3B%20filename%3D%22Screenshot%202024-11-24%20175846.png%22%3B%20filename%2A%3DUTF-8%27%27Screenshot%25202024-11-24%2520175846.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA47CRXKRHNYNTRWHT%2F20241130%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20241130T230304Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=e44a2a8c422dac2f73270d8544665403d8e4d64b11d05b9605b46e67002c8e64\",\n                \"created_at\": \"2024-09-10T18:53:46.801Z\"\n            }\n        }\n    ]\n}"
 						}
 					]
 				},
@@ -12022,7 +12022,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "4d3371ae-dd39-4778-aa0b-a6f8001ac983",
+				"id": "03df99db-4efd-4c6c-bdd8-f9378b5f9de2",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -12032,7 +12032,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "d1102c08-f9ee-47b4-8d10-318929a847f6",
+				"id": "f4e3c86d-3380-46ec-b3fe-4fc1ef419a39",
 				"type": "text/javascript",
 				"exec": [
 					""
