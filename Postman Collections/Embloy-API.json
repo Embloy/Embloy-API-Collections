@@ -3346,9 +3346,8 @@
 							],
 							"variable": [
 								{
-									"id": "92ade7e4-c818-41eb-ac4f-9cc644d2375e",
 									"key": "source",
-									"value": "lever",
+									"value": "ashby",
 									"description": "Service that needs to refresh its webhooks. Allowed values are:`embloy`,`lever`,`ashby`"
 								}
 							]
@@ -4231,10 +4230,136 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{root}}/api/{{api_version}}/user/integrations/ashby",
+						"url": {
+							"raw": "{{root}}/api/{{api_version}}/user/integrations/:source?archive_jobs=0",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"api",
+								"{{api_version}}",
+								"user",
+								"integrations",
+								":source"
+							],
+							"query": [
+								{
+									"key": "archive_jobs",
+									"value": "0",
+									"description": "Flag to optionally archive all jobs from the third party service. "
+								}
+							],
+							"variable": [
+								{
+									"key": "source",
+									"value": "",
+									"description": "Service that needs to refresh its webhooks. Allowed values are:`embloy`,`lever`,`ashby`"
+								}
+							]
+						},
 						"description": "The provided access token is first verified, and then the current user's profile image is deleted permanently."
 					},
-					"response": []
+					"response": [
+						{
+							"id": "9ff723dc-87fb-480c-8771-f545b0028779",
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{root}}/api/{{api_version}}/user/integrations/:source?archive_jobs=0",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"{{api_version}}",
+										"user",
+										"integrations",
+										":source"
+									],
+									"query": [
+										{
+											"key": "archive_jobs",
+											"value": "0",
+											"description": "Flag to optionally archive all jobs from the third party service. "
+										}
+									],
+									"variable": [
+										{
+											"key": "source",
+											"value": "",
+											"description": "Service that needs to refresh its webhooks. Allowed values are:`embloy`,`lever`,`ashby`"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"cbb63218294f643a3f004103dcc866dd\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "3f523e1c-9218-4925-ba16-4b0f60469f52"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.326879"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "cache_read.active_support;dur=0.18, cache_write.active_support;dur=0.06, start_processing.action_controller;dur=0.33, sql.active_record;dur=250.99, instantiation.active_record;dur=0.33, unpermitted_parameters.action_controller;dur=0.30, process_action.action_controller;dur=134.80"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Length",
+									"value": "51"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"Integration deactivated successfully.\"\n}"
+						}
+					]
 				}
 			],
 			"id": "bcb60e9d-92d7-4f5b-8e72-137270f96af3",
