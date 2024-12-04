@@ -4221,6 +4221,20 @@
 							"body": "{\n    \"message\": \"Profile image successfully removed.\"\n}"
 						}
 					]
+				},
+				{
+					"name": "Deactivate Integration",
+					"id": "520941d1-575a-42c0-9d49-b85ee2bb7d65",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{root}}/api/{{api_version}}/user/integrations/ashby",
+						"description": "The provided access token is first verified, and then the current user's profile image is deleted permanently."
+					},
+					"response": []
 				}
 			],
 			"id": "bcb60e9d-92d7-4f5b-8e72-137270f96af3",
