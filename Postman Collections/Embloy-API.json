@@ -4257,7 +4257,7 @@
 								}
 							]
 						},
-						"description": "The provided access token is first verified, and then the current user's profile image is deleted permanently."
+						"description": "Deactivate a third-party integration for the current user and delete all webhooks. Optionally archives Embloy copies of external job postings."
 					},
 					"response": [
 						{
