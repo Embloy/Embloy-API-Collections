@@ -4231,7 +4231,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{root}}/api/{{api_version}}/user/integrations/:source?archive_jobs=1",
+							"raw": "{{root}}/api/{{api_version}}/user/integrations/:source?archive_jobs=0",
 							"host": [
 								"{{root}}"
 							],
@@ -4245,7 +4245,7 @@
 							"query": [
 								{
 									"key": "archive_jobs",
-									"value": "1",
+									"value": "0",
 									"description": "Flag to optionally archive all jobs from the third party service. "
 								}
 							],
