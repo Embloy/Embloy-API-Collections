@@ -4231,7 +4231,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{root}}/api/{{api_version}}/user/integrations/:source?archive_jobs=0",
+							"raw": "{{root}}/api/{{api_version}}/user/integrations/:source?archive_jobs=1",
 							"host": [
 								"{{root}}"
 							],
@@ -4245,7 +4245,7 @@
 							"query": [
 								{
 									"key": "archive_jobs",
-									"value": "0",
+									"value": "1",
 									"description": "Flag to optionally archive all jobs from the third party service. "
 								}
 							],
@@ -12161,7 +12161,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "f43942c6-a98d-4ed7-8da6-05d46974c427",
+				"id": "6a7d306a-ed6e-4e3a-84cf-69dc614d11d6",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -12171,7 +12171,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "0bba3bb9-3e1f-4860-8348-bf2909a68bcf",
+				"id": "fdca81a2-48f5-4ef9-a3fa-086586be2fba",
 				"type": "text/javascript",
 				"exec": [
 					""
