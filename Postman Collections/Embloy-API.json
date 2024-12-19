@@ -2746,7 +2746,7 @@
 					},
 					"response": [
 						{
-							"id": "650a58af-0735-44c6-a701-59bc152ae9e9",
+							"id": "139036bd-dd89-4b02-950e-049c3c866a55",
 							"name": "200 OK",
 							"originalRequest": {
 								"method": "GET",
@@ -2758,15 +2758,65 @@
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
 									"key": "Content-Type",
-									"value": "application/json",
-									"description": "",
-									"type": "text"
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"eaf544c7411061cb842018ccbeab1208\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "e6b7e1e4-2c38-412d-a6a3-7e1af7d6fdab"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "2.718472"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "cache_read.active_support;dur=0.44, cache_write.active_support;dur=0.17, start_processing.action_controller;dur=0.50, sql.active_record;dur=978.66, instantiation.active_record;dur=83.29, service_url.active_storage;dur=8.58, process_action.action_controller;dur=2643.08"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Length",
+									"value": "4631"
 								}
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"user\": {\n        \"id\": 3,\n        \"email\": \"carlo.bortolan@de.embloy.com\",\n        \"first_name\": \"Carlo\",\n        \"last_name\": \"Bortolan\",\n        \"date_of_birth\": null,\n        \"longitude\": null,\n        \"latitude\": null,\n        \"country_code\": null,\n        \"postal_code\": null,\n        \"city\": null,\n        \"address\": null,\n        \"activity_status\": 1,\n        \"user_role\": \"admin\",\n        \"type\": \"CompanyUser\",\n        \"view_count\": 0,\n        \"applications_count\": 0,\n        \"jobs_count\": 1,\n        \"linkedin_url\": null,\n        \"instagram_url\": null,\n        \"twitter_url\": null,\n        \"facebook_url\": null,\n        \"github_url\": null,\n        \"portfolio_url\": null,\n        \"phone\": null,\n        \"application_notifications\": true,\n        \"communication_notifications\": true,\n        \"marketing_notifications\": false,\n        \"security_notifications\": true,\n        \"image_url\": null,\n        \"created_at\": \"2024-09-14T20:31:13.725Z\",\n        \"updated_at\": \"2024-11-14T01:43:08.817Z\"\n    },\n    \"company\": {\n        \"company_name\": \"Example Inc.\",\n        \"company_phone\": \"123-456-7890\",\n        \"company_email\": \"contact@example.com\",\n        \"company_urls\": null,\n        \"company_industry\": \"Technology\",\n        \"company_description\": {\n            \"id\": null,\n            \"name\": \"company_description\",\n            \"body\": null,\n            \"record_type\": \"User\",\n            \"record_id\": 3,\n            \"created_at\": null,\n            \"updated_at\": null\n        },\n        \"company_logo\": null,\n        \"company_slug\": \"example-inc\"\n    }\n}"
+							"body": "{\n    \"user\": {\n        \"id\": 1,\n        \"email\": \"carlo.bortolan@de.embloy.com\",\n        \"first_name\": \"Carlo\",\n        \"last_name\": \"Bortolan\",\n        \"date_of_birth\": null,\n        \"longitude\": null,\n        \"latitude\": null,\n        \"country_code\": null,\n        \"postal_code\": null,\n        \"city\": null,\n        \"address\": \"Heimstättenstraße 6\",\n        \"activity_status\": 1,\n        \"user_role\": \"admin\",\n        \"type\": \"CompanyUser\",\n        \"view_count\": 0,\n        \"applications_count\": 7,\n        \"jobs_count\": 39,\n        \"linkedin_url\": \"https://linkedin.com/in/carlobortolan\",\n        \"instagram_url\": \"\",\n        \"twitter_url\": null,\n        \"facebook_url\": null,\n        \"github_url\": \"https://github.com/carlobortolan\",\n        \"portfolio_url\": \"https://carlobortolan.com\",\n        \"phone\": \"4915225237383.0\",\n        \"application_notifications\": true,\n        \"communication_notifications\": true,\n        \"marketing_notifications\": false,\n        \"security_notifications\": true,\n        \"image_url\": \"https://embloy.s3.eu-central-1.amazonaws.com/q6jaz1jsrr1iylx3epokfg8qn73j?response-content-disposition=inline%3B%20filename%3D%22Screenshot%202024-12-04%20150114.png%22%3B%20filename%2A%3DUTF-8%27%27Screenshot%25202024-12-04%2520150114.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA47CRXKRHNYNTRWHT%2F20241219%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20241219T161301Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=95fcb11c0f88331b58db30a10cb0e9ab243e5197720ab171f303058195397700\",\n        \"created_at\": \"2024-09-10T18:53:46.801Z\",\n        \"updated_at\": \"2024-12-04T14:02:22.492Z\"\n    },\n    \"subscription\": {\n        \"id\": 1,\n        \"customer_id\": 3,\n        \"name\": \"default\",\n        \"processor_id\": \"sub_1PxclbKMiBrigNb6FAyACuLJ\",\n        \"processor_plan\": \"price_1Pxb4zKMiBrigNb6XPZOmA7z\",\n        \"quantity\": 1,\n        \"status\": \"active\",\n        \"current_period_start\": \"2024-12-10T22:42:34.000Z\",\n        \"current_period_end\": \"2025-01-10T22:42:34.000Z\",\n        \"trial_ends_at\": null,\n        \"ends_at\": null,\n        \"metered\": false,\n        \"pause_behavior\": null,\n        \"pause_starts_at\": null,\n        \"pause_resumes_at\": null,\n        \"application_fee_percent\": null,\n        \"metadata\": {},\n        \"data\": {\n            \"subscription_items\": [\n                {\n                    \"id\": \"si_QpHK0EEQXDkO2y\",\n                    \"price\": {\n                        \"id\": \"price_1Pxb4zKMiBrigNb6XPZOmA7z\",\n                        \"type\": \"recurring\",\n                        \"active\": true,\n                        \"object\": \"price\",\n                        \"created\": 1726001669,\n                        \"product\": \"prod_QpFaXuThRqNOxo\",\n                        \"currency\": \"eur\",\n                        \"livemode\": true,\n                        \"metadata\": {},\n                        \"nickname\": null,\n                        \"recurring\": {\n                            \"meter\": null,\n                            \"interval\": \"month\",\n                            \"usage_type\": \"licensed\",\n                            \"interval_count\": 1,\n                            \"aggregate_usage\": null,\n                            \"trial_period_days\": null\n                        },\n                        \"lookup_key\": null,\n                        \"tiers_mode\": null,\n                        \"unit_amount\": 0,\n                        \"tax_behavior\": \"unspecified\",\n                        \"billing_scheme\": \"per_unit\",\n                        \"custom_unit_amount\": null,\n                        \"transform_quantity\": null,\n                        \"unit_amount_decimal\": \"0\"\n                    },\n                    \"metadata\": {},\n                    \"quantity\": 1\n                }\n            ]\n        },\n        \"stripe_account\": null,\n        \"payment_method_id\": \"pm_1PxclBKMiBrigNb6qiS1vhCf\",\n        \"created_at\": \"2024-09-10T22:42:34.000Z\",\n        \"updated_at\": \"2024-12-19T16:13:03.173Z\",\n        \"prorate\": true\n    },\n    \"company\": {\n        \"id\": 1,\n        \"company_name\": \"Embloy Platforms UG (haftungsbeschränkt)\",\n        \"company_phone\": \"004912345678910\",\n        \"company_email\": \"info@embloy.com\",\n        \"company_urls\": [\n            \"https://www.github.com/embloy\",\n            \"https://www.linkedin.com/company/embloy\",\n            \"https://www.embloy.com\",\n            \"https://www.about.embloy.com/en\",\n            \"https://api.embloy.com\",\n            \"https://linked.com/\",\n            \"https://genius.embloy.com\",\n            \"https://developers.embloy.com\",\n            \"https://docs.embloy.com\",\n            \"https://postman.com/embloy\"\n        ],\n        \"company_industry\": \"Technology\",\n        \"company_description\": {\n            \"id\": 158,\n            \"name\": \"company_description\",\n            \"body\": \"<h1 id=\\\"the-world-s-first-job-application-api\\\">The World's First Job Application API</h1>\\n<p>Deliver <strong>outstanding candidate experiences</strong> by offering the option to apply with Embloy.</p>\\n<p>Find out more at <a href=\\\"https://about.embloy.com/en/\\\">https://about.embloy.com/en/</a>.</p>\\n<p><img src=\\\"https://avatars.githubusercontent.com/u/132399266?s=200&amp;v=4\\\" alt=\\\"logo\\\"></p>\\n<p><em>Sign up to Embloy and apply for jobs with Venmo-like simplicity. Create an account once, use it to apply with one click and manage your applications in one place.</em></p>\",\n            \"record_type\": \"User\",\n            \"record_id\": 1,\n            \"created_at\": \"2024-11-15T02:37:16.881Z\",\n            \"updated_at\": \"2024-11-15T04:05:19.044Z\"\n        },\n        \"company_logo\": \"https://embloy.s3.eu-central-1.amazonaws.com/5s4u81ta6i1flknyh0fkj4zbsqtx?response-content-disposition=inline%3B%20filename%3D%22logo-light.png%22%3B%20filename%2A%3DUTF-8%27%27logo-light.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA47CRXKRHNYNTRWHT%2F20241219%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20241219T161303Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=6a137e4427cfce9d4f76271e1e9eea7d6b70e4a6a3a9390686737c77ff85c120\",\n        \"company_slug\": \"embloy\"\n    }\n}"
 						}
 					]
 				},
@@ -12161,7 +12211,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "eab46c30-a223-4257-b228-c25c9105d211",
+				"id": "5f27b94a-4c49-40f0-8321-083af81cddfb",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -12171,7 +12221,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "5c48cfe4-2dfe-43b3-9b93-2436fb131367",
+				"id": "0254657b-ea59-4088-a00d-63d8c3dda6ac",
 				"type": "text/javascript",
 				"exec": [
 					""
