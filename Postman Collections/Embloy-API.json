@@ -2742,7 +2742,7 @@
 						"method": "GET",
 						"header": [],
 						"url": "{{root}}/api/{{api_version}}/user",
-						"description": "Returns the current user's profile information, including the company account, if the user has a company account."
+						"description": "Returns the current user's profile information, including the company account if the user has a company account and subscription if the user has a subscription."
 					},
 					"response": [
 						{
