@@ -7848,7 +7848,25 @@
 								}
 							]
 						},
-						"url": "{{root}}/api/{{api_version}}/jobs/{{job_id}}/applications",
+						"url": {
+							"raw": "{{root}}/api/{{api_version}}/jobs/{{job_id}}/applications?save_as_draft=1",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"api",
+								"{{api_version}}",
+								"jobs",
+								"{{job_id}}",
+								"applications"
+							],
+							"query": [
+								{
+									"key": "save_as_draft",
+									"value": "1"
+								}
+							]
+						},
 						"description": "The provided access token is first verified, and then a new application in the name of the associated user is submitted to the specified job. For Embloy v0 the user account (in detail the user profile) is considered to be the figurehead with which one applies for a job."
 					},
 					"response": [
