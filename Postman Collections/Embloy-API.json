@@ -7958,7 +7958,8 @@
 							"query": [
 								{
 									"key": "save_as_draft",
-									"value": "1"
+									"value": "1",
+									"description": "Optional flag to save the application as a draft which can be edited and submitted at a later point in time. Note that to update the draft, you can send only the updated fields, but to submit the draft, you need to send all fields."
 								}
 							]
 						},
