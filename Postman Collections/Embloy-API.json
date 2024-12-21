@@ -7848,87 +7848,103 @@
 								{
 									"key": "application_answers[0][application_option_id]",
 									"value": "25",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "application_answers[0][answer]",
 									"value": "Yes",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "application_answers[1][application_option_id]",
 									"value": "26",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "application_answers[1][answer]",
 									"value": "Master's Degree",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "application_answers[2][application_option_id]",
 									"value": "27",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "application_answers[2][answer]",
 									"value": "https://github.com/username",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "application_answers[3][application_option_id]",
 									"value": "28",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "application_answers[3][answer]",
 									"value": "1231312",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "application_answers[4][application_option_id]",
 									"value": "29",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "application_answers[4][answer]",
 									"value": "AI, Scrum",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "application_answers[5][application_option_id]",
 									"value": "32",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "application_answers[5][answer]",
 									"value": "Yes, it's a free world",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "application_answers[6][application_option_id]",
 									"value": "33",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "application_answers[6][answer]",
-									"value": "No",
-									"type": "text"
+									"value": "Yes",
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "application_answers[7][application_option_id]",
 									"value": "34",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "application_answers[7][file]",
 									"type": "file",
-									"src": "7xL1CYndq/test_file.txt"
+									"src": "7xL1CYndq/test_file.txt",
+									"disabled": true
 								}
 							]
 						},
 						"url": {
-							"raw": "{{root}}/api/{{api_version}}/jobs/{{job_id}}/applications?save_as_draft=1",
+							"raw": "{{root}}/api/{{api_version}}/jobs/{{job_id}}/applications?save_as_draft=0",
 							"host": [
 								"{{root}}"
 							],
@@ -7942,7 +7958,7 @@
 							"query": [
 								{
 									"key": "save_as_draft",
-									"value": "1"
+									"value": "0"
 								}
 							]
 						},
