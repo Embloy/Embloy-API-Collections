@@ -7847,14 +7847,12 @@
 								{
 									"key": "application_answers[6][application_option_id]",
 									"value": "33",
-									"type": "text",
-									"disabled": true
+									"type": "text"
 								},
 								{
 									"key": "application_answers[6][answer]",
 									"value": "Yes",
-									"type": "text",
-									"disabled": true
+									"type": "text"
 								},
 								{
 									"key": "application_answers[7][application_option_id]",
