@@ -7847,12 +7847,14 @@
 								{
 									"key": "application_answers[6][application_option_id]",
 									"value": "33",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "application_answers[6][answer]",
 									"value": "Yes",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "application_answers[7][application_option_id]",
@@ -8063,6 +8065,178 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"errors\": {\n        \"application_text\": [\n            {\n                \"error\": \"ERR_LENGTH\",\n                \"description\": \"Attribute length is invalid\",\n                \"count\": 0\n            },\n            {\n                \"error\": \"blank\"\n            }\n        ]\n    }\n}"
+						},
+						{
+							"id": "e9643276-d1ce-4129-a01d-e39ef905fe38",
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "application_answers[0][application_option_id]",
+											"value": "25",
+											"type": "text"
+										},
+										{
+											"key": "application_answers[0][answer]",
+											"value": "Yes",
+											"type": "text"
+										},
+										{
+											"key": "application_answers[1][application_option_id]",
+											"value": "26",
+											"type": "text"
+										},
+										{
+											"key": "application_answers[1][answer]",
+											"value": "Master's Degree",
+											"type": "text"
+										},
+										{
+											"key": "application_answers[2][application_option_id]",
+											"value": "27",
+											"type": "text"
+										},
+										{
+											"key": "application_answers[2][answer]",
+											"value": "https://github.com/username",
+											"type": "text"
+										},
+										{
+											"key": "application_answers[3][application_option_id]",
+											"value": "28",
+											"type": "text"
+										},
+										{
+											"key": "application_answers[3][answer]",
+											"value": "1231312",
+											"type": "text"
+										},
+										{
+											"key": "application_answers[4][application_option_id]",
+											"value": "29",
+											"type": "text"
+										},
+										{
+											"key": "application_answers[4][answer]",
+											"value": "AI, Scrum",
+											"type": "text"
+										},
+										{
+											"key": "application_answers[5][application_option_id]",
+											"value": "32",
+											"type": "text"
+										},
+										{
+											"key": "application_answers[5][answer]",
+											"value": "Yes, it's a free world",
+											"type": "text"
+										},
+										{
+											"key": "application_answers[6][application_option_id]",
+											"value": "33",
+											"type": "text"
+										},
+										{
+											"key": "application_answers[6][answer]",
+											"value": "Yes",
+											"type": "text"
+										},
+										{
+											"key": "application_answers[7][application_option_id]",
+											"value": "34",
+											"type": "text"
+										},
+										{
+											"key": "application_answers[7][file]",
+											"type": "file",
+											"src": "a_Z8kHeuW/og.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{root}}/api/{{api_version}}/jobs/{{job_id}}/applications?save_as_draft=0",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"{{api_version}}",
+										"jobs",
+										"{{job_id}}",
+										"applications"
+									],
+									"query": [
+										{
+											"key": "save_as_draft",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "6b07c732-9495-47e6-92b2-05da563fda00"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "4.789568"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "cache_read.active_support;dur=0.44, cache_write.active_support;dur=0.17, start_processing.action_controller;dur=0.57, sql.active_record;dur=3444.49, instantiation.active_record;dur=103.47, process_action.action_controller;dur=3612.35"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"errors\": {\n        \"application\": [\n            {\n                \"error\": \"Invalid application answer for option 34: Attachment is too large (max is 2 MB)\"\n            }\n        ]\n    }\n}"
 						},
 						{
 							"id": "77737e5c-0343-4c08-9c6e-181ff2bedc8f",
