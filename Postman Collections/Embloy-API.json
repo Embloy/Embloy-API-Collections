@@ -7832,7 +7832,7 @@
 								},
 								{
 									"key": "application_answers[4][application_option_id]",
-									"value": "32",
+									"value": "29",
 									"type": "text"
 								},
 								{
@@ -7845,11 +7845,31 @@
 									"type": "file",
 									"description": "Application attachment (can be required by the employer and must have the file format specified in the job's 'allowed_cv_formats' field)",
 									"src": "UM2EtAJ0m/Operations Research _ Retake-Prüfung - assignment.pdf"
+								},
+								{
+									"key": "application_answers[5][application_option_id]",
+									"value": "32",
+									"type": "text"
+								},
+								{
+									"key": "application_answers[5][answer]",
+									"value": "Yes, it's a free world",
+									"type": "text"
+								},
+								{
+									"key": "application_answers[6][application_option_id]",
+									"value": "33",
+									"type": "text"
+								},
+								{
+									"key": "application_answers[6][answer]",
+									"value": "Yes",
+									"type": "text"
 								}
 							]
 						},
 						"url": {
-							"raw": "{{root}}/api/{{api_version}}/jobs/{{job_id}}/applications?save_as_draft=0",
+							"raw": "{{root}}/api/{{api_version}}/jobs/{{job_id}}/applications?save_as_draft=1",
 							"host": [
 								"{{root}}"
 							],
@@ -7863,7 +7883,7 @@
 							"query": [
 								{
 									"key": "save_as_draft",
-									"value": "0"
+									"value": "1"
 								}
 							]
 						},
