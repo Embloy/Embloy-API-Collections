@@ -7835,12 +7835,6 @@
 									"type": "text"
 								},
 								{
-									"key": "application_attachment",
-									"type": "file",
-									"description": "Application attachment (can be required by the employer and must have the file format specified in the job's 'allowed_cv_formats' field)",
-									"src": "UM2EtAJ0m/Operations Research _ Retake-Prüfung - assignment.pdf"
-								},
-								{
 									"key": "application_answers[5][application_option_id]",
 									"value": "32",
 									"type": "text"
@@ -7859,6 +7853,16 @@
 									"key": "application_answers[6][answer]",
 									"value": "Yes",
 									"type": "text"
+								},
+								{
+									"key": "application_answers[7][application_option_id]",
+									"value": "34",
+									"type": "text"
+								},
+								{
+									"key": "application_answers[7][file]",
+									"type": "file",
+									"src": "P8QwBliX0/apple-touch-icon.png"
 								}
 							]
 						},
@@ -12243,7 +12247,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "0e400a0c-cb85-45d1-ab1d-47168096c324",
+				"id": "a0406b2d-733c-481b-8902-ab586715fabb",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -12253,7 +12257,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "138386f6-20cc-4857-b496-90764b8dc014",
+				"id": "cdab49b8-eb15-494b-a8b1-2aa3751f88d3",
 				"type": "text/javascript",
 				"exec": [
 					""
