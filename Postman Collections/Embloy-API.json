@@ -7785,12 +7785,6 @@
 							"mode": "formdata",
 							"formdata": [
 								{
-									"key": "application_text",
-									"value": "Hello World",
-									"type": "text",
-									"description": "Application text which will be shown to the employer."
-								},
-								{
 									"key": "application_answers[0][application_option_id]",
 									"value": "25",
 									"type": "text"
@@ -7869,7 +7863,7 @@
 							]
 						},
 						"url": {
-							"raw": "{{root}}/api/{{api_version}}/jobs/{{job_id}}/applications?save_as_draft=1",
+							"raw": "{{root}}/api/{{api_version}}/jobs/{{job_id}}/applications?save_as_draft=0",
 							"host": [
 								"{{root}}"
 							],
@@ -7883,7 +7877,7 @@
 							"query": [
 								{
 									"key": "save_as_draft",
-									"value": "1"
+									"value": "0"
 								}
 							]
 						},
