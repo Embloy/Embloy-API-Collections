@@ -5865,8 +5865,8 @@
 								{
 									"key": "company_logo",
 									"description": "A square image of your company logo. Allowed formats are PNG, JPEG and JPG with a maximum size of 2 megabytes.",
-									"type": "text",
-									"value": "\"\""
+									"type": "file",
+									"src": "mwgSLJ7Ge/test_image.png"
 								}
 							]
 						},
