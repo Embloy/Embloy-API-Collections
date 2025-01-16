@@ -7638,7 +7638,8 @@
 							"query": [
 								{
 									"key": "draft_only",
-									"value": "1"
+									"value": "1",
+									"description": "Optional flag to filter for saved application drafts"
 								}
 							]
 						},
@@ -7728,6 +7729,94 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": null
+						},
+						{
+							"id": "d5e843de-91cd-46ac-86cc-84b97dc72366",
+							"name": "404 Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/application?draft_only=1",
+									"host": [
+										"{{root}}"
+									],
+									"path": [
+										"api",
+										"{{api_version}}",
+										"jobs",
+										"{{own_job_id}}",
+										"application"
+									],
+									"query": [
+										{
+											"key": "draft_only",
+											"value": "1",
+											"description": "Optional flag to filter for saved application drafts"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "ac65d6b2-62b3-4a8d-8c3a-c8f2520c4093"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "2.159991"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "cache_read.active_support;dur=0.51, cache_write.active_support;dur=0.23, start_processing.action_controller;dur=0.55, sql.active_record;dur=1197.81, instantiation.active_record;dur=130.65, process_action.action_controller;dur=1275.19"
+								},
+								{
+									"key": "vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"No draft found for this job.\"\n}"
 						}
 					]
 				},
@@ -12515,7 +12604,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "9e14dbbe-6fe1-45aa-a425-a493c8c7d67c",
+				"id": "b77ceeb3-eebf-4ad6-828c-073588872978",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -12525,7 +12614,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "37d859d5-04d5-429e-9f10-a68cb57dee00",
+				"id": "a94ba568-88e4-4c61-bf1b-cc0d3905caa7",
 				"type": "text/javascript",
 				"exec": [
 					""
