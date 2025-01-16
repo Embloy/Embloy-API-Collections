@@ -7623,7 +7623,25 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/application",
+						"url": {
+							"raw": "{{root}}/api/{{api_version}}/jobs/{{own_job_id}}/application?draft_only=1",
+							"host": [
+								"{{root}}"
+							],
+							"path": [
+								"api",
+								"{{api_version}}",
+								"jobs",
+								"{{own_job_id}}",
+								"application"
+							],
+							"query": [
+								{
+									"key": "draft_only",
+									"value": "1"
+								}
+							]
+						},
 						"description": "Returns the applications submitted by the current user for a given job including optional application attachments."
 					},
 					"response": [
